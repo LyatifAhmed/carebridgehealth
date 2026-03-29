@@ -42,6 +42,7 @@ export default function AboutPage() {
                 src="/lyatif-ahmed-founder-carebridgehealth-istanbul.avif"
                 alt="Latif Ahmed, founder of CareBridge Health"
                 fill
+                sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover object-[center_10%]"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent p-6">

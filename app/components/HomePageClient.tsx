@@ -178,6 +178,7 @@ export default function HomePageClient() {
                   src={item.img}
                   alt={item.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className={`object-cover transition duration-700 group-hover:scale-105 ${
                     item.title === "Hair transplant"
                       ? "object-[center_38%]"
@@ -208,6 +209,7 @@ export default function HomePageClient() {
               src="/womens-health-feature.avif"
               alt="Women's health and advanced gynaecological procedures"
               fill
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
             />
           </div>
@@ -297,6 +299,7 @@ export default function HomePageClient() {
               src="/cosmetic-feature.avif"
               alt="Selected cosmetic surgery coordination"
               fill
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover object-[30%_center] md:object-center"
             />
           </div>
@@ -310,6 +313,7 @@ export default function HomePageClient() {
               src="/trust.avif"
               alt="Trusted clinic coordination"
               fill
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover object-[70%_center] md:object-center"
             />
           </div>
