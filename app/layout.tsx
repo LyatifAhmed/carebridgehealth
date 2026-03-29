@@ -21,32 +21,62 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://carebridgehealth.co"),
+
   title: "CareBridge Health | Medical Treatment in Turkey from the UK",
   description:
-    "CareBridge Health helps UK-based patients access carefully selected clinics in Istanbul for dental, hair transplant, cosmetic, and specialised treatments.",
-  metadataBase: new URL("https://carebridgehealth.co"),
+    "CareBridge Health helps UK-based patients access carefully selected clinics in Istanbul for dental, hair transplant, cosmetic, bariatric, eye, and specialised treatments.",
+
+  keywords: [
+    "medical treatment in Turkey from the UK",
+    "Turkey medical tourism UK",
+    "dental treatment Turkey",
+    "hair transplant Turkey",
+    "cosmetic surgery Turkey",
+    "bariatric surgery Turkey",
+    "eye treatment Turkey",
+    "Istanbul clinics for UK patients",
+  ],
+
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
-    title: "CareBridge Health",
+    title: "CareBridge Health | Medical Treatment in Turkey from the UK",
     description:
-      "Private medical treatment in Turkey, carefully coordinated from the UK.",
+      "Private medical treatment in Turkey, carefully coordinated for UK-based patients.",
     url: "https://carebridgehealth.co",
     siteName: "CareBridge Health",
     images: [
       {
-        url: "/hero-medical.avif",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
+        alt: "CareBridge Health medical treatment in Turkey from the UK",
       },
     ],
     locale: "en_GB",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "CareBridge Health",
+    title: "CareBridge Health | Medical Treatment in Turkey from the UK",
     description:
-      "Private medical treatment in Turkey, coordinated from the UK.",
-    images: ["/hero-medical.avif"],
+      "Private medical treatment in Turkey, carefully coordinated for UK-based patients.",
+    images: ["/og-image.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -60,6 +90,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="icon" href="/favicon.ico?v=2" />
+        <link rel="shortcut icon" href="/favicon.ico?v=2" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
+
       <body className="flex min-h-full flex-col bg-[#fcfaf7] text-slate-900">
         <Navbar />
         <main className="flex-1">{children}</main>
