@@ -297,7 +297,7 @@ export default function HomePageClient() {
               src="/cosmetic-feature.avif"
               alt="Selected cosmetic surgery coordination"
               fill
-              className="object-cover"
+              className="object-cover object-[30%_center] md:object-center"
             />
           </div>
         </div>
@@ -310,7 +310,7 @@ export default function HomePageClient() {
               src="/trust.avif"
               alt="Trusted clinic coordination"
               fill
-              className="object-cover"
+              className="object-cover object-[70%_center] md:object-center"
             />
           </div>
 
