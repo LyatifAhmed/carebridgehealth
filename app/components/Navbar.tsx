@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,19 +26,23 @@ export default function Navbar() {
         {/* LEFT SIDE (logo + nav sadece scroll yokken) */}
         {!scrolled && (
           <>
-            <div className="flex items-center gap-3">
+            <Link
+              href="/"
+              className="group flex items-center gap-3 transition-all duration-300"
+            >
               <Image
                 src="/logo.png"
                 alt="CareBridge Health"
                 width={32}
                 height={32}
-                className="h-8 w-8 object-contain"
+                className="h-8 w-8 object-contain transition-all duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.35)]"
                 priority
               />
-              <span className="text-sm font-semibold text-white">
+
+              <span className="text-sm font-semibold text-white transition-all duration-300 group-hover:text-white/90">
                 CareBridge Health
               </span>
-            </div>
+            </Link>
 
             <nav className="hidden gap-6 text-sm text-white/80 md:flex">
               <a href="#services" className="hover:text-white">

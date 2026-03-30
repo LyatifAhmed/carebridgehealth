@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { FormEvent, useState } from "react";
 import ChatAssistant from "./ChatAssistant";
 import HeroCursor from "./HeroCursor";
@@ -10,6 +11,7 @@ type ConsultationForm = {
   email: string;
   whatsapp: string;
   treatment: string;
+  treatmentCity: string;
   location: string;
   timeframe: string;
   note: string;
@@ -20,6 +22,7 @@ const initialState: ConsultationForm = {
   email: "",
   whatsapp: "",
   treatment: "",
+  treatmentCity: "",
   location: "",
   timeframe: "",
   note: "",
@@ -28,33 +31,62 @@ const initialState: ConsultationForm = {
 const treatmentCards = [
   {
     title: "Dental treatments",
-    desc: "Implants, veneers, and smile design with carefully selected clinics.",
+    desc: "Implants, veneers, and smile design through carefully selected clinics in Istanbul and Antalya.",
     img: "/dental.avif",
   },
   {
     title: "Hair transplant",
-    desc: "Structured planning and natural-result focused clinics in Istanbul.",
+    desc: "Structured planning and natural-result focused clinics with clear pre-travel coordination.",
     img: "/hair.avif",
   },
   {
     title: "Eye treatments",
-    desc: "Vision-focused procedures and specialist support with clear coordination.",
+    desc: "Vision-focused procedures and specialist support with a more organised patient journey.",
     img: "/eye.avif",
   },
   {
     title: "Cosmetic surgery",
-    desc: "Selected face, body, and aesthetic procedures handled with privacy and care.",
+    desc: "Selected face, body, and aesthetic procedures handled with privacy, structure, and care.",
     img: "/cosmetic.avif",
   },
   {
     title: "Weight loss surgery",
-    desc: "Gastric sleeve and selected bariatric procedures with full planning support.",
+    desc: "Selected bariatric procedures with clear planning support and individually reviewed pathways.",
     img: "/bariatric.avif",
   },
   {
     title: "Women’s health",
-    desc: "Selected gynaecological and functional procedures handled with discretion.",
+    desc: "Selected gynaecological and functional procedures handled with particular discretion.",
     img: "/womens-health.avif",
+  },
+];
+
+const destinationCards = [
+  {
+    title: "Treatment in Istanbul",
+    subtitle: "For specialist care and complex procedures",
+    desc: "A strong choice for patients prioritising advanced hospitals, specialist teams, and more complex treatment pathways.",
+    bullets: [
+      "Advanced hospitals and specialists",
+      "Strong fit for more complex procedures",
+      "Structured clinical pathway",
+    ],
+    href: "/treatment-in-istanbul",
+    cta: "Explore Istanbul",
+    image: "/istanbul-hero.avif",
+  },
+  {
+    title: "Treatment in Antalya",
+    subtitle: "For comfort, recovery, and value",
+    desc: "A strong choice for patients seeking premium clinic options with a calmer recovery environment and a more lifestyle-oriented experience.",
+    bullets: [
+      "Comfort-led experience",
+      "Recovery-friendly destination",
+      "Strong value for selected treatments",
+    ],
+    href: "/treatment-in-antalya",
+    cta: "Explore Antalya",
+    image: "/trust.avif",
   },
 ];
 
@@ -100,116 +132,208 @@ export default function HomePageClient() {
 
   return (
     <main className="bg-[#fcfaf7] text-slate-900">
-      <section id="hero-section" className="relative min-h-[100svh] w-full overflow-hidden cursor-none">
-  <Image
-    src="/hero-medical.avif"
-    alt="Private medical treatment coordination in Turkey"
-    fill
-    priority
-    sizes="100vw"
-    className="object-cover"
-  />
+      <section
+        id="hero-section"
+        className="relative min-h-[100svh] w-full overflow-hidden cursor-none"
+      >
+        <Image
+          src="/hero-medical.avif"
+          alt="Private medical treatment coordination in Turkey"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
 
-  <div className="absolute inset-0 bg-slate-950/38" />
-  <div className="absolute inset-0 bg-gradient-to-r from-slate-950/55 via-slate-950/22 to-transparent" />
-  <HeroCursor containerId="hero-section" />
-  
-  <div className="relative z-10 flex min-h-[100svh] items-center pt-24">
-    <div className="mx-auto w-full max-w-7xl px-6">
-      <div className="max-w-3xl">
-        <p className="text-xs font-medium uppercase tracking-[0.28em] text-white/72">
-          CareBridge Health
-        </p>
+        <div className="absolute inset-0 bg-slate-950/42" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-950/28 to-transparent" />
+        <HeroCursor containerId="hero-section" />
 
-        <h1 className="font-display mt-6 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-white md:text-7xl">
-          Private medical treatment in Turkey,
-          <span className="block text-white/88">
-            carefully coordinated from the UK
-          </span>
-        </h1>
+        <div className="relative z-10 flex min-h-[100svh] items-center pt-24">
+          <div className="mx-auto w-full max-w-7xl px-6">
+            <div className="max-w-3xl">
+              <p className="text-xs font-medium uppercase tracking-[0.28em] text-white/72">
+                CareBridge Health
+              </p>
 
-        <p className="mt-7 max-w-2xl text-base leading-8 text-white/82 md:text-lg">
-          We help UK-based patients access carefully selected clinics in
-          Istanbul with clarity, structure, and discretion.
-        </p>
+              <h1 className="font-display mt-6 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-white md:text-7xl">
+                Private medical treatment in Turkey,
+                <span className="block text-white/88">
+                  carefully coordinated from the UK
+                </span>
+              </h1>
 
-        <div className="mt-10 flex flex-wrap gap-4">
-          <a
-            href="#form"
-            className="inline-flex items-center rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950 transition hover:-translate-y-0.5 hover:opacity-95"
-          >
-            Request private consultation
-          </a>
+              <p className="mt-7 max-w-2xl text-base leading-8 text-white/82 md:text-lg">
+                We help UK-based patients access carefully selected clinics in
+                <span className="font-medium text-white"> Istanbul and Antalya</span>
+                , with a more structured, discreet, and well-supported experience
+                before travel.
+              </p>
 
-          <a
-            href="#services"
-            className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-7 py-4 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/15"
-          >
-            Explore treatments
-          </a>
+              <p className="mt-6 text-sm text-white/60">
+                UK-based coordination · Istanbul & Antalya · Carefully selected
+                clinics
+              </p>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="#form"
+                  className="inline-flex items-center rounded-full bg-white px-8 py-4 text-sm font-medium text-slate-950 shadow-lg transition hover:-translate-y-0.5 hover:opacity-95"
+                >
+                  Request private consultation
+                </a>
+
+                <a
+                  href="#destinations"
+                  className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm font-medium text-white backdrop-blur-md transition hover:bg-white/10"
+                >
+                  Compare Istanbul & Antalya
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
-      <section id="services" className="mx-auto max-w-7xl px-6 py-28">
-        <div className="max-w-2xl">
+      <section id="destinations" className="mx-auto max-w-7xl px-6 py-28">
+        <div className="max-w-3xl">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-            Treatments
+            Destinations
           </p>
-          <h2 className="font-display mt-4 text-4xl font-semibold tracking-[-0.03em]">
-  What we help with
-</h2>
+          <h2 className="font-display mt-4 text-4xl font-semibold tracking-[-0.03em] md:text-5xl">
+            Choose the treatment experience that fits you best
+          </h2>
           <p className="mt-4 text-base leading-8 text-slate-600">
-            Carefully selected treatment categories for patients seeking a more
-            structured and private experience before travelling.
+            We do not position every destination in the same way. Istanbul is
+            often stronger for specialist-led and more complex pathways, while
+            Antalya can be especially appealing for comfort, recovery, and value
+            in selected treatments.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {treatmentCards.map((item) => (
+        <div className="mt-12 grid gap-8 md:grid-cols-2">
+          {destinationCards.map((item) => (
             <div
               key={item.title}
-              className="group overflow-hidden rounded-[28px] border border-slate-200/80 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)]"
+              className="overflow-hidden rounded-[30px] border border-slate-200/80 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.05)]"
             >
               <div className="relative h-[260px] w-full overflow-hidden">
                 <Image
-                  src={item.img}
+                  src={item.image}
                   alt={item.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className={`object-cover transition duration-700 group-hover:scale-105 ${
-                    item.title === "Hair transplant"
-                      ? "object-[center_38%]"
-                      : item.title === "Eye treatments"
-                      ? "object-[center_35%]"
-                      : "object-center"
-                  }`}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/45 via-slate-950/10 to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/75">
+                    {item.subtitle}
+                  </p>
+                  <h3 className="mt-2 text-3xl font-semibold tracking-[-0.03em] text-white">
+                    {item.title}
+                  </h3>
+                </div>
               </div>
 
               <div className="p-7">
-                <h3 className="text-xl font-semibold tracking-[-0.02em]">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
-                  {item.desc}
-                </p>
+                <p className="text-sm leading-7 text-slate-600">{item.desc}</p>
+
+                <div className="mt-6 space-y-3 text-sm leading-7 text-slate-700">
+                  {item.bullets.map((bullet) => (
+                    <p key={bullet}>• {bullet}</p>
+                  ))}
+                </div>
+
+                <div className="mt-7">
+                  <Link
+                    href={item.href}
+                    className="inline-flex rounded-full bg-slate-950 px-6 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
+                  >
+                    {item.cta}
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="bg-[#f7f1eb] py-28">
+      <section id="services" className="bg-[#f8f4ef] py-28">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="max-w-2xl">
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
+              Treatments
+            </p>
+            <h2 className="font-display mt-4 text-4xl font-semibold tracking-[-0.03em]">
+              What we help with
+            </h2>
+            <p className="mt-4 text-base leading-8 text-slate-600">
+              Carefully selected treatment categories for patients seeking a more
+              structured, private, and well-guided experience before travelling
+              to Turkey.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+            {treatmentCards.map((item) => (
+              <div
+                key={item.title}
+                className="group overflow-hidden rounded-[28px] border border-slate-200/80 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)]"
+              >
+                <div className="relative h-[260px] w-full overflow-hidden">
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className={`object-cover transition duration-700 group-hover:scale-105 ${
+                      item.title === "Hair transplant"
+                        ? "object-[center_38%]"
+                        : item.title === "Eye treatments"
+                        ? "object-[center_35%]"
+                        : "object-center"
+                    }`}
+                  />
+                </div>
+
+                <div className="p-7">
+                  <h3 className="text-xl font-semibold tracking-[-0.02em]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-600">
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 flex flex-wrap gap-4">
+            <Link
+              href="/treatment-in-istanbul"
+              className="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
+            >
+              See treatments in Istanbul
+            </Link>
+            <Link
+              href="/treatment-in-antalya"
+              className="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
+            >
+              See treatments in Antalya
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 md:grid-cols-2">
           <div className="relative h-[560px] w-full overflow-hidden rounded-[32px]">
             <Image
               src="/womens-health-feature.avif"
               alt="Women's health and advanced gynaecological procedures"
               fill
-              sizes="(max-width: 768px) 100vw, 33vw"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
@@ -225,8 +349,9 @@ export default function HomePageClient() {
 
             <p className="mt-6 text-base leading-8 text-slate-600">
               For patients seeking a more private, carefully handled experience,
-              we can help coordinate selected women’s health procedures in
-              Istanbul through trusted partner clinics.
+              we can help coordinate selected women’s health procedures through
+              trusted partner clinics in Turkey, with destination choice guided
+              by the nature of the treatment and patient preference.
             </p>
 
             <div className="mt-8 space-y-3 text-slate-700">
@@ -242,19 +367,25 @@ export default function HomePageClient() {
               reviewed individually by the relevant medical provider.
             </p>
 
-            <div className="mt-9">
+            <div className="mt-9 flex flex-wrap gap-4">
               <a
                 href="#form"
                 className="inline-flex rounded-full bg-slate-950 px-7 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
               >
                 Request a private consultation
               </a>
+              <Link
+                href="/treatment-in-istanbul"
+                className="inline-flex rounded-full border border-slate-300 px-7 py-4 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
+              >
+                View Istanbul page
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-28">
+      <section className="bg-[#f7f1eb] py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 md:grid-cols-2">
           <div className="max-w-xl">
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
@@ -268,7 +399,8 @@ export default function HomePageClient() {
             <p className="mt-6 text-base leading-8 text-slate-600">
               We can help coordinate selected aesthetic procedures through
               trusted partner clinics for patients who value privacy, clear
-              communication, and careful planning before travel.
+              communication, and careful planning before travel. Depending on
+              your priorities, we can help guide you towards Istanbul or Antalya.
             </p>
 
             <div className="mt-8 space-y-3 text-slate-700">
@@ -284,13 +416,19 @@ export default function HomePageClient() {
               provider.
             </p>
 
-            <div className="mt-9">
+            <div className="mt-9 flex flex-wrap gap-4">
               <a
                 href="#form"
                 className="inline-flex rounded-full bg-slate-950 px-7 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
               >
                 Enquire about cosmetic treatment
               </a>
+              <Link
+                href="/treatment-in-antalya"
+                className="inline-flex rounded-full border border-slate-300 px-7 py-4 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
+              >
+                View Antalya page
+              </Link>
             </div>
           </div>
 
@@ -299,7 +437,7 @@ export default function HomePageClient() {
               src="/cosmetic-feature.avif"
               alt="Selected cosmetic surgery coordination"
               fill
-              sizes="(max-width: 768px) 100vw, 33vw"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover object-[30%_center] md:object-center"
             />
           </div>
@@ -313,7 +451,7 @@ export default function HomePageClient() {
               src="/trust.avif"
               alt="Trusted clinic coordination"
               fill
-              sizes="(max-width: 768px) 100vw, 33vw"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover object-[70%_center] md:object-center"
             />
           </div>
@@ -328,11 +466,11 @@ export default function HomePageClient() {
             </h2>
 
             <ul className="mt-8 space-y-5 text-base leading-8 text-slate-600">
-              <li>✔ UK-based coordination</li>
-              <li>✔ Carefully selected partner clinics</li>
-              <li>✔ Clear communication before travel</li>
-              <li>✔ Structured guidance from enquiry to treatment</li>
-              <li>✔ Discreet and professional experience</li>
+              <li>✔ UK-based coordination and communication</li>
+              <li>✔ Carefully selected third-party partner clinics</li>
+              <li>✔ Clear guidance before travel</li>
+              <li>✔ Destination options in Istanbul and Antalya</li>
+              <li>✔ Discreet, structured, and professional experience</li>
             </ul>
           </div>
         </div>
@@ -351,8 +489,8 @@ export default function HomePageClient() {
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {[
             "Submit your consultation request",
-            "We review your case and respond",
-            "You receive clear next steps",
+            "We review your treatment and destination preferences",
+            "You receive clear next steps by email",
           ].map((step, index) => (
             <div
               key={step}
@@ -380,8 +518,9 @@ export default function HomePageClient() {
               </h2>
 
               <p className="mt-4 text-base leading-8 text-slate-600">
-                Share a few details and we’ll review your request by email. We
-                usually respond within 24 hours.
+                Share a few details and we’ll review your request by email. You
+                can also tell us whether you are more interested in treatment in
+                Istanbul, Antalya, or if you would like guidance on the best fit.
               </p>
             </div>
 
@@ -395,6 +534,21 @@ export default function HomePageClient() {
               <span className="rounded-full bg-slate-100 px-4 py-2">
                 Reviewed individually
               </span>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                href="/treatment-in-istanbul"
+                className="inline-flex rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
+              >
+                Learn about Istanbul
+              </Link>
+              <Link
+                href="/treatment-in-antalya"
+                className="inline-flex rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
+              >
+                Learn about Antalya
+              </Link>
             </div>
 
             <form onSubmit={handleSubmit} className="mt-8 space-y-4">
@@ -445,6 +599,18 @@ export default function HomePageClient() {
 
               <div className="grid gap-4 md:grid-cols-2">
                 <select
+                  value={form.treatmentCity}
+                  onChange={(e) => updateField("treatmentCity", e.target.value)}
+                  className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
+                  required
+                >
+                  <option value="">Where would you like treatment?</option>
+                  <option>Istanbul</option>
+                  <option>Antalya</option>
+                  <option>Open to guidance / not sure yet</option>
+                </select>
+
+                <select
                   value={form.location}
                   onChange={(e) => updateField("location", e.target.value)}
                   className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
@@ -457,7 +623,9 @@ export default function HomePageClient() {
                   <option>North America</option>
                   <option>Other</option>
                 </select>
+              </div>
 
+              <div className="grid gap-4 md:grid-cols-2">
                 <select
                   value={form.timeframe}
                   onChange={(e) => updateField("timeframe", e.target.value)}
@@ -500,7 +668,9 @@ export default function HomePageClient() {
 
       <section className="mx-auto max-w-5xl px-6 py-14 text-sm leading-7 text-slate-500">
         CareBridge Health is not a medical provider. We act as an independent
-        coordination service connecting patients with third-party clinics.
+        coordination service connecting patients with third-party clinics. All
+        treatments, suitability decisions, and medical outcomes remain the
+        responsibility of the relevant provider.
       </section>
 
       <ChatAssistant />
