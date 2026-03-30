@@ -24,19 +24,28 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://carebridgehealth.co"),
 
-  title: "CareBridge Health | Medical Treatment in Turkey from the UK",
+  title: {
+    default: "CareBridge Health | Medical Treatment in Turkey from the UK",
+    template: "%s | CareBridge Health",
+  },
+
   description:
-    "CareBridge Health helps UK-based patients access carefully selected clinics in Istanbul for dental, hair transplant, cosmetic, bariatric, eye, and specialised treatments.",
+    "CareBridge Health helps UK-based patients access carefully selected clinics in Istanbul and Antalya for dental, hair transplant, cosmetic, bariatric, eye, women’s health, and specialised treatments.",
 
   keywords: [
     "medical treatment in Turkey from the UK",
     "Turkey medical tourism UK",
+    "medical treatment Istanbul",
+    "medical treatment Antalya",
     "dental treatment Turkey",
     "hair transplant Turkey",
     "cosmetic surgery Turkey",
     "bariatric surgery Turkey",
     "eye treatment Turkey",
+    "women's health treatment Turkey",
     "Istanbul clinics for UK patients",
+    "Antalya clinics for UK patients",
+    "CareBridge Health",
   ],
 
   alternates: {
@@ -46,12 +55,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CareBridge Health | Medical Treatment in Turkey from the UK",
     description:
-      "Private medical treatment in Turkey, carefully coordinated for UK-based patients.",
+      "Private medical treatment in Turkey, carefully coordinated for UK-based patients in Istanbul and Antalya.",
     url: "https://carebridgehealth.co",
     siteName: "CareBridge Health",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://carebridgehealth.co/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "CareBridge Health medical treatment in Turkey from the UK",
@@ -65,8 +74,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CareBridge Health | Medical Treatment in Turkey from the UK",
     description:
-      "Private medical treatment in Turkey, carefully coordinated for UK-based patients.",
-    images: ["/og-image.jpg"],
+      "Private medical treatment in Turkey, carefully coordinated for UK-based patients in Istanbul and Antalya.",
+    images: ["https://carebridgehealth.co/og-image.jpg"],
   },
 
   robots: {

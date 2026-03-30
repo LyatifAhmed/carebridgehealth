@@ -65,72 +65,72 @@ export default function TreatmentInIstanbulPage() {
   return (
     <main className="bg-[#fcfaf7] text-slate-900">
       <section
-        id="hero-section"
-        className="relative min-h-[88svh] overflow-hidden cursor-none"
-      >
-        <Image
-            src="/istanbul-hero.avif"
-            alt="Private medical treatment coordination in Istanbul"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-[center_30%]"
-        />
-        <div className="absolute inset-0 bg-slate-950/42" />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-950/28 to-transparent" />
-        <HeroCursor containerId="hero-section" />
+  id="hero-section"
+  className="relative min-h-[88svh] overflow-hidden cursor-none"
+>
+  <Image
+    src="/istanbul-hero.avif"
+    alt="Private medical treatment coordination in Istanbul"
+    fill
+    priority
+    sizes="100vw"
+    className="object-cover object-[center_30%]"
+  />
+  <div className="absolute inset-0 bg-slate-950/42" />
+  <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-950/28 to-transparent" />
+  <HeroCursor containerId="hero-section" />
 
-        <div className="relative z-10 flex min-h-[88svh] items-center pt-24">
-          <div className="mx-auto w-full max-w-7xl px-6">
-            <div className="max-w-3xl">
-              <p className="text-xs font-medium uppercase tracking-[0.28em] text-white/72">
-                CareBridge Health
-              </p>
+  <div className="relative z-10 flex min-h-[88svh] items-center pt-24">
+    <div className="mx-auto w-full max-w-7xl px-6">
+      <div className="max-w-3xl">
+        <p className="text-xs font-medium uppercase tracking-[0.28em] text-white/72">
+          CareBridge Health
+        </p>
 
-              <h1 className="mt-6 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-white md:text-7xl">
-                Medical treatment in Istanbul,
-                <span className="block text-white/88">
-                  carefully coordinated from the UK
-                </span>
-              </h1>
+        <h1 className="font-display mt-6 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-white md:text-7xl">
+          Medical treatment in Istanbul,
+          <span className="block text-white/88">
+            carefully coordinated from the UK
+          </span>
+        </h1>
 
-              <p className="mt-7 max-w-2xl text-base leading-8 text-white/82 md:text-lg">
-                Istanbul can be a strong choice for patients seeking advanced
-                hospitals, specialist teams, and a more structured pathway for
-                selected treatments in Turkey.
-              </p>
+        <p className="mt-7 max-w-2xl text-base leading-8 text-white/82 md:text-lg">
+          Istanbul can be a strong choice for patients seeking advanced
+          hospitals, specialist teams, and a more structured pathway for
+          selected treatments in Turkey.
+        </p>
 
-              <div className="mt-8 flex flex-wrap gap-3 text-sm text-white/80">
-                <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
-                  Specialist-led care
-                </span>
-                <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
-                  Major medical city
-                </span>
-                <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
-                  UK-based coordination
-                </span>
-              </div>
-
-              <div className="mt-10 flex flex-wrap gap-4">
-                <a
-                  href="#form"
-                  className="inline-flex items-center rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950 transition hover:-translate-y-0.5 hover:opacity-95"
-                >
-                  Request private consultation
-                </a>
-
-                <Link
-                  href="/treatment-in-antalya"
-                  className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-7 py-4 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/15"
-                >
-                  Compare with Antalya
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div className="mt-8 flex flex-wrap gap-3 text-sm text-white/80">
+          <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
+            Specialist-led care
+          </span>
+          <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
+            Major medical city
+          </span>
+          <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
+            UK-based coordination
+          </span>
         </div>
-      </section>
+
+        <div className="mt-10 flex flex-wrap gap-4">
+          <a
+            href="#form"
+            className="inline-flex items-center rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950 transition hover:-translate-y-0.5 hover:opacity-95"
+          >
+            Request private consultation
+          </a>
+
+          <Link
+            href="/treatment-in-antalya"
+            className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-7 py-4 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/15"
+          >
+            Compare with Antalya
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="grid gap-14 md:grid-cols-2 md:items-center">
@@ -163,7 +163,7 @@ export default function TreatmentInIstanbulPage() {
               alt="Trusted medical coordination in Istanbul"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
+              className="object-cover object-[80%_center] md:object-center"
             />
           </div>
         </div>
@@ -231,7 +231,7 @@ export default function TreatmentInIstanbulPage() {
               alt="Structured private treatment planning in Istanbul"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover object-center"
+              className="object-cover object-[30%_center] md:object-center"
             />
           </div>
 

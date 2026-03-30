@@ -1,4 +1,6 @@
-import type { MetadataRoute } from "next";
+// app/robots.ts
+
+import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
   return {

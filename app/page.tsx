@@ -27,32 +27,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://carebridgehealth.co",
   },
-  openGraph: {
-    title:
-      "CareBridge Health | Private Medical Treatment in Turkey, Coordinated from the UK",
-    description:
-      "We help UK-based patients access carefully selected clinics in Istanbul and Antalya with clarity, structure, and discretion.",
-    url: "https://carebridgehealth.co",
-    siteName: "CareBridge Health",
-    images: [
-      {
-        url: "/hero-medical.avif",
-        width: 1600,
-        height: 900,
-        alt: "CareBridge Health private medical treatment coordination in Turkey",
-      },
-    ],
-    locale: "en_GB",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "CareBridge Health | Private Medical Treatment in Turkey, Coordinated from the UK",
-    description:
-      "Structured, discreet medical tourism coordination for UK-based patients seeking treatment in Istanbul and Antalya.",
-    images: ["/hero-medical.avif"],
-  },
+  
   robots: {
     index: true,
     follow: true,

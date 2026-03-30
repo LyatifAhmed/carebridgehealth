@@ -26,32 +26,7 @@ export const metadata: Metadata = {
     canonical:
       "https://carebridgehealth.co/treatment-in-istanbul/womens-health",
   },
-  openGraph: {
-    title:
-      "Women’s Health Treatments in Istanbul for UK Patients | CareBridge Health",
-    description:
-      "Explore selected women’s health and gynaecological procedures in Istanbul through discreet UK-based coordination and carefully structured guidance.",
-    url: "https://carebridgehealth.co/treatment-in-istanbul/womens-health",
-    siteName: "CareBridge Health",
-    images: [
-      {
-        url: "/womens-health-feature.avif",
-        width: 1600,
-        height: 900,
-        alt: "Women’s health treatment coordination in Istanbul",
-      },
-    ],
-    locale: "en_GB",
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Women’s Health Treatments in Istanbul for UK Patients | CareBridge Health",
-    description:
-      "Discreet coordination and structured guidance for women’s health treatment in Istanbul.",
-    images: ["/womens-health-feature.avif"],
-  },
+  
   robots: {
     index: true,
     follow: true,
