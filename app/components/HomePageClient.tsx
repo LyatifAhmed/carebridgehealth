@@ -90,6 +90,29 @@ const destinationCards = [
   },
 ];
 
+const premiumServiceCards = [
+  {
+    title: "Optional concierge travel support",
+    desc: "For patients who want a more seamless journey, we can help coordinate selected extras such as hotel stay, airport pickup, local transport, and flight planning support through trusted third-party partners.",
+    bullets: [
+      "Hotel options available on request",
+      "Airport pickup and local transport support",
+      "Flight planning support for a smoother journey",
+      "Arranged around your treatment schedule",
+    ],
+  },
+  {
+    title: "Secure Stripe payment options",
+    desc: "For additional trust and convenience, selected coordination and package payments can be handled securely through Stripe, offering patients a familiar, professional, and more reassuring payment experience.",
+    bullets: [
+      "Stripe available for selected payments",
+      "Trusted card payment experience",
+      "Clearer payment handling before travel",
+      "Useful for patients who prefer secure checkout",
+    ],
+  },
+];
+
 export default function HomePageClient() {
   const [form, setForm] = useState<ConsultationForm>(initialState);
   const [sending, setSending] = useState(false);
@@ -166,7 +189,7 @@ export default function HomePageClient() {
               <p className="mt-7 max-w-2xl text-base leading-8 text-white/82 md:text-lg">
                 We help UK-based patients access carefully selected clinics in
                 <span className="font-medium text-white"> Istanbul and Antalya</span>
-                , with a more structured, discreet, and well-supported experience
+                , with a more structured, discreet, and concierge-led experience
                 before travel.
               </p>
 
@@ -468,10 +491,69 @@ export default function HomePageClient() {
             <ul className="mt-8 space-y-5 text-base leading-8 text-slate-600">
               <li>✔ UK-based coordination and communication</li>
               <li>✔ Carefully selected third-party partner clinics</li>
-              <li>✔ Clear guidance before travel</li>
-              <li>✔ Destination options in Istanbul and Antalya</li>
-              <li>✔ Discreet, structured, and professional experience</li>
+              <li>✔ More discreet and structured planning before travel</li>
+              <li>✔ Destination guidance across Istanbul and Antalya</li>
+              <li>✔ A more premium, concierge-led patient experience</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-28">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="max-w-3xl">
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
+              Premium support
+            </p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] md:text-5xl">
+              Optional premium support for a more complete experience
+            </h2>
+            <p className="mt-4 text-base leading-8 text-slate-600">
+              Some patients prefer more than treatment coordination alone. Where
+              suitable, we can also help structure selected travel and payment
+              arrangements to make the overall experience feel smoother, clearer,
+              and more reassuring.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
+            {premiumServiceCards.map((item) => (
+              <div
+                key={item.title}
+                className="relative overflow-hidden rounded-[32px] border border-slate-200/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(248,244,239,0.98)_100%)] p-8 shadow-[0_18px_60px_rgba(15,23,42,0.06)]"
+              >
+                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(15,23,42,0.06),transparent_38%)]" />
+
+                <div className="relative z-10">
+                  <div className="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-[11px] font-medium uppercase tracking-[0.22em] text-slate-500">
+                    Available on request
+                  </div>
+
+                  <h3 className="mt-5 text-2xl font-semibold tracking-[-0.03em] text-slate-900">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-4 text-sm leading-7 text-slate-600">
+                    {item.desc}
+                  </p>
+
+                  <div className="mt-6 space-y-3 text-sm leading-7 text-slate-700">
+                    {item.bullets.map((bullet) => (
+                      <p key={bullet}>✦ {bullet}</p>
+                    ))}
+                  </div>
+
+                  <div className="mt-8">
+                    <a
+                      href="#form"
+                      className="inline-flex rounded-full bg-slate-950 px-6 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
+                    >
+                      Discuss your preferences
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -533,6 +615,12 @@ export default function HomePageClient() {
               </span>
               <span className="rounded-full bg-slate-100 px-4 py-2">
                 Reviewed individually
+              </span>
+              <span className="rounded-full bg-slate-100 px-4 py-2">
+                Optional hotel and transport support
+              </span>
+              <span className="rounded-full bg-slate-100 px-4 py-2">
+                Stripe available for selected payments
               </span>
             </div>
 
@@ -668,9 +756,9 @@ export default function HomePageClient() {
 
       <section className="mx-auto max-w-5xl px-6 py-14 text-sm leading-7 text-slate-500">
         CareBridge Health is not a medical provider. We act as an independent
-        coordination service connecting patients with third-party clinics. All
-        treatments, suitability decisions, and medical outcomes remain the
-        responsibility of the relevant provider.
+        coordination service connecting patients with third-party clinics and
+        selected travel partners. All treatments, suitability decisions, and
+        medical outcomes remain the responsibility of the relevant provider.
       </section>
 
       <ChatAssistant />
