@@ -28,6 +28,65 @@ const initialState: ConsultationForm = {
   note: "",
 };
 
+const trustItems = [
+  "UK-based coordination",
+  "Carefully selected clinics",
+  "Private and discreet process",
+  "Secure payment options available",
+];
+
+const destinationCards = [
+  {
+    title: "Treatment in Istanbul",
+    subtitle: "For specialist care and complex procedures",
+    desc: "A strong choice for patients prioritising advanced hospitals, specialist teams, and more complex treatment pathways.",
+    bullets: [
+      "Advanced hospitals and specialists",
+      "Strong fit for more complex procedures",
+      "Structured clinical pathway",
+    ],
+    href: "/treatment-in-istanbul",
+    cta: "Explore Istanbul",
+    image: "/istanbul-hero.avif",
+  },
+  {
+    title: "Treatment in Antalya",
+    subtitle: "For comfort, recovery, and value",
+    desc: "A strong choice for patients seeking premium clinic options with a calmer recovery environment and a more recovery-friendly experience.",
+    bullets: [
+      "Comfort-led experience",
+      "Recovery-friendly destination",
+      "Strong value for selected treatments",
+    ],
+    href: "/treatment-in-antalya",
+    cta: "Explore Antalya",
+    image: "/trust.avif",
+  },
+];
+
+const premiumServiceCards = [
+  {
+    title: "Optional concierge travel support",
+    desc: "For patients who want a smoother journey, we can help coordinate selected extras such as hotel stay, airport pickup, local transport, and flight planning support through trusted third-party partners.",
+    bullets: [
+      "Hotel options available on request",
+      "Airport pickup and local transport support",
+      "Flight planning support for a smoother journey",
+      "Arranged around your treatment schedule",
+    ],
+  },
+  {
+    title: "Secure Stripe payment options",
+    desc: "For additional trust and convenience, selected coordination and package payments can be handled securely through Stripe, offering a familiar and professional payment experience.",
+    bullets: [
+      "Stripe available for selected payments",
+      "Trusted card payment experience",
+      "Clearer payment handling before travel",
+      "Useful for patients who prefer secure checkout",
+    ],
+  },
+];
+
 const treatmentCards = [
   {
     title: "Dental treatments",
@@ -61,55 +120,18 @@ const treatmentCards = [
   },
 ];
 
-const destinationCards = [
+const processSteps = [
   {
-    title: "Treatment in Istanbul",
-    subtitle: "For specialist care and complex procedures",
-    desc: "A strong choice for patients prioritising advanced hospitals, specialist teams, and more complex treatment pathways.",
-    bullets: [
-      "Advanced hospitals and specialists",
-      "Strong fit for more complex procedures",
-      "Structured clinical pathway",
-    ],
-    href: "/treatment-in-istanbul",
-    cta: "Explore Istanbul",
-    image: "/istanbul-hero.avif",
+    title: "Share your request",
+    desc: "Tell us the treatment you are considering, your preferred destination, and your timeframe.",
   },
   {
-    title: "Treatment in Antalya",
-    subtitle: "For comfort, recovery, and value",
-    desc: "A strong choice for patients seeking premium clinic options with a calmer recovery environment and a more lifestyle-oriented experience.",
-    bullets: [
-      "Comfort-led experience",
-      "Recovery-friendly destination",
-      "Strong value for selected treatments",
-    ],
-    href: "/treatment-in-antalya",
-    cta: "Explore Antalya",
-    image: "/trust.avif",
-  },
-];
-
-const premiumServiceCards = [
-  {
-    title: "Optional concierge travel support",
-    desc: "For patients who want a more seamless journey, we can help coordinate selected extras such as hotel stay, airport pickup, local transport, and flight planning support through trusted third-party partners.",
-    bullets: [
-      "Hotel options available on request",
-      "Airport pickup and local transport support",
-      "Flight planning support for a smoother journey",
-      "Arranged around your treatment schedule",
-    ],
+    title: "We review and guide",
+    desc: "We review your enquiry and help guide you towards the most suitable next step.",
   },
   {
-    title: "Secure Stripe payment options",
-    desc: "For additional trust and convenience, selected coordination and package payments can be handled securely through Stripe, offering patients a familiar, professional, and more reassuring payment experience.",
-    bullets: [
-      "Stripe available for selected payments",
-      "Trusted card payment experience",
-      "Clearer payment handling before travel",
-      "Useful for patients who prefer secure checkout",
-    ],
+    title: "Receive clear next steps",
+    desc: "You receive a structured response by email, with no obligation to proceed.",
   },
 ];
 
@@ -157,7 +179,7 @@ export default function HomePageClient() {
     <main className="bg-[#fcfaf7] text-slate-900">
       <section
         id="hero-section"
-        className="relative min-h-[100svh] w-full overflow-hidden cursor-none"
+        className="relative min-h-[100svh] overflow-hidden cursor-none"
       >
         <Image
           src="/hero-medical.avif"
@@ -168,47 +190,49 @@ export default function HomePageClient() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-slate-950/42" />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-950/28 to-transparent" />
+        <div className="absolute inset-0 bg-slate-950/45" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/75 via-slate-950/35 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/35 via-transparent to-transparent" />
+
         <HeroCursor containerId="hero-section" />
 
         <div className="relative z-10 flex min-h-[100svh] items-center pt-24">
           <div className="mx-auto w-full max-w-7xl px-6">
             <div className="max-w-3xl">
-              <p className="text-xs font-medium uppercase tracking-[0.28em] text-white/72">
+              <p className="text-[11px] font-medium uppercase tracking-[0.28em] text-white/70 md:text-xs">
                 CareBridge Health
               </p>
 
-              <h1 className="font-display mt-6 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-white md:text-7xl">
+              <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[1.02] tracking-[-0.05em] text-white sm:text-5xl md:mt-6 md:text-7xl">
                 Private medical treatment in Turkey,
-                <span className="block text-white/88">
+                <span className="mt-2 block text-white/88">
                   carefully coordinated from the UK
                 </span>
               </h1>
 
-              <p className="mt-7 max-w-2xl text-base leading-8 text-white/82 md:text-lg">
+              <p className="mt-6 max-w-2xl text-base leading-7 text-white/82 md:mt-7 md:text-lg md:leading-8">
                 We help UK-based patients access carefully selected clinics in
                 <span className="font-medium text-white"> Istanbul and Antalya</span>
-                , with a more structured, discreet, and concierge-led experience
-                before travel.
+                , with a more structured, discreet, and premium experience before
+                travel.
               </p>
 
-              <p className="mt-6 text-sm text-white/60">
+              <p className="mt-5 text-sm leading-6 text-white/62 md:mt-6">
                 UK-based coordination · Istanbul & Antalya · Carefully selected
                 clinics
               </p>
 
-              <div className="mt-10 flex flex-wrap gap-4">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:mt-10 md:gap-4">
                 <a
                   href="#form"
-                  className="inline-flex items-center rounded-full bg-white px-8 py-4 text-sm font-medium text-slate-950 shadow-lg transition hover:-translate-y-0.5 hover:opacity-95"
+                  className="inline-flex items-center justify-center rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950 shadow-lg transition hover:-translate-y-0.5 hover:opacity-95"
                 >
                   Request private consultation
                 </a>
 
                 <a
                   href="#destinations"
-                  className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm font-medium text-white backdrop-blur-md transition hover:bg-white/10"
+                  className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 py-4 text-sm font-medium text-white backdrop-blur-md transition hover:bg-white/10"
                 >
                   Compare Istanbul & Antalya
                 </a>
@@ -218,12 +242,27 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      <section id="destinations" className="mx-auto max-w-7xl px-6 py-28">
+      <section className="border-y border-slate-200/80 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-4">
+          <div className="grid gap-3 text-sm text-slate-600 sm:grid-cols-2 xl:grid-cols-4">
+            {trustItems.map((item) => (
+              <div
+                key={item}
+                className="rounded-full border border-slate-200 bg-slate-50 px-4 py-3 text-center"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="destinations" className="mx-auto max-w-7xl px-6 py-24 md:py-28">
         <div className="max-w-3xl">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
             Destinations
           </p>
-          <h2 className="font-display mt-4 text-4xl font-semibold tracking-[-0.03em] md:text-5xl">
+          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] md:text-5xl">
             Choose the treatment experience that fits you best
           </h2>
           <p className="mt-4 text-base leading-8 text-slate-600">
@@ -240,7 +279,7 @@ export default function HomePageClient() {
               key={item.title}
               className="overflow-hidden rounded-[30px] border border-slate-200/80 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.05)]"
             >
-              <div className="relative h-[260px] w-full overflow-hidden">
+              <div className="relative h-[240px] w-full overflow-hidden md:h-[260px]">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -248,18 +287,18 @@ export default function HomePageClient() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/45 via-slate-950/10 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/75">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-slate-950/10 to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5 md:bottom-6 md:left-6 md:right-6">
+                  <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-white/75 md:text-xs">
                     {item.subtitle}
                   </p>
-                  <h3 className="mt-2 text-3xl font-semibold tracking-[-0.03em] text-white">
+                  <h3 className="mt-2 text-2xl font-semibold tracking-[-0.03em] text-white md:text-3xl">
                     {item.title}
                   </h3>
                 </div>
               </div>
 
-              <div className="p-7">
+              <div className="p-6 md:p-7">
                 <p className="text-sm leading-7 text-slate-600">{item.desc}</p>
 
                 <div className="mt-6 space-y-3 text-sm leading-7 text-slate-700">
@@ -282,13 +321,104 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      <section id="services" className="bg-[#f8f4ef] py-28">
+      <section id="why" className="bg-[#f7f4ee] py-24 md:py-28">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-2 md:gap-14">
+          <div className="relative order-2 h-[360px] w-full overflow-hidden rounded-[32px] md:order-1 md:h-[460px]">
+            <Image
+              src="/trust.avif"
+              alt="Trusted clinic coordination"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover object-[70%_center] md:object-center"
+            />
+          </div>
+
+          <div className="order-1 max-w-xl md:order-2">
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
+              Why CareBridge
+            </p>
+
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
+              A more reassuring way to plan treatment abroad
+            </h2>
+
+            <ul className="mt-8 space-y-5 text-base leading-8 text-slate-600">
+              <li>✔ UK-based communication before travel</li>
+              <li>✔ Carefully selected third-party partner clinics</li>
+              <li>✔ Clear destination guidance based on treatment type</li>
+              <li>✔ More discreet and structured planning</li>
+              <li>✔ Optional support for patients who want a smoother journey</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-24 md:py-28">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="max-w-3xl">
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
+              Premium support
+            </p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] md:text-5xl">
+              Optional support for a more complete experience
+            </h2>
+            <p className="mt-4 text-base leading-8 text-slate-600">
+              Some patients prefer more than treatment coordination alone. Where
+              suitable, we can also help structure selected travel and payment
+              arrangements to make the overall experience feel smoother, clearer,
+              and more reassuring.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
+            {premiumServiceCards.map((item) => (
+              <div
+                key={item.title}
+                className="relative overflow-hidden rounded-[32px] border border-slate-200/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(248,244,239,0.98)_100%)] p-7 shadow-[0_18px_60px_rgba(15,23,42,0.06)] md:p-8"
+              >
+                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(15,23,42,0.06),transparent_38%)]" />
+
+                <div className="relative z-10">
+                  <div className="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-[11px] font-medium uppercase tracking-[0.22em] text-slate-500">
+                    Available on request
+                  </div>
+
+                  <h3 className="mt-5 text-2xl font-semibold tracking-[-0.03em] text-slate-900">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-4 text-sm leading-7 text-slate-600">
+                    {item.desc}
+                  </p>
+
+                  <div className="mt-6 space-y-3 text-sm leading-7 text-slate-700">
+                    {item.bullets.map((bullet) => (
+                      <p key={bullet}>✦ {bullet}</p>
+                    ))}
+                  </div>
+
+                  <div className="mt-8">
+                    <a
+                      href="#form"
+                      className="inline-flex rounded-full bg-slate-950 px-6 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
+                    >
+                      Discuss your preferences
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="bg-[#f8f4ef] py-24 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
               Treatments
             </p>
-            <h2 className="font-display mt-4 text-4xl font-semibold tracking-[-0.03em]">
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
               What we help with
             </h2>
             <p className="mt-4 text-base leading-8 text-slate-600">
@@ -304,7 +434,7 @@ export default function HomePageClient() {
                 key={item.title}
                 className="group overflow-hidden rounded-[28px] border border-slate-200/80 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)]"
               >
-                <div className="relative h-[260px] w-full overflow-hidden">
+                <div className="relative h-[240px] w-full overflow-hidden md:h-[260px]">
                   <Image
                     src={item.img}
                     alt={item.title}
@@ -320,7 +450,7 @@ export default function HomePageClient() {
                   />
                 </div>
 
-                <div className="p-7">
+                <div className="p-6 md:p-7">
                   <h3 className="text-xl font-semibold tracking-[-0.02em]">
                     {item.title}
                   </h3>
@@ -349,9 +479,9 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      <section className="bg-white py-28">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 md:grid-cols-2">
-          <div className="relative h-[560px] w-full overflow-hidden rounded-[32px]">
+      <section className="bg-white py-24 md:py-28">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-2 md:gap-14">
+          <div className="relative h-[400px] w-full overflow-hidden rounded-[32px] md:h-[560px]">
             <Image
               src="/womens-health-feature.avif"
               alt="Women's health and advanced gynaecological procedures"
@@ -408,157 +538,7 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      <section className="bg-[#f7f1eb] py-28">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 md:grid-cols-2">
-          <div className="max-w-xl">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Featured area
-            </p>
-
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-              Cosmetic surgery with a more structured, discreet process
-            </h2>
-
-            <p className="mt-6 text-base leading-8 text-slate-600">
-              We can help coordinate selected aesthetic procedures through
-              trusted partner clinics for patients who value privacy, clear
-              communication, and careful planning before travel. Depending on
-              your priorities, we can help guide you towards Istanbul or Antalya.
-            </p>
-
-            <div className="mt-8 space-y-3 text-slate-700">
-              <p>• Face and neck procedures</p>
-              <p>• Breast procedures</p>
-              <p>• Body contouring and selected aesthetic surgery</p>
-              <p>• Case-by-case review through selected providers</p>
-            </div>
-
-            <p className="mt-7 text-sm leading-7 text-slate-500">
-              We do not promise outcomes. Each case is reviewed individually,
-              and treatment suitability is determined by the relevant medical
-              provider.
-            </p>
-
-            <div className="mt-9 flex flex-wrap gap-4">
-              <a
-                href="#form"
-                className="inline-flex rounded-full bg-slate-950 px-7 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
-              >
-                Enquire about cosmetic treatment
-              </a>
-              <Link
-                href="/treatment-in-antalya"
-                className="inline-flex rounded-full border border-slate-300 px-7 py-4 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
-              >
-                View Antalya page
-              </Link>
-            </div>
-          </div>
-
-          <div className="relative h-[560px] w-full overflow-hidden rounded-[32px]">
-            <Image
-              src="/cosmetic-feature.avif"
-              alt="Selected cosmetic surgery coordination"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover object-[30%_center] md:object-center"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section id="why" className="bg-[#f7f4ee] py-28">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 md:grid-cols-2">
-          <div className="relative h-[460px] w-full overflow-hidden rounded-[32px]">
-            <Image
-              src="/trust.avif"
-              alt="Trusted clinic coordination"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover object-[70%_center] md:object-center"
-            />
-          </div>
-
-          <div className="max-w-xl">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Why CareBridge
-            </p>
-
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-              Why patients choose us
-            </h2>
-
-            <ul className="mt-8 space-y-5 text-base leading-8 text-slate-600">
-              <li>✔ UK-based coordination and communication</li>
-              <li>✔ Carefully selected third-party partner clinics</li>
-              <li>✔ More discreet and structured planning before travel</li>
-              <li>✔ Destination guidance across Istanbul and Antalya</li>
-              <li>✔ A more premium, concierge-led patient experience</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-28">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-3xl">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Premium support
-            </p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] md:text-5xl">
-              Optional premium support for a more complete experience
-            </h2>
-            <p className="mt-4 text-base leading-8 text-slate-600">
-              Some patients prefer more than treatment coordination alone. Where
-              suitable, we can also help structure selected travel and payment
-              arrangements to make the overall experience feel smoother, clearer,
-              and more reassuring.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-8 md:grid-cols-2">
-            {premiumServiceCards.map((item) => (
-              <div
-                key={item.title}
-                className="relative overflow-hidden rounded-[32px] border border-slate-200/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(248,244,239,0.98)_100%)] p-8 shadow-[0_18px_60px_rgba(15,23,42,0.06)]"
-              >
-                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(15,23,42,0.06),transparent_38%)]" />
-
-                <div className="relative z-10">
-                  <div className="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-[11px] font-medium uppercase tracking-[0.22em] text-slate-500">
-                    Available on request
-                  </div>
-
-                  <h3 className="mt-5 text-2xl font-semibold tracking-[-0.03em] text-slate-900">
-                    {item.title}
-                  </h3>
-
-                  <p className="mt-4 text-sm leading-7 text-slate-600">
-                    {item.desc}
-                  </p>
-
-                  <div className="mt-6 space-y-3 text-sm leading-7 text-slate-700">
-                    {item.bullets.map((bullet) => (
-                      <p key={bullet}>✦ {bullet}</p>
-                    ))}
-                  </div>
-
-                  <div className="mt-8">
-                    <a
-                      href="#form"
-                      className="inline-flex rounded-full bg-slate-950 px-6 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
-                    >
-                      Discuss your preferences
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="process" className="mx-auto max-w-7xl px-6 py-28">
+      <section id="process" className="mx-auto max-w-7xl px-6 py-24 md:py-28">
         <div className="max-w-2xl">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
             Process
@@ -566,28 +546,30 @@ export default function HomePageClient() {
           <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
             How it works
           </h2>
+          <p className="mt-4 text-base leading-8 text-slate-600">
+            Our approach is designed to feel clear, discreet, and easy to follow.
+          </p>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {[
-            "Submit your consultation request",
-            "We review your treatment and destination preferences",
-            "You receive clear next steps by email",
-          ].map((step, index) => (
+          {processSteps.map((step, index) => (
             <div
-              key={step}
+              key={step.title}
               className="rounded-[28px] border border-slate-200 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.03)]"
             >
               <div className="text-sm text-slate-500">Step {index + 1}</div>
               <div className="mt-3 text-lg font-medium tracking-[-0.02em]">
-                {step}
+                {step.title}
               </div>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                {step.desc}
+              </p>
             </div>
           ))}
         </div>
       </section>
 
-      <section id="form" className="bg-[#f7f4ee] py-28">
+      <section id="form" className="bg-[#f7f4ee] py-24 md:py-28">
         <div className="mx-auto max-w-4xl px-6">
           <div className="rounded-[32px] border border-slate-200/80 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)] md:p-10">
             <div className="max-w-2xl">
@@ -606,20 +588,20 @@ export default function HomePageClient() {
               </p>
             </div>
 
-            <div className="mt-6 flex flex-wrap gap-3 text-sm text-slate-600">
-              <span className="rounded-full bg-slate-100 px-4 py-2">
+            <div className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-2 xl:grid-cols-3">
+              <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
                 No obligation enquiry
               </span>
-              <span className="rounded-full bg-slate-100 px-4 py-2">
+              <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
                 Private and discreet
               </span>
-              <span className="rounded-full bg-slate-100 px-4 py-2">
+              <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
                 Reviewed individually
               </span>
-              <span className="rounded-full bg-slate-100 px-4 py-2">
+              <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
                 Optional hotel and transport support
               </span>
-              <span className="rounded-full bg-slate-100 px-4 py-2">
+              <span className="rounded-full bg-slate-100 px-4 py-2 text-center sm:col-span-2 xl:col-span-1">
                 Stripe available for selected payments
               </span>
             </div>
@@ -739,7 +721,7 @@ export default function HomePageClient() {
               <button
                 type="submit"
                 disabled={sending}
-                className="w-full rounded-full bg-slate-950 px-6 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95 disabled:opacity-50"
+                className="w-full rounded-full bg-slate-950 px-6 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {sending ? "Sending..." : "Request private review"}
               </button>
