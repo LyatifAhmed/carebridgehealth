@@ -1,19 +1,16 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://carebridgehealth.co";
+  const baseUrl = "https://www.carebridgehealth.co";
   const now = new Date();
 
   return [
-    // CORE
     {
       url: `${baseUrl}/`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 1,
     },
-
-    // DESTINATIONS (MOST IMPORTANT SEO PAGES)
     {
       url: `${baseUrl}/treatment-in-istanbul`,
       lastModified: now,
@@ -26,16 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.95,
     },
-
-    // TREATMENT SEO PAGE (VERY IMPORTANT)
     {
       url: `${baseUrl}/treatment-in-istanbul/womens-health`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
     },
-
-    // SUPPORTING PAGES
     {
       url: `${baseUrl}/about`,
       lastModified: now,
@@ -48,8 +41,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
-
-    // LEGAL
     {
       url: `${baseUrl}/privacy-policy`,
       lastModified: now,
