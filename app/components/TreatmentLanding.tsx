@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+type ExtraLink = {
+  textBefore?: string;
+  linkText: string;
+  href: string;
+  textAfter?: string;
+};
+
 type TreatmentLandingProps = {
   eyebrow: string;
   title: string;
@@ -20,6 +27,7 @@ type TreatmentLandingProps = {
   secondaryCtaLabel?: string;
   tertiaryCtaHref?: string;
   tertiaryCtaLabel?: string;
+  extraLinks?: ExtraLink[];
 };
 
 export default function TreatmentLanding({
@@ -39,6 +47,7 @@ export default function TreatmentLanding({
   secondaryCtaLabel = "Start your enquiry",
   tertiaryCtaHref = "/blog",
   tertiaryCtaLabel = "Read patient insights",
+  extraLinks = [],
 }: TreatmentLandingProps) {
   return (
     <main className="min-h-screen bg-[#fcfaf7] text-neutral-900">
@@ -58,6 +67,23 @@ export default function TreatmentLanding({
 
           <div className="mt-8 max-w-3xl rounded-[28px] border border-neutral-200 bg-white p-6 shadow-sm md:p-7">
             <p className="text-base leading-7 text-neutral-700">{heroNote}</p>
+
+            {extraLinks.length > 0 ? (
+              <div className="mt-6 space-y-3 text-sm leading-7 text-neutral-500">
+                {extraLinks.map((item, index) => (
+                  <p key={`${item.href}-${index}`}>
+                    {item.textBefore}
+                    <Link
+                      href={item.href}
+                      className="font-medium text-neutral-900 underline underline-offset-4 transition hover:opacity-70"
+                    >
+                      {item.linkText}
+                    </Link>
+                    {item.textAfter}
+                  </p>
+                ))}
+              </div>
+            ) : null}
           </div>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -127,7 +153,9 @@ export default function TreatmentLanding({
                 <p className="text-sm font-medium uppercase tracking-[0.22em] text-neutral-500">
                   Step {index + 1}
                 </p>
-                <p className="mt-4 text-base leading-7 text-neutral-700">{step}</p>
+                <p className="mt-4 text-base leading-7 text-neutral-700">
+                  {step}
+                </p>
               </div>
             ))}
           </div>

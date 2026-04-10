@@ -14,6 +14,20 @@ export default function TreatmentInTurkeyPage() {
       title="Treatment in Turkey with clearer guidance before you commit"
       intro="Turkey has become a popular option for patients seeking private treatment, shorter waiting times, and access to a wide range of clinics and specialists. CareBridge Health helps UK-based patients approach that journey more carefully, with clearer communication and a more structured starting point."
       heroNote="Our role is not to replace a clinic or a doctor. We help you understand the pathway, think more clearly about destination and treatment fit, and move towards the next step with greater confidence."
+      extraLinks={[
+        {
+          textBefore: "If you are comparing destinations, you can explore ",
+          linkText: "treatment in Istanbul",
+          href: "/treatment-in-istanbul",
+          textAfter: " for specialist-led pathways.",
+        },
+        {
+          textBefore: "For a more recovery-focused environment, you may also consider ",
+          linkText: "treatment in Antalya",
+          href: "/treatment-in-antalya",
+          textAfter: ".",
+        },
+      ]}
       suitableFor={[
         "Patients comparing treatment in Turkey with private treatment in the UK or elsewhere.",
         "People looking for better value but wanting a more structured route than contacting providers at random.",
