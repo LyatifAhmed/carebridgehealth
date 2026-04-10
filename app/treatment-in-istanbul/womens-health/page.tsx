@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     canonical:
       "https://carebridgehealth.co/treatment-in-istanbul/womens-health",
   },
-  
   robots: {
     index: true,
     follow: true,
@@ -121,10 +120,8 @@ export default function WomensHealthIstanbulPage() {
       <main className="bg-[#fcfaf7] text-slate-900">
         <section
           id="hero-section"
-          className="relative min-h-[70svh] md:min-h-[88svh] overflow-hidden cursor-none"
+          className="relative min-h-[70svh] overflow-hidden cursor-none md:min-h-[88svh]"
         >
-          
-
           <Image
             src="/womens-health-feature.avif"
             alt="Women's health treatment in Istanbul"
@@ -139,14 +136,14 @@ export default function WomensHealthIstanbulPage() {
 
           <HeroCursor containerId="hero-section" />
 
-          <div className="relative z-10 flex min-h-[70svh] md:min-h-[88svh] items-center pt-16 md:pt-24">
+          <div className="relative z-10 flex min-h-[70svh] items-center pt-16 md:min-h-[88svh] md:pt-24">
             <div className="mx-auto max-w-7xl px-6">
               <div className="max-w-3xl">
                 <p className="text-xs uppercase tracking-[0.28em] text-white/70">
                   CareBridge Health
                 </p>
 
-                <h1 className="font-display mt-6 text-5xl font-semibold tracking-[-0.03em] text-white md:text-7xl">
+                <h1 className="mt-6 text-5xl font-semibold tracking-[-0.03em] text-white md:text-7xl">
                   Women’s health treatments in Istanbul,
                   <span className="block text-white/85">
                     handled with discretion and care
@@ -168,7 +165,7 @@ export default function WomensHealthIstanbulPage() {
 
                 <div className="mt-10 flex flex-wrap gap-4">
                   <a
-                    href="#form"
+                    href="/#form"
                     className="rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950 transition hover:scale-[1.03] hover:shadow-lg"
                   >
                     Request private consultation
@@ -276,6 +273,17 @@ export default function WomensHealthIstanbulPage() {
               treatment pathway can make a significant difference before
               travelling.
             </p>
+
+            <p className="mt-6 text-sm text-slate-500">
+              You can also read our{" "}
+              <Link
+                href="/blog/how-to-choose-a-clinic-in-turkey"
+                className="underline underline-offset-4 hover:text-slate-900"
+              >
+                guide on how to choose a clinic in Turkey more carefully
+              </Link>{" "}
+              if you are still comparing options.
+            </p>
           </div>
         </section>
 
@@ -289,7 +297,7 @@ export default function WomensHealthIstanbulPage() {
               Istanbul or Antalya?
             </h2>
 
-            <p className="mt-6 text-slate-600 leading-8">
+            <p className="mt-6 leading-8 text-slate-600">
               Istanbul is often the stronger choice for more complex or
               specialist-led procedures. Antalya may be more suitable for
               patients prioritising recovery environment and comfort.
@@ -375,7 +383,7 @@ export default function WomensHealthIstanbulPage() {
               Request a private consultation
             </h2>
 
-            <p className="mt-4 text-slate-600 leading-8">
+            <p className="mt-4 leading-8 text-slate-600">
               Share your situation and we’ll help you understand whether
               Istanbul may be the right fit for your priorities.
             </p>

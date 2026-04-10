@@ -23,11 +23,20 @@ type BlogSection =
       items: string[];
     };
 
+type CtaLink = {
+  label: string;
+  href: string;
+  variant?: "primary" | "secondary";
+};
+
 type BlogPost = {
   slug: string;
   title: string;
   description: string;
   sections: BlogSection[];
+  ctaTitle: string;
+  ctaText: string;
+  ctaLinks: CtaLink[];
 };
 
 const posts: BlogPost[] = [
@@ -99,6 +108,15 @@ const posts: BlogPost[] = [
           "It is also important to consider whether the treatment environment matches your needs. Some procedures may be better suited to specialist-heavy environments such as those found in larger cities. Others may benefit from a more recovery-focused setting.",
       },
       {
+        type: "linkParagraph",
+        contentBefore:
+          "Patients who are still deciding between destinations may also want to compare ",
+        linkText: "treatment in Istanbul",
+        href: "/treatment-in-istanbul",
+        contentAfter:
+          " with Antalya before making a decision about the best overall fit.",
+      },
+      {
         type: "paragraph",
         content:
           "Ultimately, treatment in Turkey can be a viable and positive option for some patients, but only when approached with care. The safest outcomes tend to come from structured planning, realistic expectations, and choosing providers based on suitability rather than visibility or price alone.",
@@ -110,6 +128,24 @@ const posts: BlogPost[] = [
         linkText: "Treatment in Turkey",
         href: "/treatment-in-turkey",
         contentAfter: ".",
+      },
+    ],
+    ctaTitle: "Considering treatment in Turkey?",
+    ctaText:
+      "If you are exploring options, you can request a private consultation to better understand your situation, possible next steps, and whether Istanbul or Antalya may be a better fit.",
+    ctaLinks: [
+      {
+        label: "Request consultation",
+        href: "/#form",
+        variant: "primary",
+      },
+      {
+        label: "Explore treatment in Turkey",
+        href: "/treatment-in-turkey",
+      },
+      {
+        label: "View Istanbul treatments",
+        href: "/treatment-in-istanbul",
       },
     ],
   },
@@ -171,9 +207,26 @@ const posts: BlogPost[] = [
           "However, the decision should not be based purely on lifestyle preference. The type of treatment you are considering is one of the most important factors. Some procedures benefit from a highly specialised environment, while others can be carried out effectively in a more streamlined setting.",
       },
       {
+        type: "linkParagraph",
+        contentBefore:
+          "If you already know that specialist access matters most, you may want to explore ",
+        linkText: "medical treatment in Istanbul",
+        href: "/treatment-in-istanbul",
+        contentAfter:
+          " in more detail before narrowing down providers.",
+      },
+      {
         type: "paragraph",
         content:
           "Another important factor is how the treatment pathway is structured. In larger cities like Istanbul, the number of options can create complexity. Without a clear plan, patients may feel like they are comparing too many variables at once. Antalya can sometimes feel more straightforward, but this depends heavily on the provider and the way the process is coordinated.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore:
+          "Patients prioritising recovery environment and a more comfort-led experience may prefer to review ",
+        linkText: "medical treatment in Antalya",
+        href: "/treatment-in-antalya",
+        contentAfter: " before making a final decision.",
       },
       {
         type: "paragraph",
@@ -188,6 +241,24 @@ const posts: BlogPost[] = [
         href: "/treatment-in-turkey",
         contentAfter:
           ". You can also compare destination-specific pages for a more detailed view.",
+      },
+    ],
+    ctaTitle: "Still deciding between Istanbul and Antalya?",
+    ctaText:
+      "The right destination depends on your treatment type, the complexity of your case, and the kind of experience you want before and after travel.",
+    ctaLinks: [
+      {
+        label: "Explore Istanbul",
+        href: "/treatment-in-istanbul",
+        variant: "primary",
+      },
+      {
+        label: "Explore Antalya",
+        href: "/treatment-in-antalya",
+      },
+      {
+        label: "Request consultation",
+        href: "/#form",
       },
     ],
   },
@@ -255,6 +326,15 @@ const posts: BlogPost[] = [
           "Patients should also consider the full treatment journey, not just the procedure itself. This includes pre-treatment planning, the experience during treatment, and what happens after you leave the clinic. Aftercare is particularly important for patients returning to the UK, as follow-up support may need to be managed remotely.",
       },
       {
+        type: "linkParagraph",
+        contentBefore:
+          "Many patients find it helpful to first understand the wider pathway around ",
+        linkText: "treatment in Turkey",
+        href: "/treatment-in-turkey",
+        contentAfter:
+          " before narrowing down specific providers and destinations.",
+      },
+      {
         type: "paragraph",
         content:
           "Another common mistake is focusing too heavily on price comparison. While cost is naturally part of the decision, the lowest option is not always the most appropriate. A more balanced approach considers quality, structure, communication, and how well the clinic aligns with your specific needs.",
@@ -271,6 +351,24 @@ const posts: BlogPost[] = [
         linkText: "Treatment in Turkey",
         href: "/treatment-in-turkey",
         contentAfter: ".",
+      },
+    ],
+    ctaTitle: "Need a more structured starting point?",
+    ctaText:
+      "If you are still comparing clinics, it may help to first understand the treatment pathway, the likely destination fit, and what questions matter most before you commit.",
+    ctaLinks: [
+      {
+        label: "Explore treatment in Turkey",
+        href: "/treatment-in-turkey",
+        variant: "primary",
+      },
+      {
+        label: "Start your enquiry",
+        href: "/#form",
+      },
+      {
+        label: "Compare Istanbul and Antalya",
+        href: "/blog/istanbul-or-antalya-for-treatment-in-turkey",
       },
     ],
   },
@@ -349,7 +447,10 @@ function renderSection(section: BlogSection, index: number) {
 
     case "bulletList":
       return (
-        <ul key={index} className="space-y-3 pl-1 text-base leading-8 text-slate-700">
+        <ul
+          key={index}
+          className="space-y-3 pl-1 text-base leading-8 text-slate-700"
+        >
           {section.items.map((item) => (
             <li key={item} className="flex gap-3">
               <span className="mt-3 h-1.5 w-1.5 rounded-full bg-slate-900" />
@@ -417,30 +518,26 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
 
         <div className="mt-14 rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-semibold">
-            Considering treatment in Turkey?
-          </h2>
+          <h2 className="text-2xl font-semibold">{post.ctaTitle}</h2>
 
           <p className="mt-4 text-sm leading-7 text-slate-600">
-            If you are exploring options, you can request a private consultation
-            to better understand your situation, possible next steps, and whether
-            Istanbul or Antalya may be a better fit.
+            {post.ctaText}
           </p>
 
           <div className="mt-6 flex flex-wrap gap-4">
-            <Link
-              href="/#form"
-              className="rounded-full bg-slate-950 px-6 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5"
-            >
-              Request consultation
-            </Link>
-
-            <Link
-              href="/treatment-in-turkey"
-              className="rounded-full border border-slate-300 px-6 py-3 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
-            >
-              Learn about treatment in Turkey
-            </Link>
+            {post.ctaLinks.map((link) => (
+              <Link
+                key={link.href + link.label}
+                href={link.href}
+                className={
+                  link.variant === "primary"
+                    ? "rounded-full bg-slate-950 px-6 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5"
+                    : "rounded-full border border-slate-300 px-6 py-3 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
+                }
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
       </article>

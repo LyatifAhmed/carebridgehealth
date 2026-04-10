@@ -14,22 +14,27 @@ const treatmentAreas = [
   {
     title: "Dental treatments",
     desc: "Implants, veneers, full-mouth restoration, and smile design through carefully selected clinics.",
+    href: "/dental-treatment-turkey",
   },
   {
     title: "Hair transplant",
     desc: "Natural-result focused options with structured planning, aftercare guidance, and clear pre-travel coordination.",
+    href: "/hair-transplant-turkey",
   },
   {
     title: "Eye treatments",
     desc: "Selected vision-focused procedures and specialist pathways for patients seeking a more organised process.",
+    href: "/eye-treatment-turkey",
   },
   {
     title: "Cosmetic surgery",
     desc: "Selected face, body, and aesthetic procedures handled through trusted providers with privacy and clarity.",
+    href: "/cosmetic-surgery-turkey",
   },
   {
     title: "Weight loss surgery",
     desc: "Selected bariatric procedures with case-by-case review and better structure before travel.",
+    href: "/weight-loss-surgery-turkey",
   },
   {
     title: "Women’s health",
@@ -65,72 +70,72 @@ export default function TreatmentInIstanbulPage() {
   return (
     <main className="bg-[#fcfaf7] text-slate-900">
       <section
-  id="hero-section"
-  className="relative min-h-[88svh] overflow-hidden cursor-none"
->
-  <Image
-    src="/istanbul-hero.avif"
-    alt="Private medical treatment coordination in Istanbul"
-    fill
-    priority
-    sizes="100vw"
-    className="object-cover object-[center_30%]"
-  />
-  <div className="absolute inset-0 bg-slate-950/42" />
-  <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-950/28 to-transparent" />
-  <HeroCursor containerId="hero-section" />
+        id="hero-section"
+        className="relative min-h-[88svh] overflow-hidden cursor-none"
+      >
+        <Image
+          src="/istanbul-hero.avif"
+          alt="Private medical treatment coordination in Istanbul"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[center_30%]"
+        />
+        <div className="absolute inset-0 bg-slate-950/42" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-950/28 to-transparent" />
+        <HeroCursor containerId="hero-section" />
 
-  <div className="relative z-10 flex min-h-[88svh] items-center pt-24">
-    <div className="mx-auto w-full max-w-7xl px-6">
-      <div className="max-w-3xl">
-        <p className="text-xs font-medium uppercase tracking-[0.28em] text-white/72">
-          CareBridge Health
-        </p>
+        <div className="relative z-10 flex min-h-[88svh] items-center pt-24">
+          <div className="mx-auto w-full max-w-7xl px-6">
+            <div className="max-w-3xl">
+              <p className="text-xs font-medium uppercase tracking-[0.28em] text-white/72">
+                CareBridge Health
+              </p>
 
-        <h1 className="font-display mt-6 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-white md:text-7xl">
-          Medical treatment in Istanbul,
-          <span className="block text-white/88">
-            carefully coordinated from the UK
-          </span>
-        </h1>
+              <h1 className="mt-6 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-white md:text-7xl">
+                Medical treatment in Istanbul,
+                <span className="block text-white/88">
+                  carefully coordinated from the UK
+                </span>
+              </h1>
 
-        <p className="mt-7 max-w-2xl text-base leading-8 text-white/82 md:text-lg">
-          Istanbul can be a strong choice for patients seeking advanced
-          hospitals, specialist teams, and a more structured pathway for
-          selected treatments in Turkey.
-        </p>
+              <p className="mt-7 max-w-2xl text-base leading-8 text-white/82 md:text-lg">
+                Istanbul can be a strong choice for patients seeking advanced
+                hospitals, specialist teams, and a more structured pathway for
+                selected treatments in Turkey.
+              </p>
 
-        <div className="mt-8 flex flex-wrap gap-3 text-sm text-white/80">
-          <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
-            Specialist-led care
-          </span>
-          <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
-            Major medical city
-          </span>
-          <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
-            UK-based coordination
-          </span>
+              <div className="mt-8 flex flex-wrap gap-3 text-sm text-white/80">
+                <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
+                  Specialist-led care
+                </span>
+                <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
+                  Major medical city
+                </span>
+                <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
+                  UK-based coordination
+                </span>
+              </div>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="/#form"
+                  className="inline-flex items-center rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950 transition hover:-translate-y-0.5 hover:opacity-95"
+                >
+                  Request private consultation
+                </a>
+
+                <Link
+                  href="/treatment-in-antalya"
+                  className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-7 py-4 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/15"
+                >
+                  Compare with Antalya
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div className="mt-10 flex flex-wrap gap-4">
-          <a
-            href="#form"
-            className="inline-flex items-center rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950 transition hover:-translate-y-0.5 hover:opacity-95"
-          >
-            Request private consultation
-          </a>
-
-          <Link
-            href="/treatment-in-antalya"
-            className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-7 py-4 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/15"
-          >
-            Compare with Antalya
-          </Link>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="grid gap-14 md:grid-cols-2 md:items-center">
@@ -155,6 +160,24 @@ export default function TreatmentInIstanbulPage() {
                 <p key={item}>• {item}</p>
               ))}
             </div>
+
+            <p className="mt-8 text-base leading-8 text-slate-600">
+              For many patients, the appeal of Istanbul is not only access to a
+              wider specialist environment, but also the ability to approach
+              more complex treatment decisions with more structure before
+              travelling.
+            </p>
+
+            <p className="mt-6 text-sm text-slate-500">
+              If you are still comparing providers, you can read our{" "}
+              <Link
+                href="/blog/how-to-choose-a-clinic-in-turkey"
+                className="underline underline-offset-4 hover:text-slate-900"
+              >
+                guide on how to choose a clinic in Turkey
+              </Link>{" "}
+              before making a decision.
+            </p>
           </div>
 
           <div className="relative h-[520px] w-full overflow-hidden rounded-[32px]">
@@ -188,37 +211,26 @@ export default function TreatmentInIstanbulPage() {
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {treatmentAreas.map((item) =>
-              item.href ? (
-                <Link
-                  key={item.title}
-                  href={item.href}
-                  className="rounded-[28px] border border-slate-200/80 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(15,23,42,0.06)]"
-                >
-                  <h3 className="text-xl font-semibold tracking-[-0.02em]">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-600">
-                    {item.desc}
-                  </p>
-                  <p className="mt-5 text-sm font-medium text-slate-900">
-                    Explore page →
-                  </p>
-                </Link>
-              ) : (
-                <div
-                  key={item.title}
-                  className="rounded-[28px] border border-slate-200/80 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.04)]"
-                >
-                  <h3 className="text-xl font-semibold tracking-[-0.02em]">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-600">
-                    {item.desc}
-                  </p>
-                </div>
-              )
-            )}
+            {treatmentAreas.map((item) => (
+              <Link
+                key={item.title}
+                href={item.href}
+                className="group rounded-[28px] border border-slate-200/80 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,23,42,0.08)]"
+              >
+                <h3 className="text-xl font-semibold tracking-[-0.02em]">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  {item.desc}
+                </p>
+                <p className="mt-5 text-sm font-medium text-slate-900">
+                  Learn more
+                  <span className="ml-1 inline-block transition group-hover:translate-x-1">
+                    →
+                  </span>
+                </p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -267,7 +279,7 @@ export default function TreatmentInIstanbulPage() {
 
             <div className="mt-9 flex flex-wrap gap-4">
               <a
-                href="#form"
+                href="/#form"
                 className="inline-flex rounded-full bg-slate-950 px-7 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
               >
                 Start your enquiry
