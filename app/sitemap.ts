@@ -11,6 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+
+    {
+      url: `${baseUrl}/treatment-in-turkey`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
     {
       url: `${baseUrl}/treatment-in-istanbul`,
       lastModified: now,
@@ -23,12 +30,70 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.95,
     },
+
     {
-      url: `${baseUrl}/treatment-in-istanbul/womens-health`,
+      url: `${baseUrl}/hair-transplant-turkey`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/dental-treatment-turkey`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/cosmetic-surgery-turkey`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/weight-loss-surgery-turkey`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/eye-treatment-turkey`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+
+    {
+      url: `${baseUrl}/treatment-in-istanbul/womens-health`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/is-treatment-in-turkey-safe-for-uk-patients`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/blog/istanbul-or-antalya-for-treatment-in-turkey`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/blog/how-to-choose-a-clinic-in-turkey`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.75,
+    },
+
     {
       url: `${baseUrl}/about`,
       lastModified: now,

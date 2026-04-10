@@ -3,34 +3,45 @@ import HomePageClient from "./components/HomePageClient";
 
 export const metadata: Metadata = {
   title:
-    "CareBridge Health | Private Medical Treatment in Turkey, Coordinated from the UK",
+    "Private Medical Treatment in Turkey | UK-Based Coordination | CareBridge Health",
   description:
-    "CareBridge Health helps UK-based patients access carefully selected clinics in Istanbul and Antalya with clear communication, structured coordination, and a discreet experience.",
+    "CareBridge Health helps UK-based patients explore private medical treatment in Turkey through carefully selected clinics in Istanbul and Antalya, with clearer communication, structured coordination, and a discreet experience.",
   keywords: [
-    "medical tourism Turkey",
+    "private medical treatment in Turkey",
     "medical treatment Turkey from UK",
-    "private medical treatment Turkey",
+    "treatment in Turkey",
     "private medical treatment Istanbul",
     "private medical treatment Antalya",
-    "medical treatment in Istanbul",
-    "medical treatment in Antalya",
     "hair transplant Turkey",
-    "hair transplant Antalya",
     "dental treatment Turkey",
-    "dental treatment Antalya",
     "eye treatment Turkey",
     "cosmetic surgery Turkey",
-    "women's health Turkey",
-    "UK medical tourism coordination",
+    "weight loss surgery Turkey",
+    "medical tourism coordination UK",
     "CareBridge Health",
   ],
   alternates: {
     canonical: "https://carebridgehealth.co",
   },
-  
   robots: {
     index: true,
     follow: true,
+  },
+  openGraph: {
+    title:
+      "Private Medical Treatment in Turkey | UK-Based Coordination | CareBridge Health",
+    description:
+      "CareBridge Health helps UK-based patients explore treatment in Turkey with clearer communication, structured coordination, and carefully selected clinic pathways.",
+    url: "https://carebridgehealth.co",
+    siteName: "CareBridge Health",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Private Medical Treatment in Turkey | UK-Based Coordination | CareBridge Health",
+    description:
+      "Explore treatment in Turkey with more guidance, structure, and confidence before travel.",
   },
 };
 

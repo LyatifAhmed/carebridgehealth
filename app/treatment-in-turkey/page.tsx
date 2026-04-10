@@ -1,0 +1,59 @@
+import type { Metadata } from "next";
+import TreatmentLanding from "../components/TreatmentLanding";
+
+export const metadata: Metadata = {
+  title: "Treatment in Turkey | Private Medical Coordination from the UK",
+  description:
+    "Explore treatment in Turkey with private UK-based coordination. We help patients understand options, compare destinations, and plan a smoother treatment journey.",
+};
+
+export default function TreatmentInTurkeyPage() {
+  return (
+    <TreatmentLanding
+      eyebrow="Treatment in Turkey"
+      title="Treatment in Turkey with clearer guidance before you commit"
+      intro="Turkey has become a popular option for patients seeking private treatment, shorter waiting times, and access to a wide range of clinics and specialists. CareBridge Health helps UK-based patients approach that journey more carefully, with clearer communication and a more structured starting point."
+      heroNote="Our role is not to replace a clinic or a doctor. We help you understand the pathway, think more clearly about destination and treatment fit, and move towards the next step with greater confidence."
+      suitableFor={[
+        "Patients comparing treatment in Turkey with private treatment in the UK or elsewhere.",
+        "People looking for better value but wanting a more structured route than contacting providers at random.",
+        "Patients who want help thinking through destination, timing, recovery, and treatment planning before making decisions.",
+      ]}
+      whyTurkey={[
+        "A broad private healthcare landscape with clinics and hospitals across multiple specialties.",
+        "Competitive pricing compared with many Western private markets.",
+        "Destinations such as Istanbul and Antalya can offer different strengths depending on treatment type and recovery priorities.",
+      ]}
+      processSteps={[
+        "You tell us what treatment you are considering, your priorities, and your approximate timeframe.",
+        "We review your situation and help you think more clearly about the most suitable next step.",
+        "If appropriate, we guide you towards the consultation stage and help you prepare for treatment and travel planning.",
+      ]}
+      faq={[
+        {
+          question: "Is treatment in Turkey safe?",
+          answer:
+            "Safety depends on the clinic, doctor, facility standards, your personal medical situation, and how well the case is assessed in advance. That is why careful selection and proper review matter.",
+        },
+        {
+          question: "Can you recommend one city over another?",
+          answer:
+            "That depends on the treatment type, complexity, recovery preferences, and budget. Istanbul often offers broader specialist access, while Antalya may appeal to patients prioritising a calmer recovery environment.",
+        },
+        {
+          question: "Do you provide treatment directly?",
+          answer:
+            "No. We provide coordination and guidance around the treatment journey. Medical decisions and treatment delivery remain with the licensed clinic and doctors.",
+        },
+      ]}
+      ctaTitle="Ready to discuss your treatment plans?"
+      ctaText="If you already have a treatment in mind, the best next step is to send an enquiry. We can review your situation, understand what you are looking for, and help you decide whether Istanbul, Antalya, or another route may be more appropriate."
+      primaryCtaHref="/#form"
+      primaryCtaLabel="Request private consultation"
+      secondaryCtaHref="/#form"
+      secondaryCtaLabel="Start your enquiry"
+      tertiaryCtaHref="/blog"
+      tertiaryCtaLabel="Read patient insights"
+    />
+  );
+}
