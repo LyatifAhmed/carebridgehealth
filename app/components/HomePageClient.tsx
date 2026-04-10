@@ -250,7 +250,7 @@ export default function HomePageClient() {
                   href="#form"
                   className="inline-flex items-center justify-center rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950 shadow-lg transition hover:-translate-y-0.5 hover:opacity-95"
                 >
-                  Request private consultation
+                  Get a private treatment plan review
                 </a>
 
                 <a
@@ -298,7 +298,10 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      <section id="destinations" className="mx-auto max-w-7xl px-6 py-24 md:py-28">
+      <section
+        id="destinations"
+        className="mx-auto max-w-7xl px-6 py-24 md:py-28"
+      >
         <div className="max-w-3xl">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
             Destinations
@@ -640,19 +643,20 @@ export default function HomePageClient() {
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-                Request a private consultation
+                Get a private treatment plan review
               </h2>
 
               <p className="mt-4 text-base leading-8 text-slate-600">
-                Share a few details and we’ll review your request by email. You
-                can also tell us whether you are more interested in treatment in
-                Istanbul, Antalya, or if you would like guidance on the best fit.
+                Share a few details and we’ll review your case more carefully by
+                email. We can help you think through destination fit, likely
+                next steps, and whether Istanbul or Antalya may be more
+                appropriate for your priorities.
               </p>
             </div>
 
             <div className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-2 xl:grid-cols-3">
               <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
-                No obligation enquiry
+                No obligation review
               </span>
               <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
                 Private and discreet
@@ -661,10 +665,13 @@ export default function HomePageClient() {
                 Reviewed individually
               </span>
               <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
-                Optional hotel and transport support
+                UK-based coordination
               </span>
-              <span className="rounded-full bg-slate-100 px-4 py-2 text-center sm:col-span-2 xl:col-span-1">
-                Stripe available for selected payments
+              <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
+                Response within 24 hours
+              </span>
+              <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
+                Destination guidance included
               </span>
             </div>
 
@@ -791,13 +798,14 @@ export default function HomePageClient() {
                 disabled={sending}
                 className="w-full rounded-full bg-slate-950 px-6 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
               >
-                {sending ? "Sending..." : "Request private review"}
+                {sending ? "Sending..." : "Get my private review"}
               </button>
             </form>
 
             {submitted ? (
               <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-700">
-                Your request has been received. We’ll get back to you by email.
+                Your request has been received. We’ll review it carefully and get
+                back to you by email.
               </div>
             ) : null}
           </div>

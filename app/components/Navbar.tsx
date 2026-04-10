@@ -99,8 +99,8 @@ export default function Navbar() {
   const solidNavbar = !isHome || scrolled;
 
   const shellClasses = solidNavbar
-    ? "border border-black/5 bg-white/80 shadow-[0_20px_60px_rgba(15,23,42,0.08)] backdrop-blur-2xl"
-    : "bg-transparent";
+    ? "border border-slate-200/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.96)_0%,rgba(252,250,247,0.94)_100%)] shadow-[0_24px_70px_rgba(15,23,42,0.10)] backdrop-blur-2xl"
+    : "border border-white/10 bg-[rgba(255,255,255,0.06)] shadow-[0_20px_60px_rgba(15,23,42,0.16)] backdrop-blur-xl";
 
   const brandTextClasses = solidNavbar
     ? "text-slate-900 group-hover:text-slate-700"
@@ -111,8 +111,12 @@ export default function Navbar() {
     : "text-white/80 hover:text-white";
 
   const mobileButtonClasses = solidNavbar
-    ? "border-black/10 bg-white/70 text-slate-900 hover:bg-white"
+    ? "border-slate-200 bg-white/70 text-slate-900 hover:bg-white"
     : "border-white/15 bg-white/10 text-white hover:bg-white/15";
+
+  const quoteButtonClasses = solidNavbar
+    ? "border border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f8f6f2_100%)] text-slate-900 shadow-sm hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(15,23,42,0.10)]"
+    : "border border-white/15 bg-white/12 text-white backdrop-blur-md hover:-translate-y-0.5 hover:bg-white/16";
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50">
@@ -233,7 +237,7 @@ export default function Navbar() {
             <a
               href="/#form"
               onClick={closeDesktopDropdown}
-              className="rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white transition-all duration-300 hover:opacity-90"
+              className={`rounded-xl px-4 py-2 text-sm font-medium transition-all duration-300 ${quoteButtonClasses}`}
             >
               Get quote
             </a>
