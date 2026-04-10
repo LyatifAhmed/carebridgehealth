@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const treatmentLinks = [
   {
@@ -48,6 +49,9 @@ const treatmentLinks = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
   const [scrolled, setScrolled] = useState(false);
   const [treatmentsOpen, setTreatmentsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -63,6 +67,7 @@ export default function Navbar() {
       }
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -91,15 +96,29 @@ export default function Navbar() {
     setTreatmentsOpen(false);
   }
 
+  const solidNavbar = !isHome || scrolled;
+
+  const shellClasses = solidNavbar
+    ? "border border-black/5 bg-white/80 shadow-[0_20px_60px_rgba(15,23,42,0.08)] backdrop-blur-2xl"
+    : "bg-transparent";
+
+  const brandTextClasses = solidNavbar
+    ? "text-slate-900 group-hover:text-slate-700"
+    : "text-white group-hover:text-white/90";
+
+  const navTextClasses = solidNavbar
+    ? "text-slate-600 hover:text-slate-900"
+    : "text-white/80 hover:text-white";
+
+  const mobileButtonClasses = solidNavbar
+    ? "border-black/10 bg-white/70 text-slate-900 hover:bg-white"
+    : "border-white/15 bg-white/10 text-white hover:bg-white/15";
+
   return (
     <header className="fixed left-0 right-0 top-0 z-50">
       <div className="mx-auto max-w-6xl px-6 py-4">
         <div
-          className={`flex items-center justify-between rounded-2xl px-4 py-3 transition-all duration-300 ${
-            scrolled
-              ? "border border-white/10 bg-[rgba(15,23,42,0.55)] shadow-[0_20px_60px_rgba(15,23,42,0.25)] backdrop-blur-2xl"
-              : "bg-transparent"
-          }`}
+          className={`flex items-center justify-between rounded-2xl px-4 py-3 transition-all duration-300 ${shellClasses}`}
         >
           <Link
             href="/"
@@ -114,16 +133,18 @@ export default function Navbar() {
               alt="CareBridge Health"
               width={32}
               height={32}
-              className="h-8 w-8 object-contain transition duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.35)]"
+              className="h-8 w-8 object-contain transition duration-300 group-hover:scale-105"
               priority
             />
-            <span className="text-sm font-semibold text-white transition duration-300 group-hover:text-white/90">
+            <span
+              className={`text-sm font-semibold transition duration-300 ${brandTextClasses}`}
+            >
               CareBridge Health
             </span>
           </Link>
 
           {!scrolled && (
-            <nav className="hidden items-center gap-6 text-sm text-white/80 md:flex">
+            <nav className="hidden items-center gap-6 md:flex">
               <div
                 className="relative pb-2"
                 onMouseEnter={() => setTreatmentsOpen(true)}
@@ -133,7 +154,7 @@ export default function Navbar() {
                   type="button"
                   aria-expanded={treatmentsOpen}
                   aria-haspopup="true"
-                  className="flex items-center gap-2 transition hover:text-white"
+                  className={`flex items-center gap-2 text-sm transition ${navTextClasses}`}
                 >
                   Treatments
                   <span
@@ -175,17 +196,17 @@ export default function Navbar() {
               </div>
 
               <a
-                href="#why"
+                href={isHome ? "#why" : "/#why"}
                 onClick={closeDesktopDropdown}
-                className="transition hover:text-white"
+                className={`text-sm transition ${navTextClasses}`}
               >
                 Why us
               </a>
 
               <a
-                href="#process"
+                href={isHome ? "#process" : "/#process"}
                 onClick={closeDesktopDropdown}
-                className="transition hover:text-white"
+                className={`text-sm transition ${navTextClasses}`}
               >
                 Process
               </a>
@@ -193,15 +214,15 @@ export default function Navbar() {
               <Link
                 href="/blog"
                 onClick={closeDesktopDropdown}
-                className="transition hover:text-white"
+                className={`text-sm transition ${navTextClasses}`}
               >
                 Insights
               </Link>
 
               <a
-                href="#form"
+                href="/#form"
                 onClick={closeDesktopDropdown}
-                className="transition hover:text-white"
+                className={`text-sm transition ${navTextClasses}`}
               >
                 Contact
               </a>
@@ -210,11 +231,9 @@ export default function Navbar() {
 
           <div className="flex items-center gap-3">
             <a
-              href="#form"
+              href="/#form"
               onClick={closeDesktopDropdown}
-              className={`rounded-xl bg-white px-4 py-2 text-sm font-medium text-black transition-all duration-300 hover:opacity-90 ${
-                scrolled ? "scale-105 shadow-lg" : ""
-              }`}
+              className="rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white transition-all duration-300 hover:opacity-90"
             >
               Get quote
             </a>
@@ -224,7 +243,7 @@ export default function Navbar() {
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileMenuOpen}
               onClick={() => setMobileMenuOpen((prev) => !prev)}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/15 bg-white/10 text-white backdrop-blur-md transition hover:bg-white/15 md:hidden"
+              className={`inline-flex h-11 w-11 items-center justify-center rounded-xl border backdrop-blur-md transition md:hidden ${mobileButtonClasses}`}
             >
               <span className="text-lg">{mobileMenuOpen ? "✕" : "☰"}</span>
             </button>
@@ -251,7 +270,7 @@ export default function Navbar() {
               : "-translate-y-3 opacity-0"
           }`}
         >
-          <div className="overflow-hidden rounded-[28px] border border-white/10 bg-[rgba(15,23,42,0.92)] p-4 shadow-[0_30px_80px_rgba(15,23,42,0.35)] backdrop-blur-2xl">
+          <div className="max-h-[calc(100svh-7rem)] overflow-y-auto overscroll-contain rounded-[28px] border border-white/10 bg-[rgba(15,23,42,0.92)] p-4 shadow-[0_30px_80px_rgba(15,23,42,0.35)] backdrop-blur-2xl">
             <div className="space-y-2">
               <button
                 type="button"
@@ -271,7 +290,7 @@ export default function Navbar() {
               <div
                 className={`overflow-hidden transition-all duration-300 ${
                   mobileTreatmentsOpen
-                    ? "max-h-[900px] opacity-100"
+                    ? "max-h-[1200px] opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
               >
@@ -295,7 +314,7 @@ export default function Navbar() {
               </div>
 
               <a
-                href="#why"
+                href={isHome ? "#why" : "/#why"}
                 onClick={closeMobileMenu}
                 className="block rounded-2xl px-4 py-4 text-sm font-medium text-white transition hover:bg-white/5"
               >
@@ -303,7 +322,7 @@ export default function Navbar() {
               </a>
 
               <a
-                href="#process"
+                href={isHome ? "#process" : "/#process"}
                 onClick={closeMobileMenu}
                 className="block rounded-2xl px-4 py-4 text-sm font-medium text-white transition hover:bg-white/5"
               >
@@ -319,7 +338,7 @@ export default function Navbar() {
               </Link>
 
               <a
-                href="#form"
+                href="/#form"
                 onClick={closeMobileMenu}
                 className="block rounded-2xl px-4 py-4 text-sm font-medium text-white transition hover:bg-white/5"
               >
