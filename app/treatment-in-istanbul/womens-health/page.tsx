@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroCursor from "../../components/HeroCursor";
 
-
 export const metadata: Metadata = {
   title:
     "Women’s Health Treatments in Istanbul for UK Patients | CareBridge Health",
@@ -33,11 +32,26 @@ export const metadata: Metadata = {
 };
 
 const procedures = [
-  "Hysterectomy",
-  "Myomectomy",
-  "Ovarian cyst treatment",
-  "Urinary incontinence surgery",
-  "Selected genital aesthetic procedures",
+  {
+    title: "Hysterectomy",
+    href: "/#form",
+  },
+  {
+    title: "Myomectomy",
+    href: "/#form",
+  },
+  {
+    title: "Ovarian cyst treatment",
+    href: "/#form",
+  },
+  {
+    title: "Urinary incontinence surgery",
+    href: "/#form",
+  },
+  {
+    title: "Selected genital aesthetic procedures",
+    href: "/#form",
+  },
 ];
 
 const clinicChecklist = [
@@ -158,6 +172,12 @@ export default function WomensHealthIstanbulPage() {
                   to Turkey.
                 </p>
 
+                <p className="mt-5 max-w-2xl text-sm leading-7 text-white/65">
+                  CareBridge Health is not a clinic. We act as an independent
+                  coordination service and, where appropriate, enquiries may move
+                  into direct review through a relevant partner clinic in Turkey.
+                </p>
+
                 <p className="mt-6 text-sm text-white/60">
                   UK-based coordination · Specialist-led pathways · Clear
                   guidance before travel
@@ -218,6 +238,18 @@ export default function WomensHealthIstanbulPage() {
               </Link>{" "}
               page for a broader overview of available treatment pathways.
             </p>
+
+            <p className="mt-4 text-sm text-slate-500">
+              Patients who are still researching broader safety questions can
+              also read our{" "}
+              <Link
+                href="/blog/is-treatment-in-turkey-safe-for-uk-patients"
+                className="underline underline-offset-4 hover:text-slate-900"
+              >
+                safety guide for UK patients considering treatment in Turkey
+              </Link>
+              .
+            </p>
           </div>
         </section>
 
@@ -233,12 +265,18 @@ export default function WomensHealthIstanbulPage() {
 
             <div className="mt-10 grid gap-6 md:grid-cols-2">
               {procedures.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.03)]"
+                <Link
+                  key={item.title}
+                  href={item.href}
+                  className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.03)] transition hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(15,23,42,0.06)]"
                 >
-                  <p className="text-base font-medium text-slate-900">{item}</p>
-                </div>
+                  <p className="text-base font-medium text-slate-900">
+                    {item.title}
+                  </p>
+                  <p className="mt-3 text-sm text-slate-500">
+                    Request a private review →
+                  </p>
+                </Link>
               ))}
             </div>
 
@@ -317,6 +355,13 @@ export default function WomensHealthIstanbulPage() {
               >
                 Explore Antalya
               </Link>
+
+              <Link
+                href="/blog/istanbul-or-antalya-for-treatment-in-turkey"
+                className="inline-block rounded-full border border-slate-300 px-6 py-3 transition hover:bg-white"
+              >
+                Read destination comparison
+              </Link>
             </div>
           </div>
         </section>
@@ -374,34 +419,49 @@ export default function WomensHealthIstanbulPage() {
         </section>
 
         <section id="form" className="bg-white py-24">
-          <div className="mx-auto max-w-4xl px-6 text-center">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Private consultation
-            </p>
+          <div className="mx-auto max-w-4xl px-6">
+            <div className="rounded-[32px] border border-slate-200 bg-[#fcfaf7] p-8 text-center shadow-[0_20px_60px_rgba(15,23,42,0.05)] md:p-10">
+              <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
+                Private consultation
+              </p>
 
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-              Request a private consultation
-            </h2>
+              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
+                Request a private women’s health review
+              </h2>
 
-            <p className="mt-4 leading-8 text-slate-600">
-              Share your situation and we’ll help you understand whether
-              Istanbul may be the right fit for your priorities.
-            </p>
+              <p className="mt-4 leading-8 text-slate-600">
+                Share your situation and we’ll help you understand whether Istanbul
+                may be the right fit, what the next step may look like, and whether
+                a more specialist-led pathway is likely to be appropriate.
+              </p>
 
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/#form"
-                className="inline-block rounded-full bg-slate-950 px-8 py-4 text-white transition hover:-translate-y-0.5 hover:opacity-95"
-              >
-                Go to consultation form
-              </Link>
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm text-slate-600">
+                <span className="rounded-full bg-white px-4 py-2">
+                  Private and discreet
+                </span>
+                <span className="rounded-full bg-white px-4 py-2">
+                  No obligation review
+                </span>
+                <span className="rounded-full bg-white px-4 py-2">
+                  UK-based coordination
+                </span>
+              </div>
 
-              <Link
-                href="/treatment-in-istanbul"
-                className="inline-block rounded-full border border-slate-300 px-8 py-4 text-slate-900 transition hover:bg-slate-50"
-              >
-                Back to Istanbul treatments
-              </Link>
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+                <Link
+                  href="/#form"
+                  className="inline-block rounded-full bg-slate-950 px-8 py-4 text-white transition hover:-translate-y-0.5 hover:opacity-95"
+                >
+                  Go to consultation form
+                </Link>
+
+                <Link
+                  href="/treatment-in-istanbul"
+                  className="inline-block rounded-full border border-slate-300 px-8 py-4 text-slate-900 transition hover:bg-slate-50"
+                >
+                  Back to Istanbul treatments
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -412,8 +472,6 @@ export default function WomensHealthIstanbulPage() {
           treatments, provider selection, suitability decisions, and medical
           outcomes remain the responsibility of the relevant medical provider.
         </section>
-
-        
       </main>
     </>
   );
