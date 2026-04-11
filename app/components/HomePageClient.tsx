@@ -31,7 +31,7 @@ const initialState: ConsultationForm = {
 const trustItems = [
   "UK-based coordination",
   "Carefully selected clinics",
-  "Private and discreet process",
+  "Direct doctor review where appropriate",
   "Structured treatment planning",
 ];
 
@@ -153,12 +153,12 @@ const reassurancePoints = [
     desc: "Many patients are comfortable exploring treatment abroad, but still want clear communication before travel. Our UK-based coordination model helps make that part feel more familiar and structured.",
   },
   {
-    title: "Not all clinics are positioned the same",
-    desc: "We do not present treatment as a generic marketplace. Different clinics, cities, and pathways suit different types of patients and procedures.",
+    title: "Only carefully selected clinic pathways",
+    desc: "We do not present treatment as a generic marketplace. We focus on selected clinics and treatment pathways that we know, trust, and position more carefully based on treatment type and destination fit.",
   },
   {
-    title: "More than a price comparison",
-    desc: "Patients often start by comparing cost, but the right route also depends on complexity, recovery needs, timing, discretion, and the kind of support you want around the journey.",
+    title: "More than coordinator-only communication",
+    desc: "Where appropriate, enquiries can move into direct review through a Turkey-licensed doctor via a relevant partner clinic, rather than staying only at coordinator level.",
   },
 ];
 
@@ -239,10 +239,17 @@ export default function HomePageClient() {
 
               <p className="mt-6 max-w-2xl text-base leading-7 text-white/82 md:mt-7 md:text-lg md:leading-8">
                 We help UK-based patients access carefully selected clinics in
-                <span className="font-medium text-white"> Istanbul and Antalya</span>
-                , with a more structured, discreet, and premium experience before
-                travel.
+                <span className="font-medium text-white"> Istanbul and Antalya</span>,
+                with a more structured, discreet, and premium experience before
+                travel. Where appropriate, enquiries may also move into direct
+                review through a Turkey-licensed doctor via a relevant partner clinic.
               </p>
+
+              <div className="mt-5 max-w-2xl text-sm leading-6 text-white/65">
+                CareBridge Health is not a clinic. We act as an independent
+                coordination service designed to help patients move from online
+                research to a clearer next step.
+              </div>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:mt-10 md:gap-4">
                 <a
@@ -388,6 +395,7 @@ export default function HomePageClient() {
             <ul className="mt-8 space-y-5 text-base leading-8 text-slate-600">
               <li>✔ UK-based communication before travel</li>
               <li>✔ Carefully selected third-party partner clinics</li>
+              <li>✔ Direct review through a Turkey-licensed doctor where appropriate</li>
               <li>✔ Clear destination guidance based on treatment type</li>
               <li>✔ More discreet and structured planning</li>
               <li>✔ Optional support for patients who want a smoother journey</li>
@@ -651,6 +659,12 @@ export default function HomePageClient() {
                 next steps, and whether Istanbul or Antalya may be more
                 appropriate for your priorities.
               </p>
+
+              <p className="mt-4 text-sm leading-7 text-slate-500">
+                Where appropriate, your enquiry may then move into direct review
+                through a Turkey-licensed doctor via a relevant partner clinic,
+                rather than staying only at coordinator level.
+              </p>
             </div>
 
             <div className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-2 xl:grid-cols-3">
@@ -792,6 +806,14 @@ export default function HomePageClient() {
                 className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
               />
 
+              <p className="text-xs leading-6 text-slate-500">
+                By submitting this form, you consent to CareBridge Health using
+                your details to review your enquiry and, where appropriate,
+                sharing relevant information with a suitable third-party clinic
+                partner or Turkey-licensed medical provider for initial review
+                and coordination.
+              </p>
+
               <button
                 type="submit"
                 disabled={sending}
@@ -812,13 +834,12 @@ export default function HomePageClient() {
       </section>
 
       <section className="mx-auto max-w-5xl px-6 py-14 text-sm leading-7 text-slate-500">
-        CareBridge Health is not a medical provider. We act as an independent
-        coordination service connecting patients with third-party clinics and
-        selected travel partners. All treatments, suitability decisions, and
-        medical outcomes remain the responsibility of the relevant provider.
+        CareBridge Health is not a clinic or medical provider. We act as an
+        independent coordination service connecting patients with third-party
+        clinics and Turkey-licensed medical providers. All treatments, clinical
+        decisions, suitability assessments, and medical outcomes remain the
+        responsibility of the relevant provider.
       </section>
-
-      
     </main>
   );
 }
