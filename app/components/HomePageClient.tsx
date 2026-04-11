@@ -128,7 +128,7 @@ const treatmentCards = [
     shortTitle: "Women’s health",
     desc: "Selected women’s health and gynaecological procedures handled with particular discretion and individual review.",
     img: "/womens-health.avif",
-    href: "/treatment-in-turkey",
+    href: "/treatment-in-istanbul/womens-health",
   },
 ];
 

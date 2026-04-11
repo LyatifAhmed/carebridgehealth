@@ -38,7 +38,7 @@ const treatmentAreas = [
   {
     title: "Women’s health",
     desc: "Selected gynaecological and functional procedures handled with discretion and a more carefully guided process.",
-    href: "/treatment-in-turkey",
+    href: "treatment-in-istanbul/womens-health",
   },
 ];
 
