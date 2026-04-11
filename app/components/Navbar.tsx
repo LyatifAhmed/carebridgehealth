@@ -119,7 +119,13 @@ export default function Navbar() {
     : "border border-white/15 bg-white/12 text-white backdrop-blur-md hover:-translate-y-0.5 hover:bg-white/16";
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50">
+    <header
+      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? "-translate-y-3 opacity-0 pointer-events-none"
+          : "translate-y-0 opacity-100"
+      }`}
+    >
       <div className="mx-auto max-w-6xl px-6 py-4">
         <div
           className={`flex items-center justify-between rounded-2xl px-4 py-3 transition-all duration-300 ${shellClasses}`}
