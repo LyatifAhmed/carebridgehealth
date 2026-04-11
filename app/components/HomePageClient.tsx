@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FormEvent, useState } from "react";
-import ChatAssistant from "./ChatAssistant";
 import HeroCursor from "./HeroCursor";
 import InsightsPreview from "./InsightsPreview";
 
@@ -819,7 +818,7 @@ export default function HomePageClient() {
         medical outcomes remain the responsibility of the relevant provider.
       </section>
 
-      <ChatAssistant />
+      
     </main>
   );
 }

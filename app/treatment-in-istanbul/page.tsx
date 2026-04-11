@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import ChatAssistant from "../components/ChatAssistant";
 import HeroCursor from "../components/HeroCursor";
 
 export const metadata: Metadata = {
@@ -380,7 +379,7 @@ export default function TreatmentInIstanbulPage() {
         outcomes remain the responsibility of the relevant medical provider.
       </section>
 
-      <ChatAssistant />
+      
     </main>
   );
 }

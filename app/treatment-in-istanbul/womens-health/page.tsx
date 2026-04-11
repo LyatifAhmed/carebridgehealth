@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import HeroCursor from "../../components/HeroCursor";
-import ChatAssistant from "../../components/ChatAssistant";
+
 
 export const metadata: Metadata = {
   title:
@@ -413,7 +413,7 @@ export default function WomensHealthIstanbulPage() {
           outcomes remain the responsibility of the relevant medical provider.
         </section>
 
-        <ChatAssistant />
+        
       </main>
     </>
   );

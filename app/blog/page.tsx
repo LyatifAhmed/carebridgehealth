@@ -18,6 +18,12 @@ const posts = [
       "What patients should consider beyond price when evaluating treatment abroad.",
   },
   {
+    title: "How much does treatment in Turkey cost for UK patients?",
+    href: "/blog/cost-of-treatment-in-turkey-for-uk-patients",
+    description:
+      "A realistic breakdown of treatment costs, hidden expenses, and what UK patients should expect.",
+  },
+  {
     title: "Istanbul or Antalya: which is better for treatment in Turkey?",
     href: "/blog/istanbul-or-antalya-for-treatment-in-turkey",
     description:

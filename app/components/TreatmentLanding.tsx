@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 type ExtraLink = {
@@ -43,12 +45,18 @@ export default function TreatmentLanding({
   ctaText = "Tell us what you are considering and we will help you understand the next steps, likely treatment pathway, and whether Istanbul or Antalya may be a better fit.",
   primaryCtaHref = "/#form",
   primaryCtaLabel = "Request private consultation",
-  secondaryCtaHref = "/#form",
-  secondaryCtaLabel = "Start your enquiry",
+  secondaryCtaHref,
+  secondaryCtaLabel = "Ask a few questions first",
   tertiaryCtaHref = "/blog",
   tertiaryCtaLabel = "Read patient insights",
   extraLinks = [],
 }: TreatmentLandingProps) {
+  function openChat() {
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new Event("open-carebridge-chat"));
+    }
+  }
+
   return (
     <main className="min-h-screen bg-[#fcfaf7] text-neutral-900">
       <section className="border-b border-neutral-200 bg-gradient-to-b from-neutral-50 to-white">
@@ -94,12 +102,22 @@ export default function TreatmentLanding({
               {primaryCtaLabel}
             </Link>
 
-            <Link
-              href={secondaryCtaHref}
-              className="rounded-full border border-neutral-300 bg-white px-6 py-3 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50"
-            >
-              {secondaryCtaLabel}
-            </Link>
+            {secondaryCtaHref ? (
+              <Link
+                href={secondaryCtaHref}
+                className="rounded-full border border-neutral-300 bg-white px-6 py-3 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50"
+              >
+                {secondaryCtaLabel}
+              </Link>
+            ) : (
+              <button
+                type="button"
+                onClick={openChat}
+                className="rounded-full border border-neutral-300 bg-white px-6 py-3 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50"
+              >
+                {secondaryCtaLabel}
+              </button>
+            )}
           </div>
         </div>
       </section>
@@ -180,12 +198,22 @@ export default function TreatmentLanding({
               {primaryCtaLabel}
             </Link>
 
-            <Link
-              href={secondaryCtaHref}
-              className="rounded-full border border-neutral-300 bg-white px-6 py-3 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50"
-            >
-              {secondaryCtaLabel}
-            </Link>
+            {secondaryCtaHref ? (
+              <Link
+                href={secondaryCtaHref}
+                className="rounded-full border border-neutral-300 bg-white px-6 py-3 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50"
+              >
+                {secondaryCtaLabel}
+              </Link>
+            ) : (
+              <button
+                type="button"
+                onClick={openChat}
+                className="rounded-full border border-neutral-300 bg-white px-6 py-3 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50"
+              >
+                {secondaryCtaLabel}
+              </button>
+            )}
 
             <Link
               href={tertiaryCtaHref}
