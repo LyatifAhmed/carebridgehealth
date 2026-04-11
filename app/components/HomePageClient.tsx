@@ -598,6 +598,14 @@ export default function HomePageClient() {
               >
                 Request a private consultation
               </a>
+
+              <Link
+                href="/treatment-in-istanbul/womens-health"
+                className="inline-flex rounded-full border border-slate-300 px-7 py-4 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
+              >
+                Explore women’s health treatments
+              </Link>
+
               <Link
                 href="/treatment-in-turkey"
                 className="inline-flex rounded-full border border-slate-300 px-7 py-4 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
