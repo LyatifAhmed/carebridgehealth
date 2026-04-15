@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Patient-friendly guidance on treatment in Turkey, destination choice, clinic selection, and planning your treatment journey from the UK.",
   alternates: {
-    canonical: "https://carebridgehealth.co/blog",
+    canonical: "/blog",
   },
 };
 
