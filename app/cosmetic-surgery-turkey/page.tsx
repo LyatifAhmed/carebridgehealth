@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Cosmetic Surgery Turkey | UK-Based Coordination",
   description:
     "Considering cosmetic surgery in Turkey? Explore a more structured route with UK-based coordination and clearer pre-treatment guidance.",
+  alternates: {
+    canonical: "/cosmetic-surgery-turkey",
+  },
 };
 
 export default function CosmeticSurgeryTurkeyPage() {

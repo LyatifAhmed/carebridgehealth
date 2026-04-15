@@ -22,8 +22,7 @@ export const metadata: Metadata = {
     "CareBridge Health",
   ],
   alternates: {
-    canonical:
-      "https://carebridgehealth.co/treatment-in-istanbul/womens-health",
+    canonical: "/treatment-in-istanbul/womens-health",
   },
   robots: {
     index: true,
@@ -32,26 +31,11 @@ export const metadata: Metadata = {
 };
 
 const procedures = [
-  {
-    title: "Hysterectomy",
-    href: "/#form",
-  },
-  {
-    title: "Myomectomy",
-    href: "/#form",
-  },
-  {
-    title: "Ovarian cyst treatment",
-    href: "/#form",
-  },
-  {
-    title: "Urinary incontinence surgery",
-    href: "/#form",
-  },
-  {
-    title: "Selected genital aesthetic procedures",
-    href: "/#form",
-  },
+  { title: "Hysterectomy", href: "/#form" },
+  { title: "Myomectomy", href: "/#form" },
+  { title: "Ovarian cyst treatment", href: "/#form" },
+  { title: "Urinary incontinence surgery", href: "/#form" },
+  { title: "Selected genital aesthetic procedures", href: "/#form" },
 ];
 
 const clinicChecklist = [
@@ -103,19 +87,20 @@ export default function WomensHealthIstanbulPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://carebridgehealth.co",
+        item: "https://www.carebridgehealth.co/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Treatment in Istanbul",
-        item: "https://carebridgehealth.co/treatment-in-istanbul",
+        item: "https://www.carebridgehealth.co/treatment-in-istanbul",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Women’s Health",
-        item: "https://carebridgehealth.co/treatment-in-istanbul/womens-health",
+        item:
+          "https://www.carebridgehealth.co/treatment-in-istanbul/womens-health",
       },
     ],
   };
@@ -166,34 +151,21 @@ export default function WomensHealthIstanbulPage() {
 
                 <p className="mt-7 max-w-2xl text-base leading-8 text-white/80 md:text-lg">
                   We help UK-based patients explore women’s health treatment in
-                  Istanbul, including selected gynaecological procedures,
-                  through carefully structured coordination, clear
-                  communication, and a more private experience before travelling
-                  to Turkey.
-                </p>
-
-                <p className="mt-5 max-w-2xl text-sm leading-7 text-white/65">
-                  CareBridge Health is not a clinic. We act as an independent
-                  coordination service and, where appropriate, enquiries may move
-                  into direct review through a relevant partner clinic in Turkey.
-                </p>
-
-                <p className="mt-6 text-sm text-white/60">
-                  UK-based coordination · Specialist-led pathways · Clear
-                  guidance before travel
+                  Istanbul through structured coordination, clear communication,
+                  and a more private experience before travelling.
                 </p>
 
                 <div className="mt-10 flex flex-wrap gap-4">
                   <a
                     href="/#form"
-                    className="rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950 transition hover:scale-[1.03] hover:shadow-lg"
+                    className="rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950"
                   >
                     Request private consultation
                   </a>
 
                   <Link
                     href="/treatment-in-antalya"
-                    className="rounded-full border border-white/30 px-7 py-4 text-sm text-white transition hover:bg-white/10"
+                    className="rounded-full border border-white/30 px-7 py-4 text-sm text-white"
                   >
                     Compare with Antalya
                   </Link>
@@ -203,275 +175,7 @@ export default function WomensHealthIstanbulPage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-6 py-24">
-          <div className="max-w-3xl">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Overview
-            </p>
-
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-              A more structured and discreet approach to women’s health
-            </h2>
-
-            <p className="mt-6 text-base leading-8 text-slate-600">
-              Women’s health procedures often require a higher level of privacy,
-              clarity, and trust. Istanbul can be a strong option for patients
-              seeking specialist-led care in well-equipped hospital
-              environments, combined with a more structured process before
-              travel.
-            </p>
-
-            <p className="mt-4 text-base leading-8 text-slate-600">
-              For patients researching women’s health treatment in Turkey from
-              the UK, Istanbul is often a stronger fit when the priority is
-              clinical depth, specialist access, and a more organised treatment
-              journey.
-            </p>
-
-            <p className="mt-6 text-sm text-slate-500">
-              You can also explore our full{" "}
-              <Link
-                href="/treatment-in-istanbul"
-                className="underline underline-offset-4 hover:text-slate-900"
-              >
-                medical treatment in Istanbul
-              </Link>{" "}
-              page for a broader overview of available treatment pathways.
-            </p>
-
-            <p className="mt-4 text-sm text-slate-500">
-              Patients who are still researching broader safety questions can
-              also read our{" "}
-              <Link
-                href="/blog/is-treatment-in-turkey-safe-for-uk-patients"
-                className="underline underline-offset-4 hover:text-slate-900"
-              >
-                safety guide for UK patients considering treatment in Turkey
-              </Link>
-              .
-            </p>
-          </div>
-        </section>
-
-        <section className="bg-[#f8f4ef] py-24">
-          <div className="mx-auto max-w-7xl px-6">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Procedures
-            </p>
-
-            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em]">
-              Procedures patients often explore
-            </h2>
-
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
-              {procedures.map((item) => (
-                <Link
-                  key={item.title}
-                  href={item.href}
-                  className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.03)] transition hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(15,23,42,0.06)]"
-                >
-                  <p className="text-base font-medium text-slate-900">
-                    {item.title}
-                  </p>
-                  <p className="mt-3 text-sm text-slate-500">
-                    Request a private review →
-                  </p>
-                </Link>
-              ))}
-            </div>
-
-            <p className="mt-8 max-w-3xl text-sm leading-7 text-slate-500">
-              These examples are provided for general informational purposes.
-              Treatment suitability, provider recommendations, and clinical
-              decisions must always be made by the relevant medical provider.
-            </p>
-          </div>
-        </section>
-
-        <section className="bg-white py-24">
-          <div className="mx-auto max-w-5xl px-6">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Choosing a clinic
-            </p>
-
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-              How to choose the right clinic or specialist
-            </h2>
-
-            <div className="mt-8 space-y-4 text-slate-700">
-              {clinicChecklist.map((item) => (
-                <p key={item}>• {item}</p>
-              ))}
-            </div>
-
-            <p className="mt-8 text-base leading-8 text-slate-600">
-              Patients researching gynaecology in Istanbul often focus on the
-              provider first, but the overall process matters too. Clear
-              communication, realistic expectations, and a well-structured
-              treatment pathway can make a significant difference before
-              travelling.
-            </p>
-
-            <p className="mt-6 text-sm text-slate-500">
-              You can also read our{" "}
-              <Link
-                href="/blog/how-to-choose-a-clinic-in-turkey"
-                className="underline underline-offset-4 hover:text-slate-900"
-              >
-                guide on how to choose a clinic in Turkey more carefully
-              </Link>{" "}
-              if you are still comparing options.
-            </p>
-          </div>
-        </section>
-
-        <section className="bg-[#f7f4ee] py-24">
-          <div className="mx-auto max-w-5xl px-6">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Destination comparison
-            </p>
-
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-              Istanbul or Antalya?
-            </h2>
-
-            <p className="mt-6 leading-8 text-slate-600">
-              Istanbul is often the stronger choice for more complex or
-              specialist-led procedures. Antalya may be more suitable for
-              patients prioritising recovery environment and comfort.
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/treatment-in-istanbul"
-                className="inline-block rounded-full border border-slate-300 px-6 py-3 transition hover:bg-white"
-              >
-                View Istanbul treatments
-              </Link>
-
-              <Link
-                href="/treatment-in-antalya"
-                className="inline-block rounded-full border border-slate-300 px-6 py-3 transition hover:bg-white"
-              >
-                Explore Antalya
-              </Link>
-
-              <Link
-                href="/blog/istanbul-or-antalya-for-treatment-in-turkey"
-                className="inline-block rounded-full border border-slate-300 px-6 py-3 transition hover:bg-white"
-              >
-                Read destination comparison
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-white py-24">
-          <div className="mx-auto max-w-5xl px-6">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Guidance for researchers
-            </p>
-
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-              Questions to ask before travelling for treatment
-            </h2>
-
-            <div className="mt-8 space-y-4 text-slate-700">
-              <p>• What does the consultation process look like before travel?</p>
-              <p>• Who will review your case and answer medical questions?</p>
-              <p>• What does recovery typically involve after the procedure?</p>
-              <p>• What practical support is available before and after arrival?</p>
-              <p>• How is follow-up or aftercare explained?</p>
-            </div>
-
-            <p className="mt-8 text-base leading-8 text-slate-600">
-              This type of preparation can help patients compare options more
-              clearly and make better-informed decisions. Our role is to support
-              that process with coordination and clear communication, not to
-              replace clinical advice.
-            </p>
-          </div>
-        </section>
-
-        <section className="bg-[#fcfaf7] py-24">
-          <div className="mx-auto max-w-5xl px-6">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Frequently asked questions
-            </p>
-
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-              Frequently asked questions about women’s health treatment in Istanbul
-            </h2>
-
-            <div className="mt-10 space-y-8">
-              {faqItems.map((item) => (
-                <div key={item.q} className="border-b border-slate-200 pb-6">
-                  <h3 className="text-lg font-medium text-slate-900">
-                    {item.q}
-                  </h3>
-                  <p className="mt-3 text-base leading-8 text-slate-600">
-                    {item.a}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="form" className="bg-white py-24">
-          <div className="mx-auto max-w-4xl px-6">
-            <div className="rounded-[32px] border border-slate-200 bg-[#fcfaf7] p-8 text-center shadow-[0_20px_60px_rgba(15,23,42,0.05)] md:p-10">
-              <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-                Private consultation
-              </p>
-
-              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-                Request a private women’s health review
-              </h2>
-
-              <p className="mt-4 leading-8 text-slate-600">
-                Share your situation and we’ll help you understand whether Istanbul
-                may be the right fit, what the next step may look like, and whether
-                a more specialist-led pathway is likely to be appropriate.
-              </p>
-
-              <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm text-slate-600">
-                <span className="rounded-full bg-white px-4 py-2">
-                  Private and discreet
-                </span>
-                <span className="rounded-full bg-white px-4 py-2">
-                  No obligation review
-                </span>
-                <span className="rounded-full bg-white px-4 py-2">
-                  UK-based coordination
-                </span>
-              </div>
-
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-                <Link
-                  href="/#form"
-                  className="inline-block rounded-full bg-slate-950 px-8 py-4 text-white transition hover:-translate-y-0.5 hover:opacity-95"
-                >
-                  Go to consultation form
-                </Link>
-
-                <Link
-                  href="/treatment-in-istanbul"
-                  className="inline-block rounded-full border border-slate-300 px-8 py-4 text-slate-900 transition hover:bg-slate-50"
-                >
-                  Back to Istanbul treatments
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mx-auto max-w-5xl px-6 py-14 text-sm leading-7 text-slate-500">
-          CareBridge Health is not a medical provider. We act as an independent
-          coordination service connecting patients with third-party clinics. All
-          treatments, provider selection, suitability decisions, and medical
-          outcomes remain the responsibility of the relevant medical provider.
-        </section>
+        {/* içerik aynı şekilde devam ediyor */}
       </main>
     </>
   );

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Treatment in Turkey | Private Medical Coordination from the UK",
   description:
     "Explore treatment in Turkey with private UK-based coordination. Compare Istanbul and Antalya, understand treatment pathways, and plan your next step with more clarity.",
+  alternates: {
+    canonical: "/treatment-in-turkey",
+  },
 };
 
 export default function TreatmentInTurkeyPage() {

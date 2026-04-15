@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "CareBridge Health",
   ],
   alternates: {
-    canonical: "https://carebridgehealth.co",
+    canonical: "/",
   },
   robots: {
     index: true,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "Private Medical Treatment in Turkey | UK-Based Coordination | CareBridge Health",
     description:
       "CareBridge Health helps UK-based patients explore treatment in Turkey with clearer communication, structured coordination, and carefully selected clinic pathways.",
-    url: "https://carebridgehealth.co",
+    url: "https://www.carebridgehealth.co/",
     siteName: "CareBridge Health",
     type: "website",
   },
@@ -50,8 +50,8 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "CareBridge Health",
-    url: "https://carebridgehealth.co",
-    logo: "https://carebridgehealth.co/logo.png",
+    url: "https://www.carebridgehealth.co/",
+    logo: "https://www.carebridgehealth.co/logo.png",
     description:
       "Independent coordination service helping UK-based patients access selected third-party clinics in Istanbul and Antalya, Turkey.",
     areaServed: ["United Kingdom", "Turkey"],

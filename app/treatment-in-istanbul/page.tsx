@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Medical Treatment in Istanbul for UK Patients | CareBridge Health",
   description:
     "Explore private medical treatment in Istanbul through CareBridge Health. Carefully selected clinics, structured guidance, and UK-based coordination for patients seeking clarity and discretion.",
+  alternates: {
+    canonical: "/treatment-in-istanbul",
+  },
 };
 
 const treatmentAreas = [

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Eye Treatment Turkey | UK-Based Coordination",
   description:
     "Considering eye treatment in Turkey? Explore a more informed route with UK-based coordination and private treatment planning support.",
+  alternates: {
+    canonical: "/eye-treatment-turkey",
+  },
 };
 
 export default function EyeTreatmentTurkeyPage() {

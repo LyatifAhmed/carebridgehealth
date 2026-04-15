@@ -1,3 +1,18 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Read the CareBridge Health privacy policy, including how we collect, use, store, and share personal data.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function PrivacyPolicyPage() {
   return (
     <main className="bg-[#fcfaf7] text-slate-900">
@@ -11,7 +26,7 @@ export default function PrivacyPolicyPage() {
         </h1>
 
         <p className="mt-6 text-sm text-slate-500">
-          Last updated: {new Date().getFullYear()}
+          Last updated: 11 April 2026
         </p>
 
         <div className="mt-10 space-y-8 text-sm leading-7 text-slate-600">
@@ -22,11 +37,8 @@ export default function PrivacyPolicyPage() {
             website or submit a consultation request.
           </p>
 
-          {/* 1 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              1. Who we are
-            </h2>
+            <h2 className="font-medium text-slate-900">1. Who we are</h2>
             <p className="mt-2">
               CareBridge Health is operated by Generation Beta Digital Ltd,
               registered in the United Kingdom.
@@ -37,11 +49,8 @@ export default function PrivacyPolicyPage() {
             <p>Company No: 16274319</p>
           </div>
 
-          {/* 2 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              2. What data we collect
-            </h2>
+            <h2 className="font-medium text-slate-900">2. What data we collect</h2>
             <p className="mt-2">
               When you submit a consultation request, we may collect:
             </p>
@@ -55,14 +64,9 @@ export default function PrivacyPolicyPage() {
             </ul>
           </div>
 
-          {/* 3 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              3. How we use your data
-            </h2>
-            <p className="mt-2">
-              We use your information strictly to:
-            </p>
+            <h2 className="font-medium text-slate-900">3. How we use your data</h2>
+            <p className="mt-2">We use your information strictly to:</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Review your consultation request</li>
               <li>Respond to your enquiry</li>
@@ -74,11 +78,8 @@ export default function PrivacyPolicyPage() {
             </p>
           </div>
 
-          {/* 4 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              4. Sharing your data
-            </h2>
+            <h2 className="font-medium text-slate-900">4. Sharing your data</h2>
             <p className="mt-2">
               Where necessary, we may share relevant information with selected
               third-party clinics in order to assess your case and provide
@@ -90,7 +91,6 @@ export default function PrivacyPolicyPage() {
             </p>
           </div>
 
-          {/* 5 */}
           <div>
             <h2 className="font-medium text-slate-900">
               5. Data storage & security
@@ -102,11 +102,8 @@ export default function PrivacyPolicyPage() {
             </p>
           </div>
 
-          {/* 6 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              6. Your rights
-            </h2>
+            <h2 className="font-medium text-slate-900">6. Your rights</h2>
             <p className="mt-2">
               Under UK data protection law, you have the right to:
             </p>
@@ -118,29 +115,21 @@ export default function PrivacyPolicyPage() {
             </ul>
           </div>
 
-          {/* 7 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              7. Cookies
-            </h2>
+            <h2 className="font-medium text-slate-900">7. Cookies</h2>
             <p className="mt-2">
               Our website may use basic cookies for functionality and analytics.
               These do not collect sensitive personal information.
             </p>
           </div>
 
-          {/* 8 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              8. Contact
-            </h2>
+            <h2 className="font-medium text-slate-900">8. Contact</h2>
             <p className="mt-2">
               If you have any questions about this policy or your data, you can
               contact us at:
             </p>
-            <p className="mt-2">
-              Email: info@gebedi.com
-            </p>
+            <p className="mt-2">Email: info@gebedi.com</p>
           </div>
         </div>
       </section>

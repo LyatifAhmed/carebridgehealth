@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Hair Transplant Turkey | UK-Based Coordination",
   description:
     "Considering a hair transplant in Turkey? Explore a more informed and supported route with private UK-based coordination through CareBridge Health.",
+  alternates: {
+    canonical: "/hair-transplant-turkey",
+  },
 };
 
 export default function HairTransplantTurkeyPage() {

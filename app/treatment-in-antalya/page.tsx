@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Medical Treatment in Antalya for UK Patients | CareBridge Health",
   description:
     "Explore private medical treatment in Antalya through CareBridge Health. Carefully selected clinics, UK-based coordination, and a more comfort-led treatment journey for selected procedures.",
+  alternates: {
+    canonical: "/treatment-in-antalya",
+  },
 };
 
 const treatmentAreas = [
@@ -38,7 +41,7 @@ const treatmentAreas = [
   {
     title: "Women’s health",
     desc: "Selected gynaecological and functional procedures handled with discretion and a more carefully guided process.",
-    href: "treatment-in-istanbul/womens-health",
+    href: "/treatment-in-istanbul/womens-health",
   },
 ];
 
@@ -249,8 +252,6 @@ export default function TreatmentInAntalyaPage() {
           </div>
         </div>
       </section>
-
-      
     </main>
   );
 }

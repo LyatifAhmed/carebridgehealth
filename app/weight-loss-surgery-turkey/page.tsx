@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Weight Loss Surgery Turkey | UK-Based Coordination",
   description:
     "Explore weight loss surgery in Turkey with UK-based coordination. Get support understanding options, planning, and next-step considerations.",
+  alternates: {
+    canonical: "/weight-loss-surgery-turkey",
+  },
 };
 
 export default function WeightLossSurgeryTurkeyPage() {

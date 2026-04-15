@@ -1,3 +1,18 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+  description:
+    "Read the CareBridge Health terms and conditions, including the nature of our coordination service, liability limitations, and your responsibilities.",
+  alternates: {
+    canonical: "/terms",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function TermsPage() {
   return (
     <main className="bg-[#fcfaf7] text-slate-900">
@@ -11,7 +26,7 @@ export default function TermsPage() {
         </h1>
 
         <p className="mt-6 text-sm text-slate-500">
-          Last updated: {new Date().getFullYear()}
+          Last updated: 11 April 2026
         </p>
 
         <div className="mt-10 space-y-8 text-sm leading-7 text-slate-600">
@@ -21,18 +36,14 @@ export default function TermsPage() {
             submitting a consultation request, you agree to these Terms.
           </p>
 
-          {/* 1 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              1. Who we are
-            </h2>
+            <h2 className="font-medium text-slate-900">1. Who we are</h2>
             <p className="mt-2">
-              CareBridge Health is operated by Generation Beta Digital Ltd,
-              a company registered in the United Kingdom.
+              CareBridge Health is operated by Generation Beta Digital Ltd, a
+              company registered in the United Kingdom.
             </p>
           </div>
 
-          {/* 2 */}
           <div>
             <h2 className="font-medium text-slate-900">
               2. Nature of our service
@@ -47,16 +58,13 @@ export default function TermsPage() {
             </p>
 
             <p className="mt-2">
-              We do not provide medical advice, diagnosis, or treatment.
-              All medical services are provided by independent clinics.
+              We do not provide medical advice, diagnosis, or treatment. All
+              medical services are provided by independent clinics.
             </p>
           </div>
 
-          {/* 3 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              3. No medical liability
-            </h2>
+            <h2 className="font-medium text-slate-900">3. No medical liability</h2>
             <p className="mt-2">
               Any treatment you choose to undergo is your own decision.
             </p>
@@ -73,11 +81,8 @@ export default function TermsPage() {
             </ul>
           </div>
 
-          {/* 4 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              4. Third-party clinics
-            </h2>
+            <h2 className="font-medium text-slate-900">4. Third-party clinics</h2>
             <p className="mt-2">
               Clinics introduced through CareBridge Health operate independently.
             </p>
@@ -88,14 +93,9 @@ export default function TermsPage() {
             </p>
           </div>
 
-          {/* 5 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              5. No guarantees
-            </h2>
-            <p className="mt-2">
-              We do not guarantee:
-            </p>
+            <h2 className="font-medium text-slate-900">5. No guarantees</h2>
+            <p className="mt-2">We do not guarantee:</p>
 
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Specific medical results or outcomes</li>
@@ -105,14 +105,9 @@ export default function TermsPage() {
             </ul>
           </div>
 
-          {/* 6 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              6. Your responsibility
-            </h2>
-            <p className="mt-2">
-              You are responsible for:
-            </p>
+            <h2 className="font-medium text-slate-900">6. Your responsibility</h2>
+            <p className="mt-2">You are responsible for:</p>
 
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Providing accurate information</li>
@@ -122,11 +117,8 @@ export default function TermsPage() {
             </ul>
           </div>
 
-          {/* 7 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              7. Payments
-            </h2>
+            <h2 className="font-medium text-slate-900">7. Payments</h2>
             <p className="mt-2">
               CareBridge Health does not process payments for medical treatment
               unless explicitly stated.
@@ -138,15 +130,14 @@ export default function TermsPage() {
             </p>
           </div>
 
-          {/* 8 */}
           <div>
             <h2 className="font-medium text-slate-900">
               8. Limitation of liability
             </h2>
             <p className="mt-2">
-              To the fullest extent permitted by law, CareBridge Health shall not
-              be liable for any direct, indirect, or consequential loss arising
-              from:
+              To the fullest extent permitted by law, CareBridge Health shall
+              not be liable for any direct, indirect, or consequential loss
+              arising from:
             </p>
 
             <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -156,37 +147,26 @@ export default function TermsPage() {
             </ul>
           </div>
 
-          {/* 9 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              9. Data & privacy
-            </h2>
+            <h2 className="font-medium text-slate-900">9. Data & privacy</h2>
             <p className="mt-2">
               Your use of our services is also governed by our Privacy Policy.
             </p>
           </div>
 
-          {/* 10 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              10. Governing law
-            </h2>
+            <h2 className="font-medium text-slate-900">10. Governing law</h2>
             <p className="mt-2">
               These Terms are governed by the laws of England and Wales.
             </p>
           </div>
 
-          {/* 11 */}
           <div>
-            <h2 className="font-medium text-slate-900">
-              11. Contact
-            </h2>
+            <h2 className="font-medium text-slate-900">11. Contact</h2>
             <p className="mt-2">
               For any questions regarding these Terms, contact:
             </p>
-            <p className="mt-2">
-              Email: info@gebedi.com
-            </p>
+            <p className="mt-2">Email: info@gebedi.com</p>
           </div>
         </div>
       </section>
