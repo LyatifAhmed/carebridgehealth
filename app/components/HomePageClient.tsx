@@ -15,6 +15,8 @@ type ConsultationForm = {
   location: string;
   timeframe: string;
   note: string;
+  consentDataProcessing: boolean;
+  consentDisclaimer: boolean;
 };
 
 const initialState: ConsultationForm = {
@@ -26,6 +28,8 @@ const initialState: ConsultationForm = {
   location: "",
   timeframe: "",
   note: "",
+  consentDataProcessing: false,
+  consentDisclaimer: false,
 };
 
 const trustItems = [
@@ -814,12 +818,61 @@ export default function HomePageClient() {
                 className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
               />
 
+              <div className="space-y-4 rounded-[24px] border border-slate-200 bg-slate-50 p-5">
+                <label className="flex items-start gap-3 text-sm leading-6 text-slate-600">
+                  <input
+                    type="checkbox"
+                    checked={form.consentDataProcessing}
+                    onChange={(e) =>
+                      updateField("consentDataProcessing", e.target.checked)
+                    }
+                    className="mt-1 h-4 w-4 rounded border-slate-300"
+                    required
+                  />
+                  <span>
+                    I explicitly consent to CareBridge Health using my
+                    information, including health-related information I choose
+                    to provide, to review my enquiry and, where appropriate,
+                    share relevant details with a suitable third-party clinic
+                    partner or Turkey-licensed medical provider for initial
+                    review and coordination.
+                  </span>
+                </label>
+
+                <label className="flex items-start gap-3 text-sm leading-6 text-slate-600">
+                  <input
+                    type="checkbox"
+                    checked={form.consentDisclaimer}
+                    onChange={(e) =>
+                      updateField("consentDisclaimer", e.target.checked)
+                    }
+                    className="mt-1 h-4 w-4 rounded border-slate-300"
+                    required
+                  />
+                  <span>
+                    I understand that CareBridge Health is an independent
+                    coordination service and not a clinic or medical provider,
+                    and does not provide medical advice, diagnosis, or treatment.
+                  </span>
+                </label>
+              </div>
+
               <p className="text-xs leading-6 text-slate-500">
-                By submitting this form, you consent to CareBridge Health using
-                your details to review your enquiry and, where appropriate,
-                sharing relevant information with a suitable third-party clinic
-                partner or Turkey-licensed medical provider for initial review
-                and coordination.
+                Please only include information you are comfortable sharing at this stage.
+                By submitting this form, you confirm that you have read our{" "}
+                <Link
+                  href="/privacy-policy"
+                  className="underline underline-offset-2 hover:text-slate-900"
+                >
+                  Privacy Policy
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="/terms"
+                  className="underline underline-offset-2 hover:text-slate-900"
+                >
+                  Terms
+                </Link>.
               </p>
 
               <button

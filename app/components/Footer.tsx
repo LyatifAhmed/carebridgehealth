@@ -5,8 +5,6 @@ export default function Footer() {
     <footer className="border-t border-slate-200/80 bg-[linear-gradient(180deg,#ffffff_0%,#f8f6f2_100%)]">
       <div className="mx-auto max-w-7xl px-6 py-20">
         <div className="grid gap-12 md:grid-cols-4">
-          
-          {/* Brand */}
           <div>
             <h3 className="text-lg font-semibold tracking-tight text-slate-900">
               CareBridge Health
@@ -22,11 +20,24 @@ export default function Footer() {
               London • Istanbul coordination
             </p>
 
+            <div className="mt-6 flex flex-wrap gap-2">
+              <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600">
+                UK company
+              </span>
+              <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600">
+                ICO registered
+              </span>
+              <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600">
+                Privacy-first
+              </span>
+            </div>
+
             <p className="mt-6 text-xs text-slate-400">
               Part of{" "}
               <a
                 href="https://gebedi.com"
                 target="_blank"
+                rel="noreferrer"
                 className="underline underline-offset-4 hover:text-slate-700"
               >
                 Generation Beta Digital
@@ -34,11 +45,8 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Navigation */}
           <div>
-            <h4 className="text-sm font-medium text-slate-900">
-              Navigation
-            </h4>
+            <h4 className="text-sm font-medium text-slate-900">Navigation</h4>
 
             <ul className="mt-5 space-y-3 text-sm text-slate-600">
               <li>
@@ -69,13 +77,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company & Trust */}
           <div>
             <h4 className="text-sm font-medium text-slate-900">
               Company & trust
             </h4>
 
-            <div className="mt-5 space-y-3 text-sm text-slate-600 leading-6">
+            <div className="mt-5 space-y-3 text-sm leading-6 text-slate-600">
               <p className="font-medium text-slate-900">
                 Generation Beta Digital Ltd
               </p>
@@ -86,19 +93,29 @@ export default function Footer() {
               </p>
 
               <p>Company No: 16274319</p>
-              <p>ICO No: ZB883806</p>
+
+              <p>
+                ICO Registration:{" "}
+                <a
+                  href="https://ico.org.uk/ESDWebPages/Entry/ZB883806"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline underline-offset-2 hover:text-slate-900"
+                >
+                  ZB883806
+                </a>
+              </p>
             </div>
 
-            <p className="mt-4 text-xs text-slate-500">
-              CareBridge Health is operated by Generation Beta Digital Ltd.
+            <p className="mt-4 text-xs leading-6 text-slate-500">
+              CareBridge Health is operated by Generation Beta Digital Ltd and
+              uses privacy and data handling processes designed for UK GDPR
+              transparency and consent-based enquiry handling.
             </p>
           </div>
 
-          {/* Work with us */}
           <div>
-            <h4 className="text-sm font-medium text-slate-900">
-              Work with us
-            </h4>
+            <h4 className="text-sm font-medium text-slate-900">Work with us</h4>
 
             <p className="mt-5 text-sm leading-6 text-slate-600">
               We collaborate with a limited number of carefully selected
@@ -122,8 +139,15 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom */}
-        <div className="mt-16 flex flex-col gap-4 border-t border-slate-200 pt-6 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+        <div className="mt-16 rounded-[24px] border border-slate-200 bg-white/80 p-5 text-sm leading-6 text-slate-600">
+          CareBridge Health is an independent coordination service. We are not a
+          clinic or medical provider, and we do not provide medical advice,
+          diagnosis, or treatment. Any clinical assessment, treatment planning,
+          and medical services are provided by independent third-party medical
+          providers.
+        </div>
+
+        <div className="mt-8 flex flex-col gap-4 border-t border-slate-200 pt-6 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
           <div className="space-y-1">
             <p>© {new Date().getFullYear()} CareBridge Health</p>
             <p className="text-xs text-slate-400">
@@ -132,10 +156,16 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap gap-6">
-            <Link href="/privacy-policy" className="transition hover:text-slate-900">
+            <Link
+              href="/privacy-policy"
+              className="transition hover:text-slate-900"
+            >
               Privacy Policy
             </Link>
-            <Link href="/terms" className="transition hover:text-slate-900">
+            <Link
+              href="/terms"
+              className="transition hover:text-slate-900"
+            >
               Terms
             </Link>
           </div>

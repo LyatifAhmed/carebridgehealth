@@ -12,6 +12,8 @@ type ConsultationPayload = {
   location: string;
   timeframe: string;
   note: string;
+  consentDataProcessing: boolean;
+  consentDisclaimer: boolean;
 };
 
 function escapeHtml(value: string) {
@@ -27,6 +29,10 @@ function display(value?: string) {
   return value?.trim() ? value.trim() : "Not provided";
 }
 
+function yesNo(value?: boolean) {
+  return value ? "Yes" : "No";
+}
+
 function row(label: string, value?: string) {
   return `
     <tr>
@@ -40,7 +46,14 @@ function row(label: string, value?: string) {
   `;
 }
 
-function buildAdminHtml(data: ConsultationPayload) {
+function buildAdminHtml(
+  data: ConsultationPayload,
+  meta: {
+    submittedAt: string;
+    ip: string;
+    userAgent: string;
+  }
+) {
   return `
     <div style="font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#0f172a;max-width:760px;margin:0 auto;">
       <h2 style="margin:0 0 16px 0;">New consultation request — CareBridge Health</h2>
@@ -59,6 +72,18 @@ function buildAdminHtml(data: ConsultationPayload) {
           ${row("Location", data.location)}
           ${row("Timeframe", data.timeframe)}
           ${row("Notes", data.note)}
+        </tbody>
+      </table>
+
+      <h3 style="margin:28px 0 12px 0;font-size:16px;">Consent and submission record</h3>
+
+      <table style="border-collapse:collapse;width:100%;font-size:14px;">
+        <tbody>
+          ${row("Data processing consent given", yesNo(data.consentDataProcessing))}
+          ${row("Disclaimer accepted", yesNo(data.consentDisclaimer))}
+          ${row("Submitted at", meta.submittedAt)}
+          ${row("IP address", meta.ip)}
+          ${row("User agent", meta.userAgent)}
         </tbody>
       </table>
     </div>
@@ -137,6 +162,13 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    if (!data.consentDataProcessing || !data.consentDisclaimer) {
+      return NextResponse.json(
+        { error: "Required consent fields were not accepted." },
+        { status: 400 }
+      );
+    }
+
     const adminEmail = process.env.CONSULTATION_TO_EMAIL;
     const fromEmail =
       process.env.CONSULTATION_FROM_EMAIL ||
@@ -156,12 +188,27 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    const submittedAt = new Date().toISOString();
+
+    const forwardedFor = req.headers.get("x-forwarded-for");
+    const realIp = req.headers.get("x-real-ip");
+    const ip =
+      forwardedFor?.split(",")[0]?.trim() ||
+      realIp ||
+      "Unavailable";
+
+    const userAgent = req.headers.get("user-agent") || "Unavailable";
+
     await resend.emails.send({
       from: fromEmail,
       to: adminEmail,
       replyTo: data.email,
       subject: `New consultation request from ${data.fullName}`,
-      html: buildAdminHtml(data),
+      html: buildAdminHtml(data, {
+        submittedAt,
+        ip,
+        userAgent,
+      }),
     });
 
     await resend.emails.send({

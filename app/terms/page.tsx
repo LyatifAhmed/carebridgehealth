@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions",
+  title: "Terms & Conditions | CareBridge Health",
   description:
     "Read the CareBridge Health terms and conditions, including the nature of our coordination service, liability limitations, and your responsibilities.",
   alternates: {
@@ -26,147 +27,247 @@ export default function TermsPage() {
         </h1>
 
         <p className="mt-6 text-sm text-slate-500">
-          Last updated: 11 April 2026
+          Last updated: 21 April 2026
         </p>
 
         <div className="mt-10 space-y-8 text-sm leading-7 text-slate-600">
           <p>
-            These Terms & Conditions (“Terms”) govern your use of the
-            CareBridge Health website and services. By using our website or
-            submitting a consultation request, you agree to these Terms.
+            These Terms & Conditions (“Terms”) govern your use of the CareBridge
+            Health website and services. By using our website or submitting a
+            consultation request, you agree to these Terms.
           </p>
 
+          {/* 1 */}
           <div>
             <h2 className="font-medium text-slate-900">1. Who we are</h2>
             <p className="mt-2">
-              CareBridge Health is operated by Generation Beta Digital Ltd, a
-              company registered in the United Kingdom.
+              CareBridge Health is operated by{" "}
+              <strong>Generation Beta Digital Ltd</strong>, a company registered
+              in England and Wales.
+            </p>
+            <p className="mt-2">
+              Registered address: 3rd Floor, 86–90 Paul Street, London EC2A 4NE
             </p>
           </div>
 
+          {/* 2 */}
           <div>
             <h2 className="font-medium text-slate-900">
               2. Nature of our service
             </h2>
-            <p className="mt-2">
-              CareBridge Health provides a coordination and information service.
-              We help connect patients with third-party clinics in Turkey.
-            </p>
 
             <p className="mt-2 font-medium text-slate-900">
-              We are not a medical provider.
+              CareBridge Health is not a clinic or medical provider.
             </p>
 
             <p className="mt-2">
-              We do not provide medical advice, diagnosis, or treatment. All
-              medical services are provided by independent clinics.
+              We provide an independent coordination and information service.
+              We help connect patients with third-party clinics and medical
+              providers, primarily in Turkey.
+            </p>
+
+            <p className="mt-2">
+              We do not provide medical advice, diagnosis, or treatment, and we
+              do not act as a healthcare provider.
+            </p>
+
+            <p className="mt-2">
+              No doctor–patient relationship is created between you and
+              CareBridge Health.
             </p>
           </div>
 
+          {/* 3 */}
           <div>
-            <h2 className="font-medium text-slate-900">3. No medical liability</h2>
+            <h2 className="font-medium text-slate-900">
+              3. Third-party providers
+            </h2>
+
             <p className="mt-2">
-              Any treatment you choose to undergo is your own decision.
+              Any clinic or medical provider introduced to you operates
+              independently.
             </p>
 
             <p className="mt-2">
-              CareBridge Health is not responsible for:
+              Any treatment, agreement, pricing, or payment is strictly between
+              you and the provider.
+            </p>
+
+            <p className="mt-2">
+              We do not control and are not responsible for their services,
+              decisions, or outcomes.
+            </p>
+          </div>
+
+          {/* 4 */}
+          <div>
+            <h2 className="font-medium text-slate-900">
+              4. No medical liability
+            </h2>
+
+            <p className="mt-2">
+              To the fullest extent permitted by law, CareBridge Health is not
+              responsible for:
             </p>
 
             <ul className="mt-2 list-disc space-y-1 pl-5">
+              <li>Medical advice or clinical decisions</li>
+              <li>Diagnosis, treatment, or procedures</li>
               <li>Medical outcomes or results</li>
-              <li>Clinical decisions made by third-party providers</li>
               <li>Complications, side effects, or dissatisfaction</li>
-              <li>Post-treatment care or follow-up provided by clinics</li>
+              <li>Aftercare or follow-up treatment</li>
             </ul>
           </div>
 
+          {/* 5 */}
           <div>
-            <h2 className="font-medium text-slate-900">4. Third-party clinics</h2>
-            <p className="mt-2">
-              Clinics introduced through CareBridge Health operate independently.
-            </p>
+            <h2 className="font-medium text-slate-900">
+              5. No guarantees
+            </h2>
 
-            <p className="mt-2">
-              Any agreement, treatment plan, or payment you make is directly
-              between you and the clinic.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="font-medium text-slate-900">5. No guarantees</h2>
             <p className="mt-2">We do not guarantee:</p>
 
             <ul className="mt-2 list-disc space-y-1 pl-5">
-              <li>Specific medical results or outcomes</li>
-              <li>Availability of treatments</li>
-              <li>Pricing consistency between providers</li>
+              <li>Specific results or outcomes</li>
+              <li>Availability of treatments or providers</li>
+              <li>Pricing consistency</li>
               <li>Timelines or recovery expectations</li>
             </ul>
           </div>
 
+          {/* 6 */}
           <div>
-            <h2 className="font-medium text-slate-900">6. Your responsibility</h2>
-            <p className="mt-2">You are responsible for:</p>
+            <h2 className="font-medium text-slate-900">
+              6. Travel and international risk
+            </h2>
+
+            <p className="mt-2">
+              If you choose to travel abroad for treatment, you do so at your own
+              risk.
+            </p>
+
+            <p className="mt-2">
+              You are responsible for understanding travel requirements,
+              insurance, medical risks, and local regulations.
+            </p>
+          </div>
+
+          {/* 7 */}
+          <div>
+            <h2 className="font-medium text-slate-900">
+              7. Your responsibilities
+            </h2>
 
             <ul className="mt-2 list-disc space-y-1 pl-5">
-              <li>Providing accurate information</li>
-              <li>Reviewing treatment details carefully</li>
-              <li>Making informed decisions before proceeding</li>
-              <li>Following medical advice from your chosen provider</li>
+              <li>Providing accurate and complete information</li>
+              <li>Making informed decisions before treatment</li>
+              <li>Following advice from your chosen provider</li>
+              <li>Reviewing all agreements with clinics carefully</li>
             </ul>
           </div>
 
+          {/* 8 */}
           <div>
-            <h2 className="font-medium text-slate-900">7. Payments</h2>
+            <h2 className="font-medium text-slate-900">8. Payments</h2>
+
             <p className="mt-2">
               CareBridge Health does not process payments for medical treatment
               unless explicitly stated.
             </p>
 
             <p className="mt-2">
-              Any payment for treatment is made directly to the clinic or
-              provider.
+              Payments for treatment are made directly to the provider.
             </p>
           </div>
 
+          {/* 9 */}
           <div>
             <h2 className="font-medium text-slate-900">
-              8. Limitation of liability
+              9. Limitation of liability
             </h2>
+
             <p className="mt-2">
               To the fullest extent permitted by law, CareBridge Health shall
-              not be liable for any direct, indirect, or consequential loss
-              arising from:
+              not be liable for any direct, indirect, incidental, or
+              consequential loss arising from:
             </p>
 
             <ul className="mt-2 list-disc space-y-1 pl-5">
-              <li>Use of our website or services</li>
-              <li>Decisions made based on information provided</li>
-              <li>Medical treatments received from third parties</li>
+              <li>Your use of our website or services</li>
+              <li>Reliance on information provided</li>
+              <li>Any treatment received from third-party providers</li>
             </ul>
           </div>
 
+          {/* 10 */}
           <div>
-            <h2 className="font-medium text-slate-900">9. Data & privacy</h2>
+            <h2 className="font-medium text-slate-900">
+              10. Indemnity
+            </h2>
+
             <p className="mt-2">
-              Your use of our services is also governed by our Privacy Policy.
+              You agree to indemnify and hold harmless CareBridge Health and
+              Generation Beta Digital Ltd from any claims, damages, or losses
+              arising from your use of the service or decisions made based on
+              introductions provided.
             </p>
           </div>
 
+          {/* 11 */}
           <div>
-            <h2 className="font-medium text-slate-900">10. Governing law</h2>
+            <h2 className="font-medium text-slate-900">
+              11. Data & privacy
+            </h2>
+
             <p className="mt-2">
-              These Terms are governed by the laws of England and Wales.
+              Your use of our services is also governed by our{" "}
+              <Link
+                href="/privacy-policy"
+                className="underline underline-offset-2 hover:text-slate-900"
+              >
+                Privacy Policy
+              </Link>.
             </p>
           </div>
 
+          {/* 12 */}
           <div>
-            <h2 className="font-medium text-slate-900">11. Contact</h2>
+            <h2 className="font-medium text-slate-900">
+              12. Governing law
+            </h2>
+
             <p className="mt-2">
-              For any questions regarding these Terms, contact:
+              These Terms are governed by the laws of England and Wales. Any
+              disputes shall be subject to the exclusive jurisdiction of the
+              courts of England and Wales.
             </p>
-            <p className="mt-2">Email: info@gebedi.com</p>
+          </div>
+
+          {/* 13 */}
+          <div>
+            <h2 className="font-medium text-slate-900">
+              13. Changes to these terms
+            </h2>
+
+            <p className="mt-2">
+              We may update these Terms from time to time. Continued use of the
+              website means you accept any updated version.
+            </p>
+          </div>
+
+          {/* 14 */}
+          <div>
+            <h2 className="font-medium text-slate-900">14. Contact</h2>
+
+            <p className="mt-2">
+              Email:{" "}
+              <a
+                href="mailto:info@gebedi.com"
+                className="underline underline-offset-2 hover:text-slate-900"
+              >
+                info@gebedi.com
+              </a>
+            </p>
           </div>
         </div>
       </section>
