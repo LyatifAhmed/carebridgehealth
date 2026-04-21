@@ -16,6 +16,12 @@ type ConsultationPayload = {
   consentDisclaimer: boolean;
 };
 
+function generateLeadId() {
+  const date = new Date().toISOString().slice(2, 10).replace(/-/g, "");
+  const rand = Math.floor(1000 + Math.random() * 9000);
+  return `CBH-${date}-${rand}`;
+}
+
 function escapeHtml(value: string) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -49,6 +55,7 @@ function row(label: string, value?: string) {
 function buildAdminHtml(
   data: ConsultationPayload,
   meta: {
+    leadId: string;
     submittedAt: string;
     ip: string;
     userAgent: string;
@@ -64,6 +71,7 @@ function buildAdminHtml(
 
       <table style="border-collapse:collapse;width:100%;font-size:14px;">
         <tbody>
+          ${row("Lead ID", meta.leadId)}
           ${row("Full name", data.fullName)}
           ${row("Email", data.email)}
           ${row("WhatsApp", data.whatsapp)}
@@ -90,7 +98,7 @@ function buildAdminHtml(
   `;
 }
 
-function buildCustomerHtml(data: ConsultationPayload) {
+function buildCustomerHtml(data: ConsultationPayload, leadId: string) {
   return `
     <div style="font-family:Arial,Helvetica,sans-serif;line-height:1.7;color:#0f172a;max-width:640px;margin:0 auto;">
       <div style="padding:32px 24px;border:1px solid #e2e8f0;border-radius:20px;background:#ffffff;">
@@ -108,6 +116,10 @@ function buildCustomerHtml(data: ConsultationPayload) {
 
         <p style="margin:0 0 16px 0;color:#475569;">
           Thank you for contacting CareBridge Health.
+        </p>
+
+        <p style="margin:0 0 16px 0;color:#475569;">
+          Your reference number is <strong>${escapeHtml(leadId)}</strong>.
         </p>
 
         <p style="margin:0 0 16px 0;color:#475569;">
@@ -188,23 +200,21 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    const leadId = generateLeadId();
     const submittedAt = new Date().toISOString();
 
     const forwardedFor = req.headers.get("x-forwarded-for");
     const realIp = req.headers.get("x-real-ip");
-    const ip =
-      forwardedFor?.split(",")[0]?.trim() ||
-      realIp ||
-      "Unavailable";
-
+    const ip = forwardedFor?.split(",")[0]?.trim() || realIp || "Unavailable";
     const userAgent = req.headers.get("user-agent") || "Unavailable";
 
     await resend.emails.send({
       from: fromEmail,
       to: adminEmail,
       replyTo: data.email,
-      subject: `New consultation request from ${data.fullName}`,
+      subject: `New consultation (${leadId}) - ${data.fullName}`,
       html: buildAdminHtml(data, {
+        leadId,
         submittedAt,
         ip,
         userAgent,
@@ -214,11 +224,11 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: fromEmail,
       to: data.email,
-      subject: "We’ve received your treatment review request",
-      html: buildCustomerHtml(data),
+      subject: `We’ve received your treatment review request (${leadId})`,
+      html: buildCustomerHtml(data, leadId),
     });
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, leadId });
   } catch (error) {
     console.error("consultation route error", error);
 
