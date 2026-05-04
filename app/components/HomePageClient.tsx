@@ -128,7 +128,7 @@ const treatmentCards = [
     href: "/weight-loss-surgery-turkey",
   },
   {
-    title: "Treatment in Turkey",
+    title: "Women’s health treatment in Turkey",
     shortTitle: "Women’s health",
     desc: "Selected women’s health and gynaecological procedures handled with particular discretion and individual review.",
     img: "/womens-health.avif",
@@ -485,9 +485,9 @@ export default function HomePageClient() {
             </h2>
             <p className="mt-4 text-base leading-8 text-slate-600">
               These treatment pages are designed to help patients explore their
-              options more clearly before making contact. Each one supports a
-              stronger internal linking structure and gives you a more informed
-              starting point.
+              options more clearly before making contact. Each page gives you a 
+              clearer starting point before making an enquiry, with practical guidance 
+              on treatment type, destination fit, and what to consider before travel.
             </p>
           </div>
 
