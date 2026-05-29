@@ -35,6 +35,12 @@ const posts = [
     description:
       "Questions and signals that matter before committing to treatment.",
   },
+    {
+    title: "What UK patients should know before planning treatment in Turkey",
+    href: "/blog/what-uk-patients-should-know-before-treatment-in-turkey",
+    description:
+      "A clearer overview of what UK-based patients should understand before choosing clinics, destinations, and treatment pathways in Turkey.",
+  },
 ];
 
 export default function BlogPage() {
