@@ -34,135 +34,191 @@ const initialState: ConsultationForm = {
 
 const trustItems = [
   "UK-based coordination",
-  "Carefully selected clinics",
-  "Direct doctor review where appropriate",
-  "Structured treatment planning",
+  "Independent, not a clinic",
+  "Doctor review where appropriate",
+  "Selected provider routes",
 ];
 
-const destinationCards = [
+const heroStats = [
   {
-    title: "Treatment in Istanbul",
-    subtitle: "For specialist care and more complex procedures",
-    desc: "A strong choice for patients prioritising specialist access, advanced hospitals, and more structured clinical pathways for complex or higher-acuity treatment journeys.",
-    bullets: [
-      "Advanced hospitals and specialists",
-      "Stronger fit for more complex procedures",
-      "Well-suited to specialist-led pathways",
-    ],
-    href: "/treatment-in-istanbul",
-    cta: "Explore Istanbul",
-    image: "/istanbul-hero.avif",
+    label: "Destinations",
+    value: "Istanbul & Antalya",
   },
   {
-    title: "Treatment in Antalya",
-    subtitle: "For comfort, recovery, and selected value-led care",
-    desc: "A strong choice for patients who want a calmer environment, a more recovery-focused setting, and good value in carefully selected treatments and clinics.",
-    bullets: [
-      "Comfort-led treatment journey",
-      "Recovery-friendly destination",
-      "Strong value for selected procedures",
-    ],
-    href: "/treatment-in-antalya",
-    cta: "Explore Antalya",
-    image: "/trust.avif",
-  },
-];
-
-const premiumServiceCards = [
-  {
-    title: "Optional concierge travel support",
-    desc: "For patients who want a smoother experience, we can help coordinate selected extras such as hotel stay, airport pickup, local transport, and flight planning support through trusted third-party partners.",
-    bullets: [
-      "Hotel options available on request",
-      "Airport pickup and local transport support",
-      "Flight planning support for a smoother journey",
-      "Coordinated around your treatment timeline",
-    ],
+    label: "Response target",
+    value: "Within 24 hours",
   },
   {
-    title: "Secure Stripe payment options",
-    desc: "For additional convenience and trust, selected coordination and package payments can be handled securely through Stripe, offering a familiar and professional payment experience before travel.",
-    bullets: [
-      "Stripe available for selected payments",
-      "Trusted card payment experience",
-      "Clearer payment handling before travel",
-      "Helpful for patients who prefer secure checkout",
-    ],
+    label: "Model",
+    value: "Private coordination",
   },
 ];
 
 const treatmentCards = [
   {
-    title: "Dental treatment in Turkey",
-    shortTitle: "Dental treatments",
-    desc: "Implants, veneers, crowns, and broader restorative treatment planning through carefully selected clinics in Istanbul and Antalya.",
+    title: "Dental treatment",
+    desc: "Implants, veneers, crowns, Hollywood Smile and broader restorative treatment planning.",
     img: "/dental.avif",
     href: "/dental-treatment-turkey",
+    tag: "Dental",
   },
   {
-    title: "Hair transplant in Turkey",
-    shortTitle: "Hair transplant",
-    desc: "Structured planning and natural-result focused clinic routes for patients researching hair restoration in Turkey.",
+    title: "Hair transplant",
+    desc: "FUE and natural-result focused hair restoration planning for patients researching Turkey.",
     img: "/hair.avif",
     href: "/hair-transplant-turkey",
+    tag: "Hair",
   },
   {
-    title: "Eye treatment in Turkey",
-    shortTitle: "Eye treatments",
-    desc: "Vision-focused procedures and specialist coordination for patients seeking a more organised treatment pathway abroad.",
-    img: "/eye.avif",
-    href: "/eye-treatment-turkey",
-  },
-  {
-    title: "Cosmetic surgery in Turkey",
-    shortTitle: "Cosmetic surgery",
-    desc: "Selected face, body, and aesthetic procedures approached with more discretion, structure, and pre-treatment clarity.",
+    title: "Cosmetic surgery",
+    desc: "Selected aesthetic procedures approached with privacy, structure and pre-treatment clarity.",
     img: "/cosmetic.avif",
     href: "/cosmetic-surgery-turkey",
+    tag: "Aesthetic",
   },
   {
-    title: "Weight loss surgery in Turkey",
-    shortTitle: "Weight loss surgery",
-    desc: "Selected bariatric procedures with careful planning support and a more considered treatment journey.",
+    title: "Weight loss surgery",
+    desc: "Selected bariatric pathways with careful suitability, planning and destination guidance.",
     img: "/bariatric.avif",
     href: "/weight-loss-surgery-turkey",
+    tag: "Bariatric",
   },
   {
-    title: "Women’s health treatment in Turkey",
-    shortTitle: "Women’s health",
-    desc: "Selected women’s health and gynaecological procedures handled with particular discretion and individual review.",
+    title: "Eye treatment",
+    desc: "Vision-focused procedures and specialist coordination for patients seeking treatment abroad.",
+    img: "/eye.avif",
+    href: "/eye-treatment-turkey",
+    tag: "Eye care",
+  },
+  {
+    title: "Women’s health",
+    desc: "Selected women’s health and gynaecological procedures handled with discretion.",
     img: "/womens-health.avif",
     href: "/treatment-in-istanbul/womens-health",
+    tag: "Specialist",
   },
 ];
 
-const processSteps = [
+const guideLinks = [
   {
-    title: "Share your request",
-    desc: "Tell us the treatment you are considering, where you are based, and whether you are leaning towards Istanbul, Antalya, or want guidance.",
+    label: "Dental implants",
+    href: "/dental-implants-turkey",
+    type: "Dental",
   },
   {
-    title: "We review and guide",
-    desc: "We review your enquiry and help guide you towards the most suitable next step based on treatment type, priorities, and destination fit.",
+    label: "Dental implant cost",
+    href: "/dental-implants-cost-turkey",
+    type: "Cost guide",
   },
   {
-    title: "Receive clear next steps",
-    desc: "You receive a structured response by email, with no obligation to proceed and a clearer understanding of your options.",
+    label: "Dental veneers",
+    href: "/veneers-turkey",
+    type: "Dental",
+  },
+  {
+    label: "Veneers cost",
+    href: "/dental-veneers-cost-turkey",
+    type: "Cost guide",
+  },
+  {
+    label: "Hollywood Smile",
+    href: "/hollywood-smile-turkey",
+    type: "Dental",
+  },
+  {
+    label: "Hollywood Smile cost",
+    href: "/hollywood-smile-cost-turkey",
+    type: "Cost guide",
+  },
+  {
+    label: "FUE hair transplant",
+    href: "/fue-hair-transplant-turkey",
+    type: "Hair",
+  },
+  {
+    label: "Hair transplant cost",
+    href: "/hair-transplant-cost-turkey",
+    type: "Cost guide",
+  },
+  {
+    label: "Gastric sleeve cost",
+    href: "/gastric-sleeve-cost-turkey",
+    type: "Weight loss",
+  },
+  {
+    label: "How treatment works",
+    href: "/how-treatment-in-turkey-works",
+    type: "Patient guide",
   },
 ];
 
 const reassurancePoints = [
   {
     title: "A UK-facing point of contact",
-    desc: "Many patients are comfortable exploring treatment abroad, but still want clear communication before travel. Our UK-based coordination model helps make that part feel more familiar and structured.",
+    desc: "Clearer communication before travel, so you are not left comparing overseas providers alone.",
   },
   {
-    title: "Only carefully selected clinic pathways",
-    desc: "We do not present treatment as a generic marketplace. We focus on selected clinics and treatment pathways that we know, trust, and position more carefully based on treatment type and destination fit.",
+    title: "Selected provider pathways",
+    desc: "We are not a generic marketplace. We help route enquiries through relevant third-party clinic or partner pathways.",
   },
   {
-    title: "More than coordinator-only communication",
-    desc: "Where appropriate, enquiries can move into direct review through a Turkey-licensed doctor via a relevant partner clinic, rather than staying only at coordinator level.",
+    title: "Medical decisions stay clinical",
+    desc: "CareBridge coordinates. Suitability, consent, treatment plans and outcomes remain with qualified providers.",
+  },
+];
+
+const destinationCards = [
+  {
+    title: "Istanbul",
+    subtitle: "Specialist access and complex care",
+    desc: "Often stronger for specialist-led pathways, advanced hospitals and more complex treatment journeys.",
+    href: "/treatment-in-istanbul",
+    image: "/istanbul-hero.avif",
+  },
+  {
+    title: "Antalya",
+    subtitle: "Comfort, recovery and selected value-led care",
+    desc: "A calmer destination for selected procedures where comfort, recovery and value matter.",
+    href: "/treatment-in-antalya",
+    image: "/trust.avif",
+  },
+];
+
+const processSteps = [
+  {
+    title: "Share your request",
+    desc: "Tell us the treatment, your location, preferred destination and rough timeframe.",
+  },
+  {
+    title: "We review and guide",
+    desc: "We help clarify destination fit, key questions and the most suitable next step.",
+  },
+  {
+    title: "Receive next steps",
+    desc: "You receive a structured response by email with no obligation to proceed.",
+  },
+];
+
+const premiumServiceCards = [
+  {
+    title: "Optional concierge travel support",
+    desc: "For patients who want a smoother experience, we can help coordinate selected extras through trusted third-party partners.",
+    bullets: [
+      "Hotel options available on request",
+      "Airport pickup and local transport support",
+      "Flight planning support",
+      "Coordinated around your treatment timeline",
+    ],
+  },
+  {
+    title: "Secure Stripe payment options",
+    desc: "Selected coordination and package payments can be handled securely through Stripe where appropriate.",
+    bullets: [
+      "Stripe available for selected payments",
+      "Trusted card payment experience",
+      "Clearer payment handling before travel",
+      "Helpful for patients who prefer secure checkout",
+    ],
   },
 ];
 
@@ -207,7 +263,7 @@ export default function HomePageClient() {
   }
 
   return (
-    <main className="bg-[#fcfaf7] text-slate-900">
+    <main className="bg-[#fbf7ef] text-slate-950">
       <section
         id="hero-section"
         className="relative min-h-[100svh] overflow-hidden cursor-none"
@@ -221,83 +277,245 @@ export default function HomePageClient() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-slate-950/45" />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/75 via-slate-950/35 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/35 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-slate-950/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/45 to-slate-950/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/55 via-transparent to-transparent" />
 
         <HeroCursor containerId="hero-section" />
 
         <div className="relative z-10 flex min-h-[100svh] items-center pt-24">
-          <div className="mx-auto w-full max-w-7xl px-6">
-            <div className="max-w-3xl">
-              <p className="text-[11px] font-medium uppercase tracking-[0.28em] text-white/70 md:text-xs">
+          <div className="mx-auto grid w-full max-w-7xl items-center gap-12 px-6 lg:grid-cols-[1.08fr_0.92fr]">
+            <div className="max-w-4xl">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-white/65">
                 CareBridge Health
               </p>
 
-              <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[1.02] tracking-[-0.05em] text-white sm:text-5xl md:mt-6 md:text-7xl">
-                Private medical treatment in Turkey,
-                <span className="mt-2 block text-white/88">
-                  carefully coordinated from the UK
+              <h1 className="mt-5 text-5xl font-semibold leading-[0.98] tracking-[-0.06em] text-white sm:text-6xl md:text-7xl">
+                Private treatment in Turkey,
+                <span className="block text-white/85">
+                  coordinated from the UK.
                 </span>
               </h1>
 
-              <p className="mt-6 max-w-2xl text-base leading-7 text-white/82 md:mt-7 md:text-lg md:leading-8">
-                We help UK-based patients access carefully selected clinics in
-                <span className="font-medium text-white"> Istanbul and Antalya</span>,
-                with a more structured, discreet, and premium experience before
-                travel. Where appropriate, enquiries may also move into direct
-                review through a Turkey-licensed doctor via a relevant partner clinic.
+              <p className="mt-7 max-w-2xl text-base leading-8 text-white/78 md:text-lg">
+                A calmer way for UK-based patients to explore carefully selected
+                treatment routes in Istanbul and Antalya before travelling.
               </p>
 
-              <div className="mt-5 max-w-2xl text-sm leading-6 text-white/65">
-                CareBridge Health is not a clinic. We act as an independent
-                coordination service designed to help patients move from online
-                research to a clearer next step.
-              </div>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-white/58">
+                CareBridge Health is not a clinic or medical provider. We are an
+                independent coordination and information service helping patients
+                move from online research to clearer next steps.
+              </p>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:mt-10 md:gap-4">
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a
                   href="#form"
-                  className="inline-flex items-center justify-center rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950 shadow-lg transition hover:-translate-y-0.5 hover:opacity-95"
+                  className="inline-flex items-center justify-center rounded-full bg-white px-7 py-4 text-sm font-semibold text-slate-950 shadow-xl transition hover:-translate-y-0.5 hover:opacity-95"
                 >
-                  Get a private treatment plan review
+                  Get a private review
                 </a>
 
-                <a
-                  href="#destinations"
-                  className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 py-4 text-sm font-medium text-white backdrop-blur-md transition hover:bg-white/10"
+                <Link
+                  href="/how-treatment-in-turkey-works"
+                  className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-7 py-4 text-sm font-semibold text-white backdrop-blur-md transition hover:bg-white/15"
                 >
-                  Compare Istanbul & Antalya
+                  How treatment works
+                </Link>
+
+                <a
+                  href="#services"
+                  className="inline-flex items-center justify-center rounded-full border border-white/15 px-7 py-4 text-sm font-semibold text-white/85 transition hover:bg-white/10"
+                >
+                  Explore treatments
+                </a>
+              </div>
+            </div>
+
+            <div className="hidden cursor-auto rounded-[36px] border border-white/15 bg-white/10 p-5 shadow-2xl backdrop-blur-xl lg:block">
+              <div className="cursor-auto rounded-[30px] bg-white p-6 text-slate-950 shadow-xl">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-400">
+                  Private pathway review
+                </p>
+
+                <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em]">
+                  Start with clarity before you travel.
+                </h2>
+
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  Share your treatment interest and receive a structured first response
+                  before committing to anything.
+                </p>
+
+                <div className="mt-6 space-y-3">
+                  {heroStats.map((item) => (
+                    <div
+                      key={item.label}
+                      className="rounded-2xl border border-slate-200 bg-slate-50 p-4 transition hover:border-slate-300 hover:bg-white"
+                    >
+                      <p className="text-xs text-slate-500">{item.label}</p>
+                      <p className="mt-1 text-lg font-semibold">{item.value}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <a
+                  href="#form"
+                  className="mt-6 inline-flex w-full cursor-pointer justify-center rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
+                >
+                  Start enquiry
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+            <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto grid max-w-7xl gap-3 px-6 py-4 text-sm text-slate-600 sm:grid-cols-2 lg:grid-cols-4">
+          {trustItems.map((item) => (
+            <div
+              key={item}
+              className="rounded-full border border-slate-200 bg-slate-50 px-4 py-3 text-center"
+            >
+              {item}
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <section className="border-y border-slate-200/80 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-4">
-          <div className="grid gap-3 text-sm text-slate-600 sm:grid-cols-2 xl:grid-cols-4">
-            {trustItems.map((item) => (
-              <div
-                key={item}
-                className="rounded-full border border-slate-200 bg-slate-50 px-4 py-3 text-center"
-              >
-                {item}
+      <section id="services" className="mx-auto max-w-7xl px-6 py-24 md:py-28">
+        <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+              Treatments
+            </p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+              Start with the treatment route that fits your case
+            </h2>
+            <p className="mt-5 text-base leading-8 text-slate-600">
+              Focused pages for patients comparing Turkey with private treatment
+              options in the UK.
+            </p>
+          </div>
+
+          <Link
+            href="/treatment-in-turkey"
+            className="inline-flex w-fit rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
+          >
+            View all treatment routes
+          </Link>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {treatmentCards.map((item) => (
+            <Link
+              key={item.title}
+              href={item.href}
+              className="group overflow-hidden rounded-[30px] border border-slate-200 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.06)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(15,23,42,0.1)]"
+            >
+              <div className="relative h-56 overflow-hidden">
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className={`object-cover transition duration-700 group-hover:scale-105 ${
+                    item.tag === "Hair"
+                      ? "object-[center_38%]"
+                      : item.tag === "Eye care"
+                        ? "object-[center_35%]"
+                        : "object-center"
+                  }`}
+                />
+                <div className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-800 backdrop-blur">
+                  {item.tag}
+                </div>
               </div>
-            ))}
+
+              <div className="p-6">
+                <h3 className="text-xl font-semibold tracking-[-0.03em]">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  {item.desc}
+                </p>
+                <p className="mt-5 text-sm font-semibold text-slate-950">
+                  Explore route →
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <div className="mt-14 overflow-hidden rounded-[36px] border border-slate-200 bg-white shadow-[0_24px_80px_rgba(15,23,42,0.07)]">
+          <div className="grid lg:grid-cols-[0.9fr_1.4fr]">
+            <div className="relative overflow-hidden bg-slate-950 p-8 text-white md:p-10">
+              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.18),transparent_38%)]" />
+              <div className="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-emerald-400/20 blur-3xl" />
+
+              <div className="relative z-10">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/55">
+                  Popular guides
+                </p>
+
+                <h3 className="mt-4 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
+                  More specific treatment and cost guides
+                </h3>
+
+                <p className="mt-5 text-sm leading-7 text-white/70">
+                  Explore focused pages for dental implants, veneers, Hollywood
+                  Smile, FUE hair transplant, gastric sleeve cost and treatment
+                  planning before making an enquiry.
+                </p>
+
+                <Link
+                  href="/how-treatment-in-turkey-works"
+                  className="mt-8 inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:opacity-95"
+                >
+                  How treatment in Turkey works
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(248,244,239,0.98)_100%)] p-6 md:p-8">
+              <div className="grid gap-3 sm:grid-cols-2">
+                {guideLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="group rounded-2xl border border-slate-200 bg-white p-4 transition duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-[0_14px_34px_rgba(15,23,42,0.07)]"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div>
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">
+                          {item.type}
+                        </p>
+
+                        <p className="mt-2 text-sm font-semibold text-slate-900">
+                          {item.label}
+                        </p>
+                      </div>
+
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-100 text-sm text-slate-500 transition group-hover:bg-slate-950 group-hover:text-white">
+                        →
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-24 md:py-28">
-        <div className="grid gap-8 md:grid-cols-3">
+      <section className="bg-white py-24 md:py-28">
+        <div className="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-3">
           {reassurancePoints.map((item) => (
             <div
               key={item.title}
-              className="rounded-[28px] border border-slate-200/80 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.04)]"
+              className="rounded-[30px] border border-slate-200 bg-[#fbf7ef] p-7 shadow-[0_12px_40px_rgba(15,23,42,0.04)]"
             >
-              <h2 className="text-xl font-semibold tracking-[-0.02em] text-slate-900">
+              <h2 className="text-xl font-semibold tracking-[-0.03em] text-slate-950">
                 {item.title}
               </h2>
               <p className="mt-4 text-sm leading-7 text-slate-600">
@@ -308,255 +526,72 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      <section
-        id="destinations"
-        className="mx-auto max-w-7xl px-6 py-24 md:py-28"
-      >
-        <div className="max-w-3xl">
-          <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-            Destinations
-          </p>
-          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] md:text-5xl">
-            Choose the treatment experience that fits you best
-          </h2>
-          <p className="mt-4 text-base leading-8 text-slate-600">
-            We do not position every destination in the same way. Istanbul is
-            often stronger for specialist-led and more complex pathways, while
-            Antalya can be especially appealing for comfort, recovery, and value
-            in selected treatments.
-          </p>
+      <section id="destinations" className="mx-auto max-w-7xl px-6 py-24 md:py-28">
+        <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+              Destinations
+            </p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+              Istanbul or Antalya — choose the right journey
+            </h2>
+            <p className="mt-5 text-base leading-8 text-slate-600">
+              We do not position every destination in the same way. Istanbul is
+              often stronger for specialist-led and more complex pathways, while
+              Antalya can suit comfort-led recovery and selected value-focused
+              treatments.
+            </p>
+          </div>
+
+          <a
+            href="#form"
+            className="inline-flex w-fit rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+          >
+            Ask for guidance
+          </a>
         </div>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {destinationCards.map((item) => (
-            <div
+            <Link
               key={item.title}
-              className="overflow-hidden rounded-[30px] border border-slate-200/80 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.05)]"
+              href={item.href}
+              className="group overflow-hidden rounded-[34px] border border-slate-200 bg-white shadow-[0_18px_60px_rgba(15,23,42,0.06)] transition duration-500 hover:-translate-y-1"
             >
-              <div className="relative h-[240px] w-full overflow-hidden md:h-[260px]">
+              <div className="relative h-[280px] overflow-hidden md:h-[340px]">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
+                  className="object-cover transition duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-slate-950/10 to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5 md:bottom-6 md:left-6 md:right-6">
-                  <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-white/75 md:text-xs">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/65">
                     {item.subtitle}
                   </p>
-                  <h3 className="mt-2 text-2xl font-semibold tracking-[-0.03em] text-white md:text-3xl">
+                  <h3 className="mt-3 text-4xl font-semibold tracking-[-0.05em] text-white">
                     {item.title}
                   </h3>
                 </div>
               </div>
 
-              <div className="p-6 md:p-7">
+              <div className="p-7">
                 <p className="text-sm leading-7 text-slate-600">{item.desc}</p>
-
-                <div className="mt-6 space-y-3 text-sm leading-7 text-slate-700">
-                  {item.bullets.map((bullet) => (
-                    <p key={bullet}>• {bullet}</p>
-                  ))}
-                </div>
-
-                <div className="mt-7">
-                  <Link
-                    href={item.href}
-                    className="inline-flex rounded-full bg-slate-950 px-6 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
-                  >
-                    {item.cta}
-                  </Link>
-                </div>
+                <p className="mt-6 text-sm font-semibold text-slate-950">
+                  Explore {item.title} →
+                </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
 
-      <section id="why" className="bg-[#f7f4ee] py-24 md:py-28">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-2 md:gap-14">
-          <div className="relative order-2 h-[360px] w-full overflow-hidden rounded-[32px] md:order-1 md:h-[460px]">
-            <Image
-              src="/trust.avif"
-              alt="UK-based treatment coordination and trusted clinic matching"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover object-[70%_center] md:object-center"
-            />
-          </div>
-
-          <div className="order-1 max-w-xl md:order-2">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Why CareBridge
-            </p>
-
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-              A more reassuring way to plan treatment abroad
-            </h2>
-
-            <ul className="mt-8 space-y-5 text-base leading-8 text-slate-600">
-              <li>✔ UK-based communication before travel</li>
-              <li>✔ Carefully selected third-party partner clinics</li>
-              <li>✔ Direct review through a Turkey-licensed doctor where appropriate</li>
-              <li>✔ Clear destination guidance based on treatment type</li>
-              <li>✔ More discreet and structured planning</li>
-              <li>✔ Optional support for patients who want a smoother journey</li>
-            </ul>
-
-            <p className="mt-8 text-sm leading-7 text-slate-600">
-              We are designed for patients who want more confidence before making
-              treatment decisions abroad. That means clearer communication, more
-              thoughtful clinic positioning, and a less overwhelming starting
-              point than contacting multiple providers at random.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-24 md:py-28">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-3xl">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Premium support
-            </p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] md:text-5xl">
-              Optional support for a more complete experience
-            </h2>
-            <p className="mt-4 text-base leading-8 text-slate-600">
-              Some patients prefer more than treatment coordination alone. Where
-              suitable, we can also help structure selected travel and payment
-              arrangements to make the overall experience feel smoother, clearer,
-              and more reassuring.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-8 md:grid-cols-2">
-            {premiumServiceCards.map((item) => (
-              <div
-                key={item.title}
-                className="relative overflow-hidden rounded-[32px] border border-slate-200/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(248,244,239,0.98)_100%)] p-7 shadow-[0_18px_60px_rgba(15,23,42,0.06)] md:p-8"
-              >
-                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(15,23,42,0.06),transparent_38%)]" />
-
-                <div className="relative z-10">
-                  <div className="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-[11px] font-medium uppercase tracking-[0.22em] text-slate-500">
-                    Available on request
-                  </div>
-
-                  <h3 className="mt-5 text-2xl font-semibold tracking-[-0.03em] text-slate-900">
-                    {item.title}
-                  </h3>
-
-                  <p className="mt-4 text-sm leading-7 text-slate-600">
-                    {item.desc}
-                  </p>
-
-                  <div className="mt-6 space-y-3 text-sm leading-7 text-slate-700">
-                    {item.bullets.map((bullet) => (
-                      <p key={bullet}>✦ {bullet}</p>
-                    ))}
-                  </div>
-
-                  <div className="mt-8">
-                    <a
-                      href="#form"
-                      className="inline-flex rounded-full bg-slate-950 px-6 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
-                    >
-                      Discuss your preferences
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="services" className="bg-[#f8f4ef] py-24 md:py-28">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-3xl">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-              Treatments
-            </p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-              Explore treatment routes in Turkey
-            </h2>
-            <p className="mt-4 text-base leading-8 text-slate-600">
-              These treatment pages are designed to help patients explore their
-              options more clearly before making contact. Each page gives you a 
-              clearer starting point before making an enquiry, with practical guidance 
-              on treatment type, destination fit, and what to consider before travel.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            {treatmentCards.map((item) => (
-              <Link
-                key={item.title}
-                href={item.href}
-                className="group overflow-hidden rounded-[28px] border border-slate-200/80 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)]"
-              >
-                <div className="relative h-[240px] w-full overflow-hidden md:h-[260px]">
-                  <Image
-                    src={item.img}
-                    alt={item.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className={`object-cover transition duration-700 group-hover:scale-105 ${
-                      item.shortTitle === "Hair transplant"
-                        ? "object-[center_38%]"
-                        : item.shortTitle === "Eye treatments"
-                        ? "object-[center_35%]"
-                        : "object-center"
-                    }`}
-                  />
-                </div>
-
-                <div className="p-6 md:p-7">
-                  <h3 className="text-xl font-semibold tracking-[-0.02em]">
-                    {item.shortTitle}
-                  </h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-600">
-                    {item.desc}
-                  </p>
-                  <p className="mt-5 text-sm font-medium text-slate-900">
-                    Learn more →
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          <div className="mt-12 flex flex-wrap gap-4">
-            <Link
-              href="/treatment-in-turkey"
-              className="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
-            >
-              Explore treatment in Turkey
-            </Link>
-            <Link
-              href="/treatment-in-istanbul"
-              className="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
-            >
-              See treatments in Istanbul
-            </Link>
-            <Link
-              href="/treatment-in-antalya"
-              className="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
-            >
-              See treatments in Antalya
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <InsightsPreview />
-
-      <section className="bg-white py-24 md:py-28">
+            <section className="bg-white py-24 md:py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-2 md:gap-14">
-          <div className="relative h-[400px] w-full overflow-hidden rounded-[32px] md:h-[560px]">
+          <div className="relative h-[420px] overflow-hidden rounded-[36px] md:h-[560px]">
             <Image
               src="/womens-health-feature.avif"
               alt="Women's health and advanced gynaecological procedures in Turkey"
@@ -564,29 +599,38 @@ export default function HomePageClient() {
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/35 via-transparent to-transparent" />
           </div>
 
           <div className="max-w-xl">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
               Featured area
             </p>
 
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
               Women’s health and specialised gynaecological procedures
             </h2>
 
             <p className="mt-6 text-base leading-8 text-slate-600">
               For patients seeking a more private, carefully handled experience,
               we can help coordinate selected women’s health procedures through
-              trusted partner clinics in Turkey, with destination choice guided
-              by the nature of the treatment and patient preference.
+              relevant provider routes in Turkey.
             </p>
 
-            <div className="mt-8 space-y-3 text-slate-700">
-              <p>• Hysterectomy</p>
-              <p>• Myomectomy</p>
-              <p>• Urinary incontinence surgery</p>
-              <p>• Selected genital aesthetic procedures</p>
+            <div className="mt-8 grid gap-3 text-sm text-slate-700 sm:grid-cols-2">
+              {[
+                "Hysterectomy",
+                "Myomectomy",
+                "Urinary incontinence surgery",
+                "Selected genital aesthetic procedures",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-full border border-slate-200 bg-[#fbf7ef] px-4 py-3"
+                >
+                  {item}
+                </div>
+              ))}
             </div>
 
             <p className="mt-7 text-sm leading-7 text-slate-500">
@@ -598,24 +642,69 @@ export default function HomePageClient() {
             <div className="mt-9 flex flex-wrap gap-4">
               <a
                 href="#form"
-                className="inline-flex rounded-full bg-slate-950 px-7 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
+                className="inline-flex rounded-full bg-slate-950 px-7 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:opacity-95"
               >
-                Request a private consultation
+                Request private review
               </a>
 
               <Link
                 href="/treatment-in-istanbul/womens-health"
-                className="inline-flex rounded-full border border-slate-300 px-7 py-4 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
+                className="inline-flex rounded-full border border-slate-300 px-7 py-4 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
               >
-                Explore women’s health treatments
+                Explore women’s health
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <Link
-                href="/treatment-in-turkey"
-                className="inline-flex rounded-full border border-slate-300 px-7 py-4 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
-              >
-                Learn more about treatment in Turkey
-              </Link>
+      <section className="bg-[#f7f0e7] py-24 md:py-28">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+                Premium support
+              </p>
+              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+                Optional support for a smoother overall experience
+              </h2>
+              <p className="mt-5 text-base leading-8 text-slate-600">
+                Some patients want more than treatment coordination alone. Where
+                suitable, we can also help structure selected travel and payment
+                arrangements through trusted third-party partners.
+              </p>
+            </div>
+
+            <div className="grid gap-6">
+              {premiumServiceCards.map((item) => (
+                <div
+                  key={item.title}
+                  className="overflow-hidden rounded-[32px] border border-slate-200 bg-white p-7 shadow-[0_18px_60px_rgba(15,23,42,0.06)]"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
+                    Available on request
+                  </p>
+
+                  <h3 className="mt-4 text-2xl font-semibold tracking-[-0.03em]">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-7 text-slate-600">
+                    {item.desc}
+                  </p>
+
+                  <div className="mt-5 grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
+                    {item.bullets.map((bullet) => (
+                      <div
+                        key={bullet}
+                        className="rounded-2xl bg-slate-50 px-4 py-3"
+                      >
+                        {bullet}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -623,15 +712,15 @@ export default function HomePageClient() {
 
       <section id="process" className="mx-auto max-w-7xl px-6 py-24 md:py-28">
         <div className="max-w-2xl">
-          <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
             Process
           </p>
-          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
+          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
             How it works
           </h2>
-          <p className="mt-4 text-base leading-8 text-slate-600">
-            Our approach is designed to feel clear, discreet, and easy to follow
-            for patients who want a more guided route into treatment abroad.
+          <p className="mt-5 text-base leading-8 text-slate-600">
+            Designed to feel clear, discreet and easy to follow before you make
+            any major decision.
           </p>
         </div>
 
@@ -639,12 +728,14 @@ export default function HomePageClient() {
           {processSteps.map((step, index) => (
             <div
               key={step.title}
-              className="rounded-[28px] border border-slate-200 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.03)]"
+              className="rounded-[30px] border border-slate-200 bg-white p-7 shadow-[0_14px_44px_rgba(15,23,42,0.05)]"
             >
-              <div className="text-sm text-slate-500">Step {index + 1}</div>
-              <div className="mt-3 text-lg font-medium tracking-[-0.02em]">
-                {step.title}
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-950 text-sm font-semibold text-white">
+                {index + 1}
               </div>
+              <h3 className="mt-6 text-xl font-semibold tracking-[-0.03em]">
+                {step.title}
+              </h3>
               <p className="mt-3 text-sm leading-7 text-slate-600">
                 {step.desc}
               </p>
@@ -653,75 +744,44 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      <section id="form" className="bg-[#f7f4ee] py-24 md:py-28">
-        <div className="mx-auto max-w-4xl px-6">
-          <div className="rounded-[32px] border border-slate-200/80 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)] md:p-10">
-            <div className="max-w-2xl">
-              <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-                Private consultation
-              </p>
+      <section id="form" className="bg-slate-950 py-24 text-white md:py-28">
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/45">
+              Private consultation
+            </p>
 
-              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-                Get a private treatment plan review
-              </h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+              Get a private treatment plan review
+            </h2>
 
-              <p className="mt-4 text-base leading-8 text-slate-600">
-                Share a few details and we’ll review your case more carefully by
-                email. We can help you think through destination fit, likely
-                next steps, and whether Istanbul or Antalya may be more
-                appropriate for your priorities.
-              </p>
+            <p className="mt-5 text-base leading-8 text-white/65">
+              Share a few details and we’ll review your request more carefully
+              by email. We can help you think through destination fit, next
+              steps, and whether Istanbul or Antalya may be more appropriate for
+              your priorities.
+            </p>
 
-              <p className="mt-4 text-sm leading-7 text-slate-500">
-                Where appropriate, your enquiry may then move into direct review
-                through a Turkey-licensed doctor via a relevant partner clinic,
-                rather than staying only at coordinator level.
-              </p>
+            <div className="mt-8 grid gap-3 text-sm text-white/70">
+              {[
+                "No obligation review",
+                "Private and discreet",
+                "UK-based coordination",
+                "Destination guidance included",
+                "Response target within 24 hours",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-full border border-white/10 bg-white/5 px-4 py-3"
+                >
+                  {item}
+                </div>
+              ))}
             </div>
+          </div>
 
-            <div className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-2 xl:grid-cols-3">
-              <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
-                No obligation review
-              </span>
-              <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
-                Private and discreet
-              </span>
-              <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
-                Reviewed individually
-              </span>
-              <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
-                UK-based coordination
-              </span>
-              <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
-                Response within 24 hours
-              </span>
-              <span className="rounded-full bg-slate-100 px-4 py-2 text-center">
-                Destination guidance included
-              </span>
-            </div>
-
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Link
-                href="/treatment-in-turkey"
-                className="inline-flex rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
-              >
-                Learn about treatment in Turkey
-              </Link>
-              <Link
-                href="/treatment-in-istanbul"
-                className="inline-flex rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
-              >
-                Learn about Istanbul
-              </Link>
-              <Link
-                href="/treatment-in-antalya"
-                className="inline-flex rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
-              >
-                Learn about Antalya
-              </Link>
-            </div>
-
-            <form onSubmit={handleSubmit} className="mt-8 space-y-4">
+          <div className="rounded-[34px] border border-white/10 bg-white p-6 text-slate-950 shadow-2xl md:p-8">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <input
                   value={form.fullName}
@@ -795,26 +855,24 @@ export default function HomePageClient() {
                 </select>
               </div>
 
-              <div className="grid gap-4 md:grid-cols-2">
-                <select
-                  value={form.timeframe}
-                  onChange={(e) => updateField("timeframe", e.target.value)}
-                  className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
-                  required
-                >
-                  <option value="">When are you considering treatment?</option>
-                  <option>As soon as possible</option>
-                  <option>Within 1 month</option>
-                  <option>Within 1–3 months</option>
-                  <option>Just exploring options</option>
-                </select>
-              </div>
+              <select
+                value={form.timeframe}
+                onChange={(e) => updateField("timeframe", e.target.value)}
+                className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
+                required
+              >
+                <option value="">When are you considering treatment?</option>
+                <option>As soon as possible</option>
+                <option>Within 1 month</option>
+                <option>Within 1–3 months</option>
+                <option>Just exploring options</option>
+              </select>
 
               <textarea
                 value={form.note}
                 onChange={(e) => updateField("note", e.target.value)}
                 placeholder="Optional notes"
-                rows={6}
+                rows={5}
                 className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
               />
 
@@ -831,11 +889,11 @@ export default function HomePageClient() {
                   />
                   <span>
                     I explicitly consent to CareBridge Health using my
-                    information, including health-related information I choose
-                    to provide, to review my enquiry and, where appropriate,
-                    share relevant details with a suitable third-party clinic
-                    partner or Turkey-licensed medical provider for initial
-                    review and coordination.
+                    information, including health-related information I choose to
+                    provide, to review my enquiry and, where appropriate, share
+                    relevant details with a suitable third-party clinic partner
+                    or Turkey-licensed medical provider for initial review and
+                    coordination.
                   </span>
                 </label>
 
@@ -858,8 +916,9 @@ export default function HomePageClient() {
               </div>
 
               <p className="text-xs leading-6 text-slate-500">
-                Please only include information you are comfortable sharing at this stage.
-                By submitting this form, you confirm that you have read our{" "}
+                Please only include information you are comfortable sharing at
+                this stage. By submitting this form, you confirm that you have
+                read our{" "}
                 <Link
                   href="/privacy-policy"
                   className="underline underline-offset-2 hover:text-slate-900"
@@ -878,7 +937,7 @@ export default function HomePageClient() {
               <button
                 type="submit"
                 disabled={sending}
-                className="w-full rounded-full bg-slate-950 px-6 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
+                className="w-full rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {sending ? "Sending..." : "Get my private review"}
               </button>
@@ -886,8 +945,8 @@ export default function HomePageClient() {
 
             {submitted ? (
               <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-700">
-                Your request has been received. We’ll review it carefully and get
-                back to you by email.
+                Your request has been received. We’ll review it carefully and
+                get back to you by email.
               </div>
             ) : null}
           </div>
