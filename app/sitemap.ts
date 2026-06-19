@@ -9,9 +9,49 @@ const routes = [
   { path: "/treatment-in-antalya", changeFrequency: "weekly", priority: 0.95 },
 
   { path: "/hair-transplant-turkey", changeFrequency: "weekly", priority: 0.9 },
+  {
+    path: "/hair-transplant-cost-turkey",
+    changeFrequency: "weekly",
+    priority: 0.85,
+  },
+  {
+    path: "/fue-hair-transplant-turkey",
+    changeFrequency: "weekly",
+    priority: 0.85,
+  },
   { path: "/dental-treatment-turkey", changeFrequency: "weekly", priority: 0.9 },
+  {
+    path: "/dental-implants-turkey",
+    changeFrequency: "weekly",
+    priority: 0.85,
+  },
+  {
+    path: "/veneers-turkey",
+    changeFrequency: "weekly",
+    priority: 0.85,
+  },
+  {
+    path: "/hollywood-smile-cost-turkey",
+    changeFrequency: "weekly",
+    priority: 0.85,
+  },
+  {
+    path: "/dental-veneers-cost-turkey",
+    changeFrequency: "weekly",
+    priority: 0.85,
+  },
+  {
+    path: "/dental-implants-cost-turkey",
+    changeFrequency: "weekly",
+    priority: 0.85,
+  },
   { path: "/cosmetic-surgery-turkey", changeFrequency: "weekly", priority: 0.9 },
   { path: "/weight-loss-surgery-turkey", changeFrequency: "weekly", priority: 0.9 },
+  {
+    path: "/gastric-sleeve-cost-turkey",
+    changeFrequency: "weekly",
+    priority: 0.85,
+  },
   { path: "/eye-treatment-turkey", changeFrequency: "weekly", priority: 0.9 },
 
   {
@@ -41,6 +81,11 @@ const routes = [
   { path: "/partner-application", changeFrequency: "monthly", priority: 0.5 },
   { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
   { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
+  {
+    path: "/how-treatment-in-turkey-works",
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
 ] satisfies Array<{
   path: string;
   changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
