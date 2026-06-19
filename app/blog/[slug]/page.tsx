@@ -688,6 +688,468 @@ const posts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "hair-transplant-turkey-vs-uk-cost",
+    title: "Hair transplant Turkey vs UK cost: what patients should compare",
+    description:
+      "A practical comparison for UK patients researching hair transplant costs in Turkey versus private treatment in the UK, including FUE, graft numbers, aftercare, and travel considerations.",
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Hair transplant cost is one of the first things UK patients compare when researching Turkey. The headline difference can look attractive, but a careful comparison should include more than the price shown on a clinic website.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A better comparison looks at technique, graft planning, surgeon involvement, donor area management, aftercare, travel costs, and what happens if you need advice after returning to the UK.",
+      },
+      {
+        type: "heading",
+        content: "Why Turkey often appears cheaper than the UK",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Turkey has a large hair transplant market with many clinics built around international patients. Package pricing may include the procedure, hotel, transfers, and basic aftercare, which can make the overall offer feel simpler than arranging private treatment locally.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore:
+          "If you are still comparing treatment types, start with our main guide to ",
+        linkText: "hair transplant in Turkey",
+        href: "/hair-transplant-turkey",
+        contentAfter: ".",
+      },
+      {
+        type: "heading",
+        content: "FUE, graft numbers, and why quotes vary",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Two patients can receive very different quotes because hair loss pattern, donor area quality, hairline design, and graft requirements are different. Focusing only on the largest graft number can be misleading if the plan does not protect the donor area for the future.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore:
+          "Patients researching technique can also read our focused page on ",
+        linkText: "FUE hair transplant in Turkey",
+        href: "/fue-hair-transplant-turkey",
+        contentAfter: ".",
+      },
+      {
+        type: "heading",
+        content: "What UK patients should include in the real cost",
+      },
+      {
+        type: "bulletList",
+        items: [
+          "Procedure or package price",
+          "Flights and travel insurance",
+          "Hotel nights before and after the procedure",
+          "Time off work during recovery",
+          "Medication, aftercare products, and follow-up communication",
+          "Potential correction or revision costs if expectations are not met",
+        ],
+      },
+      {
+        type: "heading",
+        content: "The cheapest quote is not always the best value",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Good value is not simply the lowest quote. Patients should understand who is involved in the procedure, how the hairline is designed, what aftercare looks like, and whether the provider explains realistic expectations clearly.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore:
+          "For a broader pricing overview, see our page on ",
+        linkText: "hair transplant cost in Turkey",
+        href: "/hair-transplant-cost-turkey",
+        contentAfter: ".",
+      },
+    ],
+    ctaTitle: "Researching hair transplant options?",
+    ctaText:
+      "CareBridge Health can help you understand the process, questions to ask, and whether a Turkey treatment pathway may be suitable before you commit.",
+    ctaLinks: [
+      {
+        label: "Request consultation",
+        href: "/#form",
+        variant: "primary",
+      },
+      {
+        label: "Hair transplant in Turkey",
+        href: "/hair-transplant-turkey",
+      },
+      {
+        label: "Hair transplant cost guide",
+        href: "/hair-transplant-cost-turkey",
+      },
+    ],
+  },
+  {
+    slug: "dental-implants-turkey-vs-uk-cost",
+    title: "Dental implants Turkey vs UK cost: what to compare before travelling",
+    description:
+      "A practical guide for UK patients comparing dental implant costs in Turkey with private dental implant treatment in the UK.",
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Dental implants are one of the most common reasons UK patients explore treatment in Turkey. The cost difference can be significant, but implant treatment should never be judged by price alone.",
+      },
+      {
+        type: "heading",
+        content: "Why implant costs vary",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Implant cost depends on the number of implants, implant system, bone condition, scans, possible grafting, temporary teeth, final restorations, clinic standards, and whether treatment needs more than one visit.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore: "For the treatment overview, read our guide to ",
+        linkText: "dental implants in Turkey",
+        href: "/dental-implants-turkey",
+        contentAfter: ".",
+      },
+      {
+        type: "heading",
+        content: "What UK patients should ask before accepting a quote",
+      },
+      {
+        type: "bulletList",
+        items: [
+          "Which implant system is being used?",
+          "Are scans, abutments, and final crowns included?",
+          "Is bone grafting needed or possible?",
+          "How many visits may be required?",
+          "What happens if healing takes longer than expected?",
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "A low initial price may not include everything needed for the final result. Patients should ask whether the quote includes only implant placement or the full restorative pathway.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore: "You can also compare our focused page on ",
+        linkText: "dental implant costs in Turkey",
+        href: "/dental-implants-cost-turkey",
+        contentAfter: ".",
+      },
+      {
+        type: "heading",
+        content: "Planning matters more than speed",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Some implant cases require staged treatment and healing time. Trying to complete everything too quickly can increase risk or compromise the long-term plan. A responsible provider should explain the timeline clearly.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore:
+          "Patients considering wider dental work can start with our main page on ",
+        linkText: "dental treatment in Turkey",
+        href: "/dental-treatment-turkey",
+        contentAfter: ".",
+      },
+    ],
+    ctaTitle: "Need a clearer implant pathway?",
+    ctaText:
+      "Share your situation and we can help you understand what questions to ask before moving forward with dental implant treatment abroad.",
+    ctaLinks: [
+      {
+        label: "Request consultation",
+        href: "/#form",
+        variant: "primary",
+      },
+      {
+        label: "Dental implants Turkey",
+        href: "/dental-implants-turkey",
+      },
+      {
+        label: "Dental implant cost guide",
+        href: "/dental-implants-cost-turkey",
+      },
+    ],
+  },
+  {
+    slug: "veneers-turkey-vs-uk-cost",
+    title: "Veneers Turkey vs UK cost: what patients should know",
+    description:
+      "A guide for UK patients comparing veneer treatment in Turkey with private cosmetic dentistry in the UK, including cost, materials, planning, and long-term maintenance.",
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Veneers in Turkey are popular with patients looking for cosmetic smile improvements. The price difference compared with private treatment in the UK can be attractive, but veneers involve long-term dental decisions that should be approached carefully.",
+      },
+      {
+        type: "heading",
+        content: "Veneer cost depends on more than the number of teeth",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The final cost may depend on the material, number of veneers, smile design, tooth preparation, bite, gum health, and whether additional treatments are needed before veneers are placed.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore: "Start with our treatment page for ",
+        linkText: "dental veneers in Turkey",
+        href: "/veneers-turkey",
+        contentAfter: ".",
+      },
+      {
+        type: "heading",
+        content: "Important questions before travelling",
+      },
+      {
+        type: "bulletList",
+        items: [
+          "Will the treatment involve tooth shaving or preparation?",
+          "What material is recommended and why?",
+          "How natural will the final shade and shape look?",
+          "What maintenance or replacement may be needed later?",
+          "Are there less aggressive alternatives?",
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "Aesthetic dentistry should still be based on clinical suitability. The most dramatic result is not always the healthiest or most natural long-term option.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore: "For pricing factors, read our page on ",
+        linkText: "dental veneers cost in Turkey",
+        href: "/dental-veneers-cost-turkey",
+        contentAfter: ".",
+      },
+      {
+        type: "heading",
+        content: "Hollywood Smile vs veneers",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Some patients use the terms veneers and Hollywood Smile interchangeably, but a Hollywood Smile may involve veneers, crowns, whitening, gum contouring, or a combination of treatments.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore: "If you are considering a full smile makeover, see ",
+        linkText: "Hollywood Smile in Turkey",
+        href: "/hollywood-smile-turkey",
+        contentAfter: ".",
+      },
+    ],
+    ctaTitle: "Thinking about veneers abroad?",
+    ctaText:
+      "We can help you understand the planning questions before you commit to cosmetic dental treatment in Turkey.",
+    ctaLinks: [
+      {
+        label: "Request consultation",
+        href: "/#form",
+        variant: "primary",
+      },
+      {
+        label: "Veneers Turkey",
+        href: "/veneers-turkey",
+      },
+      {
+        label: "Veneers cost guide",
+        href: "/dental-veneers-cost-turkey",
+      },
+    ],
+  },
+  {
+    slug: "hollywood-smile-turkey-guide",
+    title: "Hollywood Smile in Turkey: what UK patients should understand first",
+    description:
+      "A practical guide to Hollywood Smile treatment in Turkey, including veneers, crowns, smile design, cost factors, and suitability questions.",
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Hollywood Smile is one of the most searched cosmetic dental treatments in Turkey, but the term can mean different things depending on the clinic and the patient's dental condition.",
+      },
+      {
+        type: "heading",
+        content: "Hollywood Smile is not one single procedure",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A Hollywood Smile may involve veneers, crowns, whitening, gum contouring, implants, or a wider smile makeover. Because of this, patients should understand the treatment plan rather than just the package name.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore: "You can start with our dedicated page on ",
+        linkText: "Hollywood Smile in Turkey",
+        href: "/hollywood-smile-turkey",
+        contentAfter: ".",
+      },
+      {
+        type: "heading",
+        content: "What affects the cost",
+      },
+      {
+        type: "bulletList",
+        items: [
+          "Number of teeth included",
+          "Whether veneers, crowns, or both are used",
+          "Material quality and laboratory work",
+          "Smile design complexity",
+          "Gum, bite, or implant-related needs",
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "Patients should be careful with packages that focus only on a fixed number of teeth without explaining suitability, preparation, materials, and long-term maintenance.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore: "For cost planning, see our focused page on ",
+        linkText: "Hollywood Smile cost in Turkey",
+        href: "/hollywood-smile-cost-turkey",
+        contentAfter: ".",
+      },
+      {
+        type: "heading",
+        content: "Natural results require personalised planning",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The best cosmetic dental results usually match the patient's face, age, bite, and expectations. A very white or uniform result may look appealing online but may not be the most natural choice for every patient.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore:
+          "If you are comparing wider dental options, review ",
+        linkText: "dental treatment in Turkey",
+        href: "/dental-treatment-turkey",
+        contentAfter: " before deciding.",
+      },
+    ],
+    ctaTitle: "Exploring a smile makeover?",
+    ctaText:
+      "CareBridge Health can help you think through treatment options and next steps before committing to a cosmetic dental pathway.",
+    ctaLinks: [
+      {
+        label: "Request consultation",
+        href: "/#form",
+        variant: "primary",
+      },
+      {
+        label: "Hollywood Smile Turkey",
+        href: "/hollywood-smile-turkey",
+      },
+      {
+        label: "Hollywood Smile cost",
+        href: "/hollywood-smile-cost-turkey",
+      },
+    ],
+  },
+  {
+    slug: "gastric-sleeve-turkey-vs-uk-cost",
+    title: "Gastric sleeve Turkey vs UK cost: what to compare carefully",
+    description:
+      "A guide for UK patients comparing gastric sleeve surgery in Turkey with private bariatric surgery options in the UK, including cost, safety, aftercare, and suitability.",
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Gastric sleeve surgery is a major medical procedure, not a simple travel package. While some UK patients explore Turkey because private bariatric surgery can be expensive locally, cost should be only one part of the decision.",
+      },
+      {
+        type: "heading",
+        content: "Why the total cost can vary",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The overall cost may depend on hospital facilities, surgeon experience, pre-operative testing, anaesthesia, hospital stay, hotel arrangements, transfers, follow-up, and the level of aftercare included.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore: "For pricing factors, see our page on ",
+        linkText: "gastric sleeve cost in Turkey",
+        href: "/gastric-sleeve-cost-turkey",
+        contentAfter: ".",
+      },
+      {
+        type: "heading",
+        content: "Questions to ask before travelling",
+      },
+      {
+        type: "bulletList",
+        items: [
+          "How is suitability assessed before travel?",
+          "Who performs the surgery?",
+          "What tests are included before the operation?",
+          "What aftercare is available after returning to the UK?",
+          "What happens if complications or concerns arise?",
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "A responsible process should explain risks, recovery, diet stages, follow-up, and when a patient may not be suitable for surgery. A rushed process is a warning sign.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore:
+          "Patients researching broader pathways can also start with ",
+        linkText: "weight loss surgery in Turkey",
+        href: "/weight-loss-surgery-turkey",
+        contentAfter: ".",
+      },
+      {
+        type: "heading",
+        content: "Aftercare matters after you return to the UK",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Recovery from bariatric surgery continues long after the flight home. Patients should understand diet stages, warning signs, follow-up support, and what local medical help may be needed if concerns arise.",
+      },
+      {
+        type: "linkParagraph",
+        contentBefore:
+          "If you are still assessing whether treatment abroad is right for you, read ",
+        linkText: "how treatment in Turkey works",
+        href: "/how-treatment-in-turkey-works",
+        contentAfter: ".",
+      },
+    ],
+    ctaTitle: "Considering weight loss surgery abroad?",
+    ctaText:
+      "We can help you understand the process and questions to ask before you move forward with a provider route.",
+    ctaLinks: [
+      {
+        label: "Request consultation",
+        href: "/#form",
+        variant: "primary",
+      },
+      {
+        label: "Weight loss surgery Turkey",
+        href: "/weight-loss-surgery-turkey",
+      },
+      {
+        label: "Gastric sleeve cost guide",
+        href: "/gastric-sleeve-cost-turkey",
+      },
+    ],
+  }
 ];
 
 type Props = {
@@ -811,6 +1273,9 @@ export default async function BlogPostPage({ params }: Props) {
       },
     },
     mainEntityOfPage: `https://www.carebridgehealth.co/blog/${post.slug}`,
+    datePublished: "2026-06-19",
+    dateModified: new Date().toISOString(),
+    image: "https://www.carebridgehealth.co/og-image.jpg",
   };
 
   return (

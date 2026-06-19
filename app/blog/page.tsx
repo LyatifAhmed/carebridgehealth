@@ -12,6 +12,36 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: "Hair Transplant Turkey vs UK Cost",
+    href: "/blog/hair-transplant-turkey-vs-uk-cost",
+    description:
+      "A practical comparison of hair transplant costs in Turkey and the UK, including what affects price and what patients should consider.",
+  },
+  {
+    title: "Dental Implants Turkey vs UK Cost",
+    href: "/blog/dental-implants-turkey-vs-uk-cost",
+    description:
+      "Compare dental implant costs in Turkey and the UK, including treatment planning, materials, clinic standards, and hidden costs.",
+  },
+  {
+    title: "Veneers Turkey vs UK Cost",
+    href: "/blog/veneers-turkey-vs-uk-cost",
+    description:
+      "A clear guide to veneer costs in Turkey vs the UK, including smile design, materials, and planning considerations.",
+  },
+  {
+    title: "Hollywood Smile Turkey Guide",
+    href: "/blog/hollywood-smile-turkey-guide",
+    description:
+      "What UK patients should understand before considering a Hollywood Smile in Turkey.",
+  },
+  {
+    title: "Gastric Sleeve Turkey vs UK Cost",
+    href: "/blog/gastric-sleeve-turkey-vs-uk-cost",
+    description:
+      "A practical comparison of gastric sleeve costs in Turkey and the UK, including package differences and safety considerations.",
+  },
+  {
     title: "Is treatment in Turkey safe for UK patients?",
     href: "/blog/is-treatment-in-turkey-safe-for-uk-patients",
     description:
@@ -35,7 +65,7 @@ const posts = [
     description:
       "Questions and signals that matter before committing to treatment.",
   },
-    {
+  {
     title: "What UK patients should know before planning treatment in Turkey",
     href: "/blog/what-uk-patients-should-know-before-treatment-in-turkey",
     description:
