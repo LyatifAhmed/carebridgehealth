@@ -205,21 +205,13 @@ export default function Navbar() {
                 </div>
               </div>
 
-              <a
-                href={isHome ? "#why" : "/#why"}
+              <Link
+                href="/about"
                 onClick={closeDesktopDropdown}
                 className={`text-sm transition ${navTextClasses}`}
               >
-                Why us
-              </a>
-
-              <a
-                href={isHome ? "#process" : "/#process"}
-                onClick={closeDesktopDropdown}
-                className={`text-sm transition ${navTextClasses}`}
-              >
-                Process
-              </a>
+                About
+              </Link>
 
               <Link
                 href="/blog"
@@ -323,21 +315,13 @@ export default function Navbar() {
                 </div>
               </div>
 
-              <a
-                href={isHome ? "#why" : "/#why"}
+              <Link
+                href="/about"
                 onClick={closeMobileMenu}
                 className="block rounded-2xl px-4 py-4 text-sm font-medium text-white transition hover:bg-white/5"
               >
-                Why us
-              </a>
-
-              <a
-                href={isHome ? "#process" : "/#process"}
-                onClick={closeMobileMenu}
-                className="block rounded-2xl px-4 py-4 text-sm font-medium text-white transition hover:bg-white/5"
-              >
-                Process
-              </a>
+                About
+              </Link>
 
               <Link
                 href="/blog"

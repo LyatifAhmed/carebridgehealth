@@ -6,6 +6,21 @@ const routes = [
   { path: "/", changeFrequency: "weekly", priority: 1 },
 
   { path: "/treatment-in-turkey", changeFrequency: "weekly", priority: 0.95 },
+  { path: "/rhinoplasty-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/revision-rhinoplasty-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/liposuction-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/tummy-tuck-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/breast-augmentation-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/breast-lift-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/facelift-turkey", changeFrequency: "weekly", priority: 0.85 },
+
+  { path: "/hysterectomy-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/myomectomy-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/urinary-incontinence-surgery-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/labiaplasty-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/genital-aesthetic-surgery-turkey", changeFrequency: "weekly", priority: 0.85 },
+
+  { path: "/laser-eye-surgery-turkey", changeFrequency: "weekly", priority: 0.85 },
 
   {
     path: "/treatment-in-istanbul",

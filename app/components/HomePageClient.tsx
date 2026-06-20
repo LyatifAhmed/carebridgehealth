@@ -5,6 +5,9 @@ import Link from "next/link";
 import { FormEvent, useState } from "react";
 import HeroCursor from "./HeroCursor";
 import InsightsPreview from "./InsightsPreview";
+import FounderSection from "./FounderSection";
+import FaqSection from "./FaqSection";
+import PatientJourneySection from "./PatientJourneySection";
 
 type ConsultationForm = {
   fullName: string;
@@ -40,18 +43,9 @@ const trustItems = [
 ];
 
 const heroStats = [
-  {
-    label: "Destinations",
-    value: "Istanbul & Antalya",
-  },
-  {
-    label: "Response target",
-    value: "Within 24 hours",
-  },
-  {
-    label: "Model",
-    value: "Private coordination",
-  },
+  { label: "Destinations", value: "Istanbul & Antalya" },
+  { label: "Response target", value: "Within 24 hours" },
+  { label: "Model", value: "Private coordination" },
 ];
 
 const treatmentCards = [
@@ -100,71 +94,16 @@ const treatmentCards = [
 ];
 
 const guideLinks = [
-  {
-    label: "Dental implants",
-    href: "/dental-implants-turkey",
-    type: "Dental",
-  },
-  {
-    label: "Dental implant cost",
-    href: "/dental-implants-cost-turkey",
-    type: "Cost guide",
-  },
-  {
-    label: "Dental veneers",
-    href: "/veneers-turkey",
-    type: "Dental",
-  },
-  {
-    label: "Veneers cost",
-    href: "/dental-veneers-cost-turkey",
-    type: "Cost guide",
-  },
-  {
-    label: "Hollywood Smile",
-    href: "/hollywood-smile-turkey",
-    type: "Dental",
-  },
-  {
-    label: "Hollywood Smile cost",
-    href: "/hollywood-smile-cost-turkey",
-    type: "Cost guide",
-  },
-  {
-    label: "FUE hair transplant",
-    href: "/fue-hair-transplant-turkey",
-    type: "Hair",
-  },
-  {
-    label: "Hair transplant cost",
-    href: "/hair-transplant-cost-turkey",
-    type: "Cost guide",
-  },
-  {
-    label: "Gastric sleeve cost",
-    href: "/gastric-sleeve-cost-turkey",
-    type: "Weight loss",
-  },
-  {
-    label: "How treatment works",
-    href: "/how-treatment-in-turkey-works",
-    type: "Patient guide",
-  },
-];
-
-const reassurancePoints = [
-  {
-    title: "A UK-facing point of contact",
-    desc: "Clearer communication before travel, so you are not left comparing overseas providers alone.",
-  },
-  {
-    title: "Selected provider pathways",
-    desc: "We are not a generic marketplace. We help route enquiries through relevant third-party clinic or partner pathways.",
-  },
-  {
-    title: "Medical decisions stay clinical",
-    desc: "CareBridge coordinates. Suitability, consent, treatment plans and outcomes remain with qualified providers.",
-  },
+  { label: "Dental implants", href: "/dental-implants-turkey", type: "Dental" },
+  { label: "Dental implant cost", href: "/dental-implants-cost-turkey", type: "Cost guide" },
+  { label: "Dental veneers", href: "/veneers-turkey", type: "Dental" },
+  { label: "Veneers cost", href: "/dental-veneers-cost-turkey", type: "Cost guide" },
+  { label: "Hollywood Smile", href: "/hollywood-smile-turkey", type: "Dental" },
+  { label: "Hollywood Smile cost", href: "/hollywood-smile-cost-turkey", type: "Cost guide" },
+  { label: "FUE hair transplant", href: "/fue-hair-transplant-turkey", type: "Hair" },
+  { label: "Hair transplant cost", href: "/hair-transplant-cost-turkey", type: "Cost guide" },
+  { label: "Gastric sleeve cost", href: "/gastric-sleeve-cost-turkey", type: "Weight loss" },
+  { label: "How treatment works", href: "/how-treatment-in-turkey-works", type: "Patient guide" },
 ];
 
 const destinationCards = [
@@ -181,21 +120,6 @@ const destinationCards = [
     desc: "A calmer destination for selected procedures where comfort, recovery and value matter.",
     href: "/treatment-in-antalya",
     image: "/trust.avif",
-  },
-];
-
-const processSteps = [
-  {
-    title: "Share your request",
-    desc: "Tell us the treatment, your location, preferred destination and rough timeframe.",
-  },
-  {
-    title: "We review and guide",
-    desc: "We help clarify destination fit, key questions and the most suitable next step.",
-  },
-  {
-    title: "Receive next steps",
-    desc: "You receive a structured response by email with no obligation to proceed.",
   },
 ];
 
@@ -242,9 +166,7 @@ export default function HomePageClient() {
     try {
       const res = await fetch("/api/consultation", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
 
@@ -333,44 +255,45 @@ export default function HomePageClient() {
             </div>
 
             <div className="hidden cursor-auto rounded-[36px] border border-white/15 bg-white/10 p-5 shadow-2xl backdrop-blur-xl lg:block">
-              <div className="cursor-auto rounded-[30px] bg-white p-6 text-slate-950 shadow-xl">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-400">
-                  Private pathway review
-                </p>
+  <div className="cursor-auto rounded-[30px] bg-white p-6 text-slate-950 shadow-xl">
+    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-400">
+      Private pathway review
+    </p>
 
-                <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em]">
-                  Start with clarity before you travel.
-                </h2>
+    <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em]">
+      Start with clarity before you travel.
+    </h2>
 
-                <p className="mt-3 text-sm leading-7 text-slate-600">
-                  Share your treatment interest and receive a structured first response
-                  before committing to anything.
-                </p>
+    <p className="mt-3 text-sm leading-7 text-slate-600">
+      Share your treatment interest and receive a structured first response
+      before committing to anything.
+    </p>
 
-                <div className="mt-6 space-y-3">
-                  {heroStats.map((item) => (
-                    <div
-                      key={item.label}
-                      className="rounded-2xl border border-slate-200 bg-slate-50 p-4 transition hover:border-slate-300 hover:bg-white"
-                    >
-                      <p className="text-xs text-slate-500">{item.label}</p>
-                      <p className="mt-1 text-lg font-semibold">{item.value}</p>
-                    </div>
-                  ))}
-                </div>
+    <div className="mt-6 space-y-3">
+      {heroStats.map((item) => (
+        <div
+          key={item.label}
+          className="rounded-2xl border border-slate-200 bg-slate-50 p-4 transition hover:border-slate-300 hover:bg-white"
+        >
+          <p className="text-xs text-slate-500">{item.label}</p>
+          <p className="mt-1 text-lg font-semibold">{item.value}</p>
+        </div>
+      ))}
+    </div>
 
-                <a
-                  href="#form"
-                  className="mt-6 inline-flex w-full cursor-pointer justify-center rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
-                >
-                  Start enquiry
-                </a>
-              </div>
-            </div>
+    <a
+      href="#form"
+      className="mt-6 inline-flex w-full cursor-pointer justify-center rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
+    >
+      Start enquiry
+    </a>
+  </div>
+</div>
           </div>
         </div>
       </section>
-            <section className="border-y border-slate-200 bg-white">
+
+      <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto grid max-w-7xl gap-3 px-6 py-4 text-sm text-slate-600 sm:grid-cols-2 lg:grid-cols-4">
           {trustItems.map((item) => (
             <div
@@ -508,23 +431,9 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      <section className="bg-white py-24 md:py-28">
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-3">
-          {reassurancePoints.map((item) => (
-            <div
-              key={item.title}
-              className="rounded-[30px] border border-slate-200 bg-[#fbf7ef] p-7 shadow-[0_12px_40px_rgba(15,23,42,0.04)]"
-            >
-              <h2 className="text-xl font-semibold tracking-[-0.03em] text-slate-950">
-                {item.title}
-              </h2>
-              <p className="mt-4 text-sm leading-7 text-slate-600">
-                {item.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <PatientJourneySection />
+
+      <FounderSection />
 
       <section id="destinations" className="mx-auto max-w-7xl px-6 py-24 md:py-28">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
@@ -589,7 +498,8 @@ export default function HomePageClient() {
       </section>
 
       <InsightsPreview />
-            <section className="bg-white py-24 md:py-28">
+
+      <section className="bg-white py-24 md:py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-2 md:gap-14">
           <div className="relative h-[420px] overflow-hidden rounded-[36px] md:h-[560px]">
             <Image
@@ -710,39 +620,7 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      <section id="process" className="mx-auto max-w-7xl px-6 py-24 md:py-28">
-        <div className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-            Process
-          </p>
-          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-            How it works
-          </h2>
-          <p className="mt-5 text-base leading-8 text-slate-600">
-            Designed to feel clear, discreet and easy to follow before you make
-            any major decision.
-          </p>
-        </div>
-
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {processSteps.map((step, index) => (
-            <div
-              key={step.title}
-              className="rounded-[30px] border border-slate-200 bg-white p-7 shadow-[0_14px_44px_rgba(15,23,42,0.05)]"
-            >
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-950 text-sm font-semibold text-white">
-                {index + 1}
-              </div>
-              <h3 className="mt-6 text-xl font-semibold tracking-[-0.03em]">
-                {step.title}
-              </h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">
-                {step.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <FaqSection />
 
       <section id="form" className="bg-slate-950 py-24 text-white md:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.8fr_1.2fr]">

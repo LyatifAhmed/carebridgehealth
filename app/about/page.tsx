@@ -1,190 +1,258 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata: Metadata = {
+  title: "About CareBridge Health | UK-Based Treatment Coordination",
+  description:
+    "Learn about CareBridge Health, a UK-based coordination service helping patients explore treatment in Turkey with clearer communication, selected provider routes, and careful planning.",
+  alternates: {
+    canonical: "/about",
+  },
+};
+
+const principles = [
+  "UK-based coordination",
+  "Independent service",
+  "Not a clinic",
+  "Patient-first approach",
+];
+
+const operatingModel = [
+  {
+    title: "CareBridge Health",
+    text: "UK-based coordination, enquiry handling, patient guidance, communication support, and structured next steps.",
+  },
+  {
+    title: "Provider routes in Turkey",
+    text: "Independent clinics, doctors, and healthcare partners review suitability and provide medical assessment where appropriate.",
+  },
+  {
+    title: "Patient decision",
+    text: "Patients remain in control. Treatment only proceeds if the patient is comfortable after provider review and informed discussion.",
+  },
+];
+
 export default function AboutPage() {
   return (
-    <main className="bg-[#fcfaf7] text-slate-900">
-      {/* Hero / Intro */}
-      <section className="border-b border-slate-200/70 bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-24 md:py-28">
-          <div className="max-w-4xl">
-            <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
-              About
-            </p>
+    <main className="bg-[#fbf7ef] text-slate-950">
+      <section className="relative overflow-hidden bg-slate-950 px-6 py-24 text-white md:py-32">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_35%)]" />
 
-            <h1 className="font-display mt-4 text-5xl font-semibold tracking-[-0.04em] md:text-6xl">
-              CareBridge Health
-            </h1>
+        <div className="relative mx-auto max-w-6xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/50">
+            About CareBridge Health
+          </p>
 
-            <div className="mt-8 max-w-3xl space-y-5 text-lg leading-9 text-slate-600">
-              <p>
-                CareBridge Health is a UK-based coordination service helping
-                patients access carefully selected clinics in Turkey with more
-                clarity, structure, and discretion.
-              </p>
+          <h1 className="mt-5 max-w-5xl text-5xl font-semibold leading-[1] tracking-[-0.05em] md:text-7xl">
+            Helping patients approach treatment abroad with more clarity.
+          </h1>
 
-              <p>
-                We are not a medical provider. Treatments are carried out by
-                independent clinics, and every case is reviewed individually by
-                the relevant medical professionals.
-              </p>
-            </div>
+          <p className="mt-7 max-w-3xl text-base leading-8 text-white/70 md:text-lg">
+            CareBridge Health is a UK-based treatment coordination service
+            designed for patients who want a calmer, more structured starting
+            point before exploring treatment options in Turkey.
+          </p>
+
+          <div className="mt-10 flex flex-wrap gap-3">
+            {principles.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/70"
+              >
+                {item}
+              </span>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Founder */}
-      <section className="py-20 md:py-24">
-        <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 md:grid-cols-[1.05fr_0.95fr]">
-          <div className="relative overflow-hidden rounded-[32px] border border-slate-200/70 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
-            <div className="relative h-[520px] w-full">
-              <Image
-                src="/lyatif-ahmed-founder-carebridgehealth-istanbul.avif"
-                alt="Latif Ahmed, founder of CareBridge Health"
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-cover object-[center_10%]"
-              />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent p-6">
-                <p className="text-sm font-medium text-white">Latif Ahmed</p>
-                <p className="mt-1 text-sm text-white/80">
-                  Founder, CareBridge Health
+      <section className="mx-auto grid max-w-6xl items-center gap-14 px-6 py-24 md:grid-cols-[0.9fr_1.1fr]">
+        <div className="relative overflow-hidden rounded-[36px] border border-slate-200 bg-white shadow-[0_25px_70px_rgba(15,23,42,0.08)]">
+          <div className="relative h-[560px]">
+            <Image
+              src="/lyatif-ahmed-founder-carebridgehealth-istanbul.avif"
+              alt="Latif Ahmed, founder of CareBridge Health"
+              fill
+              sizes="(max-width: 768px) 100vw, 40vw"
+              className="object-cover object-[center_10%]"
+              priority
+            />
+
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent p-8">
+              <p className="text-lg font-semibold text-white">Latif Ahmed</p>
+              <p className="mt-1 text-sm text-white/80">
+                Founder, CareBridge Health
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+            Founder note
+          </p>
+
+          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+            Built for patients who want clarity before commitment.
+          </h2>
+
+          <div className="mt-7 space-y-5 text-base leading-8 text-slate-600">
+            <p>
+              CareBridge Health was created after seeing how difficult it can be
+              for patients in the UK to compare treatment options abroad with
+              confidence.
+            </p>
+
+            <p>
+              Many people start with social media pages, clinic adverts, package
+              prices, and before-and-after photos — but still feel unsure about
+              who to trust, what questions to ask, and what happens after they
+              travel.
+            </p>
+
+            <p>
+              Our role is not to replace medical judgement. Our role is to help
+              make the first stage more structured, transparent, and easier to
+              understand before patients speak directly with providers.
+            </p>
+          </div>
+
+          <div className="mt-9 flex flex-wrap gap-3">
+            <a
+              href="https://www.linkedin.com/in/lyatif-ahmed-redzheb/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex rounded-full border border-slate-300 bg-white px-6 py-4 text-sm font-medium text-slate-800 transition hover:border-slate-500"
+            >
+              Connect on LinkedIn
+            </a>
+
+            <Link
+              href="/#form"
+              className="inline-flex rounded-full bg-slate-950 px-6 py-4 text-sm font-medium text-white transition hover:bg-slate-800"
+            >
+              Request private review
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-24">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+              How we operate
+            </p>
+
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+              We coordinate the pathway. Providers deliver the treatment.
+            </h2>
+
+            <p className="mt-5 text-base leading-8 text-slate-600">
+              This distinction matters. CareBridge Health is not a hospital,
+              clinic, or medical practice. Treatment decisions and clinical
+              responsibility stay with qualified providers.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {operatingModel.map((item, index) => (
+              <div
+                key={item.title}
+                className="rounded-[30px] border border-slate-200 bg-[#fbf7ef] p-7 shadow-[0_12px_40px_rgba(15,23,42,0.04)]"
+              >
+                <div className="text-sm font-semibold text-slate-400">
+                  0{index + 1}
+                </div>
+
+                <h3 className="mt-4 text-xl font-semibold tracking-[-0.03em]">
+                  {item.title}
+                </h3>
+
+                <p className="mt-4 text-sm leading-7 text-slate-600">
+                  {item.text}
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div className="max-w-xl">
-            <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
-              Founder
-            </p>
-
-            <h2 className="font-display mt-4 text-4xl font-semibold tracking-[-0.03em]">
-              Built around trust, calm communication, and careful coordination
-            </h2>
-
-            <div className="mt-6 space-y-5 text-base leading-8 text-slate-600">
-              <p>
-                CareBridge Health was created to offer a more structured and
-                transparent way for patients to explore treatment abroad.
-              </p>
-
-              <p>
-                Instead of aggressive sales tactics or unclear promises, the
-                focus is on thoughtful planning, selected providers, and helping
-                patients make informed decisions with confidence.
-              </p>
-
-              <p>
-                Every enquiry is handled individually, with privacy and clear
-                communication at the centre of the process.
-              </p>
-            </div>
-
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="https://www.linkedin.com/in/lyatif-ahmed-redzheb/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950"
-              >
-                <span className="h-2 w-2 rounded-full bg-slate-400" />
-                View LinkedIn profile
-              </a>
-
-              <Link
-                href="/#form"
-                className="inline-flex items-center rounded-full bg-slate-950 px-5 py-3 text-sm font-medium text-white transition hover:opacity-90"
-              >
-                Request private consultation
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Approach + Trust */}
-      <section className="bg-white py-20 md:py-24">
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-2">
-          <div className="rounded-[28px] border border-slate-200/80 bg-[#f8f5ef] p-8 md:p-10">
-            <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
-              Our approach
+      <section className="mx-auto grid max-w-6xl gap-8 px-6 py-24 md:grid-cols-2">
+        <div className="rounded-[34px] border border-slate-200 bg-white p-8 shadow-[0_18px_60px_rgba(15,23,42,0.05)]">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+            Company information
+          </p>
+
+          <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em]">
+            Generation Beta Digital Ltd
+          </h2>
+
+          <div className="mt-7 space-y-4 text-sm leading-7 text-slate-700">
+            <p>
+              3rd Floor, 86–90 Paul Street
+              <br />
+              London EC2A 4NE, United Kingdom
             </p>
 
-            <h2 className="mt-4 text-2xl font-semibold tracking-[-0.02em] text-slate-900">
-              A more considered way to access treatment abroad
-            </h2>
-
-            <div className="mt-6 space-y-4 text-sm leading-7 text-slate-600">
-              <p>• Selected clinic relationships, reviewed case by case</p>
-              <p>• Clear communication before any travel planning</p>
-              <p>• A private, professional, UK-based coordination experience</p>
-              <p>• No promise of outcomes and no medical advice provided</p>
-            </div>
+            <p>Company No: 16274319</p>
+            <p>ICO Registration: ZB883806</p>
           </div>
 
-          <div className="rounded-[28px] border border-slate-200/80 bg-white p-8 shadow-[0_16px_40px_rgba(15,23,42,0.05)] md:p-10">
-            <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
-              Company & trust
-            </p>
-
-            <div className="mt-6 space-y-4 text-sm leading-7 text-slate-700">
-              <p className="text-base font-semibold text-slate-900">
-                Generation Beta Digital Ltd
-              </p>
-
-              <p>
-                3rd Floor, 86–90 Paul Street
-                <br />
-                London EC2A 4NE, UK
-              </p>
-
-              <p>Company No: 16274319</p>
-              <p>ICO No: ZB883806</p>
-            </div>
-
-            <div className="mt-6 rounded-2xl bg-slate-50 p-4 text-xs leading-6 text-slate-500">
-              CareBridge Health is operated by Generation Beta Digital Ltd as an
-              independent treatment coordination service.
-            </div>
+          <div className="mt-7 rounded-2xl bg-slate-50 p-5 text-sm leading-7 text-slate-600">
+            CareBridge Health is operated by Generation Beta Digital Ltd as an
+            independent treatment coordination service.
           </div>
+        </div>
+
+        <div className="rounded-[34px] bg-slate-950 p-8 text-white shadow-[0_18px_60px_rgba(15,23,42,0.12)]">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/45">
+            Important distinction
+          </p>
+
+          <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em]">
+            We do not provide medical advice or treatment.
+          </h2>
+
+          <p className="mt-5 text-sm leading-7 text-white/65">
+            CareBridge Health helps with coordination, communication, and
+            structured next steps. Any diagnosis, medical suitability, treatment
+            recommendation, consent, procedure, or outcome remains the
+            responsibility of the relevant independent healthcare provider.
+          </p>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 md:py-24">
-        <div className="mx-auto max-w-5xl px-6">
-          <div className="rounded-[32px] border border-slate-200 bg-[#f3efe8] p-8 shadow-[0_20px_60px_rgba(15,23,42,0.04)] md:p-12">
-            <div className="max-w-2xl">
-              <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
-                Private consultation
-              </p>
+      <section className="px-6 pb-24">
+        <div className="mx-auto max-w-5xl rounded-[36px] border border-slate-200 bg-[#f3efe8] p-8 shadow-[0_20px_60px_rgba(15,23,42,0.04)] md:p-12">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+            Private consultation
+          </p>
 
-              <h2 className="font-display mt-4 text-4xl font-semibold tracking-[-0.03em]">
-                Start with a private, no-obligation enquiry
-              </h2>
+          <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-0.04em]">
+            Start with a private, no-obligation enquiry.
+          </h2>
 
-              <p className="mt-5 text-base leading-8 text-slate-600">
-                Share a few details and we’ll review your request with care,
-                discretion, and clear next steps.
-              </p>
+          <p className="mt-5 max-w-2xl text-base leading-8 text-slate-600">
+            Share a few details and we’ll review your request with care,
+            discretion, and clearer next steps.
+          </p>
 
-              <div className="mt-8 flex flex-wrap gap-4">
-                <Link
-                  href="/#form"
-                  className="inline-flex items-center rounded-full bg-slate-950 px-6 py-4 text-sm font-medium text-white transition hover:opacity-90"
-                >
-                  Start consultation
-                </Link>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link
+              href="/#form"
+              className="inline-flex rounded-full bg-slate-950 px-6 py-4 text-sm font-medium text-white transition hover:bg-slate-800"
+            >
+              Start consultation
+            </Link>
 
-                <Link
-                  href="/#services"
-                  className="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-4 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-950"
-                >
-                  View treatments
-                </Link>
-              </div>
-            </div>
+            <Link
+              href="/how-treatment-in-turkey-works"
+              className="inline-flex rounded-full border border-slate-300 bg-white px-6 py-4 text-sm font-medium text-slate-800 transition hover:border-slate-500"
+            >
+              How treatment works
+            </Link>
           </div>
         </div>
       </section>
