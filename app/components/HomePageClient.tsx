@@ -9,6 +9,9 @@ import FounderSection from "./FounderSection";
 import FaqSection from "./FaqSection";
 import PatientJourneySection from "./PatientJourneySection";
 
+// İkonları import ediyoruz
+import { MapPin, Clock, ShieldCheck, ArrowRight, Sparkles } from "lucide-react";
+
 type ConsultationForm = {
   fullName: string;
   email: string;
@@ -42,10 +45,11 @@ const trustItems = [
   "Selected provider routes",
 ];
 
+// heroStats array'imize ilgili Lucide ikonlarını eşleştiriyoruz
 const heroStats = [
-  { label: "Destinations", value: "Istanbul & Antalya" },
-  { label: "Response target", value: "Within 24 hours" },
-  { label: "Model", value: "Private coordination" },
+  { label: "Destinations", value: "Istanbul & Antalya", icon: MapPin },
+  { label: "Response target", value: "Within 24 hours", icon: Clock },
+  { label: "Model", value: "Private coordination", icon: ShieldCheck },
 ];
 
 const treatmentCards = [
@@ -297,44 +301,89 @@ export default function HomePageClient() {
               </div>
             </div>
 
-            <div className="hidden cursor-auto rounded-[36px] border border-white/15 bg-white/10 p-5 shadow-2xl backdrop-blur-xl lg:block">
-  <div className="cursor-auto rounded-[30px] bg-white p-6 text-slate-950 shadow-xl">
-    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-400">
-      Private pathway review
-    </p>
+            {/* YENİLENMİŞ VE ENTEGRE EDİLMİŞ HERO KART BÖLÜMÜ */}
+            <div className="hidden cursor-auto rounded-[40px] border border-white/20 bg-gradient-to-b from-white/10 to-white/5 p-4 shadow-[0_32px_64px_-15px_rgba(0,0,0,0.3)] backdrop-blur-2xl lg:block transition-all duration-500 hover:border-white/30">
+              <div className="relative overflow-hidden cursor-auto rounded-[32px] bg-gradient-to-b from-white to-slate-50/90 p-8 text-slate-950 shadow-2xl">
+                
+                {/* Arka plan süslemesi - Medikal Işıltı Efekti */}
+                <div className="absolute -right-16 -top-16 h-36 w-36 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none" />
+                <div className="absolute -left-16 -bottom-16 h-36 w-36 rounded-full bg-blue-500/10 blur-3xl pointer-events-none" />
 
-    <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em]">
-      Start with clarity before you travel.
-    </h2>
+                {/* Üst Başlık / Rozet */}
+                <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1.5 border border-emerald-100">
+                  <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-800">
+                    CareBridge Coordination
+                  </p>
+                </div>
 
-    <p className="mt-3 text-sm leading-7 text-slate-600">
-      Share your treatment interest and receive a structured first response
-      before committing to anything.
-    </p>
+                {/* Ana Başlık */}
+                <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-900 leading-[1.15]">
+                  Your Healthcare Journey, <br />
+                  <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+                    Planned with Clarity.
+                  </span>
+                </h2>
 
-    <div className="mt-6 space-y-3">
-      {heroStats.map((item) => (
-        <div
-          key={item.label}
-          className="rounded-2xl border border-slate-200 bg-slate-50 p-4 transition hover:border-slate-300 hover:bg-white"
-        >
-          <p className="text-xs text-slate-500">{item.label}</p>
-          <p className="mt-1 text-lg font-semibold">{item.value}</p>
-        </div>
-      ))}
-    </div>
+                {/* Alt Açıklama */}
+                <p className="mt-3 text-sm leading-relaxed text-slate-500">
+                  Share your treatment goals. Receive a tailored medical travel itinerary and transparent cost breakdown before making any decisions.
+                </p>
 
-    <a
-      href="#form"
-      className="mt-6 inline-flex w-full cursor-pointer justify-center rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
-    >
-      Start enquiry
-    </a>
-  </div>
-</div>
+                {/* İnteraktif İstatistik / Avantaj Kartları */}
+                <div className="mt-6 grid grid-cols-1 gap-3">
+                  {heroStats?.map((item, index) => {
+                    const IconComponent = item.icon || Sparkles;
+                    return (
+                      <div
+                        key={index}
+                        className="group relative flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-md hover:shadow-emerald-500/[0.03]"
+                      >
+                        {/* İkon Alanı */}
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-slate-600 transition-colors duration-300 group-hover:bg-emerald-50 group-hover:text-emerald-600">
+                          <IconComponent className="h-5 w-5" />
+                        </div>
+                        
+                        <div>
+                          <p className="text-[11px] font-medium uppercase tracking-wider text-slate-400 group-hover:text-emerald-700 transition-colors">
+                            {item.label}
+                          </p>
+                          <p className="mt-0.5 text-base font-bold text-slate-800">
+                            {item.value}
+                          </p>
+                        </div>
+
+                        {/* Kart Sağ Ok Efekti */}
+                        <div className="absolute right-4 opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                          <ArrowRight className="h-4 w-4 text-emerald-500" />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* CTA Butonu */}
+                <a
+                  href="#form"
+                  className="group mt-6 inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-slate-900 hover:shadow-xl hover:shadow-slate-950/20 active:scale-[0.98]"
+                >
+                  <span>Start Free Consultation</span>
+                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                </a>
+
+                {/* Güven Verici Alt Metin */}
+                <p className="mt-3.5 text-center text-[11px] text-slate-400 flex items-center justify-center gap-1">
+                  <span className="inline-block h-1 w-1 rounded-full bg-slate-400" />
+                  No commitment required • 100% Confidential
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
+      
+
 
       <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto grid max-w-7xl gap-3 px-6 py-4 text-sm text-slate-600 sm:grid-cols-2 lg:grid-cols-4">
