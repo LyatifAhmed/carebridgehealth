@@ -71,6 +71,54 @@ const posts = [
     description:
       "A clearer overview of what UK-based patients should understand before choosing clinics, destinations, and treatment pathways in Turkey.",
   },
+  {
+    title: "Rhinoplasty Turkey vs UK Cost",
+    href: "/blog/rhinoplasty-turkey-vs-uk-cost",
+    description:
+      "A practical comparison of rhinoplasty costs in Turkey and the UK, including consultation, recovery, and treatment planning considerations.",
+  },
+  {
+    title: "LASIK Eye Surgery Turkey vs UK",
+    href: "/blog/lasik-eye-surgery-turkey-vs-uk",
+    description:
+      "Compare LASIK eye surgery options in Turkey and the UK, including assessment quality, technology, and recovery planning.",
+  },
+  {
+    title: "Labiaplasty Turkey Guide",
+    href: "/blog/labiaplasty-turkey-guide",
+    description:
+      "What UK patients should know about labiaplasty in Turkey, including suitability, recovery, and treatment planning.",
+  },
+  {
+    title: "Revision Rhinoplasty Turkey Guide",
+    href: "/blog/revision-rhinoplasty-turkey-guide",
+    description:
+      "A practical guide for patients considering secondary nose surgery in Turkey.",
+  },
+  {
+    title: "Cataract Surgery Turkey Guide",
+    href: "/blog/cataract-surgery-turkey-guide",
+    description:
+      "What UK patients should know about cataract surgery in Turkey, lens options, and recovery considerations.",
+  },
+  {
+    title: "Breast Augmentation Turkey Guide",
+    href: "/blog/breast-augmentation-turkey-guide",
+    description:
+      "A practical guide to breast augmentation in Turkey, including implant choices and recovery planning.",
+  },
+  {
+    title: "Liposuction Turkey Guide",
+    href: "/blog/liposuction-turkey-guide",
+    description:
+      "Learn what UK patients should know before considering liposuction in Turkey.",
+  },
+  {
+    title: "Facelift Turkey Guide",
+    href: "/blog/facelift-turkey-guide",
+    description:
+      "A patient-friendly guide to facelift surgery in Turkey, including recovery and provider selection.",
+  },
 ];
 
 export default function BlogPage() {

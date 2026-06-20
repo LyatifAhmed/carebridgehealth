@@ -478,9 +478,9 @@ export default function HomePageClient() {
                 </h3>
 
                 <p className="mt-5 text-sm leading-7 text-white/70">
-                  Explore focused pages for dental implants, veneers, Hollywood
-                  Smile, FUE hair transplant, gastric sleeve cost and treatment
-                  planning before making an enquiry.
+                  Explore focused pages for dental implants, veneers, Hollywood Smile,
+                  FUE hair transplant, gastric sleeve cost and treatment planning before
+                  making an enquiry.
                 </p>
 
                 <Link
@@ -490,52 +490,6 @@ export default function HomePageClient() {
                   How treatment in Turkey works
                 </Link>
               </div>
-              <div className="mt-14 rounded-[36px] border border-slate-200 bg-white p-6 shadow-[0_24px_80px_rgba(15,23,42,0.06)] md:p-8">
-  <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-    <div className="max-w-3xl">
-      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-        Popular procedures
-      </p>
-
-      <h3 className="mt-4 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
-        Explore specific treatment pathways
-      </h3>
-
-      <p className="mt-4 text-sm leading-7 text-slate-600">
-        Focused pages for patients comparing treatment options in Turkey before
-        making an enquiry.
-      </p>
-    </div>
-  </div>
-
-  <div className="mt-8 grid gap-6 lg:grid-cols-3">
-    {procedureLinks.map((group) => (
-      <div
-        key={group.category}
-        className="rounded-[28px] border border-slate-200 bg-[#fbf7ef] p-5"
-      >
-        <h4 className="text-lg font-semibold tracking-[-0.03em] text-slate-950">
-          {group.category}
-        </h4>
-
-        <div className="mt-5 grid gap-3">
-          {group.links.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="group flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 transition hover:-translate-y-0.5 hover:border-slate-300 hover:text-slate-950 hover:shadow-sm"
-            >
-              <span>{item.label}</span>
-              <span className="text-slate-400 transition group-hover:translate-x-0.5 group-hover:text-slate-900">
-                →
-              </span>
-            </Link>
-          ))}
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
             </div>
 
             <div className="bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(248,244,239,0.98)_100%)] p-6 md:p-8">
@@ -565,6 +519,53 @@ export default function HomePageClient() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="mt-14 rounded-[36px] border border-slate-200 bg-white p-6 shadow-[0_24px_80px_rgba(15,23,42,0.06)] md:p-8">
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div className="max-w-3xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+                Popular procedures
+              </p>
+
+              <h3 className="mt-4 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
+                Explore specific treatment pathways
+              </h3>
+
+              <p className="mt-4 text-sm leading-7 text-slate-600">
+                Focused pages for patients comparing treatment options in Turkey before
+                making an enquiry.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 grid gap-6 lg:grid-cols-3">
+            {procedureLinks.map((group) => (
+              <div
+                key={group.category}
+                className="rounded-[28px] border border-slate-200 bg-[#fbf7ef] p-5"
+              >
+                <h4 className="text-lg font-semibold tracking-[-0.03em] text-slate-950">
+                  {group.category}
+                </h4>
+
+                <div className="mt-5 grid gap-3">
+                  {group.links.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="group flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 transition hover:-translate-y-0.5 hover:border-slate-300 hover:text-slate-950 hover:shadow-sm"
+                    >
+                      <span>{item.label}</span>
+                      <span className="text-slate-400 transition group-hover:translate-x-0.5 group-hover:text-slate-900">
+                        →
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

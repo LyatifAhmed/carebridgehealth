@@ -2,25 +2,25 @@ import Link from "next/link";
 
 const featuredInsights = [
   {
-    title: "Is treatment in Turkey safe for UK patients?",
+    title: "Rhinoplasty Turkey vs UK Cost",
     description:
-      "What patients should look at beyond price when comparing clinics, destinations, and treatment pathways.",
-    href: "/blog/is-treatment-in-turkey-safe-for-uk-patients",
-    category: "Patient Guide",
+      "What UK patients should compare beyond price when researching nose surgery in Turkey.",
+    href: "/blog/rhinoplasty-turkey-vs-uk-cost",
+    category: "Cosmetic Surgery",
   },
   {
-    title: "Istanbul or Antalya: which is better for treatment in Turkey?",
+    title: "LASIK Eye Surgery Turkey vs UK",
     description:
-      "A clearer look at how destination choice can affect specialist access, recovery environment, and overall experience.",
-    href: "/blog/istanbul-or-antalya-for-treatment-in-turkey",
-    category: "Destination Guide",
+      "A practical guide to assessment quality, technology, and recovery planning before choosing LASIK abroad.",
+    href: "/blog/lasik-eye-surgery-turkey-vs-uk",
+    category: "Eye Treatment",
   },
   {
-    title: "How to choose a clinic in Turkey more carefully",
+    title: "Labiaplasty Turkey Guide",
     description:
-      "Why patients should think beyond social media marketing and ask better questions before committing.",
-    href: "/blog/how-to-choose-a-clinic-in-turkey",
-    category: "Planning",
+      "A discreet patient guide covering suitability, privacy, recovery, and questions to ask before treatment.",
+    href: "/blog/labiaplasty-turkey-guide",
+    category: "Women’s Health",
   },
 ];
 
