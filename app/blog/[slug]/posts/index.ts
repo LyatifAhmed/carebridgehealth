@@ -11,6 +11,14 @@ import { dentalImplantsTurkeyVsUkCost } from "./dental-implants-turkey-vs-uk-cos
 import { veneersTurkeyVsUkCost } from "./veneers-turkey-vs-uk-cost";
 import { hollywoodSmileTurkeyGuide } from "./hollywood-smile-turkey-guide";
 import { gastricSleeveTurkeyVsUkCost } from "./gastric-sleeve-turkey-vs-uk-cost";
+import { rhinoplastyTurkeyVsUkCost } from "./rhinoplasty-turkey-vs-uk-cost";
+import { lasikEyeSurgeryTurkeyVsUk } from "./lasik-eye-surgery-turkey-vs-uk";
+import { labiaplastyTurkeyGuide } from "./labiaplasty-turkey-guide";
+import { revisionRhinoplastyTurkeyGuide } from "./revision-rhinoplasty-turkey-guide";
+import { cataractSurgeryTurkeyGuide } from "./cataract-surgery-turkey-guide";
+import { breastAugmentationTurkeyGuide } from "./breast-augmentation-turkey-guide";
+import { liposuctionTurkeyGuide } from "./liposuction-turkey-guide";
+import { faceliftTurkeyGuide } from "./facelift-turkey-guide";
 
 export const posts: BlogPost[] = [
   whatNobodyTellsYouAboutSurgeryInTurkey,
@@ -24,4 +32,12 @@ export const posts: BlogPost[] = [
   veneersTurkeyVsUkCost,
   hollywoodSmileTurkeyGuide,
   gastricSleeveTurkeyVsUkCost,
+  rhinoplastyTurkeyVsUkCost,
+  lasikEyeSurgeryTurkeyVsUk,
+  labiaplastyTurkeyGuide,
+  revisionRhinoplastyTurkeyGuide,
+  cataractSurgeryTurkeyGuide,
+  breastAugmentationTurkeyGuide,
+  liposuctionTurkeyGuide,
+  faceliftTurkeyGuide,
 ];
