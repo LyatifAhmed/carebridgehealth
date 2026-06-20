@@ -21,6 +21,9 @@ const routes = [
   { path: "/genital-aesthetic-surgery-turkey", changeFrequency: "weekly", priority: 0.85 },
 
   { path: "/laser-eye-surgery-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/lasik-eye-surgery-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/cataract-surgery-turkey", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/lens-replacement-surgery-turkey", changeFrequency: "weekly", priority: 0.85 },
 
   {
     path: "/treatment-in-istanbul",
