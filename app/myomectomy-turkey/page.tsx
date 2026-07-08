@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Myomectomy Turkey: Cost, Fibroid Surgery & Clinics",
-  description:
-    "Considering myomectomy in Turkey? Explore fibroid surgery pathways with clearer planning, private UK-based coordination, and careful provider communication.",
+  title: "Myomectomy Turkey 2026: Cost, Fibroid Surgery & Recovery",
+  description: "Compare myomectomy surgery in Turkey, fibroid treatment options, costs and recovery guidance for UK patients.",
   alternates: {
     canonical: "/myomectomy-turkey",
   },

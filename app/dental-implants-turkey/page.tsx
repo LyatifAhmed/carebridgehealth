@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Dental Implants Turkey: Cost, Clinics & UK Guide",
-  description:
-    "Explore dental implants in Turkey with UK-based coordination. Get support with planning, clinic matching, treatment questions, and next-step guidance before travelling.",
+  title: "Dental Implants Turkey 2026: Cost, Clinics & Packages",
+  description: "Compare dental implant treatment in Turkey, expected costs, clinic options, recovery and what UK patients should know before travelling.",
 };
 
 export default function DentalImplantsTurkeyPage() {

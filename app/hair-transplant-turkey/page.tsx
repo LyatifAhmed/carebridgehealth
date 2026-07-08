@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Hair Transplant Turkey: Cost, FUE Clinics & UK Guide",
-  description:
-    "Considering a hair transplant in Turkey? Explore a more informed and supported route with private UK-based coordination through CareBridge Health.",
+  title: "Hair Transplant Turkey 2026: Cost, FUE Clinics & Recovery",
+  description: "Compare hair transplant clinics in Turkey, understand FUE costs, recovery, graft numbers and what UK patients should know before booking treatment.",
   alternates: {
     canonical: "/hair-transplant-turkey",
   },

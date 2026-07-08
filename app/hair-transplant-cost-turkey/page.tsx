@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Hair Transplant Cost Turkey: Prices, Grafts & UK Guide",
-  description:
-    "Learn about hair transplant costs in Turkey, what affects pricing, and how UK-based patients can explore treatment options with structured coordination and planning support.",
+  title: "Hair Transplant Cost Turkey 2026: Prices, Grafts & Packages",
+  description: "See average hair transplant prices in Turkey, what affects the cost, package options and how UK patients can compare clinics with confidence.",
 };
 
 export default function HairTransplantCostTurkeyPage() {

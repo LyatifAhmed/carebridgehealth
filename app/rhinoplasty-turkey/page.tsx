@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Rhinoplasty Turkey: Cost, Recovery & Trusted Clinics",
-  description:
-    "Considering rhinoplasty in Turkey? Explore nose surgery options with clearer planning, private UK-based coordination, and careful provider guidance.",
+  title: "Rhinoplasty Turkey 2026: Cost, Recovery & Surgeon Guide",
+  description: "Learn about rhinoplasty in Turkey including costs, recovery, surgeon selection and what UK patients should consider before booking.",
   alternates: {
     canonical: "/rhinoplasty-turkey",
   },

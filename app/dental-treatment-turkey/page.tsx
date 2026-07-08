@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Dental Treatment Turkey: Implants, Veneers & UK Guide",
-  description:
-    "Explore dental treatment in Turkey with private UK-based coordination. Get support with planning, clinic matching, and next-step guidance.",
+  title: "Dental Treatment Turkey 2026: Implants, Veneers & Smile Makeovers",
+  description: "Explore dental treatment in Turkey including implants, veneers, crowns and smile makeovers with practical guidance for UK patients.",
 };
 
 export default function DentalTreatmentTurkeyPage() {

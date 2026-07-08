@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Dental Veneers Cost Turkey: Prices, Materials & Guide",
-  description:
-    "Learn what influences dental veneers costs in Turkey and explore treatment planning with UK-based coordination before travelling.",
+  title: "Dental Veneers Cost Turkey 2026: Prices, Materials & Packages",
+  description: "Find out how much dental veneers cost in Turkey, what affects pricing and how UK patients can compare treatment options.",
 };
 
 export default function DentalVeneersCostTurkeyPage() {

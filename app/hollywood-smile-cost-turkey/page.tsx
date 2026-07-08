@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Hollywood Smile Cost Turkey: Prices & Treatment Guide",
-  description:
-    "Learn what influences Hollywood Smile costs in Turkey and explore treatment planning with UK-based coordination before travelling.",
+  title: "Hollywood Smile Cost Turkey 2026: Prices, Packages & Options",
+  description: "Compare Hollywood Smile prices in Turkey, what's included in treatment packages and factors affecting the final cost.",
 };
 
 export default function HollywoodSmileCostTurkeyPage() {

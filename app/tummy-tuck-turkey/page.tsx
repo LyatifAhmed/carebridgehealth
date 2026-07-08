@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Tummy Tuck Turkey: Cost, Recovery & UK Guide",
-  description:
-    "Considering a tummy tuck in Turkey? Explore abdominoplasty options with clearer planning, realistic expectations, and private UK-based coordination.",
+  title: "Tummy Tuck Turkey 2026: Cost, Recovery & Results",
+  description: "Explore tummy tuck surgery in Turkey including costs, recovery timeline, suitability and clinic comparison guidance.",
   alternates: {
     canonical: "/tummy-tuck-turkey",
   },

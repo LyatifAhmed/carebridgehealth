@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Facelift Turkey: Cost, Recovery & Clinic Guide",
-  description:
-    "Considering a facelift in Turkey? Explore facial rejuvenation options with clearer planning, realistic expectations, and private UK-based coordination.",
+  title: "Facelift Turkey 2026: Cost, Recovery & Results",
+  description: "Explore facelift surgery in Turkey, treatment costs, recovery expectations and practical guidance for UK patients.",
   alternates: {
     canonical: "/facelift-turkey",
   },

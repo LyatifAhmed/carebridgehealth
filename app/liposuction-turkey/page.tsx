@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Liposuction Turkey: Cost, Recovery & Clinic Guide",
-  description:
-    "Considering liposuction in Turkey? Explore treatment options with clearer planning, realistic expectations, and private UK-based coordination.",
+  title: "Liposuction Turkey 2026: Cost, Recovery & Body Contouring",
+  description: "Compare liposuction treatment in Turkey, body contouring options, costs, recovery and realistic expectations before surgery.",
   alternates: {
     canonical: "/liposuction-turkey",
   },

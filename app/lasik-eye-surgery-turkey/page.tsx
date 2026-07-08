@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "LASIK Eye Surgery Turkey: Cost, Recovery & Clinics",
-  description:
-    "Considering LASIK eye surgery in Turkey? Explore vision correction pathways with clearer planning, private UK-based coordination, and careful provider communication.",
+  title: "LASIK Eye Surgery Turkey 2026: Cost, Recovery & Clinics",
+  description: "Learn about LASIK eye surgery in Turkey including prices, recovery, clinic comparison and suitability for UK patients.",
   alternates: {
     canonical: "/lasik-eye-surgery-turkey",
   },

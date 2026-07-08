@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Gastric Sleeve Cost Turkey: Prices, Safety & UK Guide",
-  description:
-    "Learn what influences gastric sleeve surgery costs in Turkey and how UK-based patients can explore treatment pathways with structured support.",
+  title: "Gastric Sleeve Cost Turkey 2026: Prices, Packages & Recovery",
+  description: "Discover gastric sleeve surgery prices in Turkey, what's included, recovery expectations and how to compare treatment providers.",
 };
 
 export default function GastricSleeveCostTurkeyPage() {

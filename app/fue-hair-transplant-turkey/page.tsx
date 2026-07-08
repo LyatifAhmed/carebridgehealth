@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "FUE Hair Transplant Turkey: Cost, FUE Clinics & UK Guide",
-  description:
-    "Explore FUE hair transplant treatment in Turkey with UK-based coordination. Learn about planning, treatment considerations, and next-step guidance before travelling.",
+  title: "FUE Hair Transplant Turkey 2026: Cost, FUE Clinics & Recovery",
+  description: "Learn how FUE hair transplants work in Turkey, expected recovery, costs, results and what to compare before choosing a clinic.",
 };
 
 export default function FueHairTransplantTurkeyPage() {

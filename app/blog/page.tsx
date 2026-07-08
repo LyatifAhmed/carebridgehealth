@@ -3,8 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Insights | CareBridge Health",
-  description:
-    "Patient-friendly guidance on treatment in Turkey, destination choice, clinic selection, and planning your treatment journey from the UK.",
+  description: "Learn about labiaplasty in Turkey including expected costs, recovery, privacy and treatment planning guidance.",
   alternates: {
     canonical: "/blog",
   },

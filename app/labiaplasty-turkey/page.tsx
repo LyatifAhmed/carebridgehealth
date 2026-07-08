@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Labiaplasty Turkey: Cost, Recovery & Clinic Guide",
-  description:
-    "Considering labiaplasty in Turkey? Explore discreet treatment pathways with clearer planning, private UK-based coordination, and careful provider communication.",
+  title: "Labiaplasty Turkey 2026: Cost, Recovery & Clinics",
+  description: "Learn about labiaplasty in Turkey including expected costs, recovery, privacy and treatment planning guidance.",
   alternates: {
     canonical: "/labiaplasty-turkey",
   },

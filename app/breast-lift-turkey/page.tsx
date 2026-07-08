@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Breast Lift Turkey: Cost, Recovery & Clinic Guide",
-  description:
-    "Considering a breast lift in Turkey? Explore mastopexy options with clearer planning, realistic expectations, and private UK-based coordination.",
+  title: "Breast Lift Turkey 2026: Cost, Recovery & Results",
+  description: "Learn about breast lift surgery in Turkey, recovery, expected costs and what to compare before choosing a clinic.",
   alternates: {
     canonical: "/breast-lift-turkey",
   },

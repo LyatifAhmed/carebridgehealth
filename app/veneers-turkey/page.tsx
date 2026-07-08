@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Dental Veneers Turkey: Cost, Smile Design & Clinics",
-  description:
-    "Explore dental veneers in Turkey with UK-based coordination. Get support with planning, clinic matching, treatment questions, and next-step guidance before travelling.",
+  title: "Dental Veneers Turkey 2026: Cost, Smile Design & Clinics",
+  description: "Compare dental veneers in Turkey, treatment options, smile design, costs and what to know before choosing a cosmetic dentist.",
 };
 
 export default function VeneersTurkeyPage() {

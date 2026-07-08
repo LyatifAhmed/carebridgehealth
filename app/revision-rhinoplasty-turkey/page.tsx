@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Revision Rhinoplasty Turkey: Cost, Recovery & Trusted Clinics",
-  description:
-    "Considering revision rhinoplasty in Turkey? Explore a more careful and structured route with private UK-based coordination through CareBridge Health.",
+  title: "Revision Rhinoplasty Turkey 2026: Cost, Recovery & Surgeon Guide",
+  description: "Understand revision rhinoplasty in Turkey, expected costs, recovery and why choosing an experienced surgeon is essential.",
   alternates: {
     canonical: "/revision-rhinoplasty-turkey",
   },

@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Dental Implants Cost Turkey: Prices, Packages & Guide",
-  description:
-    "Learn what influences dental implant costs in Turkey and how UK-based patients can explore treatment options with clearer planning and coordination.",
+  title: "Dental Implants Cost Turkey 2026: Prices, Packages & Options",
+  description: "Discover average dental implant prices in Turkey, what influences costs, treatment packages and how to compare clinics safely.",
 };
 
 export default function DentalImplantsCostTurkeyPage() {

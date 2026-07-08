@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Cosmetic Surgery Turkey: Cost, Clinics & UK Guide",
-  description:
-    "Considering cosmetic surgery in Turkey? Explore a more structured route with UK-based coordination and clearer pre-treatment guidance.",
+  title: "Cosmetic Surgery Turkey 2026: Costs, Clinics & Recovery",
+  description: "Explore cosmetic surgery in Turkey, compare procedures, expected prices, recovery and trusted treatment guidance.",
   alternates: {
     canonical: "/cosmetic-surgery-turkey",
   },
