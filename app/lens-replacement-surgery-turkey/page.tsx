@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Lens Replacement Surgery Turkey | UK-Based Coordination",
+  title: "Lens Replacement Surgery Turkey: Cost, Lenses & Guide",
   description:
     "Considering lens replacement surgery in Turkey? Explore specialist eye treatment pathways with clearer planning, private UK-based coordination, and careful provider communication.",
   alternates: {

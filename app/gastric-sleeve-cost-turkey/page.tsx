@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Gastric Sleeve Cost Turkey | UK-Based Coordination",
+  title: "Gastric Sleeve Cost Turkey: Prices, Safety & UK Guide",
   description:
     "Learn what influences gastric sleeve surgery costs in Turkey and how UK-based patients can explore treatment pathways with structured support.",
 };

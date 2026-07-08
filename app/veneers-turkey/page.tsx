@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Dental Veneers Turkey | UK-Based Coordination",
+  title: "Dental Veneers Turkey: Cost, Smile Design & Clinics",
   description:
     "Explore dental veneers in Turkey with UK-based coordination. Get support with planning, clinic matching, treatment questions, and next-step guidance before travelling.",
 };

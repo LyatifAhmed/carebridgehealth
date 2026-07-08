@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Breast Lift Turkey | UK-Based Coordination",
+  title: "Breast Lift Turkey: Cost, Recovery & Clinic Guide",
   description:
     "Considering a breast lift in Turkey? Explore mastopexy options with clearer planning, realistic expectations, and private UK-based coordination.",
   alternates: {

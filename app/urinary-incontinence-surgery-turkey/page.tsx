@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Urinary Incontinence Surgery Turkey | UK-Based Coordination",
+  title: "Urinary Incontinence Surgery Turkey: Cost & Clinic Guide",
   description:
     "Considering urinary incontinence surgery in Turkey? Explore specialist-led treatment pathways with clearer planning, private UK-based coordination, and structured communication.",
   alternates: {

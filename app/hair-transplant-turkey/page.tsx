@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Hair Transplant Turkey | UK-Based Coordination",
+  title: "Hair Transplant Turkey: Cost, FUE Clinics & UK Guide",
   description:
     "Considering a hair transplant in Turkey? Explore a more informed and supported route with private UK-based coordination through CareBridge Health.",
   alternates: {

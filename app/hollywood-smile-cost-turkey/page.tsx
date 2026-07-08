@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Hollywood Smile Cost Turkey | UK-Based Coordination",
+  title: "Hollywood Smile Cost Turkey: Prices & Treatment Guide",
   description:
     "Learn what influences Hollywood Smile costs in Turkey and explore treatment planning with UK-based coordination before travelling.",
 };

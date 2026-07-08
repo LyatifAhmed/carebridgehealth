@@ -3,7 +3,7 @@ import HomePageClient from "./components/HomePageClient";
 
 export const metadata: Metadata = {
   title:
-    "Private Medical Treatment in Turkey | UK-Based Coordination | CareBridge Health",
+    "Medical Treatment in Turkey for UK Patients | Trusted Clinics & UK Support",
   description:
     "CareBridge Health helps UK-based patients explore private medical treatment in Turkey through carefully selected clinics in Istanbul and Antalya, with clearer communication, structured coordination, and a discreet experience.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Private Medical Treatment in Turkey | UK-Based Coordination | CareBridge Health",
+      "Medical Treatment in Turkey for UK Patients | Trusted Clinics & UK Support",
     description:
       "CareBridge Health helps UK-based patients explore treatment in Turkey with clearer communication, structured coordination, and carefully selected clinic pathways.",
     url: "https://www.carebridgehealth.co/",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Private Medical Treatment in Turkey | UK-Based Coordination | CareBridge Health",
+      "Medical Treatment in Turkey for UK Patients | Trusted Clinics & UK Support",
     description:
       "Explore treatment in Turkey with more guidance, structure, and confidence before travel.",
   },

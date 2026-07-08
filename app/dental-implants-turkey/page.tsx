@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Dental Implants Turkey | UK-Based Coordination",
+  title: "Dental Implants Turkey: Cost, Clinics & UK Guide",
   description:
     "Explore dental implants in Turkey with UK-based coordination. Get support with planning, clinic matching, treatment questions, and next-step guidance before travelling.",
 };

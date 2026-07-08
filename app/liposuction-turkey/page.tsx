@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Liposuction Turkey | UK-Based Coordination",
+  title: "Liposuction Turkey: Cost, Recovery & Clinic Guide",
   description:
     "Considering liposuction in Turkey? Explore treatment options with clearer planning, realistic expectations, and private UK-based coordination.",
   alternates: {

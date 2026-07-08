@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Hysterectomy Turkey | UK-Based Coordination",
+  title: "Hysterectomy Turkey: Cost, Clinics & UK Patient Guide",
   description:
     "Considering a hysterectomy in Turkey? Explore specialist-led treatment pathways with clearer planning, private UK-based coordination, and careful communication.",
   alternates: {

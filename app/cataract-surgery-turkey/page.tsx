@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Cataract Surgery Turkey | UK-Based Coordination",
+  title: "Cataract Surgery Turkey: Cost, Lenses & Clinic Guide",
   description:
     "Considering cataract surgery in Turkey? Explore specialist eye treatment pathways with clearer planning, private UK-based coordination, and careful provider communication.",
   alternates: {

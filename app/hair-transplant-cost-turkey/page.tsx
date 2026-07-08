@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Hair Transplant Cost Turkey | UK-Based Coordination",
+  title: "Hair Transplant Cost Turkey: Prices, Grafts & UK Guide",
   description:
     "Learn about hair transplant costs in Turkey, what affects pricing, and how UK-based patients can explore treatment options with structured coordination and planning support.",
 };

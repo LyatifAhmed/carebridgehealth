@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Dental Implants Cost Turkey | UK-Based Coordination",
+  title: "Dental Implants Cost Turkey: Prices, Packages & Guide",
   description:
     "Learn what influences dental implant costs in Turkey and how UK-based patients can explore treatment options with clearer planning and coordination.",
 };

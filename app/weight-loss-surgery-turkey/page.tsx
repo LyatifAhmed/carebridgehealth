@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Weight Loss Surgery Turkey | UK-Based Coordination",
+  title: "Weight Loss Surgery Turkey: Cost, Options & UK Guide",
   description:
     "Explore weight loss surgery in Turkey with UK-based coordination. Get support understanding options, planning, and next-step considerations.",
   alternates: {

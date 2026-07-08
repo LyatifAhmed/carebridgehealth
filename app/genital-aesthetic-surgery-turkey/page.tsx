@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Genital Aesthetic Surgery Turkey | UK-Based Coordination",
+  title: "Genital Aesthetic Surgery Turkey: Cost & Clinic Guide",
   description:
     "Considering genital aesthetic surgery in Turkey? Explore discreet treatment pathways with clearer planning, private UK-based coordination, and careful provider communication.",
   alternates: {
