@@ -10,7 +10,7 @@ import FaqSection from "./FaqSection";
 import PatientJourneySection from "./PatientJourneySection";
 
 // İkonları import ediyoruz
-import { MapPin, Clock, ShieldCheck, ArrowRight, Sparkles } from "lucide-react";
+import { MapPin, Clock, ShieldCheck, ArrowRight, Sparkles, LockKeyhole } from "lucide-react";
 
 type ConsultationForm = {
   fullName: string;
@@ -39,10 +39,10 @@ const initialState: ConsultationForm = {
 };
 
 const trustItems = [
-  "UK-based coordination",
+  "UK-based, international support",
   "Independent, not a clinic",
   "Doctor review where appropriate",
-  "Selected provider routes",
+  "Patient privacy first",
 ];
 
 // heroStats array'imize ilgili Lucide ikonlarını eşleştiriyoruz
@@ -267,14 +267,15 @@ export default function HomePageClient() {
               </h1>
 
               <p className="mt-7 max-w-2xl text-base leading-8 text-white/78 md:text-lg">
-                A calmer way for UK-based patients to explore carefully selected
+                A calmer way for UK and international patients to explore carefully selected
                 treatment routes in Istanbul and Antalya before travelling.
               </p>
 
               <p className="mt-4 max-w-2xl text-sm leading-7 text-white/58">
-                CareBridge Health is not a clinic or medical provider. We are an
-                independent coordination and information service helping patients
-                move from online research to clearer next steps.
+                CareBridge Health is a UK-based independent coordination service. We help
+                patients move from online research to clearer next steps, whether
+                they are based in the UK, Europe, the Middle East, North America,
+                or elsewhere.
               </p>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -301,81 +302,98 @@ export default function HomePageClient() {
               </div>
             </div>
 
-            {/* YENİLENMİŞ VE ENTEGRE EDİLMİŞ HERO KART BÖLÜMÜ */}
-            <div className="hidden cursor-auto rounded-[40px] border border-white/20 bg-gradient-to-b from-white/10 to-white/5 p-4 shadow-[0_32px_64px_-15px_rgba(0,0,0,0.3)] backdrop-blur-2xl lg:block transition-all duration-500 hover:border-white/30">
-              <div className="relative overflow-hidden cursor-auto rounded-[32px] bg-gradient-to-b from-white to-slate-50/90 p-8 text-slate-950 shadow-2xl">
-                
-                {/* Arka plan süslemesi - Medikal Işıltı Efekti */}
-                <div className="absolute -right-16 -top-16 h-36 w-36 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none" />
-                <div className="absolute -left-16 -bottom-16 h-36 w-36 rounded-full bg-blue-500/10 blur-3xl pointer-events-none" />
+            {/* COMPACT HERO JOURNEY CARD */}
+            <div className="hidden cursor-auto rounded-[34px] border border-white/20 bg-gradient-to-b from-white/10 to-white/5 p-3 shadow-[0_28px_56px_-15px_rgba(0,0,0,0.3)] backdrop-blur-2xl lg:block transition-all duration-500 hover:border-white/30">
+              <div className="relative overflow-hidden cursor-auto rounded-[28px] bg-gradient-to-b from-white to-slate-50/90 p-6 text-slate-950 shadow-2xl">
+                <div className="pointer-events-none absolute -right-16 -top-16 h-36 w-36 rounded-full bg-emerald-500/10 blur-3xl" />
+                <div className="pointer-events-none absolute -left-16 -bottom-16 h-36 w-36 rounded-full bg-blue-500/10 blur-3xl" />
 
-                {/* Üst Başlık / Rozet */}
-                <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1.5 border border-emerald-100">
-                  <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-800">
-                    CareBridge Coordination
+                <div className="relative z-10">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1.5">
+                    <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-800">
+                      UK-based coordination
+                    </p>
+                  </div>
+
+                  <h2 className="mt-4 text-2xl font-bold leading-[1.08] tracking-tight text-slate-900">
+                    Treatment planning,
+                    <span className="block text-slate-500">
+                      before you travel.
+                    </span>
+                  </h2>
+
+                  <p className="mt-3 text-sm leading-6 text-slate-500">
+                    Share your goals and receive structured guidance before deciding
+                    whether to move forward with a clinic consultation.
                   </p>
-                </div>
 
-                {/* Ana Başlık */}
-                <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-900 leading-[1.15]">
-                  Your Healthcare Journey, <br />
-                  <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
-                    Planned with Clarity.
-                  </span>
-                </h2>
-
-                {/* Alt Açıklama */}
-                <p className="mt-3 text-sm leading-relaxed text-slate-500">
-                  Share your treatment goals. Receive a tailored medical travel itinerary and transparent cost breakdown before making any decisions.
-                </p>
-
-                {/* İnteraktif İstatistik / Avantaj Kartları */}
-                <div className="mt-6 grid grid-cols-1 gap-3">
-                  {heroStats?.map((item, index) => {
-                    const IconComponent = item.icon || Sparkles;
-                    return (
+                  <div className="mt-5 grid gap-3">
+                    {[
+                      "Share your treatment goals",
+                      "Coordinator review",
+                      "Clinic route suggested",
+                    ].map((item, index) => (
                       <div
-                        key={index}
-                        className="group relative flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-md hover:shadow-emerald-500/[0.03]"
+                        key={item}
+                        className="flex items-center gap-3 rounded-2xl border border-slate-100 bg-slate-50 px-4 py-3"
                       >
-                        {/* İkon Alanı */}
-                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-slate-600 transition-colors duration-300 group-hover:bg-emerald-50 group-hover:text-emerald-600">
-                          <IconComponent className="h-5 w-5" />
-                        </div>
-                        
-                        <div>
-                          <p className="text-[11px] font-medium uppercase tracking-wider text-slate-400 group-hover:text-emerald-700 transition-colors">
-                            {item.label}
-                          </p>
-                          <p className="mt-0.5 text-base font-bold text-slate-800">
-                            {item.value}
-                          </p>
-                        </div>
-
-                        {/* Kart Sağ Ok Efekti */}
-                        <div className="absolute right-4 opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                          <ArrowRight className="h-4 w-4 text-emerald-500" />
-                        </div>
+                        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-xs font-bold text-emerald-700">
+                          {index + 1}
+                        </span>
+                        <span className="text-sm font-semibold text-slate-800">
+                          {item}
+                        </span>
                       </div>
-                    );
-                  })}
+                    ))}
+                  </div>
+
+                  <div className="mt-5 grid grid-cols-2 gap-3">
+                    <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
+                      <Clock className="h-4 w-4 text-slate-500" />
+                      <p className="mt-3 text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
+                        Response
+                      </p>
+                      <p className="mt-1 text-sm font-bold text-slate-900">
+                        Within 24h
+                      </p>
+                    </div>
+
+                    <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
+                      <MapPin className="h-4 w-4 text-slate-500" />
+                      <p className="mt-3 text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
+                        Patients
+                      </p>
+                      <p className="mt-1 text-sm font-bold text-slate-900">
+                        International
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 rounded-2xl border border-slate-100 bg-white/80 p-4">
+                    <div className="flex items-start gap-3">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-950 text-white">
+                        <LockKeyhole className="h-4 w-4" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-bold text-slate-900">
+                          Private, no-obligation enquiry
+                        </p>
+                        <p className="mt-1 text-xs leading-5 text-slate-500">
+                          Your details are reviewed discreetly before any clinic route is discussed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    href="#form"
+                    className="group mt-5 inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-slate-900 hover:shadow-xl hover:shadow-slate-950/20 active:scale-[0.98]"
+                  >
+                    <span>Start private review</span>
+                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </a>
                 </div>
-
-                {/* CTA Butonu */}
-                <a
-                  href="#form"
-                  className="group mt-6 inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-slate-900 hover:shadow-xl hover:shadow-slate-950/20 active:scale-[0.98]"
-                >
-                  <span>Start Free Consultation</span>
-                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                </a>
-
-                {/* Güven Verici Alt Metin */}
-                <p className="mt-3.5 text-center text-[11px] text-slate-400 flex items-center justify-center gap-1">
-                  <span className="inline-block h-1 w-1 rounded-full bg-slate-400" />
-                  No commitment required • 100% Confidential
-                </p>
               </div>
             </div>
 
@@ -395,6 +413,29 @@ export default function HomePageClient() {
               {item}
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-8">
+          <div className="overflow-hidden rounded-[30px] border border-slate-200 bg-[#fbf7ef] p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)] md:flex md:items-center md:justify-between md:gap-10 md:p-8">
+            <div className="max-w-xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+                Before & after photos
+              </p>
+
+              <h2 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-slate-950 md:text-3xl">
+                Patient result photos are discussed privately where appropriate.
+              </h2>
+            </div>
+
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600 md:mt-0">
+              We do not publish patient before-and-after galleries publicly. Where
+              clinically appropriate, partner doctors may discuss relevant examples
+              during a private consultation, helping protect patient privacy and
+              keeping examples relevant to your own case.
+            </p>
+          </div>
         </div>
       </section>
 
