@@ -283,7 +283,7 @@ export default function HomePageClient() {
                   href="#form"
                   className="inline-flex items-center justify-center rounded-full bg-white px-7 py-4 text-sm font-semibold text-slate-950 shadow-xl transition hover:-translate-y-0.5 hover:opacity-95"
                 >
-                  Get a private review
+                  Start a private enquiry
                 </a>
 
                 <Link
@@ -390,7 +390,7 @@ export default function HomePageClient() {
                     href="#form"
                     className="group mt-5 inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-slate-900 hover:shadow-xl hover:shadow-slate-950/20 active:scale-[0.98]"
                   >
-                    <span>Start private review</span>
+                    <span>Start a private enquiry</span>
                     <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </a>
                 </div>
@@ -806,18 +806,17 @@ export default function HomePageClient() {
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/45">
-              Private consultation
+              Private enquiry
             </p>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-              Get a private treatment plan review
+              Tell us what treatment you’re considering
             </h2>
 
             <p className="mt-5 text-base leading-8 text-white/65">
-              Share a few details and we’ll review your request more carefully
-              by email. We can help you think through destination fit, next
-              steps, and whether Istanbul or Antalya may be more appropriate for
-              your priorities.
+              Share a few details and we’ll help you understand suitable next
+              steps and, where appropriate, which clinic pathway may fit your
+              enquiry.
             </p>
 
             <div className="mt-8 grid gap-3 text-sm text-white/70">
@@ -863,9 +862,8 @@ export default function HomePageClient() {
                 <input
                   value={form.whatsapp}
                   onChange={(e) => updateField("whatsapp", e.target.value)}
-                  placeholder="WhatsApp number"
+                  placeholder="WhatsApp number (optional)"
                   className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
-                  required
                 />
 
                 <select
@@ -890,9 +888,8 @@ export default function HomePageClient() {
                   value={form.treatmentCity}
                   onChange={(e) => updateField("treatmentCity", e.target.value)}
                   className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
-                  required
                 >
-                  <option value="">Where would you like treatment?</option>
+                  <option value="">Where would you like treatment? (optional)</option>
                   <option>Istanbul</option>
                   <option>Antalya</option>
                   <option>Open to guidance / not sure yet</option>
@@ -902,9 +899,8 @@ export default function HomePageClient() {
                   value={form.location}
                   onChange={(e) => updateField("location", e.target.value)}
                   className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
-                  required
                 >
-                  <option value="">Where are you based?</option>
+                  <option value="">Where are you based? (optional)</option>
                   <option>United Kingdom</option>
                   <option>Europe</option>
                   <option>Middle East</option>
@@ -917,9 +913,8 @@ export default function HomePageClient() {
                 value={form.timeframe}
                 onChange={(e) => updateField("timeframe", e.target.value)}
                 className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
-                required
               >
-                <option value="">When are you considering treatment?</option>
+                <option value="">When are you considering treatment? (optional)</option>
                 <option>As soon as possible</option>
                 <option>Within 1 month</option>
                 <option>Within 1–3 months</option>
@@ -997,14 +992,14 @@ export default function HomePageClient() {
                 disabled={sending}
                 className="w-full rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
               >
-                {sending ? "Sending..." : "Get my private review"}
+                {sending ? "Sending..." : "Send my enquiry"}
               </button>
             </form>
 
             {submitted ? (
               <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-700">
-                Your request has been received. We’ll review it carefully and
-                get back to you by email.
+                Your enquiry has been received. We’ll review it and get back
+                to you within 24 hours.
               </div>
             ) : null}
           </div>

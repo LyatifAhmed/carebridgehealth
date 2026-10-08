@@ -186,14 +186,14 @@ export default function AboutPage() {
           </p>
 
           <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em]">
-            Generation Beta Digital Ltd
+            BetaOffice Ltd
           </h2>
 
           <div className="mt-7 space-y-4 text-sm leading-7 text-slate-700">
             <p>
-              3rd Floor, 86–90 Paul Street
+              66 Paul Street
               <br />
-              London EC2A 4NE, United Kingdom
+              London, England, EC2A 4NA, United Kingdom
             </p>
 
             <p>Company No: 16274319</p>
@@ -201,7 +201,7 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-7 rounded-2xl bg-slate-50 p-5 text-sm leading-7 text-slate-600">
-            CareBridge Health is operated by Generation Beta Digital Ltd as an
+            CareBridge Health is operated by BetaOffice Ltd as an
             independent treatment coordination service.
           </div>
         </div>

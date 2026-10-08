@@ -120,11 +120,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "-translate-y-3 opacity-0 pointer-events-none"
-          : "translate-y-0 opacity-100"
-      }`}
+      className="fixed left-0 right-0 top-0 z-50 transition-all duration-500"
     >
       <div className="mx-auto max-w-6xl px-6 py-4">
         <div
@@ -237,7 +233,7 @@ export default function Navbar() {
               onClick={closeDesktopDropdown}
               className={`rounded-xl px-4 py-2 text-sm font-medium transition-all duration-300 ${quoteButtonClasses}`}
             >
-              Get quote
+              Start enquiry
             </a>
 
             <button

@@ -42,11 +42,11 @@ export default function TermsPage() {
             <h2 className="font-medium text-slate-900">1. Who we are</h2>
             <p className="mt-2">
               CareBridge Health is operated by{" "}
-              <strong>Generation Beta Digital Ltd</strong>, a company registered
+              <strong>BetaOffice Ltd</strong>, a company registered
               in England and Wales.
             </p>
             <p className="mt-2">
-              Registered address: 3rd Floor, 86–90 Paul Street, London EC2A 4NE
+              Registered address: 66 Paul Street, London, England, EC2A 4NA
             </p>
           </div>
 
@@ -207,7 +207,7 @@ export default function TermsPage() {
 
             <p className="mt-2">
               You agree to indemnify and hold harmless CareBridge Health and
-              Generation Beta Digital Ltd from any claims, damages, or losses
+              BetaOffice Ltd from any claims, damages, or losses
               arising from your use of the service or decisions made based on
               introductions provided.
             </p>

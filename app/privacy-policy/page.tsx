@@ -41,11 +41,11 @@ export default function PrivacyPolicyPage() {
           <div>
             <h2 className="font-medium text-slate-900">1. Who we are</h2>
             <p className="mt-2">
-              CareBridge Health is operated by <strong>Generation Beta Digital Ltd</strong>,
+              CareBridge Health is operated by <strong>BetaOffice Ltd</strong>,
               a company registered in England and Wales.
             </p>
             <p className="mt-2">
-              Registered address: 3rd Floor, 86–90 Paul Street, London EC2A 4NE, United Kingdom
+              Registered address: 66 Paul Street, London, England, EC2A 4NA, United Kingdom
             </p>
             <p className="mt-2">Company number: 16274319</p>
             <p className="mt-2">
@@ -255,9 +255,9 @@ export default function PrivacyPolicyPage() {
               personal data, please contact:
             </p>
             <p className="mt-2">
-              <strong>Generation Beta Digital Ltd</strong>
+              <strong>BetaOffice Ltd</strong>
             </p>
-            <p>3rd Floor, 86–90 Paul Street, London EC2A 4NE, United Kingdom</p>
+            <p>66 Paul Street, London, England, EC2A 4NA, United Kingdom</p>
             <p className="mt-2">
               Email:{" "}
               <a
