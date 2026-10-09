@@ -10,9 +10,9 @@ export default function FueHairTransplantTurkeyPage() {
   return (
     <TreatmentLanding
       eyebrow="FUE hair transplant Turkey"
-      title="FUE hair transplant in Turkey with structured planning"
-      intro="FUE (Follicular Unit Extraction) is one of the most widely discussed hair transplant techniques in Turkey. Many UK patients explore FUE treatment because it can offer natural-looking results when properly planned and performed."
-      heroNote="The quality of a hair transplant depends on much more than the number of grafts. Hairline design, donor management, surgeon involvement, and long-term planning all matter."
+      title="FUE hair transplant in Turkey: procedure, costs and recovery"
+      intro="Considering an FUE hair transplant in Turkey? Learn how follicular unit extraction works, what affects the cost, how recovery progresses and what to check about surgeon involvement, donor hair and follow-up care before making a decision."
+      heroNote="Ask who will assess your suitability, design the hairline, extract and implant grafts, and manage complications. Confirm the clinician’s qualifications, donor-area assessment, aftercare plan and what is included in the quoted package."
       suitableFor={[
         "Patients researching FUE hair transplant treatment.",
         "People comparing private UK and Turkey options.",
@@ -28,6 +28,21 @@ export default function FueHairTransplantTurkeyPage() {
         "We help explain key planning considerations and treatment questions.",
         "If suitable, we help coordinate the next stage with the relevant provider route.",
       ]}
+      ctaTitle="Request an FUE hair transplant assessment"
+      ctaText="Tell us what you are considering. CareBridge can help connect your enquiry with a relevant medical provider for an initial review. Only an appropriately qualified clinician can assess suitability and recommend treatment."
+      primaryCtaLabel="Enquire about FUE treatment"
+      extraLinks={[
+        {
+          textBefore: "Explore pricing considerations: ",
+          linkText: "hair transplant cost in Turkey",
+          href: "/hair-transplant-cost-turkey",
+        },
+        {
+          textBefore: "Understand the wider treatment journey: ",
+          linkText: "how treatment in Turkey works",
+          href: "/how-treatment-in-turkey-works",
+        },
+      ]}
       faq={[
         {
           question: "What is FUE?",
@@ -42,7 +57,27 @@ export default function FueHairTransplantTurkeyPage() {
         {
           question: "How long does recovery take?",
           answer:
-            "Recovery timelines vary, but patients are usually able to resume many normal activities within a relatively short period. Clinics provide individual guidance.",
+            "Initial healing often takes days to weeks, while hair growth and cosmetic results develop over several months. Recovery varies, and your treating clinician should provide personalised aftercare and activity guidance.",
+        },
+        {
+          question: "Who performs the different stages of an FUE procedure?",
+          answer:
+            "Responsibilities vary between providers. Before booking, ask which qualified professionals perform the consultation, hairline design, local anaesthesia, graft extraction and implantation, and who supervises the procedure.",
+        },
+        {
+          question: "Why does donor-area management matter?",
+          answer:
+            "The donor area contains a limited supply of transplantable hair. Excessive extraction can affect its appearance and limit future treatment options. A clinician should assess donor density and long-term hair loss before recommending graft numbers.",
+        },
+        {
+          question: "Are FUE results guaranteed?",
+          answer:
+            "No. Growth and appearance depend on individual factors, graft survival, hair characteristics, existing hair loss and the treatment performed. Discuss realistic expectations, risks and alternatives with a qualified clinician.",
+        },
+        {
+          question: "What aftercare should I confirm before travelling?",
+          answer:
+            "Ask for written instructions, information about possible complications, follow-up arrangements after returning home and a clear contact route if problems arise. Also clarify whether any additional treatment or review would incur extra costs.",
         },
       ]}
     />
