@@ -162,11 +162,7 @@ export async function POST(req: NextRequest) {
     if (
       !data.fullName ||
       !data.email ||
-      !data.whatsapp ||
-      !data.treatment ||
-      !data.treatmentCity ||
-      !data.location ||
-      !data.timeframe
+      !data.treatment
     ) {
       return NextResponse.json(
         { error: "Missing required fields." },
@@ -208,7 +204,7 @@ export async function POST(req: NextRequest) {
     const ip = forwardedFor?.split(",")[0]?.trim() || realIp || "Unavailable";
     const userAgent = req.headers.get("user-agent") || "Unavailable";
 
-    await resend.emails.send({
+    const adminResult = await resend.emails.send({
       from: fromEmail,
       to: adminEmail,
       replyTo: data.email,
@@ -221,12 +217,41 @@ export async function POST(req: NextRequest) {
       }),
     });
 
-    await resend.emails.send({
-      from: fromEmail,
-      to: data.email,
-      subject: `We’ve received your treatment review request (${leadId})`,
-      html: buildCustomerHtml(data, leadId),
-    });
+    if (adminResult.error || !adminResult.data?.id) {
+      console.error(
+        "Consultation admin email failed:",
+        adminResult.error?.name || "Missing email ID"
+      );
+      return NextResponse.json(
+        { error: "Unable to deliver consultation request." },
+        { status: 502 }
+      );
+    }
+
+    try {
+      const customerResult = await resend.emails.send({
+        from: fromEmail,
+        to: data.email,
+        subject: `We’ve received your treatment review request (${leadId})`,
+        html: buildCustomerHtml(data, leadId),
+      });
+
+      if (customerResult.error) {
+        console.warn(
+          "Consultation confirmation email failed:",
+          leadId,
+          customerResult.error.name
+        );
+      }
+    } catch (confirmationError) {
+      console.warn(
+        "Consultation confirmation email threw an error:",
+        leadId,
+        confirmationError instanceof Error
+          ? confirmationError.name
+          : "Unknown error"
+      );
+    }
 
     return NextResponse.json({ success: true, leadId });
   } catch (error) {

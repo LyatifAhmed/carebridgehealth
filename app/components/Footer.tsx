@@ -33,15 +33,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-6 text-xs text-slate-400">
-              Part of{" "}
-              <a
-                href="https://gebedi.com"
-                target="_blank"
-                rel="noreferrer"
-                className="underline underline-offset-4 hover:text-slate-700"
-              >
-                Generation Beta Digital
-              </a>
+              A brand operated by BetaOffice Ltd.
             </p>
           </div>
 

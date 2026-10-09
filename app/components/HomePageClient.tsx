@@ -182,13 +182,13 @@ const premiumServiceCards = [
     ],
   },
   {
-    title: "Secure Stripe payment options",
-    desc: "Selected coordination and package payments can be handled securely through Stripe where appropriate.",
+    title: "Clear payment arrangements",
+    desc: "Treatment costs and payment arrangements are discussed directly with the relevant medical tourism provider before any booking.",
     bullets: [
-      "Stripe available for selected payments",
-      "Trusted card payment experience",
-      "Clearer payment handling before travel",
-      "Helpful for patients who prefer secure checkout",
+      "Payment details explained by the provider",
+      "Treatment costs confirmed before booking",
+      "Payments handled by the relevant provider",
+      "CareBridge does not collect treatment payments",
     ],
   },
 ];
@@ -760,8 +760,9 @@ export default function HomePageClient() {
               </h2>
               <p className="mt-5 text-base leading-8 text-slate-600">
                 Some patients want more than treatment coordination alone. Where
-                suitable, we can also help structure selected travel and payment
-                arrangements through trusted third-party partners.
+                suitable, travel arrangements may be coordinated through
+                third-party partners. Treatment payments are handled directly
+                by the relevant medical tourism provider.
               </p>
             </div>
 
