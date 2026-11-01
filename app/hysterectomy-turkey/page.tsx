@@ -3,7 +3,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
   title: "Hysterectomy Turkey 2026: Cost, Clinics & Recovery",
-  description: "Learn about hysterectomy treatment in Turkey, expected costs, recovery and what patients should know before surgery.",
+  description: "Research hysterectomy in Turkey: specialist assessment, surgical approaches, alternatives, recovery, aftercare and travel considerations for UK patients.",
   alternates: {
     canonical: "/hysterectomy-turkey",
   },
@@ -31,6 +31,10 @@ export default function HysterectomyTurkeyPage() {
         "We help clarify the information providers typically require for review.",
         "If suitable, we support the next stage of communication and treatment planning.",
       ]}
+      extraLinks={[
+        { linkText: "Read about myomectomy as a possible alternative in selected cases", href: "/myomectomy-turkey" },
+        { linkText: "Explore women's health treatment pathways", href: "/treatment-in-istanbul/womens-health" },
+      ]}
       faq={[
         {
           question: "Is a hysterectomy suitable for everyone?",
@@ -47,6 +51,8 @@ export default function HysterectomyTurkeyPage() {
           answer:
             "Recovery varies depending on the procedure and individual circumstances. The treating provider will explain recovery expectations and aftercare requirements.",
         },
+        { question: "Are there alternatives to hysterectomy?", answer: "Depending on the diagnosis, symptoms and fertility goals, a specialist may discuss medicines or other procedures. Alternatives are not suitable for every patient and require individual clinical assessment." },
+        { question: "What should I clarify before arranging travel?", answer: "Discuss the proposed surgical approach, expected hospital stay, recovery restrictions, risk of complications, follow-up and when your treating team considers travel safe." },
       ]}
     />
   );
