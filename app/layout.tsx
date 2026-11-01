@@ -49,10 +49,6 @@ export const metadata: Metadata = {
     "CareBridge Health",
   ],
 
-  alternates: {
-    canonical: "/",
-  },
-
   openGraph: {
     title: "CareBridge Health | Medical Treatment in Turkey from the UK",
     description:
