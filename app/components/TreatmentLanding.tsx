@@ -225,7 +225,7 @@ export default function TreatmentLanding({
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-6 pb-20 md:px-10 md:pb-24">
+      <section className="mx-auto max-w-6xl px-6 pb-12 md:px-10">\n        <div className="rounded-[28px] border border-neutral-200 bg-white p-7 md:p-9">\n          <h2 className="text-2xl font-semibold tracking-[-0.02em]">Plan your treatment with confidence</h2>\n          <p className="mt-3 max-w-3xl text-base leading-7 text-neutral-700">Before choosing a provider, review credentials, treatment risks, follow-up care and what is included in a written quote.</p>\n          <div className="mt-5 flex flex-wrap gap-5 text-sm">\n            <Link href="/blog/how-to-choose-a-clinic-in-turkey" className="font-medium underline underline-offset-4">How to choose a clinic</Link>\n            <Link href="/blog/is-treatment-in-turkey-safe-for-uk-patients" className="font-medium underline underline-offset-4">Safety for UK patients</Link>\n            <Link href="/how-treatment-in-turkey-works" className="font-medium underline underline-offset-4">How coordination works</Link>\n          </div>\n        </div>\n      </section>\n\n      <section className="mx-auto max-w-4xl px-6 pb-20 md:px-10 md:pb-24">
         <h2 className="text-3xl font-semibold tracking-[-0.03em]">
           Frequently asked questions
         </h2>
