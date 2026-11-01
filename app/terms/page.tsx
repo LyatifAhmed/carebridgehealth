@@ -262,10 +262,10 @@ export default function TermsPage() {
             <p className="mt-2">
               Email:{" "}
               <a
-                href="mailto:info@gebedi.com"
+                href="/contact"
                 className="underline underline-offset-2 hover:text-slate-900"
               >
-                info@gebedi.com
+                contact form
               </a>
             </p>
           </div>
