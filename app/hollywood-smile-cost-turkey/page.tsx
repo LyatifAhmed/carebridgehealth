@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/hollywood-smile-cost-turkey" },
   title: "Hollywood Smile Cost Turkey 2026: Prices, Packages & Options",
   description: "Compare Hollywood Smile prices in Turkey, what's included in treatment packages and factors affecting the final cost.",
 };
