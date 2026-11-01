@@ -3,7 +3,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
   title: "Genital Aesthetic Surgery Turkey 2026: Cost, Recovery & Clinics",
-  description: "Compare genital aesthetic surgery options in Turkey, expected costs, recovery and clinic selection guidance.",
+  description: "Explore genital aesthetic surgery in Turkey: private specialist assessment, questions to ask about risks, recovery, aftercare and UK travel planning.",
   alternates: {
     canonical: "/genital-aesthetic-surgery-turkey",
   },
@@ -31,6 +31,10 @@ export default function GenitalAestheticSurgeryTurkeyPage() {
         "We help clarify what information providers may need for an initial review.",
         "If suitable, we support the next stage of provider communication and treatment planning.",
       ]}
+      extraLinks={[
+        { linkText: "Read about labiaplasty treatment options", href: "/labiaplasty-turkey" },
+        { linkText: "Explore women's health treatment pathways in Istanbul", href: "/treatment-in-istanbul/womens-health" },
+      ]}
       faq={[
         {
           question: "What procedures are included under genital aesthetic surgery?",
@@ -47,6 +51,8 @@ export default function GenitalAestheticSurgeryTurkeyPage() {
           answer:
             "Recovery varies depending on the procedure and individual circumstances. The treating provider will explain expected recovery and aftercare requirements.",
         },
+        { question: "What should I ask before choosing a provider?", answer: "Ask which procedure is being proposed, who will perform it, their qualifications, expected benefits and risks, aftercare arrangements and what happens if complications arise. A qualified clinician must assess suitability." },
+        { question: "What should I plan before returning to the UK?", answer: "Ask your treating team about follow-up appointments, wound care, activity restrictions, travel fitness and whom to contact after returning home. Do not book travel solely around a package timetable." },
       ]}
     />
   );
