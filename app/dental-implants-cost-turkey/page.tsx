@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/dental-implants-cost-turkey" },
   title: "Dental Implants Cost Turkey 2026: Prices, Packages & Options",
   description: "Discover average dental implant prices in Turkey, what influences costs, treatment packages and how to compare clinics safely.",
 };
