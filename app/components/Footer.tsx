@@ -42,17 +42,17 @@ export default function Footer() {
 
             <ul className="mt-5 space-y-3 text-sm text-slate-600">
               <li>
-                <a href="#services" className="transition hover:text-slate-900">
+                <a href="/#services" className="transition hover:text-slate-900">
                   Treatments
                 </a>
               </li>
               <li>
-                <a href="#process" className="transition hover:text-slate-900">
+                <a href="/#process" className="transition hover:text-slate-900">
                   Process
                 </a>
               </li>
               <li>
-                <a href="#why" className="transition hover:text-slate-900">
+                <a href="/#why" className="transition hover:text-slate-900">
                   Why us
                 </a>
               </li>
@@ -62,7 +62,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#form" className="transition hover:text-slate-900">
+                <a href="/#form" className="transition hover:text-slate-900">
                   Consultation
                 </a>
               </li>
