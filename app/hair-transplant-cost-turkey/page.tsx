@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/hair-transplant-cost-turkey" },
   title: "Hair Transplant Cost Turkey 2026: Prices, Grafts & Packages",
   description: "See average hair transplant prices in Turkey, what affects the cost, package options and how UK patients can compare clinics with confidence.",
 };
