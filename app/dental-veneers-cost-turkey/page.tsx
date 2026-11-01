@@ -3,7 +3,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
   title: "Dental Veneers Cost Turkey 2026: Prices, Materials & Packages",
-  description: "Find out how much dental veneers cost in Turkey, what affects pricing and how UK patients can compare treatment options.",
+  description: "Dental veneers cost in Turkey for UK patients: compare porcelain and composite options, itemised quotes, tooth preparation, aftercare and total travel costs.",
   alternates: { canonical: "/dental-veneers-cost-turkey" },
 };
 
@@ -33,6 +33,8 @@ export default function DentalVeneersCostTurkeyPage() {
       ctaText="Tell us what you are considering. CareBridge can help pass your enquiry to a relevant provider for assessment and an initial estimate. A dentist must determine suitability and the final treatment plan."
       primaryCtaLabel="Enquire about dental veneers"
       extraLinks={[
+        { linkText: "Compare veneers treatment options", href: "/veneers-turkey" },
+        { linkText: "Explore Hollywood Smile planning and costs", href: "/hollywood-smile-cost-turkey" },
         {
           textBefore: "Compare treatment planning: ",
           linkText: "dental treatment in Turkey",
@@ -45,6 +47,8 @@ export default function DentalVeneersCostTurkeyPage() {
         },
       ]}
       faq={[
+        { question: "How can I compare veneer quotes from different clinics?", answer: "Ask each clinic to specify the number of teeth, veneer material, whether the quote is for veneers or crowns, required tooth preparation, examinations, temporary restorations, aftercare and any excluded fees. A remote estimate is not a confirmed treatment plan." },
+        { question: "What should UK patients arrange for follow-up?", answer: "Discuss maintenance, repair or replacement needs, who to contact if a veneer chips or becomes uncomfortable, and whether your UK dentist can access the treatment records. Factor possible return travel into the total cost." },
         {
           question: "Why do veneer prices vary?",
           answer:
