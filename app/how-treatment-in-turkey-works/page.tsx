@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/how-treatment-in-turkey-works" },
   title: "How Treatment in Turkey Works | CareBridge Health",
   description:
     "Learn how CareBridge Health supports UK-based patients exploring treatment in Turkey through independent clinics and authorised local healthcare partners.",
