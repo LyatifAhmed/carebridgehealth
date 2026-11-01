@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/fue-hair-transplant-turkey" },
   title: "FUE Hair Transplant Turkey 2026: Cost, FUE Clinics & Recovery",
   description: "Learn how FUE hair transplants work in Turkey, expected recovery, costs, results and what to compare before choosing a clinic.",
 };
