@@ -4,7 +4,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 export const metadata: Metadata = {
   alternates: { canonical: "/fue-hair-transplant-turkey" },
   title: "FUE Hair Transplant Turkey 2026: Cost, FUE Clinics & Recovery",
-  description: "Learn how FUE hair transplants work in Turkey, expected recovery, costs, results and what to compare before choosing a clinic.",
+  description: "FUE hair transplant in Turkey for UK patients: understand graft planning, donor-area risks, clinician involvement, recovery, costs and follow-up care.",
 };
 
 export default function FueHairTransplantTurkeyPage() {
@@ -33,6 +33,8 @@ export default function FueHairTransplantTurkeyPage() {
       ctaText="Tell us what you are considering. CareBridge can help connect your enquiry with a relevant medical provider for an initial review. Only an appropriately qualified clinician can assess suitability and recommend treatment."
       primaryCtaLabel="Enquire about FUE treatment"
       extraLinks={[
+        { linkText: "Compare hair transplant treatment approaches", href: "/hair-transplant-turkey" },
+        { linkText: "Read the UK–Turkey hair transplant cost comparison", href: "/blog/hair-transplant-turkey-vs-uk-cost" },
         {
           textBefore: "Explore pricing considerations: ",
           linkText: "hair transplant cost in Turkey",
@@ -45,6 +47,8 @@ export default function FueHairTransplantTurkeyPage() {
         },
       ]}
       faq={[
+        { question: "How should I compare FUE clinic quotes?", answer: "Ask for the proposed graft range and how it was determined, who performs each stage, what happens if the procedure plan changes, and whether medication, aftercare, follow-up and complication management are included." },
+        { question: "What should I consider before flying home after FUE?", answer: "Ask the treating clinician when travel is appropriate, how to protect the treated area, what symptoms need urgent review and how follow-up will work from the UK. Recovery and travel advice should be personalised." },
         {
           question: "What is FUE?",
           answer:
