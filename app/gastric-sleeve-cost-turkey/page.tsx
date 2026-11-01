@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/gastric-sleeve-cost-turkey" },
   title: "Gastric Sleeve Cost Turkey 2026: Prices, Packages & Recovery",
   description: "Discover gastric sleeve surgery prices in Turkey, what's included, recovery expectations and how to compare treatment providers.",
 };
