@@ -51,10 +51,10 @@ export default function PrivacyPolicyPage() {
             <p className="mt-2">
               For privacy-related questions, you can contact us at:{" "}
               <a
-                href="mailto:info@gebedi.com"
+                href="/contact"
                 className="underline underline-offset-2 hover:text-slate-900"
               >
-                info@gebedi.com
+                contact form
               </a>
             </p>
           </div>
@@ -204,10 +204,10 @@ export default function PrivacyPolicyPage() {
             <p className="mt-2">
               To exercise your rights, please contact{" "}
               <a
-                href="mailto:info@gebedi.com"
+                href="/contact"
                 className="underline underline-offset-2 hover:text-slate-900"
               >
-                info@gebedi.com
+                contact form
               </a>.
             </p>
           </div>
@@ -219,10 +219,10 @@ export default function PrivacyPolicyPage() {
               health-related information, you may withdraw that consent at any time by
               contacting us at{" "}
               <a
-                href="mailto:info@gebedi.com"
+                href="/contact"
                 className="underline underline-offset-2 hover:text-slate-900"
               >
-                info@gebedi.com
+                contact form
               </a>.
             </p>
             <p className="mt-2">
@@ -261,10 +261,10 @@ export default function PrivacyPolicyPage() {
             <p className="mt-2">
               Email:{" "}
               <a
-                href="mailto:info@gebedi.com"
+                href="/contact"
                 className="underline underline-offset-2 hover:text-slate-900"
               >
-                info@gebedi.com
+                contact form
               </a>
             </p>
           </div>
