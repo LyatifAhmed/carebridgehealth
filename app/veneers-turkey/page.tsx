@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/veneers-turkey" },
   title: "Dental Veneers Turkey 2026: Cost, Smile Design & Clinics",
   description: "Compare dental veneers in Turkey, treatment options, smile design, costs and what to know before choosing a cosmetic dentist.",
 };
