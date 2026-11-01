@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/dental-treatment-turkey" },
   title: "Dental Treatment Turkey 2026: Implants, Veneers & Smile Makeovers",
   description: "Explore dental treatment in Turkey including implants, veneers, crowns and smile makeovers with practical guidance for UK patients.",
 };
