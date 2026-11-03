@@ -51,6 +51,20 @@ export default function TreatmentLanding({
   tertiaryCtaLabel = "Read patient insights",
   extraLinks = [],
 }: TreatmentLandingProps) {
+  const illustration = /dental|veneer|teeth/i.test(title)
+    ? {
+        src: "https://unsplash.com/photos/rRgjO2Y1g1E/download?force=true&w=1400",
+        alt: "Dentist examining a patient in a clinical setting",
+        credit: "Ozkan Guner",
+      }
+    : /eye|vision|lasik/i.test(title)
+      ? {
+          src: "https://unsplash.com/photos/CHcv0c_gb2U/download?force=true&w=1400",
+          alt: "Eye examination using medical equipment",
+          credit: "Navy Medicine",
+        }
+      : null;
+
   function openChat() {
     if (typeof window !== "undefined") {
       window.dispatchEvent(new Event("open-carebridge-chat"));
@@ -72,6 +86,22 @@ export default function TreatmentLanding({
           <p className="mt-6 max-w-3xl text-lg leading-8 text-neutral-600 md:text-xl">
             {intro}
           </p>
+
+          {illustration && (
+            <figure className="mt-9 max-w-4xl overflow-hidden rounded-[28px] border border-neutral-200 bg-neutral-100">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={illustration.src}
+                alt={illustration.alt}
+                loading="lazy"
+                decoding="async"
+                className="aspect-[16/9] w-full object-cover"
+              />
+              <figcaption className="px-5 py-3 text-xs text-neutral-500">
+                Illustrative stock image, not a partner clinic. Photo: {illustration.credit} / Unsplash.
+              </figcaption>
+            </figure>
+          )}
 
           <div className="mt-8 max-w-3xl rounded-[28px] border border-neutral-200 bg-white p-6 shadow-sm md:p-7">
             <p className="text-base leading-7 text-neutral-700">{heroNote}</p>
