@@ -153,7 +153,34 @@ export default function BlogPage() {
           informed starting point.
         </p>
 
-        <div className="mt-12 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+        <section aria-labelledby="featured-guides" className="mt-12">
+          <div className="flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-teal-700">Start here</p>
+              <h2 id="featured-guides" className="mt-2 text-2xl font-semibold tracking-tight md:text-3xl">Featured patient guides</h2>
+            </div>
+            <p className="max-w-sm text-sm leading-6 text-slate-600">Practical comparisons covering clinical assessment, treatment planning and aftercare.</p>
+          </div>
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
+            {[
+              posts.find((post) => post.href.endsWith("lasik-eye-surgery-turkey-vs-uk")),
+              posts.find((post) => post.href.endsWith("gastric-sleeve-turkey-vs-uk-cost")),
+              posts.find((post) => post.href.endsWith("veneers-turkey-vs-uk-cost")),
+            ].filter((post): post is (typeof posts)[number] => Boolean(post)).map((post) => (
+              <Link key={post.href} href={post.href} className="group overflow-hidden rounded-[24px] border border-teal-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <EditorialImage src={articleImage(post.href)} alt="Illustrative healthcare photography" className="aspect-[16/10] w-full object-cover" />
+                <div className="p-6">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-teal-700">Featured guide</p>
+                  <h3 className="mt-3 text-xl font-semibold leading-snug">{post.title}</h3>
+                  <p className="mt-3 line-clamp-3 text-sm leading-6 text-slate-600">{post.description}</p>
+                  <p className="mt-5 text-sm font-semibold">Explore guide <span aria-hidden="true">→</span></p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+        <h2 className="mt-16 text-2xl font-semibold tracking-tight">All patient guides</h2>
+        <div className="mt-6 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <Link
               key={post.title}
