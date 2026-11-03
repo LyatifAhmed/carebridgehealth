@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Insights | CareBridge Health",
-  description: "Learn about labiaplasty in Turkey including expected costs, recovery, privacy and treatment planning guidance.",
+  description: "Explore CareBridge Health guides to treatment in Turkey, including costs, clinic selection, recovery, and practical advice for UK patients.",
   alternates: {
     canonical: "/blog",
   },
@@ -120,6 +120,20 @@ const posts = [
   },
 ];
 
+const articleImages = {
+  dental: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=75",
+  eye: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=75",
+  surgery: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=900&q=75",
+  care: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=75",
+} as const;
+
+function articleImage(href: string) {
+  if (/dental|veneers|hollywood-smile/.test(href)) return articleImages.dental;
+  if (/lasik|cataract|eye/.test(href)) return articleImages.eye;
+  if (/rhinoplasty|breast|facelift|liposuction|labiaplasty/.test(href)) return articleImages.surgery;
+  return articleImages.care;
+}
+
 export default function BlogPage() {
   return (
     <main className="bg-[#fcfaf7] text-slate-900">
@@ -138,22 +152,38 @@ export default function BlogPage() {
           informed starting point.
         </p>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
+        <div className="mt-12 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <Link
               key={post.title}
               href={post.href}
-              className="rounded-[28px] border border-slate-200 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition hover:-translate-y-1"
+              className="group flex h-full flex-col overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition duration-200 hover:-translate-y-1 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-900"
             >
-              <h2 className="text-2xl font-semibold tracking-[-0.03em]">
-                {post.title}
-              </h2>
-              <p className="mt-4 text-sm leading-7 text-slate-600">
-                {post.description}
-              </p>
-              <p className="mt-6 text-sm font-medium text-slate-900">
-                Read article →
-              </p>
+              <div className="aspect-[16/10] overflow-hidden bg-slate-100">
+                {/* Illustrative stock photography, not CareBridge partner facilities. */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={articleImage(post.href)}
+                  alt="Illustrative healthcare photography for this article"
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Patient guide
+                </p>
+                <h2 className="mt-3 text-xl font-semibold leading-snug tracking-[-0.025em]">
+                  {post.title}
+                </h2>
+                <p className="mt-3 line-clamp-3 text-sm leading-6 text-slate-600">
+                  {post.description}
+                </p>
+                <p className="mt-auto pt-6 text-sm font-semibold text-slate-900">
+                  Read article <span aria-hidden="true">→</span>
+                </p>
+              </div>
             </Link>
           ))}
         </div>
