@@ -4,6 +4,33 @@ import { notFound } from "next/navigation";
 import { posts } from "./posts";
 import type { BlogSection } from "./types";
 
+
+// Licensed illustrative photographs from Unsplash, not CareBridge partner facilities.
+// Source: https://unsplash.com/license
+const editorialPhotos = {
+  dental: {
+    src: "https://unsplash.com/photos/rRgjO2Y1g1E/download?force=true&w=1400",
+    alt: "Dentist examining a patient in a dental clinic",
+    credit: "Ozkan Guner / Unsplash",
+  },
+  eye: {
+    src: "https://unsplash.com/photos/CHcv0c_gb2U/download?force=true&w=1400",
+    alt: "Clinician examining a patient's eye with medical equipment",
+    credit: "Navy Medicine / Unsplash",
+  },
+  hair: {
+    src: "https://unsplash.com/photos/AWqHc49SU-c/download?force=true&w=1400",
+    alt: "Dental clinical treatment setting",
+    credit: "Ozkan Guner / Unsplash",
+  },
+} as const;
+
+function editorialPhotoFor(slug: string) {
+  if (/dental|veneers|hollywood-smile/.test(slug)) return editorialPhotos.dental;
+  if (/lasik|cataract|eye/.test(slug)) return editorialPhotos.eye;
+  return null;
+}
+
 type Props = {
   params: Promise<{
     slug: string;
@@ -107,6 +134,8 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
+  const editorialPhoto = editorialPhotoFor(post.slug);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -127,7 +156,7 @@ export default async function BlogPostPage({ params }: Props) {
     mainEntityOfPage: `https://www.carebridgehealth.co/blog/${post.slug}`,
     datePublished: "2026-06-19",
     dateModified: new Date().toISOString(),
-    image: "https://www.carebridgehealth.co/og-image.jpg",
+    image: editorialPhoto ? editorialPhoto.src : "https://www.carebridgehealth.co/og-image.jpg",
   };
 
   return (
@@ -149,6 +178,23 @@ export default async function BlogPostPage({ params }: Props) {
         <p className="mt-6 text-base leading-8 text-slate-600">
           {post.description}
         </p>
+
+        {editorialPhoto && (
+          <figure className="mt-10 overflow-hidden rounded-[28px] border border-slate-200 bg-slate-100">
+            {/* Standard img supports the Unsplash download redirect without remote image configuration. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={editorialPhoto.src}
+              alt={editorialPhoto.alt}
+              loading="lazy"
+              decoding="async"
+              className="aspect-[16/9] w-full object-cover"
+            />
+            <figcaption className="px-5 py-3 text-xs leading-5 text-slate-500">
+              Illustrative stock photograph, not a CareBridge partner clinic. Photo: {editorialPhoto.credit}.
+            </figcaption>
+          </figure>
+        )}
 
         <div className="mt-10 space-y-6">
           {post.sections.map((section, index) => renderSection(section, index))}
