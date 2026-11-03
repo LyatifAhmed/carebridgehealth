@@ -55,9 +55,9 @@ export default function TreatmentLanding({
 }: TreatmentLandingProps) {
   const illustration = /dental|veneer|teeth/i.test(title)
     ? {
-        src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1400&q=80",
-        alt: "Smiling woman portrait illustrating patient confidence",
-        credit: "Unsplash",
+        src: "/carebridge-dental-consultation.png",
+        alt: "Illustrative dental consultation scene created for CareBridge Health",
+        credit: "CareBridge Health",
       }
     : /eye|vision|lasik/i.test(title)
       ? {
@@ -69,13 +69,13 @@ export default function TreatmentLanding({
         ? {
             src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80",
             alt: "Medical professional in a healthcare setting; illustrative photograph",
-            credit: "Unsplash",
+            credit: "CareBridge Health",
           }
         : /breast|rhinoplasty|facelift|liposuction|tummy tuck|cosmetic|aesthetic/i.test(title)
           ? {
               src: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1400&q=80",
               alt: "Modern healthcare environment; illustrative photograph",
-              credit: "Unsplash",
+              credit: "CareBridge Health",
             }
           : null;
 
