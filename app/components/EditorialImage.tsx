@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 type Props = {
   src: string;
@@ -23,6 +24,9 @@ export default function EditorialImage({ src, alt, className = "", loading = "la
         </div>
       </div>
     );
+  }
+  if (src.startsWith("/")) {
+    return <Image src={src} alt={alt} width={1200} height={675} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 85vw, 1100px" quality={75} loading={loading} onError={() => setFailed(true)} className={className} />;
   }
   return <img src={src} alt={alt} loading={loading} decoding="async" onError={() => setFailed(true)} className={className} />;
 }
