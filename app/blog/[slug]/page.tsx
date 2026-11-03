@@ -10,9 +10,9 @@ import type { BlogSection } from "./types";
 // Source: https://unsplash.com/license
 const editorialPhotos = {
   dental: {
-    src: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1400&q=80",
-    alt: "Dentist examining a patient in a dental clinic",
-    credit: "Ozkan Guner / Unsplash",
+    src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1400&q=80",
+    alt: "Smiling woman portrait illustrating patient confidence",
+    credit: "Unsplash",
   },
   eye: {
     src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80",
