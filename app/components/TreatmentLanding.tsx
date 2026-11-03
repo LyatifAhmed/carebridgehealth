@@ -1,3 +1,4 @@
+import EditorialImage from "./EditorialImage";
 "use client";
 
 import Link from "next/link";
@@ -53,13 +54,13 @@ export default function TreatmentLanding({
 }: TreatmentLandingProps) {
   const illustration = /dental|veneer|teeth/i.test(title)
     ? {
-        src: "https://unsplash.com/photos/rRgjO2Y1g1E/download?force=true&w=1400",
+        src: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1400&q=80",
         alt: "Dentist examining a patient in a clinical setting",
         credit: "Ozkan Guner",
       }
     : /eye|vision|lasik/i.test(title)
       ? {
-          src: "https://unsplash.com/photos/CHcv0c_gb2U/download?force=true&w=1400",
+          src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80",
           alt: "Eye examination using medical equipment",
           credit: "Navy Medicine",
         }
@@ -101,12 +102,10 @@ export default function TreatmentLanding({
 
           {illustration && (
             <figure className="mt-9 max-w-4xl overflow-hidden rounded-[28px] border border-neutral-200 bg-neutral-100">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <EditorialImage
                 src={illustration.src}
                 alt={illustration.alt}
                 loading="lazy"
-                decoding="async"
                 className="aspect-[16/9] w-full object-cover"
               />
               <figcaption className="px-5 py-3 text-xs text-neutral-500">
