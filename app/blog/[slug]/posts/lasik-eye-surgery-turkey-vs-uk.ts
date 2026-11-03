@@ -82,6 +82,43 @@ export const lasikEyeSurgeryTurkeyVsUk: BlogPost = {
 
     {
       type: "heading",
+      content: "LASIK in Turkey vs the UK: what to compare",
+    },
+    {
+      type: "bulletList",
+      items: [
+        "Clinical assessment: ask for a complete eye examination and an explanation of suitability, regardless of country.",
+        "Total cost: compare written quotes for examinations, surgery, medication, follow-up and possible additional fees.",
+        "Aftercare: confirm who will review you after surgery and who handles complications after your return to the UK.",
+        "Travel: ask your ophthalmologist when flying is appropriate and which follow-up appointments are needed before departure.",
+        "Provider credentials: verify the surgeon's registration, facility authorisation and complaints process.",
+      ],
+    },
+    {
+      type: "heading",
+      content: "Risks and alternatives",
+    },
+    {
+      type: "paragraph",
+      content: "Possible complications include dry eyes, glare, halos, under- or over-correction and, rarely, serious vision problems. LASIK is not suitable for everyone. An ophthalmologist should explain individual risks and alternatives such as glasses, contact lenses or other procedures before you decide.",
+    },
+    {
+      type: "heading",
+      content: "Planning follow-up care when returning to the UK",
+    },
+    {
+      type: "paragraph",
+      content: "Request a written follow-up schedule, urgent contact details and copies of your clinical records before travelling. Do not assume a UK clinic will provide follow-up without an arrangement. Severe pain or sudden changes in vision require urgent medical assessment.",
+    },
+    {
+      type: "linkParagraph",
+      contentBefore: "For independent information, read the ",
+      linkText: "NHS guidance on laser eye surgery",
+      href: "https://www.nhs.uk/conditions/laser-eye-surgery/",
+      contentAfter: ".",
+    },
+    {
+      type: "heading",
       content: "Looking beyond the headline price",
     },
 
@@ -104,7 +141,7 @@ export const lasikEyeSurgeryTurkeyVsUk: BlogPost = {
   ctaTitle: "Researching LASIK treatment options?",
 
   ctaText:
-    "CareBridge Health helps patients explore treatment pathways with clearer information and a more structured starting point.",
+    "CareBridge Health can help you prepare questions and explore provider pathways. A qualified ophthalmologist must assess your suitability and explain risks before any treatment decision.",
 
   ctaLinks: [
     {
