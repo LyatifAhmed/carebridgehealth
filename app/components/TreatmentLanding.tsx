@@ -1,5 +1,6 @@
-import EditorialImage from "./EditorialImage";
 "use client";
+
+import EditorialImage from "./EditorialImage";
 
 import Link from "next/link";
 
