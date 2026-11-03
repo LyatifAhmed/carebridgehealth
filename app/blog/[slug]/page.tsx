@@ -1,3 +1,4 @@
+import EditorialImage from "../../components/EditorialImage";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -9,12 +10,12 @@ import type { BlogSection } from "./types";
 // Source: https://unsplash.com/license
 const editorialPhotos = {
   dental: {
-    src: "https://unsplash.com/photos/rRgjO2Y1g1E/download?force=true&w=1400",
+    src: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1400&q=80",
     alt: "Dentist examining a patient in a dental clinic",
     credit: "Ozkan Guner / Unsplash",
   },
   eye: {
-    src: "https://unsplash.com/photos/CHcv0c_gb2U/download?force=true&w=1400",
+    src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80",
     alt: "Clinician examining a patient's eye with medical equipment",
     credit: "Navy Medicine / Unsplash",
   },
@@ -187,12 +188,10 @@ export default async function BlogPostPage({ params }: Props) {
         {editorialPhoto && (
           <figure className="mt-10 overflow-hidden rounded-[28px] border border-slate-200 bg-slate-100">
             {/* Standard img supports the Unsplash download redirect without remote image configuration. */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <EditorialImage
               src={editorialPhoto.src}
               alt={editorialPhoto.alt}
               loading="lazy"
-              decoding="async"
               className="aspect-[16/9] w-full object-cover"
             />
             <figcaption className="px-5 py-3 text-xs leading-5 text-slate-500">
