@@ -1,3 +1,4 @@
+import EditorialImage from "../components/EditorialImage";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -161,12 +162,10 @@ export default function BlogPage() {
             >
               <div className="aspect-[16/10] overflow-hidden bg-slate-100">
                 {/* Illustrative stock photography, not CareBridge partner facilities. */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <EditorialImage
                   src={articleImage(post.href)}
                   alt="Illustrative healthcare photography for this article"
                   loading="lazy"
-                  decoding="async"
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
                 />
               </div>
