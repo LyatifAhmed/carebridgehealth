@@ -63,7 +63,19 @@ export default function TreatmentLanding({
           alt: "Eye examination using medical equipment",
           credit: "Navy Medicine",
         }
-      : null;
+      : /hair|fue|transplant/i.test(title)
+        ? {
+            src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80",
+            alt: "Medical professional in a healthcare setting; illustrative photograph",
+            credit: "Unsplash",
+          }
+        : /breast|rhinoplasty|facelift|liposuction|tummy tuck|cosmetic|aesthetic/i.test(title)
+          ? {
+              src: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1400&q=80",
+              alt: "Modern healthcare environment; illustrative photograph",
+              credit: "Unsplash",
+            }
+          : null;
 
   function openChat() {
     if (typeof window !== "undefined") {
