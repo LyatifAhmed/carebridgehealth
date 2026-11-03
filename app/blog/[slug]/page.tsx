@@ -18,11 +18,6 @@ const editorialPhotos = {
     alt: "Clinician examining a patient's eye with medical equipment",
     credit: "Navy Medicine / Unsplash",
   },
-  hair: {
-    src: "https://unsplash.com/photos/AWqHc49SU-c/download?force=true&w=1400",
-    alt: "Dental clinical treatment setting",
-    credit: "Ozkan Guner / Unsplash",
-  },
 } as const;
 
 function editorialPhotoFor(slug: string) {
