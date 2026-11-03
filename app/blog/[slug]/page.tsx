@@ -10,9 +10,9 @@ import type { BlogSection } from "./types";
 // Source: https://unsplash.com/license
 const editorialPhotos = {
   dental: {
-    src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1400&q=80",
-    alt: "Smiling woman portrait illustrating patient confidence",
-    credit: "Unsplash",
+    src: "/carebridge-dental-consultation.png",
+    alt: "Illustrative dental consultation scene created for CareBridge Health",
+    credit: "CareBridge Health",
   },
   eye: {
     src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80",
@@ -27,12 +27,12 @@ function editorialPhotoFor(slug: string) {
   if (/hair|transplant|fue/.test(slug)) return {
     src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80",
     alt: "Medical professional in a healthcare setting; illustrative photograph",
-    credit: "Unsplash",
+    credit: "CareBridge Health",
   };
   if (/breast|rhinoplasty|facelift|liposuction|tummy|cosmetic|augmentation|labiaplasty/.test(slug)) return {
     src: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1400&q=80",
     alt: "Modern healthcare setting; illustrative photograph",
-    credit: "Unsplash",
+    credit: "CareBridge Health",
   };
   return null;
 }
