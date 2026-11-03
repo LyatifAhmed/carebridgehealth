@@ -55,9 +55,9 @@ export default function TreatmentLanding({
 }: TreatmentLandingProps) {
   const illustration = /dental|veneer|teeth/i.test(title)
     ? {
-        src: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1400&q=80",
-        alt: "Dentist examining a patient in a clinical setting",
-        credit: "Ozkan Guner",
+        src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1400&q=80",
+        alt: "Smiling woman portrait illustrating patient confidence",
+        credit: "Unsplash",
       }
     : /eye|vision|lasik/i.test(title)
       ? {
