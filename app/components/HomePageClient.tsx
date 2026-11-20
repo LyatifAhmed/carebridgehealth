@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
+import { recordCareBridgeEvent } from "./AnalyticsConsent";
 import HeroCursor from "./HeroCursor";
 import InsightsPreview from "./InsightsPreview";
 import FounderSection from "./FounderSection";
@@ -197,6 +198,22 @@ export default function HomePageClient() {
   const [form, setForm] = useState<ConsultationForm>(initialState);
   const [sending, setSending] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const formObserved = useRef(false);
+  const formStarted = useRef(false);
+
+  useEffect(() => {
+    const node = document.getElementById("form");
+    if (!node || !("IntersectionObserver" in window)) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !formObserved.current) {
+        formObserved.current = true;
+        recordCareBridgeEvent("consultation_form_viewed");
+        observer.disconnect();
+      }
+    }, { threshold: 0.15 });
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   function updateField<K extends keyof ConsultationForm>(
     key: K,
@@ -222,7 +239,9 @@ export default function HomePageClient() {
       }
 
       setSubmitted(true);
+      recordCareBridgeEvent("consultation_form_submitted");
       setForm(initialState);
+      formStarted.current = false;
     } catch (error) {
       console.error(error);
       alert("Something went wrong while sending your request.");
@@ -839,7 +858,12 @@ export default function HomePageClient() {
           </div>
 
           <div className="rounded-[34px] border border-white/10 bg-white p-6 text-slate-950 shadow-2xl md:p-8">
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} data-clarity-mask="true" onChangeCapture={() => {
+              if (!formStarted.current) {
+                formStarted.current = true;
+                recordCareBridgeEvent("consultation_form_started");
+              }
+            }} className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <input
                   value={form.fullName}
