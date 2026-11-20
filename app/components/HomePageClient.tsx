@@ -631,9 +631,9 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      <PatientJourneySection />
-
       <FounderSection />
+
+      <PatientJourneySection />
 
       <MedicalPartnerSection />
 
