@@ -34,6 +34,13 @@ export const metadata: Metadata = {
       "CareBridge Health helps UK-based patients explore treatment in Turkey with clearer communication, structured coordination, and carefully selected clinic pathways.",
     url: "https://www.carebridgehealth.co/",
     siteName: "CareBridge Health",
+    images: [{
+      url: "https://www.carebridgehealth.co/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "CareBridge Health — independent patient coordination for treatment in Turkey",
+    }],
+    locale: "en_GB",
     type: "website",
   },
   twitter: {
@@ -42,6 +49,7 @@ export const metadata: Metadata = {
       "Medical Treatment in Turkey for UK Patients | Clinics, Costs & Support",
     description:
       "Explore treatment in Turkey with more guidance, structure, and confidence before travel.",
+    images: ["https://www.carebridgehealth.co/og-image.jpg"],
   },
 };
 
