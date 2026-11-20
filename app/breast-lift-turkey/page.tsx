@@ -12,6 +12,11 @@ export const metadata: Metadata = {
 export default function BreastLiftTurkeyPage() {
   return (
     <TreatmentLanding
+      heroImage={{
+        src: "/breast-lift-turkey-consultation.webp",
+        alt: "Illustration of a woman discussing breast lift surgery options with a medical professional in a Turkey clinic",
+        caption: "AI-generated illustration of a consultation, not an actual patient or CareBridge partner clinic.",
+      }}
       eyebrow="Breast Lift Turkey"
       title="Breast lift in Turkey with clearer planning before you travel"
       intro="A breast lift, also known as mastopexy, is a commonly researched cosmetic surgery procedure in Turkey. CareBridge Health helps patients approach the process with clearer communication, realistic expectations, and structured coordination before making decisions."
