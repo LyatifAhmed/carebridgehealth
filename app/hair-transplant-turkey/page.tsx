@@ -12,6 +12,11 @@ export const metadata: Metadata = {
 export default function HairTransplantTurkeyPage() {
   return (
     <TreatmentLanding
+      heroImage={{
+        src: "/hair-transplant-turkey-consultation.webp",
+        alt: "Illustration of a specialist discussing hairline assessment and hair transplant options with a patient in Turkey",
+        caption: "AI-generated illustration of a hair restoration consultation, not an actual patient or CareBridge partner clinic.",
+      }}
       eyebrow="Hair transplant Turkey"
       title="Hair transplant in Turkey with clearer guidance from the start"
       intro="Turkey is one of the most searched destinations for hair transplant treatment. CareBridge Health helps patients approach that decision more carefully, with better coordination, realistic expectations, and support before they commit."
