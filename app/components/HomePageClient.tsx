@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { recordCareBridgeEvent } from "./AnalyticsConsent";
-import HeroCursor from "./HeroCursor";
 import InsightsPreview from "./InsightsPreview";
 import FounderSection from "./FounderSection";
 import MedicalPartnerSection from "./MedicalPartnerSection";
@@ -253,175 +252,82 @@ export default function HomePageClient() {
 
   return (
     <main className="bg-[#fbf7ef] text-slate-950">
-      <section
-        id="hero-section"
-        className="relative min-h-[100svh] overflow-hidden cursor-none"
-      >
-        <Image
-          src="/hero-medical.avif"
-          alt="Private medical treatment in Turkey with UK-based coordination"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-
-        <div className="absolute inset-0 bg-slate-950/55" />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/45 to-slate-950/10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/55 via-transparent to-transparent" />
-
-        <HeroCursor containerId="hero-section" />
-
-        <div className="relative z-10 flex min-h-[100svh] items-center pt-24">
-          <div className="mx-auto grid w-full max-w-7xl items-center gap-12 px-6 lg:grid-cols-[1.08fr_0.92fr]">
-            <div className="max-w-4xl">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-white/65">
-                CareBridge Health
+      <section id="hero-section" className="relative overflow-hidden bg-gradient-to-br from-[#fbf8f3] via-white to-[#ecf8f5]">
+        <div aria-hidden="true" className="pointer-events-none absolute -right-28 top-12 h-[420px] w-[420px] rounded-full bg-teal-100/45 blur-3xl" />
+        <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-28 md:pb-20 md:pt-36">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.12fr_0.88fr] lg:gap-14">
+            <div className="max-w-2xl">
+              <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-teal-800">
+                Founder-led patient coordination
+                <span className="h-px w-9 bg-teal-600/70" />
               </p>
-
-              <h1 className="mt-5 text-5xl font-semibold leading-[0.98] tracking-[-0.06em] text-white sm:text-6xl md:text-7xl">
-                Private treatment in Turkey,
-                <span className="block text-white/85">
-                  coordinated from the UK.
-                </span>
+              <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-[-0.045em] text-slate-950 sm:text-5xl md:text-6xl lg:text-[4.1rem]">
+                A clearer path to treatment in Turkey
               </h1>
-
-              <p className="mt-7 max-w-2xl text-base leading-8 text-white/78 md:text-lg">
-                A calmer way for UK and international patients to explore carefully selected
-                treatment routes in Istanbul and Antalya before travelling.
+              <p className="mt-7 max-w-xl text-base leading-8 text-slate-700 md:text-lg">
+                CareBridge Health helps people considering treatment in Turkey understand their options, coordinate enquiries and connect with independent healthcare professionals — before making a decision.
               </p>
 
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-white/58">
-                CareBridge Health is a UK-based independent coordination service. We help
-                patients move from online research to clearer next steps, whether
-                they are based in the UK, Europe, the Middle East, North America,
-                or elsewhere.
-              </p>
-
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                <a
-                  href="#form"
-                  className="inline-flex items-center justify-center rounded-full bg-white px-7 py-4 text-sm font-semibold text-slate-950 shadow-xl transition hover:-translate-y-0.5 hover:opacity-95"
-                >
-                  Start a private enquiry
-                </a>
-
-                <Link
-                  href="/how-treatment-in-turkey-works"
-                  className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-7 py-4 text-sm font-semibold text-white backdrop-blur-md transition hover:bg-white/15"
-                >
-                  How treatment works
-                </Link>
-
-                <a
-                  href="#services"
-                  className="inline-flex items-center justify-center rounded-full border border-white/15 px-7 py-4 text-sm font-semibold text-white/85 transition hover:bg-white/10"
-                >
-                  Explore treatments
-                </a>
-              </div>
-            </div>
-
-            {/* COMPACT HERO JOURNEY CARD */}
-            <div className="hidden cursor-auto rounded-[34px] border border-white/20 bg-gradient-to-b from-white/10 to-white/5 p-3 shadow-[0_28px_56px_-15px_rgba(0,0,0,0.3)] backdrop-blur-2xl lg:block transition-all duration-500 hover:border-white/30">
-              <div className="relative overflow-hidden cursor-auto rounded-[28px] bg-gradient-to-b from-white to-slate-50/90 p-6 text-slate-950 shadow-2xl">
-                <div className="pointer-events-none absolute -right-16 -top-16 h-36 w-36 rounded-full bg-emerald-500/10 blur-3xl" />
-                <div className="pointer-events-none absolute -left-16 -bottom-16 h-36 w-36 rounded-full bg-blue-500/10 blur-3xl" />
-
-                <div className="relative z-10">
-                  <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1.5">
-                    <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
-                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-800">
-                      UK-based coordination
-                    </p>
-                  </div>
-
-                  <h2 className="mt-4 text-2xl font-bold leading-[1.08] tracking-tight text-slate-900">
-                    Treatment planning,
-                    <span className="block text-slate-500">
-                      before you travel.
-                    </span>
-                  </h2>
-
-                  <p className="mt-3 text-sm leading-6 text-slate-500">
-                    Share your goals and receive structured guidance before deciding
-                    whether to move forward with a clinic consultation.
-                  </p>
-
-                  <div className="mt-5 grid gap-3">
-                    {[
-                      "Share your treatment goals",
-                      "Coordinator review",
-                      "Clinic route suggested",
-                    ].map((item, index) => (
-                      <div
-                        key={item}
-                        className="flex items-center gap-3 rounded-2xl border border-slate-100 bg-slate-50 px-4 py-3"
-                      >
-                        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-xs font-bold text-emerald-700">
-                          {index + 1}
-                        </span>
-                        <span className="text-sm font-semibold text-slate-800">
-                          {item}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="mt-5 grid grid-cols-2 gap-3">
-                    <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
-                      <Clock className="h-4 w-4 text-slate-500" />
-                      <p className="mt-3 text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
-                        Response
-                      </p>
-                      <p className="mt-1 text-sm font-bold text-slate-900">
-                        Within 24h
-                      </p>
-                    </div>
-
-                    <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
-                      <MapPin className="h-4 w-4 text-slate-500" />
-                      <p className="mt-3 text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
-                        Patients
-                      </p>
-                      <p className="mt-1 text-sm font-bold text-slate-900">
-                        International
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mt-4 rounded-2xl border border-slate-100 bg-white/80 p-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-950 text-white">
-                        <LockKeyhole className="h-4 w-4" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-bold text-slate-900">
-                          Private, no-obligation enquiry
-                        </p>
-                        <p className="mt-1 text-xs leading-5 text-slate-500">
-                          Your details are reviewed discreetly before any clinic route is discussed.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <a
-                    href="#form"
-                    className="group mt-5 inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-slate-900 hover:shadow-xl hover:shadow-slate-950/20 active:scale-[0.98]"
-                  >
-                    <span>Start a private enquiry</span>
-                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              <div className="mt-8 border-l-[3px] border-teal-600 pl-5">
+                <p className="text-sm leading-7 text-slate-700 md:text-base">
+                  I&apos;m Latif Ahmed. After years of working with patients and families at a medical clinic, I founded CareBridge to address the coordination challenges I saw first-hand. Today, I combine that experience with software development to make the journey clearer for patients and clinics.
+                </p>
+                <div className="mt-4 flex flex-wrap items-center gap-3">
+                  <p className="text-sm font-semibold text-slate-950">Latif Ahmed <span className="font-normal text-slate-500">· Founder</span></p>
+                  <a href="https://www.linkedin.com/in/lyatif-ahmed-redzheb/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-teal-800 underline decoration-teal-300 underline-offset-4 hover:text-teal-950">
+                    Verify my background on LinkedIn
                   </a>
                 </div>
               </div>
+
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <a href="#form" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#075f63] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-950/10 transition hover:bg-[#064c50]">
+                  Start a private enquiry
+                </a>
+                <a href="#process" className="inline-flex min-h-12 items-center justify-center rounded-full border border-slate-300 bg-white/80 px-7 py-3.5 text-sm font-semibold text-slate-900 transition hover:border-teal-500 hover:bg-white">
+                  How it works
+                </a>
+              </div>
+              <p className="mt-5 max-w-lg text-xs leading-5 text-slate-500">
+                CareBridge is an independent referral and coordination service, not a clinic or medical provider. Medical advice and treatment are provided by independent healthcare professionals.
+              </p>
             </div>
 
+            <div className="mx-auto w-full max-w-[440px] lg:ml-auto">
+              <figure className="relative overflow-hidden rounded-[32px] border border-white/75 bg-slate-100 shadow-[0_30px_70px_rgba(15,23,42,0.13)]">
+                <div className="relative aspect-[4/5] w-full sm:aspect-[5/6] lg:aspect-[4/5]">
+                  <Image
+                    src="/Lyatif-Ahmed-Redzheb-Founder-of-BetaOffice.png"
+                    alt="Latif Ahmed, founder of CareBridge Health"
+                    fill
+                    priority
+                    sizes="(max-width: 640px) 90vw, (max-width: 1024px) 440px, 35vw"
+                    className="object-cover object-[center_30%]"
+                  />
+                </div>
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/75 via-slate-950/35 to-transparent px-6 pb-6 pt-16 text-white">
+                  <span className="block text-lg font-semibold">Latif Ahmed</span>
+                  <span className="mt-1 block text-xs text-white/85">Founder, CareBridge Health</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div className="mt-12 grid gap-4 sm:grid-cols-3 lg:mt-16">
+            {[
+              { title: "London-based coordination", desc: "A visible, UK-based point of contact throughout your initial enquiry." },
+              { title: "Personal healthcare connections", desc: "Introductions informed by existing relationships, with provider details shared before consultation." },
+              { title: "Clear communication", desc: "Understand the next steps before choosing whether to proceed." },
+            ].map((item) => (
+              <div key={item.title} className="rounded-[24px] border border-slate-200/85 bg-white/85 p-6 shadow-[0_10px_35px_rgba(15,23,42,0.04)]">
+                <div className="mb-4 h-1 w-10 rounded-full bg-teal-600" />
+                <h2 className="text-base font-semibold text-slate-950">{item.title}</h2>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-      
-
 
       <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto grid max-w-7xl gap-3 px-6 py-4 text-sm text-slate-600 sm:grid-cols-2 lg:grid-cols-4">
