@@ -67,14 +67,15 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl items-center gap-14 px-6 py-24 md:grid-cols-[0.9fr_1.1fr]">
-        <div className="relative overflow-hidden rounded-[36px] border border-slate-200 bg-white shadow-[0_25px_70px_rgba(15,23,42,0.08)]">
-          <div className="relative h-[560px]">
+      <section className="mx-auto max-w-6xl px-6 py-20 md:py-24">
+        <article className="flow-root">
+          <figure className="relative mb-9 overflow-hidden rounded-[32px] border border-slate-200 bg-white shadow-[0_25px_70px_rgba(15,23,42,0.08)] lg:float-left lg:mb-6 lg:mr-12 lg:w-[39%]">
+            <div className="relative h-[430px] w-full sm:h-[500px] lg:h-[515px]">
             <Image
               src="/Lyatif-Ahmed-Redzheb-Founder-of-BetaOffice.png"
               alt="Latif Ahmed, founder of CareBridge Health"
               fill
-              sizes="(max-width: 767px) 90vw, 40vw"
+              sizes="(max-width: 1023px) 90vw, 39vw"
               className="object-cover object-[center_25%]"
               priority
             />
@@ -85,12 +86,12 @@ export default function AboutPage() {
                 Founder, CareBridge Health
               </p>
             </div>
-          </div>
-        </div>
+            </div>
+          </figure>
 
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-            Founder note
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+              Founder note
           </p>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
@@ -137,7 +138,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="mt-9 flex flex-wrap gap-3">
+          <div className="clear-both mt-9 flex flex-wrap gap-3">
             <a
               href="https://www.linkedin.com/in/lyatif-ahmed-redzheb/"
               target="_blank"
@@ -154,7 +155,8 @@ export default function AboutPage() {
               Request private review
             </Link>
           </div>
-        </div>
+          </div>
+        </article>
       </section>
 
       <section className="bg-white py-24">
