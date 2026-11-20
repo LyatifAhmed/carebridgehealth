@@ -3,16 +3,16 @@ import Link from "next/link";
 
 export default function FounderSection() {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="relative overflow-hidden rounded-[36px] border border-slate-200 bg-white shadow-[0_25px_70px_rgba(15,23,42,0.08)]">
-            <div className="relative h-[520px] w-full">
+        <article className="flow-root">
+          <figure className="relative mb-9 overflow-hidden rounded-[32px] border border-slate-200 bg-white shadow-[0_25px_70px_rgba(15,23,42,0.08)] lg:float-left lg:mb-7 lg:mr-12 lg:w-[40%]">
+            <div className="relative h-[430px] w-full sm:h-[490px] lg:h-[510px]">
               <Image
                 src="/lyatif-ahmed-founder-carebridgehealth-istanbul.avif"
                 alt="Latif Ahmed, Founder of CareBridge Health"
                 fill
-                sizes="(max-width: 1024px) 100vw, 40vw"
+                sizes="(max-width: 1023px) 100vw, 40vw"
                 className="object-cover object-[center_10%]"
               />
 
@@ -26,7 +26,7 @@ export default function FounderSection() {
                 </p>
               </div>
             </div>
-          </div>
+          </figure>
 
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
@@ -37,7 +37,7 @@ export default function FounderSection() {
               Why I started CareBridge Health
             </h2>
 
-            <div className="mt-8 space-y-6 text-base leading-8 text-slate-600">
+            <div className="mt-7 space-y-5 text-base leading-8 text-slate-600">
               <p>
                 My experience in healthcare began long before I founded
                 CareBridge Health. I spent years working in a family-run
@@ -88,7 +88,7 @@ export default function FounderSection() {
               </p>
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="clear-both mt-10 flex flex-wrap gap-4">
               <a
                 href="https://www.linkedin.com/in/lyatif-ahmed-redzheb/"
                 target="_blank"
@@ -142,7 +142,7 @@ export default function FounderSection() {
               </div>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
   );
