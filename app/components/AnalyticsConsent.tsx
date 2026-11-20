@@ -44,7 +44,7 @@ export default function AnalyticsConsent() {
   useEffect(() => {
     if (!ready || consent !== "accepted") return;
     window.dataLayer = window.dataLayer || [];
-    window.gtag = function gtag(..._args: unknown[]) {
+    window.gtag = function gtag() {
       // Google's tag expects the function's arguments object in dataLayer.
       window.dataLayer?.push(arguments);
     };
