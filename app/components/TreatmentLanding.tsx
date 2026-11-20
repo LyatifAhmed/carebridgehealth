@@ -13,6 +13,7 @@ type ExtraLink = {
 };
 
 type TreatmentLandingProps = {
+  heroImage?: { src: string; alt: string; caption: string };
   eyebrow: string;
   title: string;
   intro: string;
@@ -38,6 +39,7 @@ type TreatmentLandingProps = {
 export default function TreatmentLanding({
   eyebrow,
   title,
+  heroImage,
   intro,
   heroNote,
   suitableFor,
@@ -54,7 +56,7 @@ export default function TreatmentLanding({
   tertiaryCtaLabel = "Read patient insights",
   extraLinks = [],
 }: TreatmentLandingProps) {
-  const illustration = /dental|veneer|teeth/i.test(title)
+  const fallbackIllustration = /dental|veneer|teeth/i.test(title)
     ? {
         src: "/carebridge-dental-consultation.png",
         alt: "Illustrative dental consultation scene created for CareBridge Health",
@@ -79,6 +81,10 @@ export default function TreatmentLanding({
               credit: "CareBridge Health",
             }
           : null;
+
+  const illustration = heroImage || (fallbackIllustration
+    ? { ...fallbackIllustration, caption: `Illustrative stock image, not a partner clinic. Photo: ${fallbackIllustration.credit} / Unsplash.` }
+    : null);
 
   function openChat() {
     if (typeof window !== "undefined") {
@@ -142,7 +148,7 @@ export default function TreatmentLanding({
                 className="aspect-[16/9] w-full object-cover"
               />
               <figcaption className="px-5 py-3 text-xs text-neutral-500">
-                Illustrative stock image, not a partner clinic. Photo: {illustration.credit} / Unsplash.
+                {illustration.caption}
               </figcaption>
             </figure>
           )}
