@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 const treatmentLinks = [
   {
@@ -49,8 +48,6 @@ const treatmentLinks = [
 ];
 
 export default function Navbar() {
-  const pathname = usePathname();
-  const isHome = pathname === "/";
 
   const [scrolled, setScrolled] = useState(false);
   const [treatmentsOpen, setTreatmentsOpen] = useState(false);
@@ -96,7 +93,8 @@ export default function Navbar() {
     setTreatmentsOpen(false);
   }
 
-  const solidNavbar = !isHome || scrolled;
+  // The home hero now uses a light background; retain readable dark navigation at every scroll position.
+  const solidNavbar = true;
 
   const shellClasses = solidNavbar
     ? "border border-slate-200/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.96)_0%,rgba(252,250,247,0.94)_100%)] shadow-[0_24px_70px_rgba(15,23,42,0.10)] backdrop-blur-2xl"

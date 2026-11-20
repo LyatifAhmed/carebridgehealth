@@ -537,6 +537,39 @@ export default function HomePageClient() {
         </div>
       </section>
 
+      <section aria-labelledby="carebridge-clinic-banner-heading" className="bg-white px-6 py-6 md:py-10">
+        <div className="relative mx-auto min-h-[360px] max-w-7xl overflow-hidden rounded-[32px] bg-slate-950 shadow-[0_20px_60px_rgba(15,23,42,0.13)] md:min-h-[390px]">
+          <Image
+            src="/hero-medical.avif"
+            alt="Illustrative modern medical environment representing treatment coordination in Turkey"
+            fill
+            sizes="(max-width: 768px) 100vw, 1200px"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/75 to-slate-950/35" />
+          <div className="relative flex min-h-[360px] items-center px-7 py-12 text-white md:min-h-[390px] md:px-14">
+            <div className="max-w-2xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-200">Explore with confidence</p>
+              <h2 id="carebridge-clinic-banner-heading" className="mt-4 text-3xl font-semibold leading-tight tracking-[-0.035em] md:text-5xl">
+                Your questions deserve clear answers before you travel.
+              </h2>
+              <p className="mt-5 max-w-xl text-base leading-8 text-white/85">
+                Our role is to coordinate introductions and help you prepare for an informed conversation with an independent healthcare professional — without pressure to proceed.
+              </p>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <a href="#form" className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-teal-50">
+                  Ask about treatment
+                </a>
+                <a href="#process" className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/50 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                  Understand the process
+                </a>
+              </div>
+              <p className="mt-5 text-xs text-white/65">Illustrative image. CareBridge does not provide medical treatment.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <FounderSection />
 
       <PatientJourneySection />
