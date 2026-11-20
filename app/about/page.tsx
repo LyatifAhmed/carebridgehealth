@@ -71,11 +71,11 @@ export default function AboutPage() {
         <div className="relative overflow-hidden rounded-[36px] border border-slate-200 bg-white shadow-[0_25px_70px_rgba(15,23,42,0.08)]">
           <div className="relative h-[560px]">
             <Image
-              src="/lyatif-ahmed-founder-carebridgehealth-istanbul.avif"
+              src="/Lyatif-Ahmed-Redzheb-Founder-of-BetaOffice.png"
               alt="Latif Ahmed, founder of CareBridge Health"
               fill
-              sizes="(max-width: 768px) 100vw, 40vw"
-              className="object-cover object-[center_10%]"
+              sizes="(max-width: 767px) 90vw, 40vw"
+              className="object-cover object-[center_25%]"
               priority
             />
 
@@ -99,22 +99,41 @@ export default function AboutPage() {
 
           <div className="mt-7 space-y-5 text-base leading-8 text-slate-600">
             <p>
-              CareBridge Health was created after seeing how difficult it can be
-              for patients in the UK to compare treatment options abroad with
-              confidence.
+              My experience in healthcare began long before I founded CareBridge Health.
+              I spent years working in a family-run medical clinic, welcoming patients
+              and their relatives, helping coordinate appointments and seeing first-hand
+              how important clear communication is for both patients and clinic teams.
             </p>
-
             <p>
-              Many people start with social media pages, clinic adverts, package
-              prices, and before-and-after photos — but still feel unsure about
-              who to trust, what questions to ask, and what happens after they
-              travel.
+              Patients needed reassurance and straightforward answers while busy clinics
+              worked to keep each part of the patient journey organised. I learned
+              what can go wrong when communication breaks down, and the difference
+              careful coordination makes.
             </p>
-
             <p>
-              Our role is not to replace medical judgement. Our role is to help
-              make the first stage more structured, transparent, and easier to
-              understand before patients speak directly with providers.
+              After living and working in the UK, I recognised similar challenges for
+              people considering treatment abroad. Comparing unfamiliar providers,
+              understanding the process and knowing whom to speak to can be overwhelming.
+            </p>
+            <p>
+              I created CareBridge Health to bridge that gap between patients and
+              independent healthcare professionals in Turkey. My established personal
+              relationships in the healthcare sector help me coordinate introductions,
+              while patients are encouraged to verify the provider's credentials
+              and make their own informed decisions.
+            </p>
+            <p>
+              I also bring my software development experience to this work. I continue
+              developing CareBridge to make enquiries easier, help clinics communicate
+              more clearly and create a more organised experience from the first
+              question to the conversation with a medical professional.
+            </p>
+            <p>
+              I am not a doctor, and CareBridge is not a clinic. We coordinate
+              enquiries and introductions, while independent healthcare professionals
+              are responsible for clinical assessments, treatment decisions and aftercare.
+              CareBridge may receive a referral commission if a patient proceeds
+              with treatment through a provider we introduce.
             </p>
           </div>
 
