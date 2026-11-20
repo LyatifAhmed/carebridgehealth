@@ -7,6 +7,7 @@ import { recordCareBridgeEvent } from "./AnalyticsConsent";
 import HeroCursor from "./HeroCursor";
 import InsightsPreview from "./InsightsPreview";
 import FounderSection from "./FounderSection";
+import MedicalPartnerSection from "./MedicalPartnerSection";
 import FaqSection from "./FaqSection";
 import PatientJourneySection from "./PatientJourneySection";
 
@@ -633,6 +634,8 @@ export default function HomePageClient() {
       <PatientJourneySection />
 
       <FounderSection />
+
+      <MedicalPartnerSection />
 
       <section id="destinations" className="mx-auto max-w-7xl px-6 py-24 md:py-28">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
