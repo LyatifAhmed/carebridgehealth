@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
         </h1>
 
         <p className="mt-6 text-sm text-slate-500">
-          Last updated: 21 April 2026
+          Last updated: 20 November 2026
         </p>
 
         <div className="mt-10 space-y-8 text-sm leading-7 text-slate-600">
@@ -234,9 +234,15 @@ export default function PrivacyPolicyPage() {
           <div>
             <h2 className="font-medium text-slate-900">12. Cookies and analytics</h2>
             <p className="mt-2">
-              Our website may use essential website technologies and limited analytics
-              tools to support functionality, performance, and service improvement. We
-              do not intentionally use these to collect special category data.
+              With your permission, our website loads Google Analytics 4 and Microsoft Clarity
+              to measure visits and general website interactions. These optional tools
+              are not loaded before you accept analytics. You can refuse them or change
+              your choice at any time using the Cookie settings button.
+              We do not intentionally send names, email addresses, enquiry text, selected
+              treatment information or other health-related form contents to analytics.
+              Consultation form fields are masked from session recordings. Analytics
+              providers may still process technical information such as device details
+              and page visits; please avoid including health details in website URLs.
             </p>
           </div>
 
