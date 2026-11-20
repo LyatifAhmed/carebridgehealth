@@ -39,30 +39,43 @@ export default function FounderSection() {
 
             <div className="mt-8 space-y-6 text-base leading-8 text-slate-600">
               <p>
-                After years of living and working in the UK, I noticed how
-                difficult it was for patients to compare treatment options
-                abroad with confidence.
+                My experience in healthcare began long before I founded
+                CareBridge Health. I spent years working in a family-run
+                medical clinic, welcoming patients and their families,
+                coordinating visits, and seeing first-hand how much clear
+                communication matters to both patients and clinic teams.
               </p>
 
               <p>
-                Most people were left navigating clinic websites, social media
-                pages, advertisements, and conflicting information on their own.
-                Important decisions were often being made with very little
-                guidance.
+                I saw the challenges on both sides: patients looking for
+                reassurance and straightforward answers, and busy clinics
+                trying to keep every part of the patient journey organised.
+                Those experiences showed me how much difference thoughtful
+                coordination can make.
               </p>
 
               <p>
-                CareBridge Health was created to provide a calmer and more
-                structured starting point — helping patients understand their
-                options, ask better questions, and make informed decisions
-                before committing to treatment abroad.
+                After living and working in the UK, I recognised a similar
+                problem for people considering treatment abroad. Comparing
+                unfamiliar providers, understanding the process, and knowing
+                whom to speak to could be overwhelming.
               </p>
 
               <p>
-                We are not a clinic and we do not provide medical treatment.
-                Instead, we focus on communication, coordination, and helping
-                patients access carefully selected providers through a more
-                transparent process.
+                That is why I created CareBridge Health: to help bridge the
+                gap between patients and healthcare professionals in Turkey.
+                My personal connections in the healthcare sector allow me to
+                build introductions around established relationships rather
+                than an anonymous directory, while encouraging every patient
+                to ask questions and verify the provider for themselves.
+              </p>
+
+              <p>
+                CareBridge is not a clinic and I do not provide medical
+                advice or treatment. My role is to make communication and
+                coordination clearer; independent medical professionals
+                remain responsible for clinical assessment, suitability,
+                treatment and aftercare.
               </p>
             </div>
 
