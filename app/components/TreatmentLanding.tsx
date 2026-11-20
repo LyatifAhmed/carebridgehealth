@@ -101,6 +101,36 @@ export default function TreatmentLanding({
             {intro}
           </p>
 
+          <div className="mt-7 max-w-3xl rounded-2xl border border-emerald-100 bg-emerald-50/70 px-5 py-4 text-sm leading-6 text-emerald-950">
+            <strong>Considering treatment in Turkey?</strong> Share an initial enquiry without obligation. We coordinate next steps; clinical suitability and treatment decisions remain with qualified medical providers.
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href={primaryCtaHref}
+              className="inline-flex min-h-12 items-center justify-center rounded-full bg-neutral-900 px-7 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-neutral-700"
+            >
+              {primaryCtaLabel}
+            </Link>
+
+            {secondaryCtaHref ? (
+              <Link
+                href={secondaryCtaHref}
+                className="rounded-full border border-neutral-300 bg-white px-6 py-3 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50"
+              >
+                {secondaryCtaLabel}
+              </Link>
+            ) : (
+              <button
+                type="button"
+                onClick={openChat}
+                className="rounded-full border border-neutral-300 bg-white px-6 py-3 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50"
+              >
+                {secondaryCtaLabel}
+              </button>
+            )}
+          </div>
+
           {illustration && (
             <figure className="mt-9 max-w-4xl overflow-hidden rounded-[28px] border border-neutral-200 bg-neutral-100">
               <EditorialImage
@@ -136,31 +166,7 @@ export default function TreatmentLanding({
             ) : null}
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href={primaryCtaHref}
-              className="rounded-full bg-neutral-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-            >
-              {primaryCtaLabel}
-            </Link>
 
-            {secondaryCtaHref ? (
-              <Link
-                href={secondaryCtaHref}
-                className="rounded-full border border-neutral-300 bg-white px-6 py-3 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50"
-              >
-                {secondaryCtaLabel}
-              </Link>
-            ) : (
-              <button
-                type="button"
-                onClick={openChat}
-                className="rounded-full border border-neutral-300 bg-white px-6 py-3 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50"
-              >
-                {secondaryCtaLabel}
-              </button>
-            )}
-          </div>
         </div>
       </section>
 
@@ -298,6 +304,16 @@ export default function TreatmentLanding({
           ))}
         </div>
       </section>
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-neutral-200 bg-white/95 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[0_-8px_30px_rgba(0,0,0,0.08)] backdrop-blur-md md:hidden">
+        <Link
+          href={primaryCtaHref}
+          className="flex min-h-12 w-full items-center justify-center rounded-full bg-neutral-900 px-5 text-sm font-semibold text-white"
+        >
+          {primaryCtaLabel}
+        </Link>
+        <p className="mt-1 text-center text-[11px] leading-4 text-neutral-600">No obligation · Independent coordination, not medical advice</p>
+      </div>
+      <div aria-hidden="true" className="h-24 md:hidden" />
     </main>
   );
 }
