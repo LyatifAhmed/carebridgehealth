@@ -155,6 +155,7 @@ export default function AboutPage() {
               Request private review
             </Link>
           </div>
+          </div>
         </article>
       </section>
 
