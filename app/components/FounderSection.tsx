@@ -71,6 +71,15 @@ export default function FounderSection() {
               </p>
 
               <p>
+                I now bring my software development experience into that work.
+                I continue building CareBridge Health to address the practical
+                problems I have seen first-hand: making enquiries easier for
+                patients, helping clinics communicate more clearly, and
+                creating a more organised path from the first question to
+                an informed conversation with a medical professional.
+              </p>
+
+              <p>
                 CareBridge is not a clinic and I do not provide medical
                 advice or treatment. My role is to make communication and
                 coordination clearer; independent medical professionals
