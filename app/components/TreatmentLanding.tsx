@@ -3,6 +3,7 @@
 import EditorialImage from "./EditorialImage";
 
 import Link from "next/link";
+import { recordCareBridgeEvent } from "./AnalyticsConsent";
 
 type ExtraLink = {
   textBefore?: string;
@@ -108,6 +109,7 @@ export default function TreatmentLanding({
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href={primaryCtaHref}
+              onClick={() => recordCareBridgeEvent("consultation_cta_clicked")}
               className="inline-flex min-h-12 items-center justify-center rounded-full bg-neutral-900 px-7 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-neutral-700"
             >
               {primaryCtaLabel}
@@ -241,6 +243,7 @@ export default function TreatmentLanding({
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href={primaryCtaHref}
+              onClick={() => recordCareBridgeEvent("consultation_cta_clicked")}
               className="rounded-full bg-neutral-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
             >
               {primaryCtaLabel}
@@ -307,6 +310,7 @@ export default function TreatmentLanding({
       <div className="fixed inset-x-0 bottom-0 z-40 border-t border-neutral-200 bg-white/95 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[0_-8px_30px_rgba(0,0,0,0.08)] backdrop-blur-md md:hidden">
         <Link
           href={primaryCtaHref}
+              onClick={() => recordCareBridgeEvent("consultation_cta_clicked")}
           className="flex min-h-12 w-full items-center justify-center rounded-full bg-neutral-900 px-5 text-sm font-semibold text-white"
         >
           {primaryCtaLabel}
