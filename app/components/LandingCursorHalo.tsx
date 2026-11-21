@@ -80,7 +80,7 @@ export default function LandingCursorHalo() {
     <div
       ref={haloRef}
       aria-hidden="true"
-      className="carebridge-landing-halo pointer-events-none fixed left-0 top-0 z-40 hidden h-44 w-44 rounded-full opacity-0 md:block"
+      className="carebridge-landing-halo pointer-events-none fixed left-0 top-0 z-10 hidden h-44 w-44 rounded-full opacity-0 md:block"
     />
   );
 }
