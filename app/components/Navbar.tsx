@@ -152,7 +152,7 @@ export default function Navbar() {
     : "border-white/15 bg-white/10 text-white hover:bg-white/15";
 
   const quoteButtonClasses = solidNavbar
-    ? "border border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f8f6f2_100%)] text-slate-900 shadow-sm hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(15,23,42,0.10)]"
+    ? "border border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f8f6f2_100%)] text-slate-900 shadow-sm hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(15,23,42,0.10)] dark:border-slate-600 dark:!bg-none dark:!bg-[#1b2e35] dark:!text-white"
     : "border border-white/15 bg-white/12 text-white backdrop-blur-md hover:-translate-y-0.5 hover:bg-white/16";
 
   return (
