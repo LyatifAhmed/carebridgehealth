@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "./ContactForm";
 
 const treatmentLinks = [
   {
@@ -50,6 +51,7 @@ const treatmentLinks = [
 export default function Navbar() {
 
   const [scrolled, setScrolled] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
   const [treatmentsOpen, setTreatmentsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileTreatmentsOpen, setMobileTreatmentsOpen] = useState(false);
@@ -83,6 +85,24 @@ export default function Navbar() {
       document.body.style.overflow = original;
     };
   }, [mobileMenuOpen]);
+
+  useEffect(() => {
+    if (!contactOpen) return;
+    const onEscape = (e: KeyboardEvent) => { if (e.key === "Escape") setContactOpen(false); };
+    window.addEventListener("keydown", onEscape);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onEscape);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [contactOpen]);
+
+  function openContact() {
+    closeMobileMenu();
+    closeDesktopDropdown();
+    setContactOpen(true);
+  }
 
   function closeMobileMenu() {
     setMobileMenuOpen(false);
@@ -215,13 +235,13 @@ export default function Navbar() {
                 Insights
               </Link>
 
-              <a
-                href="/#form"
-                onClick={closeDesktopDropdown}
+              <button
+                type="button"
+                onClick={openContact}
                 className={`text-sm transition ${navTextClasses}`}
               >
                 Contact
-              </a>
+              </button>
             </nav>
           )}
 
@@ -325,17 +345,30 @@ export default function Navbar() {
                 Insights
               </Link>
 
-              <a
-                href="/#form"
-                onClick={closeMobileMenu}
-                className="block rounded-2xl px-4 py-4 text-sm font-medium text-white transition hover:bg-white/5"
+              <button
+                type="button"
+                onClick={openContact}
+                className="block w-full rounded-2xl px-4 py-4 text-left text-sm font-medium text-white transition hover:bg-white/5"
               >
                 Contact
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      {contactOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/65 p-3 backdrop-blur-sm sm:p-6" onMouseDown={(e) => { if (e.target === e.currentTarget) setContactOpen(false); }}>
+          <div role="dialog" aria-modal="true" aria-labelledby="contact-dialog-title" className="relative max-h-[calc(100dvh-1.5rem)] w-full max-w-xl overflow-y-auto overscroll-contain rounded-3xl bg-[#fcfaf7] p-5 text-slate-900 shadow-2xl sm:max-h-[calc(100dvh-3rem)] sm:p-7">
+            <button type="button" aria-label="Close contact form" onClick={() => setContactOpen(false)} className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-xl text-slate-700 hover:bg-slate-100">×</button>
+            <p className="pr-12 text-xs font-semibold uppercase tracking-[0.18em] text-teal-800">CareBridge Health</p>
+            <h2 id="contact-dialog-title" className="mt-2 pr-12 text-2xl font-semibold tracking-tight">Just have a question?</h2>
+            <p className="mt-2 text-sm leading-6 text-slate-600">You don’t need to make a treatment enquiry to get in touch. Send us a general question, privacy request or feedback. Please don’t include medical records or sensitive health information.</p>
+            <ContactForm />
+            <p className="mt-3 text-center text-xs text-slate-500">Considering treatment instead? <a href="/#form" onClick={() => setContactOpen(false)} className="font-semibold text-teal-800 underline underline-offset-2">Start a free enquiry</a></p>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
