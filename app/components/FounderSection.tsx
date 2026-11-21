@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { ScrollReveal } from "./ScrollMotion";
 
 export default function FounderSection() {
   return (
     <section className="bg-white py-16 md:py-20" aria-labelledby="founder-story-title">
       <div className="mx-auto max-w-5xl px-6">
-        <div className="rounded-[32px] border border-slate-200 bg-[#fbf8f3] p-7 md:p-12">
+        <ScrollReveal className="rounded-[32px] border border-slate-200 bg-[#fbf8f3] p-7 md:p-12">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-800">
               The story behind CareBridge
@@ -32,7 +33,7 @@ export default function FounderSection() {
               </a>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );
