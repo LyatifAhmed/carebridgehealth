@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Moon, Sun } from "lucide-react";
 import ContactForm from "./ContactForm";
 
 const treatmentLinks = [
@@ -52,6 +53,24 @@ export default function Navbar() {
 
   const [scrolled, setScrolled] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const saved = window.localStorage.getItem("carebridge-theme");
+    const nextDark = saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    setDarkMode(nextDark);
+    document.documentElement.classList.toggle("dark", nextDark);
+  }, []);
+
+  function toggleTheme() {
+    setDarkMode((current) => {
+      const nextDark = !current;
+      document.documentElement.classList.toggle("dark", nextDark);
+      window.localStorage.setItem("carebridge-theme", nextDark ? "dark" : "light");
+      return nextDark;
+    });
+  }
+
   const [treatmentsOpen, setTreatmentsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileTreatmentsOpen, setMobileTreatmentsOpen] = useState(false);
@@ -117,7 +136,7 @@ export default function Navbar() {
   const solidNavbar = true;
 
   const shellClasses = solidNavbar
-    ? "border border-slate-200/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.96)_0%,rgba(252,250,247,0.94)_100%)] shadow-[0_24px_70px_rgba(15,23,42,0.10)] backdrop-blur-2xl"
+    ? "border border-slate-200/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.96)_0%,rgba(252,250,247,0.94)_100%)] dark:!border-slate-700 dark:!bg-none dark:!bg-[#17272f] shadow-[0_24px_70px_rgba(15,23,42,0.10)] backdrop-blur-2xl"
     : "border border-white/10 bg-[rgba(255,255,255,0.06)] shadow-[0_20px_60px_rgba(15,23,42,0.16)] backdrop-blur-xl";
 
   const brandTextClasses = solidNavbar
@@ -245,7 +264,10 @@ export default function Navbar() {
             </nav>
           )}
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <button type="button" onClick={toggleTheme} aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"} title={darkMode ? "Light mode" : "Dark mode"} className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white/70 text-slate-700 transition hover:border-teal-300 hover:text-teal-700 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100">
+              {darkMode ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}
+            </button>
             <a
               href="/#form"
               onClick={closeDesktopDropdown}

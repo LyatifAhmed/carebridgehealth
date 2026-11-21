@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import HeroCursor from "../../components/HeroCursor";
 
 export const metadata: Metadata = {
   title:
@@ -132,8 +133,9 @@ export default function WomensHealthIstanbulPage() {
 
       <main className="bg-[#fcfaf7] text-slate-900">
         <section id="hero-section" className="relative overflow-hidden bg-gradient-to-br from-[#fbf8f3] via-white to-[#eff8f5]">
+          <HeroCursor containerId="hero-section" theme="light" />
           <div aria-hidden="true" className="pointer-events-none absolute -right-36 top-16 h-96 w-96 rounded-full bg-teal-100/60 blur-3xl" />
-          <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-6 pb-16 pt-36 md:gap-14 md:pb-20 md:pt-40 lg:grid-cols-[1.08fr_0.92fr]">
+          <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-6 pb-16 pt-36 md:gap-14 md:pb-20 md:pt-40 lg:grid-cols-[1.08fr_0.92fr]">
             <div className="max-w-2xl">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-800">Women’s health · Istanbul</p>
               <h1 className="mt-5 text-4xl font-semibold leading-[1.1] tracking-[-0.045em] text-slate-950 sm:text-5xl lg:text-[3.65rem]">

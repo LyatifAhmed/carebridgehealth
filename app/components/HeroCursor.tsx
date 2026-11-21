@@ -4,10 +4,12 @@ import { useEffect, useRef, useState } from "react";
 
 type HeroCursorProps = {
   containerId?: string;
+  theme?: "dark" | "light";
 };
 
 export default function HeroCursor({
   containerId = "hero-section",
+  theme = "dark",
 }: HeroCursorProps) {
   const [visible, setVisible] = useState(false);
   const [dot, setDot] = useState({ x: 0, y: 0 });
@@ -17,7 +19,7 @@ export default function HeroCursor({
 
   useEffect(() => {
     const container = document.getElementById(containerId);
-    if (!container) return;
+    if (!container || !window.matchMedia("(hover: hover) and (pointer: fine)").matches || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     let mouseX = 0;
     let mouseY = 0;
@@ -37,8 +39,8 @@ export default function HeroCursor({
       delayedY = lerp(delayedY, mouseY, 0.08);
 
       // Halo bu gecikmeli pozisyonu takip ediyor
-      const targetRingX = delayedX + 110;
-      const targetRingY = delayedY - 28;
+      const targetRingX = delayedX + 155;
+      const targetRingY = delayedY - 55;
 
       ringX = lerp(ringX, targetRingX, 0.06);
       ringY = lerp(ringY, targetRingY, 0.06);
@@ -103,7 +105,7 @@ export default function HeroCursor({
   }, [containerId]);
 
   return (
-    <div className="pointer-events-none absolute inset-0 z-[8] overflow-hidden">
+    <div className="pointer-events-none absolute inset-0 z-[8] hidden overflow-hidden md:block">
       <div
         className={`absolute transition-opacity duration-300 ${
           visible ? "opacity-100" : "opacity-0"
@@ -114,7 +116,7 @@ export default function HeroCursor({
           transform: "translate(-50%, -50%)",
         }}
       >
-        <div className="h-48 w-48 rounded-full border border-white/35 bg-white/6 backdrop-blur-lg shadow-[0_0_0_1px_rgba(255,255,255,0.18),0_0_30px_rgba(255,255,255,0.12),0_0_60px_rgba(255,255,255,0.08)]" />
+        <div className={theme === "light" ? "h-48 w-48 rounded-full border border-teal-300/45 bg-teal-100/10 backdrop-blur-lg shadow-[0_0_42px_rgba(20,184,166,0.15)]" : "h-48 w-48 rounded-full border border-white/35 bg-white/6 backdrop-blur-lg shadow-[0_0_30px_rgba(255,255,255,0.12)]"} />
       </div>
 
       <div
@@ -127,7 +129,7 @@ export default function HeroCursor({
           transform: "translate(-50%, -50%)",
         }}
       >
-        <div className="h-2.5 w-2.5 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.95)]" />
+        <div className={theme === "light" ? "h-2.5 w-2.5 rounded-full bg-teal-600 shadow-[0_0_12px_rgba(13,148,136,0.45)]" : "h-2.5 w-2.5 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.95)]"} />
       </div>
     </div>
   );

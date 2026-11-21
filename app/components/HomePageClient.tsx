@@ -786,10 +786,10 @@ export default function HomePageClient() {
 
       <FaqSection />
 
-      <section id="form" className="bg-slate-950 py-24 text-white md:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.8fr_1.2fr]">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/45">
+      <section id="form" className="relative scroll-mt-24 overflow-hidden bg-gradient-to-br from-[#f6f3ec] via-[#fcfaf7] to-[#e9f5f1] py-20 text-slate-950 md:py-24">
+        <div className="relative mx-auto grid max-w-7xl items-start gap-10 px-6 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
+          <div className="lg:pt-5">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-800">
               Private enquiry
             </p>
 
@@ -797,11 +797,11 @@ export default function HomePageClient() {
               Tell us what treatment you’re considering
             </h2>
 
-            <p className="mt-5 text-base leading-8 text-white/65">
+            <p className="mt-5 max-w-lg text-base leading-8 text-slate-600">
               Choose a treatment and leave your contact details. We’ll aim to get back to you within 24 hours and explain what happens next. Our enquiry and introduction service is free, with no obligation to book treatment.
             </p>
 
-            <div className="mt-8 grid gap-3 text-sm text-white/70">
+            <div className="mt-8 grid gap-3 text-sm text-slate-700">
               {[
                 "Free to enquire — no obligation",
                 "Private and discreet",
@@ -811,7 +811,7 @@ export default function HomePageClient() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="rounded-full border border-white/10 bg-white/5 px-4 py-3"
+                  className="rounded-2xl border border-[#dbe9e3] bg-white/75 px-4 py-3 shadow-[0_5px_18px_rgba(15,23,42,0.025)]"
                 >
                   {item}
                 </div>
@@ -819,7 +819,7 @@ export default function HomePageClient() {
             </div>
           </div>
 
-          <div className="rounded-[34px] border border-white/10 bg-white p-6 text-slate-950 shadow-2xl md:p-8">
+          <div className="rounded-[32px] border border-[#dce8e3] bg-white/95 p-6 text-slate-950 shadow-[0_22px_65px_rgba(15,74,66,0.09)] md:p-8">
             <form onSubmit={handleSubmit} data-clarity-mask="true" onChangeCapture={() => {
               if (!formStarted.current) {
                 formStarted.current = true;
@@ -831,7 +831,7 @@ export default function HomePageClient() {
                   value={form.fullName}
                   onChange={(e) => updateField("fullName", e.target.value)}
                   placeholder="Full name"
-                  className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
+                  className="w-full rounded-2xl border border-[#d3e2dd] bg-[#fcfdfb] px-4 py-4 text-slate-900 outline-none transition focus:border-teal-700 focus:ring-4 focus:ring-teal-700/10"
                   required
                 />
 
@@ -840,7 +840,7 @@ export default function HomePageClient() {
                   value={form.email}
                   onChange={(e) => updateField("email", e.target.value)}
                   placeholder="Email"
-                  className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
+                  className="w-full rounded-2xl border border-[#d3e2dd] bg-[#fcfdfb] px-4 py-4 text-slate-900 outline-none transition focus:border-teal-700 focus:ring-4 focus:ring-teal-700/10"
                   required
                 />
               </div>
@@ -850,13 +850,13 @@ export default function HomePageClient() {
                   value={form.whatsapp}
                   onChange={(e) => updateField("whatsapp", e.target.value)}
                   placeholder="WhatsApp number (optional)"
-                  className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
+                  className="w-full rounded-2xl border border-[#d3e2dd] bg-[#fcfdfb] px-4 py-4 text-slate-900 outline-none transition focus:border-teal-700 focus:ring-4 focus:ring-teal-700/10"
                 />
 
                 <select
                   value={form.treatment}
                   onChange={(e) => updateField("treatment", e.target.value)}
-                  className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
+                  className="w-full rounded-2xl border border-[#d3e2dd] bg-[#fcfdfb] px-4 py-4 text-slate-900 outline-none transition focus:border-teal-700 focus:ring-4 focus:ring-teal-700/10"
                   required
                 >
                   <option value="">Select treatment</option>
@@ -874,7 +874,7 @@ export default function HomePageClient() {
                 <select
                   value={form.treatmentCity}
                   onChange={(e) => updateField("treatmentCity", e.target.value)}
-                  className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
+                  className="w-full rounded-2xl border border-[#d3e2dd] bg-[#fcfdfb] px-4 py-4 text-slate-900 outline-none transition focus:border-teal-700 focus:ring-4 focus:ring-teal-700/10"
                 >
                   <option value="">Where would you like treatment? (optional)</option>
                   <option>Istanbul</option>
@@ -885,7 +885,7 @@ export default function HomePageClient() {
                 <select
                   value={form.location}
                   onChange={(e) => updateField("location", e.target.value)}
-                  className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
+                  className="w-full rounded-2xl border border-[#d3e2dd] bg-[#fcfdfb] px-4 py-4 text-slate-900 outline-none transition focus:border-teal-700 focus:ring-4 focus:ring-teal-700/10"
                 >
                   <option value="">Where are you based? (optional)</option>
                   <option>United Kingdom</option>
@@ -899,7 +899,7 @@ export default function HomePageClient() {
               <select
                 value={form.timeframe}
                 onChange={(e) => updateField("timeframe", e.target.value)}
-                className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
+                className="w-full rounded-2xl border border-[#d3e2dd] bg-[#fcfdfb] px-4 py-4 text-slate-900 outline-none transition focus:border-teal-700 focus:ring-4 focus:ring-teal-700/10"
               >
                 <option value="">When are you considering treatment? (optional)</option>
                 <option>As soon as possible</option>
@@ -913,12 +913,12 @@ export default function HomePageClient() {
                 onChange={(e) => updateField("note", e.target.value)}
                 placeholder="Optional practical questions (no medical details, please)"
                 rows={3}
-                className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
+                className="w-full rounded-2xl border border-[#d3e2dd] bg-[#fcfdfb] px-4 py-4 text-slate-900 outline-none transition focus:border-teal-700 focus:ring-4 focus:ring-teal-700/10"
               />
 
-              <p className="text-xs leading-5 text-slate-600">Please do not include medical records, test results, diagnoses or other sensitive medical details here. Share those directly with your healthcare professional.</p>
+              <p className="rounded-xl bg-[#f5faf8] px-3 py-3 text-xs leading-5 text-slate-600">Please do not include medical records, test results, diagnoses or other sensitive medical details here. Share those directly with your healthcare professional.</p>
 
-              <div className="space-y-4 rounded-[24px] border border-slate-200 bg-slate-50 p-5">
+              <div className="space-y-4 rounded-[24px] border border-[#dbe9e3] bg-[#f3faf7] p-5">
                 <label className="flex items-start gap-3 text-sm leading-6 text-slate-600">
                   <input
                     type="checkbox"
@@ -926,7 +926,7 @@ export default function HomePageClient() {
                     onChange={(e) =>
                       updateField("consentDataProcessing", e.target.checked)
                     }
-                    className="mt-1 h-4 w-4 rounded border-slate-300"
+                    className="mt-1 h-4 w-4 shrink-0 rounded border-teal-300 accent-[#076b68]"
                     required
                   />
                   <span>
@@ -946,7 +946,7 @@ export default function HomePageClient() {
                     onChange={(e) =>
                       updateField("consentDisclaimer", e.target.checked)
                     }
-                    className="mt-1 h-4 w-4 rounded border-slate-300"
+                    className="mt-1 h-4 w-4 shrink-0 rounded border-teal-300 accent-[#076b68]"
                     required
                   />
                   <span>
@@ -963,14 +963,14 @@ export default function HomePageClient() {
                 read our{" "}
                 <Link
                   href="/privacy-policy"
-                  className="underline underline-offset-2 hover:text-slate-900"
+                  className="font-medium text-teal-800 underline underline-offset-2 hover:text-teal-950"
                 >
                   Privacy Policy
                 </Link>{" "}
                 and{" "}
                 <Link
                   href="/terms"
-                  className="underline underline-offset-2 hover:text-slate-900"
+                  className="font-medium text-teal-800 underline underline-offset-2 hover:text-teal-950"
                 >
                   Terms
                 </Link>.
@@ -979,7 +979,7 @@ export default function HomePageClient() {
               <button
                 type="submit"
                 disabled={sending}
-                className="w-full rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
+                className="w-full rounded-full bg-[#075f63] px-6 py-4 text-sm font-semibold text-white shadow-[0_10px_26px_rgba(7,95,99,0.16)] transition hover:-translate-y-0.5 hover:bg-[#064c50] disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {sending ? "Sending..." : "Send my enquiry"}
               </button>

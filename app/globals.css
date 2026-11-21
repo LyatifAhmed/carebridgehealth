@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --background: #fcfaf7;
@@ -15,11 +16,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html.dark {
+  color-scheme: dark;
+  --background: #0d1920;
+  --foreground: #edf5f3;
+}
+html:not(.dark) {
+  color-scheme: light;
 }
 
 body {
@@ -31,4 +34,67 @@ body {
 /* Premium heading font */
 .font-display {
   font-family: var(--font-display), serif;
+}
+
+/* Shared CareBridge colours: maintain legible surfaces on both modes.
+   These fallbacks cover older pages still using literal Tailwind palette classes. */
+html.dark body,
+html.dark main { background-color: #0d1920 !important; color: #edf5f3; }
+html.dark :is(section, footer)[class*="bg-[#"],
+html.dark :is(section, footer)[class*="bg-gradient-to-"],
+html.dark :is(section, footer)[class*="bg-[linear-gradient"] {
+  background-color: #101f26 !important;
+  background-image: none !important;
+}
+html.dark footer {
+  background: #101f26 !important;
+}
+html.dark [class~="bg-white"],
+html.dark [class~="bg-white/95"],
+html.dark [class~="bg-white/90"],
+html.dark [class~="bg-white/85"],
+html.dark [class~="bg-white/80"],
+html.dark [class~="bg-white/75"],
+html.dark [class~="bg-white/70"],
+html.dark [class~="bg-slate-50"],
+html.dark [class~="bg-slate-100"] {
+  background-color: #1b2e35 !important;
+}
+html.dark [class~="bg-[#fcfaf7]"],
+html.dark [class~="bg-[#fbf8f3]"],
+html.dark [class~="bg-[#fbf7ef]"],
+html.dark [class~="bg-[#f7f4ee]"],
+html.dark [class~="bg-[#f8f4ef]"],
+html.dark [class~="bg-[#f3faf7]"] {
+  background-color: #10242a !important;
+}
+html.dark [class~="text-slate-950"],
+html.dark [class~="text-slate-900"],
+html.dark [class~="text-slate-800"],
+html.dark [class~="text-slate-700"] { color: #f1f8f6 !important; }
+html.dark [class~="text-slate-600"],
+html.dark [class~="text-slate-500"] { color: #b6c8cc !important; }
+html.dark [class~="text-teal-800"],
+html.dark [class~="text-teal-700"] { color: #73dfcc !important; }
+html.dark [class~="border-slate-200"],
+html.dark [class~="border-slate-200/80"],
+html.dark [class~="border-slate-300"],
+html.dark [class~="border-[#dbe9e3]"],
+html.dark [class~="border-[#dce8e3]"] { border-color: #344a53 !important; }
+html.dark :is(input,textarea,select) {
+  background-color: #162b32 !important;
+  color: #edf5f3 !important;
+  border-color: #39545a !important;
+}
+html.dark :is(input,textarea)::placeholder { color: #a7bec3; }
+html.dark [class~="bg-slate-950"] { background-color: #0a141a !important; }
+html.dark #hero-section,
+html.dark #form {
+  background-color: #11262c !important;
+  background-image: linear-gradient(115deg,#101f27 15%,#173336 100%) !important;
+}
+html.dark #hero-section [class*="bg-gradient-to-t"],
+html.dark #hero-section [class*="bg-gradient-to-r"] {
+  /* Preserve contrast overlays on photographic heroes. */
+  background-image: revert-layer;
 }
