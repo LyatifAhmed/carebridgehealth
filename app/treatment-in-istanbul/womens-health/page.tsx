@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import HeroCursor from "../../components/HeroCursor";
 
 export const metadata: Metadata = {
   title:
@@ -132,61 +131,32 @@ export default function WomensHealthIstanbulPage() {
       />
 
       <main className="bg-[#fcfaf7] text-slate-900">
-        <section
-          id="hero-section"
-          className="relative min-h-[70svh] overflow-hidden cursor-none md:min-h-[88svh]"
-        >
-          <Image
-            src="/womens-health-feature.avif"
-            alt="Women's health treatment in Istanbul"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-[center_32%] md:object-[center_18%]"
-          />
-
-          <div className="absolute inset-0 bg-slate-950/45" />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/72 via-slate-950/32 to-transparent" />
-
-          <HeroCursor containerId="hero-section" />
-
-          <div className="relative z-10 flex min-h-[70svh] items-center pt-16 md:min-h-[88svh] md:pt-24">
-            <div className="mx-auto max-w-7xl px-6">
-              <div className="max-w-3xl">
-                <p className="text-xs uppercase tracking-[0.28em] text-white/70">
-                  CareBridge Health
-                </p>
-
-                <h1 className="mt-6 text-5xl font-semibold tracking-[-0.03em] text-white md:text-7xl">
-                  Women’s health treatments in Istanbul,
-                  <span className="block text-white/85">
-                    handled with discretion and care
-                  </span>
-                </h1>
-
-                <p className="mt-7 max-w-2xl text-base leading-8 text-white/80 md:text-lg">
-                  We help UK-based patients explore women’s health treatment in
-                  Istanbul through structured coordination, clear communication,
-                  and a more private experience before travelling.
-                </p>
-
-                <div className="mt-10 flex flex-wrap gap-4">
-                  <a
-                    href="/#form"
-                    className="rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950 transition hover:-translate-y-0.5 hover:opacity-95"
-                  >
-                    Request private consultation
-                  </a>
-
-                  <Link
-                    href="/treatment-in-antalya"
-                    className="rounded-full border border-white/30 px-7 py-4 text-sm text-white transition hover:bg-white/10"
-                  >
-                    Compare with Antalya
-                  </Link>
-                </div>
+        <section id="hero-section" className="relative overflow-hidden bg-gradient-to-br from-[#fbf8f3] via-white to-[#eff8f5]">
+          <div aria-hidden="true" className="pointer-events-none absolute -right-36 top-16 h-96 w-96 rounded-full bg-teal-100/60 blur-3xl" />
+          <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-6 pb-16 pt-36 md:gap-14 md:pb-20 md:pt-40 lg:grid-cols-[1.08fr_0.92fr]">
+            <div className="max-w-2xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-800">Women’s health · Istanbul</p>
+              <h1 className="mt-5 text-4xl font-semibold leading-[1.1] tracking-[-0.045em] text-slate-950 sm:text-5xl lg:text-[3.65rem]">
+                Women’s health treatment in Istanbul, with a more personal approach
+              </h1>
+              <p className="mt-6 max-w-xl text-base leading-8 text-slate-700 md:text-lg">
+                Considering treatment in Turkey? Tell us what you’re looking for.
+                We’ll help you take the next step and, where appropriate, arrange
+                an introduction to an independent specialist. You decide whether to proceed.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a href="/#form" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#075f63] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-950/10 transition hover:bg-[#064c50]">Start a free enquiry</a>
+                <Link href="/how-treatment-in-turkey-works" className="inline-flex min-h-12 items-center justify-center rounded-full border border-slate-300 bg-white px-7 py-3.5 text-sm font-semibold text-slate-900 transition hover:border-teal-500">How it works</Link>
               </div>
+              <p className="mt-5 max-w-xl text-xs leading-6 text-slate-500">
+                Free to enquire, with no obligation. Medical assessment, treatment and any
+                provider charges are handled by the independent healthcare provider.
+              </p>
             </div>
+            <figure className="mx-auto w-full max-w-[500px] overflow-hidden rounded-[30px] border border-slate-200/80 bg-[#f8f5f1] p-3 shadow-[0_25px_65px_rgba(15,23,42,0.08)] md:p-4 lg:ml-auto">
+              <Image src="/womens-health-feature.avif" alt="Illustration of women’s health support and care" width={920} height={700} priority sizes="(max-width: 1024px) 90vw, 500px" className="h-auto w-full rounded-[20px] object-contain" />
+              <figcaption className="px-2 pb-1 pt-3 text-xs leading-5 text-slate-500">Illustrative image. Treatment and clinical advice are provided by independent healthcare professionals.</figcaption>
+            </figure>
           </div>
         </section>
 
@@ -249,8 +219,8 @@ export default function WomensHealthIstanbulPage() {
           </div>
         </section>
 
-        <section className="bg-[#f7f4ee] py-24 md:py-28">
-          <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-2 md:gap-14">
+        <section className="bg-[#f7f4ee] py-20 md:py-24">
+          <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-2 md:gap-14">
             <div className="max-w-xl">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
                 Procedures
@@ -284,29 +254,25 @@ export default function WomensHealthIstanbulPage() {
               </p>
             </div>
 
-            <div className="relative h-[360px] overflow-hidden rounded-[32px] md:h-auto md:min-h-[520px]">
-              <Image
-                src="/womens-health-feature.avif"
-                alt="Discreet women’s health coordination in Istanbul"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-              />
+            <div className="self-center rounded-[30px] border border-[#d9e6e2] bg-white p-7 shadow-[0_16px_48px_rgba(15,23,42,0.04)] md:p-9">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-800">An easier first step</p>
+              <h3 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950">You can ask questions before deciding.</h3>
+              <p className="mt-4 text-sm leading-7 text-slate-600">Our enquiry and introduction service is free. We can help arrange the next conversation, while independent clinicians explain whether a procedure is suitable, including risks, costs and aftercare.</p>
+              <div className="mt-7 border-t border-slate-200 pt-6">
+                <p className="text-sm font-semibold text-slate-900">Your privacy comes first</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">You don’t need to send medical records to CareBridge. Share sensitive medical information directly with your healthcare professional.</p>
+                <Link href="/privacy-policy" className="mt-4 inline-block text-sm font-semibold text-teal-800 underline underline-offset-4">Read our Privacy Policy</Link>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="bg-white py-24 md:py-28">
+        <section className="bg-white py-20 md:py-24">
           <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-2 md:gap-14">
-            <div className="relative h-[360px] overflow-hidden rounded-[32px] md:h-auto md:min-h-[520px]">
-              <Image
-                src="/trust.avif"
-                alt="How to assess a clinic for women’s health treatment in Istanbul"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
+            <figure className="mx-auto w-full max-w-[520px] self-center rounded-[30px] border border-slate-200 bg-[#f8f7f4] p-4 shadow-[0_18px_55px_rgba(15,23,42,0.05)] md:p-6">
+              <Image src="/trust.avif" alt="Illustration of questions to consider when choosing a healthcare provider" width={1000} height={800} sizes="(max-width: 768px) 90vw, 520px" className="h-auto w-full rounded-2xl object-contain" />
+              <figcaption className="mt-3 text-xs leading-5 text-slate-500">Illustrative image; provider credentials, treatment risks and aftercare should always be checked directly.</figcaption>
+            </figure>
 
             <div className="max-w-xl">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
