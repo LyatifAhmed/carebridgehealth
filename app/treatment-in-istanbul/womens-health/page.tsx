@@ -131,7 +131,7 @@ export default function WomensHealthIstanbulPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <main className="bg-[#fcfaf7] text-slate-900">
+      <main className="carebridge-halo-page bg-[#fcfaf7] text-slate-900">
         <LandingCursorHalo />
         <section id="hero-section" className="relative overflow-hidden bg-gradient-to-br from-[#fbf8f3] via-white to-[#eff8f5]">
           <div aria-hidden="true" className="pointer-events-none absolute -right-36 top-16 h-96 w-96 rounded-full bg-teal-100/60 blur-3xl" />
