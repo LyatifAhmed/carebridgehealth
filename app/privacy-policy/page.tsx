@@ -75,8 +75,7 @@ export default function PrivacyPolicyPage() {
               <li>Technical data connected with your submission, such as date/time of submission, IP address, and browser information</li>
             </ul>
             <p className="mt-2">
-              Some information you provide may relate to your health or medical circumstances.
-              Where that happens, we treat it as sensitive personal data.
+              Your selected treatment interest may itself reveal health-related information. Our initial enquiry form is designed for contact and treatment-interest details rather than medical records. Please share detailed medical histories and records directly with your treating healthcare professional through their own appropriate process.
             </p>
           </div>
 
@@ -130,10 +129,7 @@ export default function PrivacyPolicyPage() {
               <li>Professional advisers where necessary</li>
             </ul>
             <p className="mt-2">
-              We only share information that is reasonably necessary for the relevant
-              purpose. Medical assessment, diagnosis, treatment planning, suitability
-              decisions, and treatment outcomes remain the responsibility of the
-              relevant provider, not CareBridge Health.
+              With the relevant permission and applicable data protection safeguards, we may pass the minimum contact and enquiry details needed for an introduction to an independent healthcare provider. You can then share detailed medical information directly with that provider through their own appropriate process. Medical assessment, diagnosis, treatment planning, suitability decisions, and treatment outcomes remain the responsibility of the relevant provider, not CareBridge Health.
             </p>
           </div>
 
@@ -154,10 +150,7 @@ export default function PrivacyPolicyPage() {
           <div>
             <h2 className="font-medium text-slate-900">7. Data minimisation</h2>
             <p className="mt-2">
-              We ask that you only provide information you are comfortable sharing at
-              the initial enquiry stage. Please do not send extensive medical records or
-              unnecessary sensitive details unless specifically requested through an
-              appropriate next step.
+              Our initial enquiry process does not ask you to upload medical records. Please do not send diagnoses, scans, test results or other detailed health information using the enquiry form or general contact form. Where medical information is needed for treatment, discuss directly with the treating healthcare professional using their appropriate process.
             </p>
           </div>
 
