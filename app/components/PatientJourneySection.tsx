@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ScrollReveal } from "./ScrollMotion";
 import { ArrowRight, CalendarCheck2, ClipboardList, MessagesSquare, Stethoscope } from "lucide-react";
 
 const steps = [
@@ -44,7 +45,8 @@ export default function PatientJourneySection() {
 
         <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {steps.map(({ number, title, description, Icon }) => (
-            <article key={number} className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_10px_35px_rgba(15,23,42,0.04)]">
+            <ScrollReveal key={number} delay={(Number(number) - 1) * 0.07} className="h-full">
+              <article className="h-full rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_10px_35px_rgba(15,23,42,0.04)]">
               <div className="flex items-center justify-between">
                 <span className="text-sm font-semibold tracking-[0.18em] text-slate-400">{number}</span>
                 <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-800">
@@ -53,7 +55,8 @@ export default function PatientJourneySection() {
               </div>
               <h3 className="mt-6 text-xl font-semibold tracking-tight text-slate-950">{title}</h3>
               <p className="mt-3 text-sm leading-7 text-slate-600">{description}</p>
-            </article>
+              </article>
+            </ScrollReveal>
           ))}
         </div>
 
