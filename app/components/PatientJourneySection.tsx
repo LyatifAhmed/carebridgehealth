@@ -4,26 +4,26 @@ import { ArrowRight, CalendarCheck2, ClipboardList, MessagesSquare, Stethoscope 
 const steps = [
   {
     number: "01",
-    title: "Send a private enquiry",
-    description: "Tell CareBridge what you are considering and how we can contact you. There is no obligation to proceed.",
+    title: "Tell us what you’re looking for",
+    description: "Choose a treatment and share your contact details. Your enquiry is free and there’s no obligation.",
     Icon: ClipboardList,
   },
   {
     number: "02",
-    title: "We coordinate the next step",
-    description: "We review your request, clarify practical questions and, where appropriate, arrange an introduction to an independent medical professional.",
+    title: "We get back to you",
+    description: "We aim to reply within 24 hours, answer your first questions and help arrange the next conversation.",
     Icon: MessagesSquare,
   },
   {
     number: "03",
-    title: "Speak with the doctor",
-    description: "For suitable enquiries, we can help arrange an online conversation with the relevant doctor. You receive the doctor's identity and credentials before the consultation. The doctor handles clinical questions and suitability.",
+    title: "Talk to a healthcare professional",
+    description: "Where appropriate, we help arrange a conversation with an independent doctor. You’ll know who they are before you meet. They answer medical questions and assess suitability.",
     Icon: Stethoscope,
   },
   {
     number: "04",
-    title: "Decide in your own time",
-    description: "If you wish to continue, treatment, pricing, risks and aftercare are discussed with the provider. You decide whether to proceed, with no commitment from the initial enquiry.",
+    title: "Make your own decision",
+    description: "You decide whether to continue. The provider explains treatment, costs, risks and aftercare before any commitment. You can also choose not to go ahead.",
     Icon: CalendarCheck2,
   },
 ];
@@ -33,12 +33,12 @@ export default function PatientJourneySection() {
     <section id="process" aria-labelledby="contact-process-title" className="scroll-mt-24 bg-[#fcfaf7] py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Your enquiry, explained</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Four simple steps</p>
           <h2 id="contact-process-title" className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-slate-950 md:text-5xl">
-            What happens after you contact us?
+            Tell us what you need. We’ll help with the next step.
           </h2>
           <p className="mt-5 text-base leading-8 text-slate-600">
-            You have a real point of contact at CareBridge. We help you reach the right conversation, while the medical professional remains responsible for all clinical decisions.
+            You only need to take the first step. Our enquiry and introduction service is free, and you remain in control throughout. A provider will explain any consultation or treatment costs before you agree to them.
           </p>
         </div>
 
@@ -59,13 +59,13 @@ export default function PatientJourneySection() {
 
         <div className="mt-9 flex flex-col gap-5 rounded-[28px] border border-slate-200 bg-white p-6 md:flex-row md:items-center md:justify-between md:p-8">
           <div className="max-w-2xl">
-            <p className="font-semibold text-slate-950">Independent coordination. Informed choice.</p>
+            <p className="font-semibold text-slate-950">Free to start. Always your choice.</p>
             <p className="mt-2 text-sm leading-6 text-slate-600">
               CareBridge is not a clinic and does not provide medical advice or treatment. We may receive a referral commission from a provider if you proceed with treatment. You can ask who the provider is and verify their credentials before deciding.
             </p>
           </div>
           <Link href="/#form" className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-slate-800">
-            Start a private enquiry <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            Send a free enquiry <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>
       </div>
