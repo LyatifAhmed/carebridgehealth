@@ -65,8 +65,20 @@ html.dark [class~="bg-[#fbf8f3]"],
 html.dark [class~="bg-[#fbf7ef]"],
 html.dark [class~="bg-[#f7f4ee]"],
 html.dark [class~="bg-[#f8f4ef]"],
-html.dark [class~="bg-[#f3faf7]"] {
-  background-color: #10242a !important;
+html.dark [class~="bg-[#f3faf7]"],
+html.dark [class*="bg-[#f"],
+html.dark [class*="bg-[#e"],
+html.dark [class*="bg-[#d"] {
+  /* Cover off-white custom cards that Tailwind's exact bg-white matches miss. */
+  background-color: #1b2e35 !important;
+  background-image: none !important;
+}
+html.dark :is(div, article, aside, figure, a, button)[class*="bg-[linear-gradient"] {
+  /* Avoid light gradient buttons/cards next to globally inverted text. */
+  background: #1b2e35 !important;
+}
+html.dark :is(div, article, aside, figure, a, button)[class*="bg-[linear-gradient"][class*="text-white"] {
+  background: #075f63 !important;
 }
 html.dark [class~="text-slate-950"],
 html.dark [class~="text-slate-900"],
@@ -80,7 +92,9 @@ html.dark [class~="border-slate-200"],
 html.dark [class~="border-slate-200/80"],
 html.dark [class~="border-slate-300"],
 html.dark [class~="border-[#dbe9e3]"],
-html.dark [class~="border-[#dce8e3]"] { border-color: #344a53 !important; }
+html.dark [class~="border-[#dce8e3]"],
+html.dark [class*="border-[#e"],
+html.dark [class*="border-[#d"] { border-color: #344a53 !important; }
 html.dark :is(input,textarea,select) {
   background-color: #162b32 !important;
   color: #edf5f3 !important;
@@ -98,3 +112,17 @@ html.dark #hero-section [class*="bg-gradient-to-r"] {
   /* Preserve contrast overlays on photographic heroes. */
   background-image: revert-layer;
 }
+
+
+/* Dark-mode buttons should never retain pale backgrounds while text is inverted. */
+html.dark a[class*="bg-[#f"],
+html.dark button[class*="bg-[#f"] {
+  background: #1b2e35 !important;
+  color: #edf5f3 !important;
+}
+html.dark a[class*="bg-slate-950"],
+html.dark button[class*="bg-slate-950"] {
+  color: #ffffff !important;
+}
+html.dark [class*="bg-[#075f63]"] { background-color: #075f63 !important; }
+html.dark [class*="bg-[#075f63]"][class*="text-white"] { color: #ffffff !important; }

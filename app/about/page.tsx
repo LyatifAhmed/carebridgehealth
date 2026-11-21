@@ -35,7 +35,7 @@ const operatingModel = [
 
 export default function AboutPage() {
   return (
-    <main className="bg-[#fbf7ef] text-slate-950">
+    <main className="bg-[#fbf7ef] text-slate-950 dark:bg-[#0d1920] dark:text-[#edf5f3]">
       <section className="relative overflow-hidden bg-slate-950 px-6 py-24 text-white md:py-32">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_35%)]" />
 
@@ -143,14 +143,14 @@ export default function AboutPage() {
               href="https://www.linkedin.com/in/lyatif-ahmed-redzheb/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex rounded-full border border-slate-300 bg-white px-6 py-4 text-sm font-medium text-slate-800 transition hover:border-slate-500"
+              className="inline-flex rounded-full border border-slate-300 bg-white px-6 py-4 text-sm font-medium text-slate-800 transition hover:border-slate-500 dark:border-[#39545a] dark:bg-[#1b2e35] dark:text-[#edf5f3]"
             >
               Connect on LinkedIn
             </a>
 
             <Link
               href="/#form"
-              className="inline-flex rounded-full bg-slate-950 px-6 py-4 text-sm font-medium text-white transition hover:bg-slate-800"
+              className="inline-flex rounded-full bg-slate-950 px-6 py-4 text-sm font-medium text-white transition hover:bg-slate-800 dark:bg-[#075f63] dark:text-white dark:hover:bg-[#087b7b]"
             >
               Request private review
             </Link>
@@ -181,7 +181,7 @@ export default function AboutPage() {
             {operatingModel.map((item, index) => (
               <div
                 key={item.title}
-                className="rounded-[30px] border border-slate-200 bg-[#fbf7ef] p-7 shadow-[0_12px_40px_rgba(15,23,42,0.04)]"
+                className="rounded-[30px] border border-slate-200 bg-[#fbf7ef] p-7 shadow-[0_12px_40px_rgba(15,23,42,0.04)] dark:border-[#354d55] dark:bg-[#1b2e35]"
               >
                 <div className="text-sm font-semibold text-slate-400">
                   0{index + 1}
@@ -246,7 +246,7 @@ export default function AboutPage() {
       </section>
 
       <section className="px-6 pb-24">
-        <div className="mx-auto max-w-5xl rounded-[36px] border border-slate-200 bg-[#f3efe8] p-8 shadow-[0_20px_60px_rgba(15,23,42,0.04)] md:p-12">
+        <div className="mx-auto max-w-5xl rounded-[36px] border border-slate-200 bg-[#f3efe8] p-8 shadow-[0_20px_60px_rgba(15,23,42,0.04)] dark:border-[#354d55] dark:bg-[#1b2e35] md:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
             Private consultation
           </p>
@@ -263,14 +263,14 @@ export default function AboutPage() {
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/#form"
-              className="inline-flex rounded-full bg-slate-950 px-6 py-4 text-sm font-medium text-white transition hover:bg-slate-800"
+              className="inline-flex rounded-full bg-slate-950 px-6 py-4 text-sm font-medium text-white transition hover:bg-slate-800 dark:bg-[#075f63] dark:text-white dark:hover:bg-[#087b7b]"
             >
               Start consultation
             </Link>
 
             <Link
               href="/how-treatment-in-turkey-works"
-              className="inline-flex rounded-full border border-slate-300 bg-white px-6 py-4 text-sm font-medium text-slate-800 transition hover:border-slate-500"
+              className="inline-flex rounded-full border border-slate-300 bg-white px-6 py-4 text-sm font-medium text-slate-800 transition hover:border-slate-500 dark:border-[#39545a] dark:bg-[#1b2e35] dark:text-[#edf5f3]"
             >
               How treatment works
             </Link>
