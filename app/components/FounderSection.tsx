@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function FounderSection() {
   return (
     <section className="bg-white py-16 md:py-20" aria-labelledby="founder-story-title">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="grid gap-8 rounded-[32px] border border-slate-200 bg-[#fbf8f3] p-7 md:grid-cols-[1.1fr_0.9fr] md:items-end md:gap-14 md:p-12">
-          <div>
+      <div className="mx-auto max-w-5xl px-6">
+        <div className="rounded-[32px] border border-slate-200 bg-[#fbf8f3] p-7 md:p-12">
+          <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-800">
               The story behind CareBridge
             </p>
@@ -19,7 +19,7 @@ export default function FounderSection() {
               I am not a medical provider. CareBridge helps coordinate introductions; independent clinicians remain responsible for assessment, treatment and aftercare.
             </p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="mt-8 flex flex-col gap-5 border-t border-slate-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-lg font-semibold text-slate-950">
               Latif Ahmed <span className="block text-sm font-normal text-slate-500">Founder, CareBridge Health</span>
             </p>
