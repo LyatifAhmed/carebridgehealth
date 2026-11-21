@@ -262,10 +262,10 @@ export default function HomePageClient() {
                 <span className="h-px w-9 bg-teal-600/70" />
               </p>
               <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-[-0.045em] text-slate-950 sm:text-5xl md:text-6xl lg:text-[4.1rem]">
-                A clearer path to treatment in Turkey
+                Treatment in Turkey, made easier to explore
               </h1>
               <p className="mt-7 max-w-xl text-base leading-8 text-slate-700 md:text-lg">
-                CareBridge Health helps people considering treatment in Turkey understand their options, coordinate enquiries and connect with independent healthcare professionals — before making a decision.
+                Simply tell us which treatment you’re interested in. We’ll get back to you with the next steps and help arrange a conversation with an independent healthcare professional, where appropriate. It’s free to enquire, and the decision to proceed is always yours.
               </p>
 
               <div className="mt-8 border-l-[3px] border-teal-600 pl-5">
@@ -282,7 +282,7 @@ export default function HomePageClient() {
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a href="#form" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#075f63] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-950/10 transition hover:bg-[#064c50]">
-                  Start a private enquiry
+                  Tell us what treatment you need
                 </a>
                 <a href="#process" className="inline-flex min-h-12 items-center justify-center rounded-full border border-slate-300 bg-white/80 px-7 py-3.5 text-sm font-semibold text-slate-900 transition hover:border-teal-500 hover:bg-white">
                   How it works
@@ -315,9 +315,9 @@ export default function HomePageClient() {
 
           <div className="mt-12 grid gap-4 sm:grid-cols-3 lg:mt-16">
             {[
-              { title: "London-based coordination", desc: "A visible, UK-based point of contact throughout your initial enquiry." },
-              { title: "Personal healthcare connections", desc: "Introductions informed by existing relationships, with provider details shared before consultation." },
-              { title: "Clear communication", desc: "Understand the next steps before choosing whether to proceed." },
+              { title: "Start for free", desc: "Tell us what treatment you’re interested in. There’s no charge to send an enquiry or receive an introduction." },
+              { title: "We arrange the next step", desc: "We aim to reply within 24 hours and help arrange a conversation with an independent healthcare professional." },
+              { title: "You decide", desc: "Ask questions, consider the options and only go ahead if you feel ready." },
             ].map((item) => (
               <div key={item.title} className="rounded-[24px] border border-slate-200/85 bg-white/85 p-6 shadow-[0_10px_35px_rgba(15,23,42,0.04)]">
                 <div className="mb-4 h-1 w-10 rounded-full bg-teal-600" />
@@ -372,11 +372,10 @@ export default function HomePageClient() {
               Treatments
             </p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-              Start with the treatment route that fits your case
+              Choose the treatment you’re interested in
             </h2>
             <p className="mt-5 text-base leading-8 text-slate-600">
-              Focused pages for patients comparing Turkey with private treatment
-              options in the UK.
+              Explore your options, then send us a free enquiry when you’re ready.
             </p>
           </div>
 
@@ -776,18 +775,16 @@ export default function HomePageClient() {
             </h2>
 
             <p className="mt-5 text-base leading-8 text-white/65">
-              Share a few details and we’ll help you understand suitable next
-              steps and, where appropriate, which clinic pathway may fit your
-              enquiry.
+              Choose a treatment and leave your contact details. We’ll aim to get back to you within 24 hours and explain what happens next. Our enquiry and introduction service is free, with no obligation to book treatment.
             </p>
 
             <div className="mt-8 grid gap-3 text-sm text-white/70">
               {[
-                "No obligation review",
+                "Free to enquire — no obligation",
                 "Private and discreet",
                 "UK-based coordination",
                 "Destination guidance included",
-                "Response target within 24 hours",
+                "We aim to reply within 24 hours",
               ].map((item) => (
                 <div
                   key={item}
