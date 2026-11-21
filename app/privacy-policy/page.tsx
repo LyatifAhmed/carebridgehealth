@@ -78,6 +78,13 @@ export default function PrivacyPolicyPage() {
               Some information you provide may relate to your health or medical circumstances.
               Where that happens, we treat it as sensitive personal data.
             </p>
+            <p className="mt-2">
+              You do not need to provide medical records, test results, diagnoses or a
+              detailed medical history to make an initial enquiry. If medical information
+              is needed, you can share it directly with the treating healthcare provider.
+              Your treatment interest or details you voluntarily submit to CareBridge
+              may nevertheless reveal sensitive health information.
+            </p>
           </div>
 
           <div>
@@ -131,9 +138,12 @@ export default function PrivacyPolicyPage() {
             </ul>
             <p className="mt-2">
               We only share information that is reasonably necessary for the relevant
-              purpose. Medical assessment, diagnosis, treatment planning, suitability
-              decisions, and treatment outcomes remain the responsibility of the
-              relevant provider, not CareBridge Health.
+              purpose. Where an introduction is appropriate, this can include sharing
+              enquiry contact details and treatment interest with an independent
+              healthcare provider or coordination partner in Turkey, as explained at
+              the point of collection. Medical assessment, diagnosis, treatment planning,
+              suitability decisions, and treatment outcomes remain the responsibility
+              of the relevant provider, not CareBridge Health.
             </p>
           </div>
 
