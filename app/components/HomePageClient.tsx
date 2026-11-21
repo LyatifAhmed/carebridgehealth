@@ -9,6 +9,7 @@ import FounderSection from "./FounderSection";
 import MedicalPartnerSection from "./MedicalPartnerSection";
 import FaqSection from "./FaqSection";
 import PatientJourneySection from "./PatientJourneySection";
+import { GentleParallax, ScrollReveal } from "./ScrollMotion";
 
 // İkonları import ediyoruz
 import { MapPin, Clock, ShieldCheck, ArrowRight, Sparkles, LockKeyhole } from "lucide-react";
@@ -293,7 +294,7 @@ export default function HomePageClient() {
               </p>
             </div>
 
-            <div className="mx-auto w-full max-w-[440px] lg:ml-auto">
+            <GentleParallax className="mx-auto w-full max-w-[440px] lg:ml-auto">
               <figure className="relative overflow-hidden rounded-[32px] border border-white/75 bg-slate-100 shadow-[0_30px_70px_rgba(15,23,42,0.13)]">
                 <div className="relative aspect-[4/5] w-full sm:aspect-[5/6] lg:aspect-[4/5]">
                   <Image
@@ -310,7 +311,7 @@ export default function HomePageClient() {
                   <span className="mt-1 block text-xs text-white/85">Founder, CareBridge Health</span>
                 </figcaption>
               </figure>
-            </div>
+            </GentleParallax>
           </div>
 
           <div className="mt-12 grid gap-4 sm:grid-cols-3 lg:mt-16">
@@ -319,11 +320,13 @@ export default function HomePageClient() {
               { title: "We arrange the next step", desc: "We aim to reply within 24 hours and help arrange a conversation with an independent healthcare professional." },
               { title: "You decide", desc: "Ask questions, consider the options and only go ahead if you feel ready." },
             ].map((item) => (
-              <div key={item.title} className="rounded-[24px] border border-slate-200/85 bg-white/85 p-6 shadow-[0_10px_35px_rgba(15,23,42,0.04)]">
+              <ScrollReveal key={item.title} className="h-full">
+                <div className="h-full rounded-[24px] border border-slate-200/85 bg-white/85 p-6 shadow-[0_10px_35px_rgba(15,23,42,0.04)]">
                 <div className="mb-4 h-1 w-10 rounded-full bg-teal-600" />
                 <h2 className="text-base font-semibold text-slate-950">{item.title}</h2>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{item.desc}</p>
-              </div>
+                </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
