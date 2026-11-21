@@ -43,7 +43,7 @@ const trustItems = [
   "UK-based, international support",
   "Independent, not a clinic",
   "Doctor review where appropriate",
-  "Patient privacy first",
+  "Privacy-first enquiries",
 ];
 
 // heroStats array'imize ilgili Lucide ikonlarını eşleştiriyoruz
@@ -289,7 +289,7 @@ export default function HomePageClient() {
                 </a>
               </div>
               <p className="mt-5 max-w-lg text-xs leading-5 text-slate-500">
-                CareBridge is an independent referral and coordination service, not a clinic or medical provider. Medical advice and treatment are provided by independent healthcare professionals.
+                We ask for basic contact details and your treatment interest, not medical records. Share detailed medical information directly with your healthcare professional. CareBridge is not a clinic or medical provider.
               </p>
             </div>
 
@@ -317,7 +317,7 @@ export default function HomePageClient() {
             {[
               { title: "Start for free", desc: "Tell us what treatment you’re interested in. There’s no charge to send an enquiry or receive an introduction." },
               { title: "We arrange the next step", desc: "We aim to reply within 24 hours and help arrange a conversation with an independent healthcare professional." },
-              { title: "You decide", desc: "Ask questions, consider the options and only go ahead if you feel ready." },
+              { title: "Your information matters", desc: "We ask for minimal details to start. Discuss your medical history directly with the treating healthcare professional." },
             ].map((item) => (
               <div key={item.title} className="rounded-[24px] border border-slate-200/85 bg-white/85 p-6 shadow-[0_10px_35px_rgba(15,23,42,0.04)]">
                 <div className="mb-4 h-1 w-10 rounded-full bg-teal-600" />
@@ -781,7 +781,7 @@ export default function HomePageClient() {
             <div className="mt-8 grid gap-3 text-sm text-white/70">
               {[
                 "Free to enquire — no obligation",
-                "Private and discreet",
+                "No medical records needed to enquire",
                 "UK-based coordination",
                 "Destination guidance included",
                 "We aim to reply within 24 hours",
@@ -885,13 +885,11 @@ export default function HomePageClient() {
                 <option>Just exploring options</option>
               </select>
 
-              <textarea
-                value={form.note}
-                onChange={(e) => updateField("note", e.target.value)}
-                placeholder="Optional notes"
-                rows={5}
-                className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
-              />
+              <div className="rounded-2xl border border-teal-100 bg-teal-50 p-4 text-sm leading-6 text-teal-950">
+                <p className="font-semibold">Your privacy matters</p>
+                <p className="mt-1">You don’t need to upload medical records or explain your medical history here. If you decide to speak with a doctor, share those details directly with the healthcare professional through their own process. We use your enquiry details to contact you and, where you have agreed, coordinate an introduction.</p>
+                <Link href="/privacy-policy" className="mt-2 inline-block font-semibold underline underline-offset-2">How we handle your information</Link>
+              </div>
 
               <div className="space-y-4 rounded-[24px] border border-slate-200 bg-slate-50 p-5">
                 <label className="flex items-start gap-3 text-sm leading-6 text-slate-600">
@@ -905,12 +903,7 @@ export default function HomePageClient() {
                     required
                   />
                   <span>
-                    I explicitly consent to CareBridge Health using my
-                    information, including health-related information I choose to
-                    provide, to review my enquiry and, where appropriate, share
-                    relevant details with a suitable third-party clinic partner
-                    or Turkey-licensed medical provider for initial review and
-                    coordination.
+                    I explicitly consent to CareBridge Health using my contact details and treatment interest to respond to my enquiry and, where appropriate, share the minimum relevant information with an independent healthcare provider in Turkey to arrange an introduction. I understand that treatment interests can be health-related information.
                   </span>
                 </label>
 
@@ -933,9 +926,7 @@ export default function HomePageClient() {
               </div>
 
               <p className="text-xs leading-6 text-slate-500">
-                Please only include information you are comfortable sharing at
-                this stage. By submitting this form, you confirm that you have
-                read our{" "}
+                Please do not send medical records, diagnoses or detailed health information through this form. CareBridge Health is operated by BetaOffice Ltd, registered with the UK Information Commissioner’s Office (ICO). ICO registration does not mean ICO approval or certification. We handle enquiries under our data protection obligations. Read our{" "
                 <Link
                   href="/privacy-policy"
                   className="underline underline-offset-2 hover:text-slate-900"
