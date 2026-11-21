@@ -5,6 +5,11 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
+    question: "Can I share my information safely?",
+    answer:
+      "Your privacy matters. At the first step we ask for contact details and what treatment you are interested in, not medical records. Please share medical histories, scans and other sensitive clinical details directly with the healthcare professional through their own secure process. With your agreement, we may pass the minimum relevant enquiry details to an independent provider in Turkey so they can contact you. CareBridge Health is operated by BetaOffice Ltd, registered with the UK ICO. Registration is not an ICO endorsement, and you can read more in our Privacy Policy.",
+  },
+  {
     question: "Is treatment in Turkey safe?",
     answer:
       "Safety depends on the clinic, medical team, treatment type, and your individual circumstances. CareBridge Health helps patients approach treatment more carefully by providing structured coordination and helping them understand important considerations before travelling.",
