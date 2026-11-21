@@ -126,3 +126,31 @@ html.dark button[class*="bg-slate-950"] {
 }
 html.dark [class*="bg-[#075f63]"] { background-color: #075f63 !important; }
 html.dark [class*="bg-[#075f63]"][class*="text-white"] { color: #ffffff !important; }
+
+
+/* Homepage-only ambient cursor ring. Positioned via transform in a single RAF;
+   the teal outline stays visible against cream, white and pale green cards. */
+.carebridge-landing-halo {
+  border: 1.5px solid rgba(6, 105, 107, 0.56);
+  background: radial-gradient(circle at 36% 30%, rgba(94, 234, 212, 0.14), rgba(13, 148, 136, 0.035) 60%, transparent 74%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.58),
+    0 0 0 5px rgba(13, 148, 136, 0.065),
+    0 0 38px rgba(13, 148, 136, 0.24),
+    0 0 78px rgba(13, 148, 136, 0.11);
+  backdrop-filter: blur(3px);
+  transition: opacity 240ms ease-out;
+  will-change: transform;
+}
+html.dark .carebridge-landing-halo {
+  border-color: rgba(134, 239, 209, 0.76);
+  background: radial-gradient(circle at 32% 28%, rgba(94, 234, 212, 0.18), rgba(13, 148, 136, 0.035) 65%, transparent 75%);
+  box-shadow:
+    inset 0 0 0 1px rgba(209, 250, 229, 0.10),
+    0 0 0 5px rgba(45, 212, 191, 0.06),
+    0 0 38px rgba(45, 212, 191, 0.27),
+    0 0 80px rgba(45, 212, 191, 0.13);
+}
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .carebridge-landing-halo { display: none !important; }
+}

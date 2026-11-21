@@ -10,6 +10,7 @@ import MedicalPartnerSection from "./MedicalPartnerSection";
 import FaqSection from "./FaqSection";
 import PatientJourneySection from "./PatientJourneySection";
 import { GentleParallax, ScrollReveal } from "./ScrollMotion";
+import LandingCursorHalo from "./LandingCursorHalo";
 
 // İkonları import ediyoruz
 import { MapPin, Clock, ShieldCheck, ArrowRight, Sparkles, LockKeyhole } from "lucide-react";
@@ -253,6 +254,7 @@ export default function HomePageClient() {
 
   return (
     <main className="bg-[#fbf7ef] text-slate-950">
+      <LandingCursorHalo />
       <section id="hero-section" className="relative overflow-hidden bg-gradient-to-br from-[#fbf8f3] via-white to-[#ecf8f5]">
         <div aria-hidden="true" className="pointer-events-none absolute -right-28 top-12 h-[420px] w-[420px] rounded-full bg-teal-100/45 blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-28 md:pb-20 md:pt-36">
