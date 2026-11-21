@@ -163,3 +163,14 @@ html.dark .carebridge-landing-halo {
 @media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
   .carebridge-landing-halo { display: none !important; }
 }
+
+
+/* Match the women's health page: keep the animated halo beneath every
+   homepage section's content layer, not across text and cards.
+   Exclude decorative absolutely-positioned overlays from the lift. */
+@media (hover: hover) and (pointer: fine) {
+  main.carebridge-halo-page > section > :is(div, article, figure):not([class*="absolute"]):not([aria-hidden="true"]) {
+    position: relative;
+    z-index: 20;
+  }
+}
