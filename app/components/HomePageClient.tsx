@@ -342,6 +342,29 @@ export default function HomePageClient() {
         </div>
       </section>
 
+      <section aria-labelledby="privacy-trust-title" className="border-b border-slate-200 bg-[#f1faf7]">
+        <div className="mx-auto grid max-w-7xl items-center gap-8 px-6 py-12 md:grid-cols-[1.1fr_0.9fr] md:py-16">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-800">Your privacy matters</p>
+            <h2 id="privacy-trust-title" className="mt-3 text-3xl font-semibold tracking-[-0.035em] text-slate-950 md:text-4xl">Your medical information belongs between you and your doctor.</h2>
+            <p className="mt-4 max-w-2xl text-base leading-8 text-slate-700">You don't need to send us medical records, test results or your medical history to get started. Share those directly with your healthcare professional if needed. CareBridge uses your enquiry details to respond and help arrange an introduction, with your permission.</p>
+            <Link href="/privacy-policy" className="mt-5 inline-flex text-sm font-semibold text-teal-800 underline underline-offset-4 hover:text-teal-950">How we protect your information</Link>
+          </div>
+          <div className="grid gap-3">
+            {[
+              { heading: "A simple first step", detail: "Start with your contact details and the type of treatment you're interested in." },
+              { heading: "You choose what to share", detail: "Please don't put medical records or detailed health history in our enquiry form." },
+              { heading: "UK data protection responsibilities", detail: "CareBridge is operated by BetaOffice Ltd, registered with the UK ICO. We take our UK GDPR responsibilities seriously; ICO registration is not an endorsement or certification." },
+            ].map((item) => (
+              <div key={item.heading} className="rounded-2xl border border-teal-100 bg-white p-5">
+                <p className="font-semibold text-slate-950">{item.heading}</p>
+                <p className="mt-1 text-sm leading-6 text-slate-600">{item.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-7xl px-6 py-8">
           <div className="overflow-hidden rounded-[30px] border border-slate-200 bg-[#fbf7ef] p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)] md:flex md:items-center md:justify-between md:gap-10 md:p-8">
@@ -888,10 +911,12 @@ export default function HomePageClient() {
               <textarea
                 value={form.note}
                 onChange={(e) => updateField("note", e.target.value)}
-                placeholder="Optional notes"
-                rows={5}
+                placeholder="Optional practical questions (no medical details, please)"
+                rows={3}
                 className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 text-slate-900 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
               />
+
+              <p className="text-xs leading-5 text-slate-600">Please do not include medical records, test results, diagnoses or other sensitive medical details here. Share those directly with your healthcare professional.</p>
 
               <div className="space-y-4 rounded-[24px] border border-slate-200 bg-slate-50 p-5">
                 <label className="flex items-start gap-3 text-sm leading-6 text-slate-600">
@@ -905,12 +930,12 @@ export default function HomePageClient() {
                     required
                   />
                   <span>
-                    I explicitly consent to CareBridge Health using my
-                    information, including health-related information I choose to
-                    provide, to review my enquiry and, where appropriate, share
-                    relevant details with a suitable third-party clinic partner
-                    or Turkey-licensed medical provider for initial review and
-                    coordination.
+                    I explicitly consent to CareBridge Health using my enquiry
+                    details (which may reveal my treatment interest) to respond
+                    and, where appropriate, sharing necessary details with an
+                    independent healthcare provider or coordination partner in
+                    Turkey to arrange an introduction. I understand I should
+                    share detailed medical information directly with my doctor.
                   </span>
                 </label>
 
