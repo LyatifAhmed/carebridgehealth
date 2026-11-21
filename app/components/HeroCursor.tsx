@@ -116,7 +116,7 @@ export default function HeroCursor({
           transform: "translate(-50%, -50%)",
         }}
       >
-        <div className={`h-48 w-48 rounded-full backdrop-blur-lg ${theme === "light" ? "border border-teal-300/45 bg-teal-100/10 shadow-[0_0_0_1px_rgba(13,148,136,0.09),0_0_42px_rgba(20,184,166,0.15),0_0_72px_rgba(20,184,166,0.08)]" : "border border-white/35 bg-white/6 shadow-[0_0_0_1px_rgba(255,255,255,0.18),0_0_30px_rgba(255,255,255,0.12),0_0_60px_rgba(255,255,255,0.08)]"}` />
+        <div className={theme === "light" ? "h-48 w-48 rounded-full border border-teal-300/45 bg-teal-100/10 backdrop-blur-lg shadow-[0_0_42px_rgba(20,184,166,0.15)]" : "h-48 w-48 rounded-full border border-white/35 bg-white/6 backdrop-blur-lg shadow-[0_0_30px_rgba(255,255,255,0.12)]"} />
       </div>
 
       <div
@@ -129,7 +129,7 @@ export default function HeroCursor({
           transform: "translate(-50%, -50%)",
         }}
       >
-        <div className={`h-2.5 w-2.5 rounded-full ${theme === "light" ? "bg-teal-600 shadow-[0_0_12px_rgba(13,148,136,0.45)]" : "bg-white shadow-[0_0_10px_rgba(255,255,255,0.95)]"}`} />
+        <div className={theme === "light" ? "h-2.5 w-2.5 rounded-full bg-teal-600 shadow-[0_0_12px_rgba(13,148,136,0.45)]" : "h-2.5 w-2.5 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.95)]"} />
       </div>
     </div>
   );
