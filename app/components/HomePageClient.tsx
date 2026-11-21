@@ -253,7 +253,7 @@ export default function HomePageClient() {
   }
 
   return (
-    <main className="bg-[#fbf7ef] text-slate-950">
+    <main className="carebridge-halo-page bg-[#fbf7ef] text-slate-950">
       <LandingCursorHalo />
       <section id="hero-section" className="relative overflow-hidden bg-gradient-to-br from-[#fbf8f3] via-white to-[#ecf8f5]">
         <div aria-hidden="true" className="pointer-events-none absolute -right-28 top-12 h-[420px] w-[420px] rounded-full bg-teal-100/45 blur-3xl" />
