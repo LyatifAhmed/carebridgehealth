@@ -22,10 +22,10 @@ export const internationalGuides = {
     title: "Medical Tourism in Turkey | International Patient Guide",
     heading: "Medical tourism in Turkey for international patients",
     description: "Planning treatment in Turkey from abroad? Explore travel, treatment quotes, independent clinics and follow-up with UK-based CareBridge Health coordination.",
-    intro: "CareBridge Health is based in the UK, but our enquiries are open to patients from the United States, United Kingdom, Canada, Europe and beyond. Start by exploring independent treatment providers in Istanbul and Antalya, then decide whether travelling for care is right for you.",
+    intro: "CareBridge Health is based in the UK, but our enquiries are open to patients from the United States, United Kingdom, Canada, Europe and beyond. Start by exploring independent treatment providers in Istanbul, then decide whether travelling for care is right for you.",
     currency: "Your preferred currency",
     sections: [
-      { title: "Choose a location and treatment route", text: "Explore Istanbul and Antalya, where we can help coordinate introductions to independent providers. Ask who will assess you, who will provide your treatment and what the proposed appointment schedule includes." },
+      { title: "Connect with a medical professional", text: "Through our local medical tourism partner in Istanbul, we help coordinate introductions within its established healthcare network. Ask who will assess you, who will provide your treatment and what the proposed appointment schedule includes." },
       { title: "Compare the whole journey", text: "Request an itemised quote with its currency, validity period, inclusions and exclusions. Consider transport, accommodation, time away from home, and what additional costs could arise. Do not book non-refundable travel before the provider confirms the plan." },
       { title: "Prepare for travel and follow-up", text: "Review your home country's travel advice and entry requirements for your passport. Ask your own healthcare professional and the treating provider about suitability, travel timing, risks, records and arrangements for follow-up and complications after you return." },
     ],
@@ -41,7 +41,7 @@ export const internationalGuides = {
     title: "Medical Tourism in Turkey from the USA | Patient Guide",
     heading: "Medical tourism in Turkey from the USA",
     description: "A guide for US patients considering treatment in Turkey: long-haul travel, USD cost comparisons, independent clinics, insurance and follow-up planning.",
-    intro: "Live in the United States and considering dental treatment, hair restoration, cosmetic surgery or another treatment in Turkey? You do not need a UK address or UK residency to contact CareBridge Health. Our UK-based team can help coordinate an introduction to an independent provider in Istanbul or Antalya.",
+    intro: "Live in the United States and considering dental treatment, hair restoration, cosmetic surgery or another treatment in Turkey? You do not need a UK address or UK residency to contact CareBridge Health. Our UK-based team can help coordinate an introduction to an independent provider in Istanbul.",
     currency: "US dollars (USD)",
     sections: [
       { title: "Plan your transatlantic journey", text: "Compare flights from your nearest US airport, connection times and arrival city. Ask the provider to confirm consultation dates, expected length of stay and when it is medically appropriate to take a long-haul flight home. Allow for a flexible return booking rather than assuming a fixed recovery period." },
@@ -64,7 +64,7 @@ export const internationalGuides = {
     title: "Medical Tourism in Turkey from the UK | Patient Guide",
     heading: "Medical tourism in Turkey from the UK",
     description: "A UK patient guide to treatment in Turkey, comparing GBP costs, independent providers, travel arrangements and follow-up after returning home.",
-    intro: "If you live in the UK and are researching treatment in Turkey, CareBridge Health offers a UK-based point of contact for introductions to independent clinics in Istanbul and Antalya. Compare the full treatment pathway rather than choosing on price alone.",
+    intro: "If you live in the UK and are researching treatment in Turkey, CareBridge Health offers a UK-based point of contact for introductions to independent clinics in Istanbul. Compare the full treatment pathway rather than choosing on price alone.",
     currency: "Pounds sterling (GBP)",
     sections: [
       { title: "Understand the total cost in pounds", text: "Ask providers to specify the billing currency, the quote validity and what is included. Compare it with a like-for-like treatment estimate in the UK, including flights, accommodation, time off work and arrangements for follow-up or unexpected expenses." },
@@ -86,7 +86,7 @@ export const internationalGuides = {
     title: "Medical Tourism in Turkey from Canada | Patient Guide",
     heading: "Medical tourism in Turkey from Canada",
     description: "Explore treatment in Turkey from Canada with guidance on Canadian dollar quotes, long-haul travel, insurance, independent providers and follow-up.",
-    intro: "Canadian residents can contact CareBridge Health directly about independent treatment providers in Turkey. Our coordination is based in the UK, with introductions to providers in Istanbul and Antalya where appropriate; you do not need to travel through or live in the UK.",
+    intro: "Canadian residents can contact CareBridge Health directly about independent treatment providers in Turkey. Our coordination is based in the UK, with introductions to providers in Istanbul where appropriate; you do not need to travel through or live in the UK.",
     currency: "Canadian dollars (CAD)",
     sections: [
       { title: "Budget in Canadian dollars", text: "Check the currency of the provider's invoice, conversion costs and which services are included. Consider flights from Canada, travel time, accommodation, companion costs if relevant, and expenses if a longer stay is required. Ask your provincial or territorial plan and private insurer what is covered outside Canada; do not assume reimbursement." },
@@ -108,7 +108,7 @@ export const internationalGuides = {
     title: "Medical Tourism in Turkey from Europe | Patient Guide",
     heading: "Medical tourism in Turkey from Europe",
     description: "International patient coordination for people in Europe exploring treatment in Turkey, with travel logistics, currency, language and follow-up planning.",
-    intro: "Patients based in European countries can enquire about treatment in Turkey through CareBridge Health. Our UK-based coordination is independent of your country of residence; we help arrange communication with independent providers in Istanbul and Antalya where appropriate.",
+    intro: "Patients based in European countries can enquire about treatment in Turkey through CareBridge Health. Our UK-based coordination is independent of your country of residence; we help arrange communication with independent providers in Istanbul where appropriate.",
     currency: "Euros (EUR) or local currency",
     sections: [
       { title: "Plan from your country of residence", text: "European countries have different travel requirements, insurance arrangements and possible flight routes. Check the official advice of your national authorities and the entry rules applicable to your passport. Ask the provider about arrival and appointment schedules." },

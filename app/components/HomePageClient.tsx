@@ -44,7 +44,7 @@ const initialState: ConsultationForm = {
 const trustItems = [
   "UK-based, international support",
   "Independent, not a clinic",
-  "Doctor review where appropriate",
+  "Established local medical network",
   "Patient privacy first",
 ];
 
@@ -168,12 +168,12 @@ const destinationCards = [
 
 const premiumServiceCards = [
   {
-    title: "Optional concierge travel support",
-    desc: "For patients who want a smoother experience, we can help coordinate selected extras through trusted third-party partners.",
+    title: "Optional travel arrangements",
+    desc: "Our local medical tourism partner can arrange optional travel services, subject to availability and a separate quote.",
     bullets: [
-      "Hotel options available on request",
+      "Hotel accommodation and booking",
       "Airport pickup and local transport support",
-      "Flight planning support",
+      "Flight ticket arrangements",
       "Coordinated around your treatment timeline",
     ],
   },
@@ -258,10 +258,10 @@ export default function HomePageClient() {
                 <span className="h-px w-9 bg-teal-600/70" />
               </p>
               <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-[-0.045em] text-slate-950 sm:text-5xl md:text-6xl lg:text-[4.1rem]">
-                Medical treatment in Turkey, made easier to explore
+                Your connection to medical professionals in Turkey
               </h1>
               <p className="mt-7 max-w-xl text-base leading-8 text-slate-700 md:text-lg">
-                From the USA, UK, Canada, Europe or elsewhere, explore treatment in Istanbul with UK-based, founder-led coordination. Tell us which treatment you’re considering and we’ll help arrange a conversation with an independent healthcare professional, where appropriate. It’s free to enquire, and the decision to proceed is always yours.
+                Finding a clinic online is easy. Knowing who to contact can be harder. Through our established, doctor-led medical tourism network in Istanbul, we help international patients connect with qualified healthcare professionals and, if needed, arrange travel support through our local partner. It’s free to enquire, with no obligation.
               </p>
 
               <div className="mt-8 border-l-[3px] border-teal-600 pl-5">
@@ -278,7 +278,7 @@ export default function HomePageClient() {
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a href="#form" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#075f63] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-950/10 transition hover:bg-[#064c50]">
-                  Tell us what treatment you need
+                  Connect with a medical professional
                 </a>
                 <a href="#process" className="inline-flex min-h-12 items-center justify-center rounded-full border border-slate-300 bg-white/80 px-7 py-3.5 text-sm font-semibold text-slate-900 transition hover:border-teal-500 hover:bg-white">
                   How it works
@@ -593,10 +593,10 @@ export default function HomePageClient() {
             <div className="max-w-2xl">
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-200">Explore with confidence</p>
               <h2 id="carebridge-clinic-banner-heading" className="mt-4 text-3xl font-semibold leading-tight tracking-[-0.035em] md:text-5xl">
-                Your questions deserve clear answers before you travel.
+                A personal connection, not an anonymous clinic search.
               </h2>
               <p className="mt-5 max-w-xl text-base leading-8 text-white/85">
-                Our role is to coordinate introductions and help you prepare for an informed conversation with an independent healthcare professional — without pressure to proceed.
+                Rather than leaving you to search through advertisements and social media, we arrange introductions through our local partner’s existing healthcare network. You can ask about the clinician’s credentials, who will perform your procedure, costs and aftercare before deciding.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <a href="#form" className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-teal-50">
@@ -756,13 +756,10 @@ export default function HomePageClient() {
                 Premium support
               </p>
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-                Optional support for a smoother overall experience
+                From your first enquiry to your arrival in Istanbul
               </h2>
               <p className="mt-5 text-base leading-8 text-slate-600">
-                Some patients want more than treatment coordination alone. Where
-                suitable, travel arrangements may be coordinated through
-                third-party partners. Treatment payments are handled directly
-                by the relevant medical tourism provider.
+                Our Istanbul partner can help with flights, accommodation and airport transfers on request. These optional services are separately quoted and arranged by the relevant partner; you are free to book your own travel. Treatment payments are handled by the relevant provider.
               </p>
             </div>
 

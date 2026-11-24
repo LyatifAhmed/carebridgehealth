@@ -13,6 +13,8 @@ type ChatMessage = {
 const MAX_USER_MESSAGES = 5;
 
 const faqReplies: Record<string, string> = {
+  travel: "Our local medical tourism partner in Istanbul can arrange optional flight tickets, accommodation and airport transfers on request, subject to availability and a separate quote. You can also book independently.",
+  network: "We connect patients with healthcare professionals through our specialist doctor-led local medical tourism partner’s established network in Istanbul. We do not independently verify unrelated clinics, provide medical advice or guarantee outcomes. You can contact a clinic directly if you prefer.",
   process:
     "The process is straightforward. You share a few details, we review the enquiry carefully, and then we reply with clearer next steps, likely destination fit, and whether there appears to be a suitable pathway worth exploring further.",
   "womens-health":
@@ -44,6 +46,9 @@ function trySmartFaqMatch(value: string) {
 
   if (faqReplies[text]) return faqReplies[text];
 
+  if (text.includes("antalya")) return faqReplies.antalya;
+  if (/flight|hotel|accommodation|transfer|airport|travel package/.test(text)) return faqReplies.travel;
+  if (/verify|verification|network|directly|credentials|why carebridge/.test(text)) return faqReplies.network;
   if (text.includes("how") && text.includes("work")) return faqReplies.process;
   if (text.includes("process")) return faqReplies.process;
   if (text.includes("women")) return faqReplies["womens-health"];
@@ -112,7 +117,10 @@ What the business does:
 - helps international patients think more clearly about treatment in Turkey
 - currently coordinates treatment enquiries in Istanbul only; Antalya is temporarily unavailable
 - helps patients understand likely next steps before submitting an enquiry
-- coordinates introductions and structured guidance where appropriate
+- arranges introductions within the existing healthcare network of a local medical tourism partner led by a specialist doctor in Istanbul
+- the local partner can arrange optional flight tickets, accommodation and airport transfers, subject to availability and separate quotes; patients may book independently
+- does NOT independently verify unrelated doctors or clinics, guarantee credentials, or promise treatment safety
+- may receive referral commission; disclose this when relevant
 - does NOT provide medical advice
 - does NOT diagnose
 - does NOT promise outcomes

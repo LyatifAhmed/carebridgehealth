@@ -28,8 +28,7 @@ export default function HealthTourismAuthorisationPage() {
           </p>
 
           <p className="mt-4 text-lg leading-8 text-slate-700">
-            Where appropriate, we may introduce patients to independent clinics,
-            doctors, and authorised healthcare coordination partners in Turkey.
+            Through our specialist doctor-led medical tourism partner in Istanbul, we arrange introductions within an established local healthcare network where appropriate.
             Treatment decisions, clinical assessments, licences, authorisations,
             and medical responsibilities belong to the relevant healthcare
             providers.
@@ -63,8 +62,8 @@ export default function HealthTourismAuthorisationPage() {
               text: "Medical treatment is provided by independent healthcare professionals and clinics in Turkey, not by CareBridge Health.",
             },
             {
-              title: "Clearer planning",
-              text: "We support communication, next-step coordination, document preparation, travel planning, and general treatment pathway guidance.",
+              title: "Optional travel arrangements",
+              text: "Our local partner can arrange flight tickets, accommodation and airport transfers on request, subject to availability and a separate quote. Patients can also arrange travel independently.",
             },
           ].map((item) => (
             <div
@@ -91,7 +90,7 @@ export default function HealthTourismAuthorisationPage() {
               <p>
                 CareBridge Health helps patients explore treatment options,
                 understand what questions to ask, and coordinate next steps with
-                relevant provider routes in Turkey.
+                providers within our partner’s existing Istanbul network. We do not independently verify unrelated clinics.
               </p>
 
               <p>

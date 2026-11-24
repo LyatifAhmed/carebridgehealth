@@ -102,9 +102,7 @@ export default function TreatmentInIstanbulPage() {
               </h1>
 
               <p className="mt-7 max-w-2xl text-base leading-8 text-white/82 md:text-lg">
-                Istanbul can be a strong choice for patients seeking advanced
-                hospitals, specialist teams, and a more structured pathway for
-                selected treatments in Turkey.
+                Through our doctor-led local medical tourism partner, we connect international patients with qualified healthcare professionals in Istanbul. Optional flight, hotel and airport transfer arrangements are available through the partner on request, subject to a separate quote.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3 text-sm text-white/80">

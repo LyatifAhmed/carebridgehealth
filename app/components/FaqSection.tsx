@@ -5,6 +5,14 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
+    question: "Why use CareBridge instead of contacting a clinic directly?",
+    answer: "You can always contact a clinic directly. Our value is a personal introduction through our doctor-led local medical tourism partner’s established network in Istanbul, with a UK-based point of contact and optional travel coordination. We do not independently verify unrelated clinics or guarantee outcomes.",
+  },
+  {
+    question: "Can you arrange flights, accommodation and airport transfers?",
+    answer: "Yes, our local medical tourism partner can arrange these optional services on request, subject to availability and a separate quote. Travel is not included in the free enquiry, and you can book independently.",
+  },
+  {
     question: "Is treatment in Turkey safe?",
     answer:
       "Safety depends on the clinic, medical team, treatment type, and your individual circumstances. CareBridge Health helps patients approach treatment more carefully by providing structured coordination and helping them understand important considerations before travelling.",
@@ -17,7 +25,7 @@ const faqs = [
   {
     question: "Are you a clinic?",
     answer:
-      "No. CareBridge Health is not a hospital, clinic, or medical provider. We help patients navigate treatment options and coordinate communication with carefully selected providers.",
+      "No. CareBridge Health is not a hospital, clinic, or medical provider. We help patients navigate treatment options and coordinate communication with providers within our local partner’s existing network.",
   },
   {
     question: "Can I speak to a doctor before travelling?",

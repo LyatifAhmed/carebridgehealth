@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const principles = [
   "UK-based coordination",
-  "Independent service",
+  "Established local network",
   "Not a clinic",
   "Patient-first approach",
 ];
@@ -24,8 +24,8 @@ const operatingModel = [
     text: "UK-based coordination, enquiry handling, patient guidance, communication support, and structured next steps.",
   },
   {
-    title: "Provider routes in Turkey",
-    text: "Independent clinics, doctors, and healthcare partners review suitability and provide medical assessment where appropriate.",
+    title: "Our Istanbul medical tourism partner",
+    text: "Our doctor-led local partner coordinates introductions within its existing medical network and can separately arrange flights, hotels and airport transfers. Independent clinicians assess suitability and deliver treatment.",
   },
   {
     title: "Patient decision",
@@ -45,7 +45,7 @@ export default function AboutPage() {
           </p>
 
           <h1 className="mt-5 max-w-5xl text-5xl font-semibold leading-[1] tracking-[-0.05em] md:text-7xl">
-            Helping patients approach treatment abroad with more clarity.
+            Connecting international patients with an established medical network.
           </h1>
 
           <p className="mt-7 max-w-3xl text-base leading-8 text-white/70 md:text-lg">
@@ -118,10 +118,7 @@ export default function AboutPage() {
             </p>
             <p>
               I created CareBridge Health to bridge that gap between patients and
-              independent healthcare professionals in Turkey. My established personal
-              relationships in the healthcare sector help me coordinate introductions,
-              while patients are encouraged to verify the provider's credentials
-              and make their own informed decisions.
+              independent healthcare professionals in Turkey. Through a family connection with a specialist doctor who runs a medical tourism company in Istanbul, we arrange introductions within an established healthcare network. Patients are encouraged to check the treating provider’s credentials and make their own informed decisions.
             </p>
             <p>
               I also bring my software development experience to this work. I continue
@@ -133,7 +130,7 @@ export default function AboutPage() {
               I am not a doctor, and CareBridge is not a clinic. We coordinate
               enquiries and introductions, while independent healthcare professionals
               are responsible for clinical assessments, treatment decisions and aftercare.
-              CareBridge may receive a referral commission if a patient proceeds
+              We do not independently verify clinics outside our network or guarantee treatment safety or outcomes. CareBridge may receive a referral commission if a patient proceeds
               with treatment through a provider we introduce.
             </p>
           </div>

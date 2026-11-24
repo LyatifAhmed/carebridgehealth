@@ -23,6 +23,7 @@ export default function InternationalPatientGuide({ region }: { region: Internat
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-800 dark:text-teal-200">UK-based coordination · International patients</p>
           <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight tracking-[-0.045em] md:text-6xl">{guide.heading}</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 dark:text-slate-200">{guide.intro}</p>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 dark:text-slate-200">Our doctor-led medical tourism partner in Istanbul connects patients with its established healthcare network. Optional flight tickets, accommodation and airport transfers can be arranged separately by the partner on request; you can also book independently.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/#form" className="rounded-full bg-[#075f63] px-7 py-3.5 text-sm font-semibold text-white hover:bg-[#064c50]">Send a free enquiry</Link>
             <Link href="/how-treatment-in-turkey-works" className="rounded-full border border-teal-200 bg-white px-7 py-3.5 text-sm font-semibold text-teal-950 hover:border-teal-500">How coordination works</Link>
@@ -50,7 +51,7 @@ export default function InternationalPatientGuide({ region }: { region: Internat
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {treatments.map((item) => <Link key={item.href} href={item.href} className="rounded-xl border border-slate-200 p-4 text-sm font-semibold text-teal-800 underline-offset-4 hover:underline dark:border-slate-700 dark:text-teal-200">{item.label} →</Link>)}
           </div>
-          <p className="mt-6 text-sm leading-7 text-slate-600 dark:text-slate-300">Compare <Link href="/treatment-in-istanbul" className="font-semibold underline underline-offset-4">Istanbul</Link> and <Link href="/treatment-in-antalya" className="font-semibold underline underline-offset-4">Antalya</Link>, or view our <Link href="/treatment-in-turkey" className="font-semibold underline underline-offset-4">treatment overview</Link>.</p>
+          <p className="mt-6 text-sm leading-7 text-slate-600 dark:text-slate-300">Explore <Link href="/treatment-in-istanbul" className="font-semibold underline underline-offset-4">Istanbul</Link>, or view our <Link href="/treatment-in-turkey" className="font-semibold underline underline-offset-4">treatment overview</Link>.</p>
         </div>
       </section>
       <section className="mx-auto max-w-6xl px-6 py-14 md:py-20">

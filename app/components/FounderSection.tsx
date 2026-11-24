@@ -14,7 +14,7 @@ export default function FounderSection() {
               Built from first-hand experience with patients and clinics.
             </h2>
             <p className="mt-5 text-base leading-8 text-slate-700">
-              After years supporting patients and their families in a medical clinic, I saw how much clearer communication and thoughtful coordination could improve the experience on both sides. I created CareBridge Health to apply that experience, my healthcare relationships and my software development skills to the challenges patients face when exploring treatment abroad.
+              After years supporting patients and their families in a medical clinic, I saw how much clearer communication and thoughtful coordination could improve the experience on both sides. I created CareBridge Health to connect international patients with an established medical tourism network in Istanbul through my personal healthcare relationships. Our local partner is a specialist doctor with an existing healthcare network and optional travel support.
             </p>
             <p className="mt-4 text-sm leading-7 text-slate-600">
               I am not a medical provider. CareBridge helps coordinate introductions; independent clinicians remain responsible for assessment, treatment and aftercare.

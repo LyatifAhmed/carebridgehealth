@@ -15,8 +15,8 @@ export default function TreatmentInTurkeyPage() {
     <TreatmentLanding
       eyebrow="Treatment in Turkey"
       title="Treatment in Turkey with clearer guidance before you commit"
-      intro="For international patients exploring private medical treatment in Turkey, CareBridge Health provides independent coordination from the UK. Whether you are based in the USA, UK, Canada, Europe or elsewhere, we help you understand the process and communicate with independent providers in Istanbul."
-      heroNote="Our role is not to replace a clinic or a doctor. We help you understand the pathway, understand available pathways in Istanbul, and move towards the next step with greater confidence before making any major decisions."
+      intro="For international patients exploring private medical treatment in Turkey, CareBridge Health provides independent coordination from the UK. Whether you are based in the USA, UK, Canada, Europe or elsewhere, we connect you with healthcare professionals through our doctor-led medical tourism partner’s existing network in Istanbul."
+      heroNote="Our role is not to replace a clinic or a doctor. We arrange introductions and help you understand the next steps. Our local partner can also arrange flights, accommodation and airport transfers on request, subject to a separate quote."
       extraLinks={[
         {
           textBefore: "Planning to travel from another country? Explore our ",

@@ -12,13 +12,13 @@ const steps = [
   {
     number: "02",
     title: "We get back to you",
-    description: "We aim to reply within 24 hours, answer your first questions and help arrange the next conversation.",
+    description: "We aim to reply within 24 hours, answer your first questions and help arrange an introduction through our local medical tourism partner.",
     Icon: MessagesSquare,
   },
   {
     number: "03",
     title: "Talk to a healthcare professional",
-    description: "Where appropriate, we help arrange a conversation with an independent doctor. You’ll know who they are before you meet. They answer medical questions and assess suitability.",
+    description: "Where appropriate, we help arrange a conversation with a qualified healthcare professional in our partner’s Istanbul network. You’ll know who they are before you meet. They answer medical questions and assess suitability.",
     Icon: Stethoscope,
   },
   {
@@ -27,6 +27,12 @@ const steps = [
     description: "You decide whether to continue. The provider explains treatment, costs, risks and aftercare before any commitment. You can also choose not to go ahead.",
     Icon: CalendarCheck2,
   },
+  {
+    number: "05",
+    title: "Arrange your travel, if needed",
+    description: "If you decide to proceed, our local partner can arrange flights, accommodation and airport transfers on request, subject to a separate quote. You can also book independently.",
+    Icon: ArrowRight,
+  },
 ];
 
 export default function PatientJourneySection() {
@@ -34,7 +40,7 @@ export default function PatientJourneySection() {
     <section id="process" aria-labelledby="contact-process-title" className="scroll-mt-24 bg-[#fcfaf7] py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Four simple steps</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Five simple steps</p>
           <h2 id="contact-process-title" className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-slate-950 md:text-5xl">
             Tell us what you need. We’ll help with the next step.
           </h2>
@@ -43,7 +49,7 @@ export default function PatientJourneySection() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
           {steps.map(({ number, title, description, Icon }) => (
             <ScrollReveal key={number} delay={(Number(number) - 1) * 0.07} className="h-full">
               <article className="h-full rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_10px_35px_rgba(15,23,42,0.04)]">
