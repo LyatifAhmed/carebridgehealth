@@ -3,7 +3,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
   title: "Myomectomy Turkey 2026: Cost, Fibroid Surgery & Recovery",
-  description: "Compare myomectomy surgery in Turkey, fibroid treatment options, costs and recovery guidance for UK patients.",
+  description: "Compare myomectomy surgery in Turkey, fibroid treatment options, costs and recovery guidance for international patients.",
   alternates: {
     canonical: "/myomectomy-turkey",
   },

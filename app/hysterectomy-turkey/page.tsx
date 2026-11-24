@@ -3,7 +3,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
   title: "Hysterectomy Turkey 2026: Cost, Clinics & Recovery",
-  description: "Research hysterectomy in Turkey: specialist assessment, surgical approaches, alternatives, recovery, aftercare and travel considerations for UK patients.",
+  description: "Research hysterectomy in Turkey: specialist assessment, surgical approaches, alternatives, recovery, aftercare and travel considerations for international patients.",
   alternates: {
     canonical: "/hysterectomy-turkey",
   },

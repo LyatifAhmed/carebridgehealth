@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Insights | CareBridge Health",
-  description: "Explore CareBridge Health guides to treatment in Turkey, including costs, clinic selection, recovery, and practical advice for UK patients.",
+  description: "Explore CareBridge Health guides to treatment in Turkey, including costs, clinic selection, recovery, and practical information for international patients.",
   alternates: {
     canonical: "/blog",
   },
@@ -148,7 +148,7 @@ export default function BlogPage() {
         </h1>
 
         <p className="mt-6 max-w-3xl text-base leading-8 text-slate-600">
-          Explore practical articles designed to help UK-based patients approach
+          Explore practical articles designed to help international patients approach
           treatment in Turkey with more clarity, better questions, and a more
           informed starting point.
         </p>

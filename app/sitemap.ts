@@ -7,6 +7,11 @@ const staticRoutes = [
   { path: "/", changeFrequency: "weekly", priority: 1 },
 
   { path: "/treatment-in-turkey", changeFrequency: "weekly", priority: 0.95 },
+  { path: "/medical-tourism-turkey", changeFrequency: "weekly", priority: 0.95 },
+  { path: "/medical-tourism-turkey-from-usa", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/medical-tourism-turkey-from-uk", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/medical-tourism-turkey-from-canada", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/medical-tourism-turkey-from-europe", changeFrequency: "weekly", priority: 0.85 },
 
   { path: "/rhinoplasty-turkey", changeFrequency: "weekly", priority: 0.85 },
   { path: "/revision-rhinoplasty-turkey", changeFrequency: "weekly", priority: 0.85 },

@@ -8,6 +8,11 @@ import ContactForm from "./ContactForm";
 
 const treatmentLinks = [
   {
+    title: "International patient guide",
+    href: "/medical-tourism-turkey",
+    desc: "Planning from the USA, UK, Canada & beyond",
+  },
+  {
     title: "Treatment in Turkey",
     href: "/treatment-in-turkey",
     desc: "Overview and planning guidance",

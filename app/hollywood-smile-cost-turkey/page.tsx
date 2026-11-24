@@ -12,7 +12,7 @@ export default function HollywoodSmileCostTurkeyPage() {
     <TreatmentLanding
       eyebrow="Hollywood Smile cost Turkey"
       title="Understanding Hollywood Smile costs in Turkey"
-      intro="Many UK patients researching cosmetic dentistry compare Hollywood Smile treatment options in Turkey. Understanding what affects cost is an important part of making an informed decision."
+      intro="Many international patients researching cosmetic dentistry compare Hollywood Smile treatment options in Turkey. Understanding what affects cost is an important part of making an informed decision."
       heroNote="A Hollywood Smile is not a single procedure. Costs can vary significantly depending on veneers, crowns, whitening, gum contouring, and the complexity of the case."
       suitableFor={[
         "Patients researching Hollywood Smile costs.",

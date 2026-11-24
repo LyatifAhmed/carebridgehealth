@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About CareBridge Health | UK-Based Treatment Coordination",
+  title: "About Our UK-Based International Patient Coordination",
   description:
-    "Learn about CareBridge Health, a UK-based coordination service helping patients explore treatment in Turkey with clearer communication, selected provider routes, and careful planning.",
+    "Learn about CareBridge Health, a UK-based independent coordination service for international patients from the USA, UK, Canada, Europe and beyond exploring treatment in Turkey.",
   alternates: {
     canonical: "/about",
   },
@@ -50,8 +50,8 @@ export default function AboutPage() {
 
           <p className="mt-7 max-w-3xl text-base leading-8 text-white/70 md:text-lg">
             CareBridge Health is a UK-based treatment coordination service
-            designed for patients who want a calmer, more structured starting
-            point before exploring treatment options in Turkey.
+            for international patients, including those in the USA, UK, Canada
+            and Europe, who want a clearer starting point before exploring treatment options in Turkey.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">

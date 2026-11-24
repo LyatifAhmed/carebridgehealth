@@ -4,7 +4,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 export const metadata: Metadata = {
   alternates: { canonical: "/hair-transplant-cost-turkey" },
   title: "Hair Transplant Cost Turkey 2026: Prices, Grafts & Packages",
-  description: "See average hair transplant prices in Turkey, what affects the cost, package options and how UK patients can compare clinics with confidence.",
+  description: "See average hair transplant prices in Turkey, what affects the cost, package options and how international patients can compare clinics with confidence.",
 };
 
 export default function HairTransplantCostTurkeyPage() {
@@ -12,7 +12,7 @@ export default function HairTransplantCostTurkeyPage() {
     <TreatmentLanding
       eyebrow="Hair transplant cost Turkey"
       title="Understanding hair transplant costs in Turkey"
-      intro="Many UK patients explore hair transplant treatment in Turkey because of the large number of specialist clinics and the potential cost difference compared with private treatment in the UK. Understanding what influences pricing is often more important than focusing on the lowest quote."
+      intro="Many international patients explore hair transplant treatment in Turkey because of the large number of specialist clinics and the potential cost difference compared with treatment in their home country. Understanding what influences pricing is often more important than focusing on the lowest quote."
       heroNote="The cheapest option is not always the best option. Experience, technique, clinic standards, aftercare, and the complexity of the case can all influence both cost and outcome."
       suitableFor={[
         "Patients researching hair transplant costs before travelling.",

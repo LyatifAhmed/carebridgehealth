@@ -26,12 +26,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.carebridgehealth.co"),
 
   title: {
-    default: "CareBridge Health | Medical Treatment in Turkey from the UK",
+    default: "CareBridge Health | Medical Tourism in Turkey for International Patients",
     template: "%s | CareBridge Health",
   },
 
   description:
-    "CareBridge Health helps UK-based patients access carefully selected clinics in Istanbul and Antalya for dental, hair transplant, cosmetic, bariatric, eye, women’s health, and specialised treatments.",
+    "CareBridge Health provides UK-based coordination for international patients exploring dental treatment, hair transplants, cosmetic surgery and other independent treatment providers in Turkey.",
 
   keywords: [
     "medical treatment in Turkey from the UK",
@@ -44,15 +44,17 @@ export const metadata: Metadata = {
     "bariatric surgery Turkey",
     "eye treatment Turkey",
     "women's health treatment Turkey",
-    "Istanbul clinics for UK patients",
-    "Antalya clinics for UK patients",
+    "medical tourism Turkey from USA",
+    "medical treatment Turkey for international patients",
+    "Istanbul clinics for international patients",
+    "Antalya clinics for international patients",
     "CareBridge Health",
   ],
 
   openGraph: {
-    title: "CareBridge Health | Medical Treatment in Turkey from the UK",
+    title: "CareBridge Health | Medical Tourism in Turkey for International Patients",
     description:
-      "Private medical treatment in Turkey, carefully coordinated for UK-based patients in Istanbul and Antalya.",
+      "International patient coordination from the UK for independent treatment providers in Istanbul and Antalya, Turkey.",
     url: "https://www.carebridgehealth.co",
     siteName: "CareBridge Health",
     images: [
@@ -60,7 +62,7 @@ export const metadata: Metadata = {
         url: "https://www.carebridgehealth.co/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "CareBridge Health medical treatment in Turkey from the UK",
+        alt: "CareBridge Health international patient coordination for treatment in Turkey",
       },
     ],
     locale: "en_GB",
@@ -69,9 +71,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "CareBridge Health | Medical Treatment in Turkey from the UK",
+    title: "CareBridge Health | Medical Tourism in Turkey for International Patients",
     description:
-      "Private medical treatment in Turkey, carefully coordinated for UK-based patients in Istanbul and Antalya.",
+      "International patient coordination from the UK for independent treatment providers in Istanbul and Antalya, Turkey.",
     images: ["https://www.carebridgehealth.co/og-image.jpg"],
   },
 

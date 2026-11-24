@@ -4,7 +4,7 @@ import Link from "next/link";
 import HeroCursor from "../components/HeroCursor";
 
 export const metadata: Metadata = {
-  title: "Medical Treatment in Antalya for UK Patients | CareBridge Health",
+  title: "Medical Treatment in Antalya for International Patients",
   description:
     "Explore private medical treatment in Antalya through CareBridge Health. Carefully selected clinics, UK-based coordination, and a more comfort-led treatment journey for selected procedures.",
   alternates: {

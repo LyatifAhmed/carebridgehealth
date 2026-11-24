@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Treatment in Turkey | Private Medical Coordination from the UK",
+  title: "Treatment in Turkey for International Patients | UK-Based Coordination",
   description:
-    "Explore treatment in Turkey with private UK-based coordination. Compare Istanbul and Antalya, understand treatment pathways, and plan your next step with more clarity.",
+    "Explore medical treatment in Turkey from the USA, UK, Canada, Europe and beyond. Compare Istanbul and Antalya with independent UK-based patient coordination.",
   alternates: {
     canonical: "/treatment-in-turkey",
   },
@@ -15,9 +15,15 @@ export default function TreatmentInTurkeyPage() {
     <TreatmentLanding
       eyebrow="Treatment in Turkey"
       title="Treatment in Turkey with clearer guidance before you commit"
-      intro="Turkey has become a popular option for UK-based patients seeking private treatment, shorter waiting times, and access to a wider range of clinics and specialists. CareBridge Health helps patients approach that journey more carefully, with clearer communication, better destination guidance, and a more structured starting point."
+      intro="For international patients exploring private medical treatment in Turkey, CareBridge Health provides independent coordination from the UK. Whether you are based in the USA, UK, Canada, Europe or elsewhere, we help you understand the process and communicate with independent providers in Istanbul and Antalya."
       heroNote="Our role is not to replace a clinic or a doctor. We help you understand the pathway, compare destinations more clearly, and move towards the next step with greater confidence before making any major decisions."
       extraLinks={[
+        {
+          textBefore: "Planning to travel from another country? Explore our ",
+          linkText: "international medical tourism guide",
+          href: "/medical-tourism-turkey",
+          textAfter: " for country-specific planning guidance.",
+        },
         {
           textBefore: "Patients prioritising specialist-led pathways may want to explore ",
           linkText: "treatment in Istanbul",
@@ -32,7 +38,7 @@ export default function TreatmentInTurkeyPage() {
         },
       ]}
       suitableFor={[
-        "Patients comparing treatment in Turkey with private treatment in the UK or elsewhere.",
+        "Patients comparing treatment in Turkey with treatment options in their home country.",
         "People looking for better value but wanting a more structured route than contacting clinics at random.",
         "Patients who want help thinking through destination, timing, recovery, and treatment planning before making decisions.",
       ]}

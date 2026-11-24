@@ -3,7 +3,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
   title: "Hair Transplant Turkey 2026: Cost, FUE Clinics & Recovery",
-  description: "Compare hair transplant clinics in Turkey, understand FUE costs, recovery, graft numbers and what UK patients should know before booking treatment.",
+  description: "Compare hair transplant clinics in Turkey, understand FUE costs, recovery, graft numbers and what international patients should know before booking treatment.",
   alternates: {
     canonical: "/hair-transplant-turkey",
   },

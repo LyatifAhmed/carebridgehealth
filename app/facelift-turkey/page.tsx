@@ -3,7 +3,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
   title: "Facelift Turkey 2026: Cost, Recovery & Results",
-  description: "Explore facelift surgery in Turkey, treatment costs, recovery expectations and practical guidance for UK patients.",
+  description: "Explore facelift surgery in Turkey, treatment costs, recovery expectations and practical guidance for international patients.",
   alternates: {
     canonical: "/facelift-turkey",
   },

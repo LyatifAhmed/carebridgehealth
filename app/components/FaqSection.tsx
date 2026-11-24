@@ -25,9 +25,9 @@ const faqs = [
       "In many cases, treatment providers can review information and arrange an initial consultation. Final decisions regarding suitability, diagnosis, and treatment plans are always made by qualified medical professionals.",
   },
   {
-    question: "Why do UK patients choose Turkey for treatment?",
+    question: "Can I enquire if I live in the USA, Canada or another country?",
     answer:
-      "Many patients are attracted by access to private healthcare, shorter waiting times, specialist expertise, and potentially lower treatment costs compared with private treatment in the UK.",
+      "Yes. CareBridge Health is based in the UK but supports enquiries from international patients. You don't need to live in the UK. The independent provider will assess suitability, while you can discuss travel logistics, communication and follow-up before deciding whether to proceed.",
   },
   {
     question: "How long does the planning process take?",

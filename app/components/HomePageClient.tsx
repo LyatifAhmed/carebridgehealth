@@ -261,14 +261,14 @@ export default function HomePageClient() {
           <div className="grid items-center gap-12 lg:grid-cols-[1.12fr_0.88fr] lg:gap-14">
             <div className="max-w-2xl">
               <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-teal-800">
-                Founder-led patient coordination
+                UK-based · International patient coordination
                 <span className="h-px w-9 bg-teal-600/70" />
               </p>
               <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-[-0.045em] text-slate-950 sm:text-5xl md:text-6xl lg:text-[4.1rem]">
-                Treatment in Turkey, made easier to explore
+                Medical treatment in Turkey, made easier to explore
               </h1>
               <p className="mt-7 max-w-xl text-base leading-8 text-slate-700 md:text-lg">
-                Simply tell us which treatment you’re interested in. We’ll get back to you with the next steps and help arrange a conversation with an independent healthcare professional, where appropriate. It’s free to enquire, and the decision to proceed is always yours.
+                From the USA, UK, Canada, Europe or elsewhere, explore treatment in Istanbul and Antalya with UK-based, founder-led coordination. Tell us which treatment you’re considering and we’ll help arrange a conversation with an independent healthcare professional, where appropriate. It’s free to enquire, and the decision to proceed is always yours.
               </p>
 
               <div className="mt-8 border-l-[3px] border-teal-600 pl-5">
@@ -344,6 +344,28 @@ export default function HomePageClient() {
               {item}
             </div>
           ))}
+        </div>
+      </section>
+
+      <section aria-labelledby="international-patients-title" className="border-b border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-12 md:py-16">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-800">International patients</p>
+          <h2 id="international-patients-title" className="mt-3 text-3xl font-semibold tracking-[-0.035em] text-slate-950 md:text-4xl">Based in the UK. Here for patients worldwide.</h2>
+          <p className="mt-4 max-w-3xl text-base leading-8 text-slate-700">You don’t need to live in the UK to enquire. Explore a guide for your home country, including travel planning, costs and questions to discuss with your healthcare provider.</p>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { title: "United States", detail: "Planning from the USA", href: "/medical-tourism-turkey-from-usa" },
+              { title: "United Kingdom", detail: "Planning from the UK", href: "/medical-tourism-turkey-from-uk" },
+              { title: "Canada", detail: "Planning from Canada", href: "/medical-tourism-turkey-from-canada" },
+              { title: "Europe", detail: "Planning from Europe", href: "/medical-tourism-turkey-from-europe" },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} className="group rounded-2xl border border-teal-100 bg-[#f1faf7] p-5 transition hover:border-teal-500">
+                <span className="flex items-center justify-between gap-2 font-semibold text-slate-950">{item.title}<ArrowRight className="h-4 w-4 text-teal-700 transition group-hover:translate-x-1" /></span>
+                <span className="mt-1 block text-sm text-slate-600">{item.detail}</span>
+              </Link>
+            ))}
+          </div>
+          <Link href="/medical-tourism-turkey" className="mt-5 inline-flex text-sm font-semibold text-teal-800 underline underline-offset-4">View the international patient guide</Link>
         </div>
       </section>
 
@@ -896,7 +918,12 @@ export default function HomePageClient() {
                   <option>United Kingdom</option>
                   <option>Europe</option>
                   <option>Middle East</option>
-                  <option>North America</option>
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Other North America</option>
+                  <option>Asia-Pacific</option>
+                  <option>Africa</option>
+                  <option>South America</option>
                   <option>Other</option>
                 </select>
               </div>

@@ -21,7 +21,7 @@ export default function HollywoodSmileTurkeyPage() {
       ]}
       whyTurkey={[
         "Turkey is internationally known for cosmetic dentistry and smile design.",
-        "Many patients travel from the UK to explore private treatment options.",
+        "Many international patients travel to Turkey to explore private treatment options.",
         "Clinics often provide digital smile planning and treatment simulations.",
       ]}
       processSteps={[

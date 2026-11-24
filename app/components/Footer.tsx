@@ -17,7 +17,7 @@ export default function Footer() {
             </p>
 
             <p className="mt-4 text-sm text-slate-500">
-              London • Istanbul coordination
+              UK-based • Istanbul & Antalya coordination
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -64,6 +64,11 @@ export default function Footer() {
                   About
                 </Link>
               </li>
+              <li><Link href="/medical-tourism-turkey" className="transition hover:text-slate-900">International patient guide</Link></li>
+              <li><Link href="/medical-tourism-turkey-from-usa" className="transition hover:text-slate-900">Patients from the USA</Link></li>
+              <li><Link href="/medical-tourism-turkey-from-uk" className="transition hover:text-slate-900">Patients from the UK</Link></li>
+              <li><Link href="/medical-tourism-turkey-from-canada" className="transition hover:text-slate-900">Patients from Canada</Link></li>
+              <li><Link href="/medical-tourism-turkey-from-europe" className="transition hover:text-slate-900">Patients from Europe</Link></li>
               <li>
                 <a href="/#form" className="transition hover:text-slate-900">
                   Consultation

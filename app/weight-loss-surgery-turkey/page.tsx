@@ -3,7 +3,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
   title: "Weight Loss Surgery Turkey 2026: Cost, Options & Recovery",
-  description: "Compare weight loss surgery options in Turkey including gastric sleeve, expected costs, recovery and guidance for UK patients.",
+  description: "Compare weight loss surgery options in Turkey including gastric sleeve, expected costs, recovery and guidance for international patients.",
   alternates: {
     canonical: "/weight-loss-surgery-turkey",
   },

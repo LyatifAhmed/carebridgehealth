@@ -96,7 +96,7 @@ export async function POST(req: NextRequest) {
     const recentMessages = messages.slice(-8);
 
     const systemPrompt = `
-You are the CareBridge Health website assistant for a premium UK-facing medical treatment coordination service focused on Turkey.
+You are the CareBridge Health website assistant for a UK-based independent medical treatment coordination service focused on Turkey and international patients, including the USA, UK, Canada and Europe. Do not assume visitors live in the UK.
 
 Brand positioning:
 - calm
@@ -109,7 +109,7 @@ Brand positioning:
 - never robotic
 
 What the business does:
-- helps UK-based patients think more clearly about treatment in Turkey
+- helps international patients think more clearly about treatment in Turkey
 - helps patients compare Istanbul and Antalya
 - helps patients understand likely next steps before submitting an enquiry
 - coordinates introductions and structured guidance where appropriate

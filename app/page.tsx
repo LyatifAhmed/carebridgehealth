@@ -3,12 +3,15 @@ import HomePageClient from "./components/HomePageClient";
 
 export const metadata: Metadata = {
   title:
-    "Medical Treatment in Turkey for UK Patients | Clinics, Costs & Support",
+    "Medical Tourism in Turkey | International Patient Coordination",
   description:
-    "CareBridge Health helps UK-based patients explore private medical treatment in Turkey through carefully selected clinics in Istanbul and Antalya, with clearer communication, structured coordination, and a discreet experience.",
+    "Explore medical treatment in Turkey from the USA, UK, Canada, Europe and beyond. CareBridge Health provides UK-based coordination and introductions to independent clinics in Istanbul and Antalya.",
   keywords: [
     "private medical treatment in Turkey",
     "medical treatment Turkey from UK",
+    "medical tourism Turkey from USA",
+    "medical treatment in Turkey for international patients",
+    "Turkey medical tourism Canada",
     "treatment in Turkey",
     "private medical treatment Istanbul",
     "private medical treatment Antalya",
@@ -29,9 +32,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Medical Treatment in Turkey for UK Patients | Clinics, Costs & Support",
+      "Medical Tourism in Turkey | International Patient Coordination",
     description:
-      "CareBridge Health helps UK-based patients explore treatment in Turkey with clearer communication, structured coordination, and carefully selected clinic pathways.",
+      "UK-based coordination for international patients exploring independent treatment providers in Istanbul and Antalya, Turkey.",
     url: "https://www.carebridgehealth.co/",
     siteName: "CareBridge Health",
     images: [{
@@ -46,7 +49,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Medical Treatment in Turkey for UK Patients | Clinics, Costs & Support",
+      "Medical Tourism in Turkey | International Patient Coordination",
     description:
       "Explore treatment in Turkey with more guidance, structure, and confidence before travel.",
     images: ["https://www.carebridgehealth.co/og-image.jpg"],
@@ -61,9 +64,8 @@ export default function HomePage() {
     url: "https://www.carebridgehealth.co/",
     logo: "https://www.carebridgehealth.co/logo.png",
     description:
-      "Independent coordination service helping UK-based patients access selected third-party clinics in Istanbul and Antalya, Turkey.",
-    areaServed: ["United Kingdom", "Turkey"],
-    availableLanguage: ["English", "Turkish", "Russian"],
+      "UK-based independent coordination service helping international patients explore selected third-party clinics in Istanbul and Antalya, Turkey.",
+    areaServed: ["United States", "United Kingdom", "Canada", "Europe", "Worldwide"],
     sameAs: [],
   };
 

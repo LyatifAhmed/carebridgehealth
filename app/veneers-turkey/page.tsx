@@ -21,7 +21,7 @@ export default function VeneersTurkeyPage() {
       ]}
       whyTurkey={[
         "Turkey is a popular destination for cosmetic dental treatments.",
-        "Many patients explore veneers abroad due to private treatment costs in the UK.",
+        "Many patients explore veneers abroad due to private treatment costs in their home country.",
         "Specialist clinics often offer comprehensive smile design planning.",
       ]}
       processSteps={[

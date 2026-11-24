@@ -12,7 +12,7 @@ export default function DentalImplantsCostTurkeyPage() {
     <TreatmentLanding
       eyebrow="Dental implants cost Turkey"
       title="Understanding dental implant costs in Turkey"
-      intro="Dental implant treatment is one of the most common reasons UK patients explore treatment in Turkey. Understanding what affects cost can help you make a more informed decision."
+      intro="Dental implant treatment is one of the most common reasons international patients explore treatment in Turkey. Understanding what affects cost can help you make a more informed decision."
       heroNote="Implant pricing can vary significantly depending on implant systems, bone condition, scans, grafting requirements, clinic standards, and treatment complexity."
       suitableFor={[
         "Patients researching implant costs before travelling.",

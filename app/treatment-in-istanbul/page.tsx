@@ -4,7 +4,7 @@ import Link from "next/link";
 import HeroCursor from "../components/HeroCursor";
 
 export const metadata: Metadata = {
-  title: "Medical Treatment in Istanbul for UK Patients | CareBridge Health",
+  title: "Medical Treatment in Istanbul for International Patients",
   description:
     "Explore private medical treatment in Istanbul through CareBridge Health. Carefully selected clinics, structured guidance, and UK-based coordination for patients seeking clarity and discretion.",
   alternates: {
@@ -50,7 +50,7 @@ const reasons = [
   "Strong fit for more complex procedures",
   "Broader treatment ecosystem in a major medical city",
   "Structured patient journey before travel",
-  "Clearer coordination for patients travelling from the UK",
+  "Clearer coordination for international patients travelling to Turkey",
 ];
 
 const processSteps = [
@@ -276,7 +276,7 @@ export default function TreatmentInIstanbulPage() {
               <p>• Clearer communication before travel</p>
               <p>• Better structure around selected provider options</p>
               <p>• A more discreet and professionally handled experience</p>
-              <p>• Guidance that starts in the UK before you travel to Turkey</p>
+              <p>• UK-based guidance before you travel from your home country to Turkey</p>
             </div>
 
             <div className="mt-9 flex flex-wrap gap-4">

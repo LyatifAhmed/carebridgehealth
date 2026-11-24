@@ -12,7 +12,7 @@ export default function GastricSleeveCostTurkeyPage() {
     <TreatmentLanding
       eyebrow="Gastric sleeve cost Turkey"
       title="Understanding gastric sleeve surgery costs in Turkey"
-      intro="Many UK patients researching weight loss surgery compare treatment options in Turkey. Understanding cost factors is an important part of making an informed decision."
+      intro="Many international patients researching weight loss surgery compare treatment options in Turkey. Understanding cost factors is an important part of making an informed decision."
       heroNote="Pricing may vary depending on hospital facilities, surgeon experience, pre-operative testing, accommodation arrangements, and aftercare support."
       suitableFor={[
         "Patients researching gastric sleeve surgery costs.",

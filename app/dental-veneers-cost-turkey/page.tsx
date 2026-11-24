@@ -3,7 +3,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
   title: "Dental Veneers Cost Turkey 2026: Prices, Materials & Packages",
-  description: "Dental veneers cost in Turkey for UK patients: compare porcelain and composite options, itemised quotes, tooth preparation, aftercare and total travel costs.",
+  description: "Dental veneers cost in Turkey for international patients: compare porcelain and composite options, itemised quotes, tooth preparation, aftercare and total travel costs.",
   alternates: { canonical: "/dental-veneers-cost-turkey" },
 };
 
@@ -48,7 +48,7 @@ export default function DentalVeneersCostTurkeyPage() {
       ]}
       faq={[
         { question: "How can I compare veneer quotes from different clinics?", answer: "Ask each clinic to specify the number of teeth, veneer material, whether the quote is for veneers or crowns, required tooth preparation, examinations, temporary restorations, aftercare and any excluded fees. A remote estimate is not a confirmed treatment plan." },
-        { question: "What should UK patients arrange for follow-up?", answer: "Discuss maintenance, repair or replacement needs, who to contact if a veneer chips or becomes uncomfortable, and whether your UK dentist can access the treatment records. Factor possible return travel into the total cost." },
+        { question: "What should international patients arrange for follow-up?", answer: "Discuss maintenance, repair or replacement needs, who to contact if a veneer chips or becomes uncomfortable, and whether your local dentist can access the treatment records. Factor possible return travel into the total cost." },
         {
           question: "Why do veneer prices vary?",
           answer:

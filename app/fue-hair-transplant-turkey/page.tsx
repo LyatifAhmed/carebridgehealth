@@ -4,7 +4,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 export const metadata: Metadata = {
   alternates: { canonical: "/fue-hair-transplant-turkey" },
   title: "FUE Hair Transplant Turkey 2026: Cost, FUE Clinics & Recovery",
-  description: "FUE hair transplant in Turkey for UK patients: understand graft planning, donor-area risks, clinician involvement, recovery, costs and follow-up care.",
+  description: "FUE hair transplant in Turkey for international patients: understand graft planning, donor-area risks, clinician involvement, recovery, costs and follow-up care.",
 };
 
 export default function FueHairTransplantTurkeyPage() {
@@ -48,7 +48,7 @@ export default function FueHairTransplantTurkeyPage() {
       ]}
       faq={[
         { question: "How should I compare FUE clinic quotes?", answer: "Ask for the proposed graft range and how it was determined, who performs each stage, what happens if the procedure plan changes, and whether medication, aftercare, follow-up and complication management are included." },
-        { question: "What should I consider before flying home after FUE?", answer: "Ask the treating clinician when travel is appropriate, how to protect the treated area, what symptoms need urgent review and how follow-up will work from the UK. Recovery and travel advice should be personalised." },
+        { question: "What should I consider before flying home after FUE?", answer: "Ask the treating clinician when travel is appropriate, how to protect the treated area, what symptoms need urgent review and how follow-up will work from your home country. Recovery and travel advice should be personalised." },
         {
           question: "What is FUE?",
           answer:

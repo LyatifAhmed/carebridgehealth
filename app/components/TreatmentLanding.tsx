@@ -288,7 +288,7 @@ export default function TreatmentLanding({
           <p className="mt-3 max-w-3xl text-base leading-7 text-neutral-700">Before choosing a provider, review credentials, treatment risks, follow-up care and what is included in a written quote.</p>
           <div className="mt-5 flex flex-wrap gap-5 text-sm">
             <Link href="/blog/how-to-choose-a-clinic-in-turkey" className="font-medium underline underline-offset-4">How to choose a clinic</Link>
-            <Link href="/blog/is-treatment-in-turkey-safe-for-uk-patients" className="font-medium underline underline-offset-4">Safety for UK patients</Link>
+            <Link href="/medical-tourism-turkey" className="font-medium underline underline-offset-4">International patient planning guide</Link>
             <Link href="/how-treatment-in-turkey-works" className="font-medium underline underline-offset-4">How coordination works</Link>
           </div>
         </div>

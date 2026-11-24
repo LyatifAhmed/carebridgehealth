@@ -3,7 +3,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
   title: "Urinary Incontinence Surgery Turkey 2026: Cost & Recovery",
-  description: "Considering urinary incontinence treatment in Turkey? Learn about specialist assessment, non-surgical options, surgery questions, recovery and follow-up for UK patients.",
+  description: "Considering urinary incontinence treatment in Turkey? Learn about specialist assessment, non-surgical options, surgery questions, recovery and follow-up for international patients.",
   alternates: {
     canonical: "/urinary-incontinence-surgery-turkey",
   },
@@ -52,7 +52,7 @@ export default function UrinaryIncontinenceSurgeryTurkeyPage() {
             "Recovery depends on the procedure performed and individual circumstances. The treating provider will explain expected recovery and aftercare requirements.",
         },
         { question: "Does every type of urinary incontinence need the same treatment?", answer: "No. Stress, urgency and mixed incontinence can have different causes and management options. A specialist should establish the type and discuss appropriate non-surgical treatments before considering surgery." },
-        { question: "What follow-up should UK patients arrange?", answer: "Before travelling, ask who will review your recovery, how complications will be handled after you return to the UK, and what records will be shared with your local clinician." },
+        { question: "What follow-up should international patients arrange?", answer: "Before travelling, ask who will review your recovery, how complications will be handled after you return home, and what records will be shared with your local clinician." },
       ]}
     />
   );

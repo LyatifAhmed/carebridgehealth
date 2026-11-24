@@ -3,7 +3,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
   title: "Rhinoplasty Turkey 2026: Cost, Recovery & Surgeon Guide",
-  description: "Learn about rhinoplasty in Turkey including costs, recovery, surgeon selection and what UK patients should consider before booking.",
+  description: "Learn about rhinoplasty in Turkey including costs, recovery, surgeon selection and what international patients should consider before booking.",
   alternates: {
     canonical: "/rhinoplasty-turkey",
   },

@@ -4,7 +4,7 @@ import TreatmentLanding from "../components/TreatmentLanding";
 export const metadata: Metadata = {
   alternates: { canonical: "/dental-implants-turkey" },
   title: "Dental Implants Turkey 2026: Cost, Clinics & Packages",
-  description: "Compare dental implant treatment in Turkey, expected costs, clinic options, recovery and what UK patients should know before travelling.",
+  description: "Compare dental implant treatment in Turkey, expected costs, clinic options, recovery and what international patients should know before travelling.",
 };
 
 export default function DentalImplantsTurkeyPage() {
@@ -21,7 +21,7 @@ export default function DentalImplantsTurkeyPage() {
       ]}
       whyTurkey={[
         "Turkey is a popular destination for private dental implant treatment.",
-        "Many patients explore Turkey because implant treatment can be costly privately in the UK.",
+        "Many patients explore Turkey because implant treatment can be costly privately in their home country.",
         "Clinics may offer combined planning, treatment, accommodation, and transfer support.",
       ]}
       processSteps={[

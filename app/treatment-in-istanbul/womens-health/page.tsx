@@ -5,7 +5,7 @@ import LandingCursorHalo from "../../components/LandingCursorHalo";
 
 export const metadata: Metadata = {
   title:
-    "Women’s Health Treatments in Istanbul for UK Patients | CareBridge Health",
+    "Women’s Health Treatments in Istanbul for International Patients",
   description:
     "Explore women’s health and gynaecological procedures in Istanbul through CareBridge Health. Discreet coordination, carefully selected clinics, and UK-based guidance for patients seeking clarity before travelling.",
   keywords: [
