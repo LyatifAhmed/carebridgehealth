@@ -47,7 +47,7 @@ export default function TreatmentLanding({
   processSteps,
   faq,
   ctaTitle = "Start with a private consultation",
-  ctaText = "Tell us what you are considering and we will help you understand the next steps, likely treatment pathway, and whether Istanbul or Antalya may be a better fit.",
+  ctaText = "Tell us what you are considering and we will help you understand the next steps, likely treatment pathway, and arrange an introduction within our Istanbul network where appropriate.",
   primaryCtaHref = "/#form",
   primaryCtaLabel = "Request private consultation",
   secondaryCtaHref,
