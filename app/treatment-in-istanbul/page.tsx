@@ -126,13 +126,6 @@ export default function TreatmentInIstanbulPage() {
                 >
                   Request private consultation
                 </a>
-
-                <Link
-                  href="/treatment-in-antalya"
-                  className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-7 py-4 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/15"
-                >
-                  Compare with Antalya
-                </Link>
               </div>
             </div>
           </div>
@@ -342,8 +335,7 @@ export default function TreatmentInIstanbulPage() {
 
               <p className="mt-4 text-base leading-8 text-slate-600">
                 Tell us what you are considering and we will review your enquiry
-                with care. If Istanbul is not the strongest fit for your goals,
-                we can also help guide you towards Antalya where relevant.
+                with care and help you understand the available pathways in Istanbul.
               </p>
             </div>
 
@@ -362,13 +354,6 @@ export default function TreatmentInIstanbulPage() {
                 className="inline-flex rounded-full bg-slate-950 px-7 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
               >
                 Go to consultation form
-              </Link>
-
-              <Link
-                href="/treatment-in-antalya"
-                className="inline-flex rounded-full border border-slate-300 px-7 py-4 text-sm font-medium text-slate-900 transition hover:-translate-y-0.5"
-              >
-                Explore Antalya instead
               </Link>
             </div>
           </div>

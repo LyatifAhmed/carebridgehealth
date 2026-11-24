@@ -50,7 +50,6 @@ const staticRoutes = [
   { path: "/eye-treatment-turkey", changeFrequency: "weekly", priority: 0.85 },
 
   { path: "/treatment-in-istanbul", changeFrequency: "weekly", priority: 0.9 },
-  { path: "/treatment-in-antalya", changeFrequency: "weekly", priority: 0.9 },
   { path: "/treatment-in-istanbul/womens-health", changeFrequency: "weekly", priority: 0.85 },
 
   { path: "/how-treatment-in-turkey-works", changeFrequency: "weekly", priority: 0.8 },

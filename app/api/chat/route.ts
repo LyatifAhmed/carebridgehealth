@@ -26,7 +26,7 @@ const faqReplies: Record<string, string> = {
   istanbul:
     "Istanbul is often the stronger fit for patients who prioritise specialist access, advanced hospitals, and more complex treatment pathways. It usually suits people who want a broader medical ecosystem around their decision.",
   antalya:
-    "Antalya is often appealing for patients who value a calmer environment, a more recovery-focused setting, and strong value in selected procedures. It can feel more comfort-led overall, depending on the treatment type.",
+    "Antalya coordination is temporarily unavailable. CareBridge Health currently coordinates treatment enquiries in Istanbul.",
   cost:
     "Cost can vary a lot depending on the treatment, clinic level, destination, and how much support is included around the journey. In most cases, the more useful starting point is understanding fit first, then narrowing down realistic options.",
   safety:
@@ -110,7 +110,7 @@ Brand positioning:
 
 What the business does:
 - helps international patients think more clearly about treatment in Turkey
-- helps patients compare Istanbul and Antalya
+- currently coordinates treatment enquiries in Istanbul only; Antalya is temporarily unavailable
 - helps patients understand likely next steps before submitting an enquiry
 - coordinates introductions and structured guidance where appropriate
 - does NOT provide medical advice
@@ -132,7 +132,7 @@ How to respond:
 
 Topics you can help with:
 - how the process works
-- whether Istanbul or Antalya may be a better fit
+- whether an Istanbul pathway may be appropriate
 - treatment categories such as dental, hair transplant, eye treatment, cosmetic surgery, weight loss surgery, and selected women's health procedures
 - how to think about clinic choice more carefully
 - what kind of next step makes sense

@@ -29,7 +29,7 @@ const quickQuestions = [
   },
   {
     label: "Hair transplant",
-    value: "Would Istanbul or Antalya be better for hair transplant?",
+    value: "How does hair transplant coordination in Istanbul work?",
   },
   {
     label: "Dental treatments",

@@ -23,11 +23,6 @@ const treatmentLinks = [
     desc: "For specialist-led pathways",
   },
   {
-    title: "Treatment in Antalya",
-    href: "/treatment-in-antalya",
-    desc: "For comfort and recovery",
-  },
-  {
     title: "Hair transplant",
     href: "/hair-transplant-turkey",
     desc: "Hair restoration planning",

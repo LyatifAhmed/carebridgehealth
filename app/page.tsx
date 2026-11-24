@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title:
     "Medical Tourism in Turkey | International Patient Coordination",
   description:
-    "Explore medical treatment in Turkey from the USA, UK, Canada, Europe and beyond. CareBridge Health provides UK-based coordination and introductions to independent clinics in Istanbul and Antalya.",
+    "Explore medical treatment in Turkey from the USA, UK, Canada, Europe and beyond. CareBridge Health provides UK-based coordination and introductions to independent clinics in Istanbul.",
   keywords: [
     "private medical treatment in Turkey",
     "medical treatment Turkey from UK",
@@ -14,7 +14,6 @@ export const metadata: Metadata = {
     "Turkey medical tourism Canada",
     "treatment in Turkey",
     "private medical treatment Istanbul",
-    "private medical treatment Antalya",
     "hair transplant Turkey",
     "dental treatment Turkey",
     "eye treatment Turkey",
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
     title:
       "Medical Tourism in Turkey | International Patient Coordination",
     description:
-      "UK-based coordination for international patients exploring independent treatment providers in Istanbul and Antalya, Turkey.",
+      "UK-based coordination for international patients exploring independent treatment providers in Istanbul, Turkey.",
     url: "https://www.carebridgehealth.co/",
     siteName: "CareBridge Health",
     images: [{
@@ -64,7 +63,7 @@ export default function HomePage() {
     url: "https://www.carebridgehealth.co/",
     logo: "https://www.carebridgehealth.co/logo.png",
     description:
-      "UK-based independent coordination service helping international patients explore selected third-party clinics in Istanbul and Antalya, Turkey.",
+      "UK-based independent coordination service helping international patients explore selected third-party clinics in Istanbul, Turkey.",
     areaServed: ["United States", "United Kingdom", "Canada", "Europe", "Worldwide"],
     sameAs: [],
   };

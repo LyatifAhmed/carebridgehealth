@@ -50,7 +50,7 @@ const trustItems = [
 
 // heroStats array'imize ilgili Lucide ikonlarını eşleştiriyoruz
 const heroStats = [
-  { label: "Destinations", value: "Istanbul & Antalya", icon: MapPin },
+  { label: "Destinations", value: "Istanbul", icon: MapPin },
   { label: "Response target", value: "Within 24 hours", icon: Clock },
   { label: "Model", value: "Private coordination", icon: ShieldCheck },
 ];
@@ -164,13 +164,6 @@ const destinationCards = [
     href: "/treatment-in-istanbul",
     image: "/istanbul-hero.avif",
   },
-  {
-    title: "Antalya",
-    subtitle: "Comfort, recovery and selected value-led care",
-    desc: "A calmer destination for selected procedures where comfort, recovery and value matter.",
-    href: "/treatment-in-antalya",
-    image: "/trust.avif",
-  },
 ];
 
 const premiumServiceCards = [
@@ -268,7 +261,7 @@ export default function HomePageClient() {
                 Medical treatment in Turkey, made easier to explore
               </h1>
               <p className="mt-7 max-w-xl text-base leading-8 text-slate-700 md:text-lg">
-                From the USA, UK, Canada, Europe or elsewhere, explore treatment in Istanbul and Antalya with UK-based, founder-led coordination. Tell us which treatment you’re considering and we’ll help arrange a conversation with an independent healthcare professional, where appropriate. It’s free to enquire, and the decision to proceed is always yours.
+                From the USA, UK, Canada, Europe or elsewhere, explore treatment in Istanbul with UK-based, founder-led coordination. Tell us which treatment you’re considering and we’ll help arrange a conversation with an independent healthcare professional, where appropriate. It’s free to enquire, and the decision to proceed is always yours.
               </p>
 
               <div className="mt-8 border-l-[3px] border-teal-600 pl-5">
@@ -632,13 +625,10 @@ export default function HomePageClient() {
               Destinations
             </p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-              Istanbul or Antalya — choose the right journey
+              Explore treatment in Istanbul
             </h2>
             <p className="mt-5 text-base leading-8 text-slate-600">
-              We do not position every destination in the same way. Istanbul is
-              often stronger for specialist-led and more complex pathways, while
-              Antalya can suit comfort-led recovery and selected value-focused
-              treatments.
+              Our current patient coordination focuses on Istanbul, with access to independent providers across selected treatment pathways.
             </p>
           </div>
 
@@ -650,7 +640,7 @@ export default function HomePageClient() {
           </a>
         </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
+        <div className="mt-12 grid gap-8">
           {destinationCards.map((item) => (
             <Link
               key={item.title}
@@ -905,7 +895,6 @@ export default function HomePageClient() {
                 >
                   <option value="">Where would you like treatment? (optional)</option>
                   <option>Istanbul</option>
-                  <option>Antalya</option>
                   <option>Open to guidance / not sure yet</option>
                 </select>
 

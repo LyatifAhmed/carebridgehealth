@@ -17,7 +17,7 @@ export default function Footer() {
             </p>
 
             <p className="mt-4 text-sm text-slate-500">
-              UK-based • Istanbul & Antalya coordination
+              UK-based • Istanbul coordination
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2">

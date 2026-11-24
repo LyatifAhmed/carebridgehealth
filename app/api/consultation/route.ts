@@ -170,6 +170,10 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    if (String(data.treatmentCity ?? "").trim().toLowerCase() === "antalya") {
+      return NextResponse.json({ error: "Antalya coordination is temporarily unavailable. Please select Istanbul or request guidance." }, { status: 400 });
+    }
+
     if (!data.consentDataProcessing || !data.consentDisclaimer) {
       return NextResponse.json(
         { error: "Required consent fields were not accepted." },

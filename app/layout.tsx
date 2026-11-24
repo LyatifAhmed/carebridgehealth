@@ -37,7 +37,6 @@ export const metadata: Metadata = {
     "medical treatment in Turkey from the UK",
     "Turkey medical tourism UK",
     "medical treatment Istanbul",
-    "medical treatment Antalya",
     "dental treatment Turkey",
     "hair transplant Turkey",
     "cosmetic surgery Turkey",
@@ -47,14 +46,13 @@ export const metadata: Metadata = {
     "medical tourism Turkey from USA",
     "medical treatment Turkey for international patients",
     "Istanbul clinics for international patients",
-    "Antalya clinics for international patients",
     "CareBridge Health",
   ],
 
   openGraph: {
     title: "CareBridge Health | Medical Tourism in Turkey for International Patients",
     description:
-      "International patient coordination from the UK for independent treatment providers in Istanbul and Antalya, Turkey.",
+      "International patient coordination from the UK for independent treatment providers in Istanbul, Turkey.",
     url: "https://www.carebridgehealth.co",
     siteName: "CareBridge Health",
     images: [
@@ -73,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CareBridge Health | Medical Tourism in Turkey for International Patients",
     description:
-      "International patient coordination from the UK for independent treatment providers in Istanbul and Antalya, Turkey.",
+      "International patient coordination from the UK for independent treatment providers in Istanbul, Turkey.",
     images: ["https://www.carebridgehealth.co/og-image.jpg"],
   },
 
