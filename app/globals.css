@@ -174,3 +174,87 @@ html.dark .carebridge-landing-halo {
     z-index: 20;
   }
 }
+
+/* Shared dark palette for treatment pages, articles and legacy components.
+   Exact utility tokens avoid altering photographs and dark hero overlays. */
+html.dark {
+  --cb-dark-surface: #1b2e35;
+  --cb-dark-muted: #14252d;
+  --cb-dark-border: #344a53;
+  --cb-dark-text: #edf5f3;
+  --cb-dark-secondary: #b6c8cc;
+}
+html.dark :is(main,section,article,div,figure,aside,header,footer)[class~="bg-neutral-50"],
+html.dark [class~="bg-neutral-100"],
+html.dark [class~="bg-gray-50"],
+html.dark [class~="bg-gray-100"],
+html.dark [class~="bg-stone-50"] { background-color: var(--cb-dark-muted) !important; }
+html.dark [class~="bg-neutral-900"],
+html.dark [class~="bg-slate-900"] { background-color: #0a141a !important; }
+html.dark [class~="text-neutral-950"],
+html.dark [class~="text-neutral-900"],
+html.dark [class~="text-neutral-800"],
+html.dark [class~="text-neutral-700"],
+html.dark [class~="text-gray-900"],
+html.dark [class~="text-gray-800"],
+html.dark [class~="text-gray-700"] { color: var(--cb-dark-text) !important; }
+html.dark [class~="text-neutral-600"],
+html.dark [class~="text-neutral-500"],
+html.dark [class~="text-neutral-400"],
+html.dark [class~="text-gray-600"],
+html.dark [class~="text-gray-500"],
+html.dark [class~="text-slate-400"] { color: var(--cb-dark-secondary) !important; }
+html.dark [class~="border-neutral-100"],
+html.dark [class~="border-neutral-200"],
+html.dark [class~="border-neutral-300"],
+html.dark [class~="border-gray-200"],
+html.dark [class~="border-gray-300"],
+html.dark [class~="border-slate-100"],
+html.dark [class~="border-slate-200/70"],
+html.dark [class~="border-slate-200/85"] { border-color: var(--cb-dark-border) !important; }
+html.dark [class~="bg-emerald-50"],
+html.dark [class~="bg-emerald-50/70"],
+html.dark [class~="bg-teal-50"],
+html.dark [class~="bg-teal-100/45"],
+html.dark [class~="bg-teal-100/60"] { background-color: #173c3b !important; }
+html.dark [class~="text-emerald-950"],
+html.dark [class~="text-emerald-800"],
+html.dark [class~="text-emerald-700"],
+html.dark [class~="text-teal-950"],
+html.dark [class~="text-green-700"] { color: #9be6ce !important; }
+html.dark [class~="border-emerald-100"],
+html.dark [class~="border-emerald-200"],
+html.dark [class~="border-teal-100"],
+html.dark [class~="border-teal-200"] { border-color: #365d58 !important; }
+html.dark [class~="bg-amber-50"] { background-color: #392f20 !important; }
+html.dark [class~="text-amber-800"] { color: #f6d49b !important; }
+html.dark [class~="border-amber-200"] { border-color: #655234 !important; }
+html.dark [class~="text-red-700"] { color: #fca5a5 !important; }
+html.dark :is(a,button)[class~="bg-neutral-900"][class~="text-white"] {
+  background-color: #075f63 !important;
+  color: #fff !important;
+}
+html.dark :is(a,button)[class~="bg-neutral-900"][class~="text-white"]:hover {
+  background-color: #087478 !important;
+}
+html.dark :is(a,button)[class~="bg-white"]:hover,
+html.dark [class~="hover:bg-neutral-50"]:hover,
+html.dark [class~="hover:bg-slate-100"]:hover,
+html.dark [class~="hover:bg-teal-50"]:hover {
+  background-color: #294149 !important;
+}
+html.dark [class~="hover:text-slate-900"]:hover,
+html.dark [class~="hover:text-slate-950"]:hover,
+html.dark [class~="group-hover:text-slate-900"] { color: var(--cb-dark-text) !important; }
+html.dark [class~="hover:text-teal-950"]:hover,
+html.dark [class~="hover:text-teal-700"]:hover { color: #9be6ce !important; }
+html.dark :is(a,button,input,textarea,select):focus-visible {
+  outline: 2px solid #73dfcc;
+  outline-offset: 3px;
+}
+/* Only invert pale gradients, not photo contrast overlays. */
+html.dark [class~="from-neutral-50"][class~="to-white"],
+html.dark [class~="from-slate-100"][class~="to-emerald-50"] {
+  background-color: var(--cb-dark-muted) !important;
+  background-image: none !important;
+}
