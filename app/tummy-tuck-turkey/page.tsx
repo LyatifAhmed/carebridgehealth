@@ -12,6 +12,11 @@ export const metadata: Metadata = {
 export default function TummyTuckTurkeyPage() {
   return (
     <TreatmentLanding
+      heroImage={{
+        src: "/tummy-tuck-abdominoplasty-turkey.webp",
+        alt: "Medical illustration of abdominal contouring and tummy tuck surgical planning",
+        caption: "AI-generated medical illustration for general information. Not a clinical photograph or a prediction of individual results.",
+      }}
       eyebrow="Tummy Tuck Turkey"
       title="Tummy tuck in Turkey with clearer planning before you travel"
       intro="A tummy tuck, also known as abdominoplasty, is a commonly researched cosmetic surgery procedure in Turkey. CareBridge Health helps patients approach the process with clearer communication, realistic expectations, and structured coordination before making decisions."
