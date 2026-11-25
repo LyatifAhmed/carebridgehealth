@@ -250,22 +250,22 @@ export default function HomePageClient() {
       <LandingCursorHalo />
       <section id="hero-section" className="relative overflow-hidden bg-gradient-to-br from-[#fbf8f3] via-white to-[#ecf8f5]">
         <div aria-hidden="true" className="pointer-events-none absolute -right-28 top-12 h-[420px] w-[420px] rounded-full bg-teal-100/45 blur-3xl" />
-        <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-28 md:pb-20 md:pt-36">
-          <div className="grid items-center gap-9 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch lg:gap-12 xl:gap-14">
+        <div className="relative mx-auto max-w-7xl px-6 pb-12 pt-24 md:pb-16 md:pt-28 lg:pt-[104px]">
+          <div className="grid items-center gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch lg:gap-10 xl:gap-12">
             <div className="max-w-2xl">
               <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-teal-800">
                 UK-based · International patient coordination
                 <span className="h-px w-9 bg-teal-600/70" />
               </p>
-              <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-[-0.045em] text-slate-950 sm:text-5xl md:text-6xl lg:text-[4.1rem]">
+              <h1 className="mt-4 text-4xl font-semibold leading-[1.06] tracking-[-0.045em] text-slate-950 sm:text-5xl lg:text-[clamp(2.6rem,3.45vw,3.5rem)]">
                 Your connection to medical professionals in Turkey
               </h1>
-              <p className="mt-7 max-w-xl text-base leading-8 text-slate-700 md:text-lg">
+              <p className="mt-5 max-w-xl text-base leading-7 text-slate-700">
                 Finding a clinic online is easy. Knowing who to contact can be harder. We introduce international patients to our independent, authorised medical tourism partner in Istanbul. Our partner coordinates doctor consultations and, if requested, optional travel services. Our introduction is free, with no obligation.
               </p>
 
-              <div className="mt-7 rounded-r-2xl border-l-[3px] border-teal-600 bg-[#f1faf7] px-5 py-4 dark:bg-[#173c3b]">
-                <p className="text-sm leading-7 text-slate-700 md:text-base">
+              <div className="mt-5 rounded-r-2xl border-l-[3px] border-teal-600 bg-[#f1faf7] px-5 py-3 dark:bg-[#173c3b]">
+                <p className="text-sm leading-6 text-slate-700">
                   I&apos;m Latif Ahmed. After years of working with patients and families at a medical clinic, I founded CareBridge to address the coordination challenges I saw first-hand. Today, I combine that experience with software development to make the journey clearer for patients and clinics.
                 </p>
                 <div className="mt-4 flex flex-wrap items-center gap-3">
@@ -276,7 +276,7 @@ export default function HomePageClient() {
                 </div>
               </div>
 
-              <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a href="#form" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#075f63] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-950/10 transition hover:bg-[#064c50]">
                   Request a free introduction
                 </a>
@@ -284,14 +284,14 @@ export default function HomePageClient() {
                   How it works
                 </a>
               </div>
-              <p className="mt-5 max-w-lg text-xs leading-5 text-slate-500">
+              <p className="mt-3 max-w-lg text-xs leading-5 text-slate-500">
                 CareBridge is an independent introduction service, not a clinic. Our Turkish partner coordinates appointments. Independent clinicians provide medical advice and treatment.
               </p>
             </div>
 
             <div className="mx-auto w-full max-w-[480px] lg:max-w-none lg:self-stretch">
               <figure className="relative overflow-hidden rounded-[32px] border border-white/75 bg-slate-100 shadow-[0_30px_70px_rgba(15,23,42,0.13)] dark:border-slate-700 lg:h-full">
-                <div className="relative aspect-[4/5] w-full sm:aspect-[5/6] lg:aspect-auto lg:h-full lg:min-h-[560px]">
+                <div className="relative aspect-[4/5] w-full sm:aspect-[5/6] lg:aspect-auto lg:h-full lg:min-h-[460px]">
                   <Image
                     src="/Lyatif-Ahmed-Redzheb-Founder-of-BetaOffice.png"
                     alt="Latif Ahmed, founder of CareBridge Health"
