@@ -9,7 +9,7 @@ import FounderSection from "./FounderSection";
 import MedicalPartnerSection from "./MedicalPartnerSection";
 import FaqSection from "./FaqSection";
 import PatientJourneySection from "./PatientJourneySection";
-import { GentleParallax, ScrollReveal } from "./ScrollMotion";
+import { ScrollReveal } from "./ScrollMotion";
 import LandingCursorHalo from "./LandingCursorHalo";
 
 // İkonları import ediyoruz
@@ -251,7 +251,7 @@ export default function HomePageClient() {
       <section id="hero-section" className="relative overflow-hidden bg-gradient-to-br from-[#fbf8f3] via-white to-[#ecf8f5]">
         <div aria-hidden="true" className="pointer-events-none absolute -right-28 top-12 h-[420px] w-[420px] rounded-full bg-teal-100/45 blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-28 md:pb-20 md:pt-36">
-          <div className="grid items-center gap-12 lg:grid-cols-[1.12fr_0.88fr] lg:gap-14">
+          <div className="grid items-center gap-9 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch lg:gap-12 xl:gap-14">
             <div className="max-w-2xl">
               <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-teal-800">
                 UK-based · International patient coordination
@@ -264,7 +264,7 @@ export default function HomePageClient() {
                 Finding a clinic online is easy. Knowing who to contact can be harder. Through our established, doctor-led medical tourism network in Istanbul, we help international patients connect with qualified healthcare professionals and, if needed, arrange travel support through our local partner. It’s free to enquire, with no obligation.
               </p>
 
-              <div className="mt-8 border-l-[3px] border-teal-600 pl-5">
+              <div className="mt-7 rounded-r-2xl border-l-[3px] border-teal-600 bg-[#f1faf7] px-5 py-4 dark:bg-[#173c3b]">
                 <p className="text-sm leading-7 text-slate-700 md:text-base">
                   I&apos;m Latif Ahmed. After years of working with patients and families at a medical clinic, I founded CareBridge to address the coordination challenges I saw first-hand. Today, I combine that experience with software development to make the journey clearer for patients and clinics.
                 </p>
@@ -276,7 +276,7 @@ export default function HomePageClient() {
                 </div>
               </div>
 
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a href="#form" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#075f63] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-950/10 transition hover:bg-[#064c50]">
                   Connect with a medical professional
                 </a>
@@ -289,24 +289,24 @@ export default function HomePageClient() {
               </p>
             </div>
 
-            <GentleParallax className="mx-auto w-full max-w-[440px] lg:ml-auto">
-              <figure className="relative overflow-hidden rounded-[32px] border border-white/75 bg-slate-100 shadow-[0_30px_70px_rgba(15,23,42,0.13)]">
-                <div className="relative aspect-[4/5] w-full sm:aspect-[5/6] lg:aspect-[4/5]">
+            <div className="mx-auto w-full max-w-[480px] lg:max-w-none lg:self-stretch">
+              <figure className="relative overflow-hidden rounded-[32px] border border-white/75 bg-slate-100 shadow-[0_30px_70px_rgba(15,23,42,0.13)] dark:border-slate-700 lg:h-full">
+                <div className="relative aspect-[4/5] w-full sm:aspect-[5/6] lg:aspect-auto lg:h-full lg:min-h-[560px]">
                   <Image
                     src="/Lyatif-Ahmed-Redzheb-Founder-of-BetaOffice.png"
                     alt="Latif Ahmed, founder of CareBridge Health"
                     fill
                     priority
-                    sizes="(max-width: 640px) 90vw, (max-width: 1024px) 440px, 35vw"
-                    className="object-cover object-[center_30%]"
+                    sizes="(max-width: 640px) 90vw, (max-width: 1023px) 480px, (max-width: 1280px) 44vw, 570px"
+                    className="object-cover object-[center_28%]"
                   />
                 </div>
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/75 via-slate-950/35 to-transparent px-6 pb-6 pt-16 text-white">
-                  <span className="block text-lg font-semibold">Latif Ahmed</span>
+                  <span className="block text-xl font-semibold lg:text-2xl">Latif Ahmed</span>
                   <span className="mt-1 block text-xs text-white/85">Founder, CareBridge Health</span>
                 </figcaption>
               </figure>
-            </GentleParallax>
+            </div>
           </div>
 
           <div className="mt-12 grid gap-4 sm:grid-cols-3 lg:mt-16">
