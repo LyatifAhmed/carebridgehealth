@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
+  openGraph: { images: ["https://www.carebridgehealth.co/gastric-sleeve-surgery-turkey.webp"] },
+  twitter: { card: "summary_large_image", images: ["https://www.carebridgehealth.co/gastric-sleeve-surgery-turkey.webp"] },
   alternates: { canonical: "/gastric-sleeve-cost-turkey" },
   title: "Gastric Sleeve Cost Turkey 2026: Prices, Packages & Recovery",
   description: "Discover gastric sleeve surgery prices in Turkey, what's included, recovery expectations and how to compare treatment providers.",
@@ -10,6 +12,11 @@ export const metadata: Metadata = {
 export default function GastricSleeveCostTurkeyPage() {
   return (
     <TreatmentLanding
+      heroImage={{
+        src: "/gastric-sleeve-surgery-turkey.webp",
+        alt: "Illustration of the stomach before and after sleeve gastrectomy, alongside medical and travel planning symbols",
+        caption: "AI-generated medical illustration for general information. Travel and accommodation are optional and may be quoted separately.",
+      }}
       eyebrow="Gastric sleeve cost Turkey"
       title="Understanding gastric sleeve surgery costs in Turkey"
       intro="Many international patients researching weight loss surgery compare treatment options in Turkey. Understanding cost factors is an important part of making an informed decision."

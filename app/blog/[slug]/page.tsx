@@ -22,6 +22,11 @@ const editorialPhotos = {
 } as const;
 
 function editorialPhotoFor(slug: string) {
+  if (slug === "gastric-sleeve-turkey-vs-uk-cost") return {
+    src: "/gastric-sleeve-turkey-vs-uk-cost.webp",
+    alt: "Gastric sleeve surgery illustration with London and Istanbul landmarks, representing UK and Turkey treatment cost comparisons",
+    credit: "CareBridge Health",
+  };
   if (/dental|veneers|hollywood-smile/.test(slug)) return editorialPhotos.dental;
   if (/lasik|cataract|eye/.test(slug)) return editorialPhotos.eye;
   if (/hair|transplant|fue/.test(slug)) return {
@@ -66,9 +71,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       url: `https://www.carebridgehealth.co/blog/${post.slug}`,
       type: "article",
+      ...(slug === "gastric-sleeve-turkey-vs-uk-cost" ? { images: ["https://www.carebridgehealth.co/gastric-sleeve-turkey-vs-uk-cost.webp"] } : {}),
     },
     twitter: {
       card: "summary_large_image",
+      ...(slug === "gastric-sleeve-turkey-vs-uk-cost" ? { images: ["https://www.carebridgehealth.co/gastric-sleeve-turkey-vs-uk-cost.webp"] } : {}),
       title: post.title,
       description: post.description,
     },
@@ -162,7 +169,7 @@ export default async function BlogPostPage({ params }: Props) {
     mainEntityOfPage: `https://www.carebridgehealth.co/blog/${post.slug}`,
     datePublished: "2026-06-19",
     dateModified: new Date().toISOString(),
-    image: editorialPhoto ? editorialPhoto.src : "https://www.carebridgehealth.co/og-image.jpg",
+    image: editorialPhoto ? new URL(editorialPhoto.src, "https://www.carebridgehealth.co").href : "https://www.carebridgehealth.co/og-image.jpg",
   };
 
   return (
@@ -191,11 +198,11 @@ export default async function BlogPostPage({ params }: Props) {
             <EditorialImage
               src={editorialPhoto.src}
               alt={editorialPhoto.alt}
-              loading="lazy"
+              loading={post.slug === "gastric-sleeve-turkey-vs-uk-cost" ? "eager" : "lazy"}
               className="aspect-[16/9] w-full object-cover"
             />
             <figcaption className="px-5 py-3 text-xs leading-5 text-slate-500">
-              Illustrative stock photograph, not a CareBridge partner clinic. Photo: {editorialPhoto.credit}.
+              {post.slug === "gastric-sleeve-turkey-vs-uk-cost" ? "AI-generated medical illustration for general information; not a clinical photograph or a treatment outcome." : `Illustrative stock photograph, not a CareBridge partner clinic. Photo: ${editorialPhoto.credit}.`}
             </figcaption>
           </figure>
         )}
