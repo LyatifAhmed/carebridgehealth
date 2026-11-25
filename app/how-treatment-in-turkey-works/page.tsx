@@ -28,7 +28,7 @@ export default function HealthTourismAuthorisationPage() {
           </p>
 
           <p className="mt-4 text-lg leading-8 text-slate-700">
-            Through our specialist doctor-led medical tourism partner in Istanbul, we arrange introductions within an established local healthcare network where appropriate.
+            We introduce patients to our independent authorised Turkish medical tourism company in Istanbul. That company coordinates appointments within its own healthcare network.
             Treatment decisions, clinical assessments, licences, authorisations,
             and medical responsibilities belong to the relevant healthcare
             providers.
@@ -89,14 +89,11 @@ export default function HealthTourismAuthorisationPage() {
             <div className="mt-6 space-y-5 text-slate-700">
               <p>
                 CareBridge Health helps patients explore treatment options,
-                understand what questions to ask, and coordinate next steps with
-                providers within our partner’s existing Istanbul network. We do not independently verify unrelated clinics.
+                understand what questions to ask, and request an introduction to our authorised Turkish partner. We do not independently verify unrelated clinics.
               </p>
 
               <p>
-                We may help with communication, initial enquiry handling,
-                appointment coordination, travel preparation, and general
-                guidance. We do not diagnose, prescribe, perform procedures, or
+                We handle initial enquiries and introductions only. The Turkish partner coordinates medical appointments and optional travel services. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments. We do not diagnose, prescribe, perform procedures, or
                 guarantee treatment outcomes.
               </p>
 

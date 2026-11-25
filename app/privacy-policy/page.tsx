@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
         </h1>
 
         <p className="mt-6 text-sm text-slate-500">
-          Last updated: 20 November 2026
+          Last updated: 25 November 2026
         </p>
 
         <div className="mt-10 space-y-8 text-sm leading-7 text-slate-600">
@@ -93,7 +93,7 @@ export default function PrivacyPolicyPage() {
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Review and respond to your enquiry</li>
               <li>Understand the type of treatment support you are seeking</li>
-              <li>Help coordinate an introduction to a relevant third-party clinic or medical provider where appropriate</li>
+              <li>Introduce you to our authorised Turkish medical tourism partner where appropriate</li>
               <li>Communicate with you about your enquiry and next steps</li>
               <li>Maintain internal records of enquiries and consent</li>
               <li>Protect our website, business, and users against misuse or abuse</li>
@@ -130,8 +130,7 @@ export default function PrivacyPolicyPage() {
               including:
             </p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
-              <li>Partner clinics</li>
-              <li>Turkey-licensed doctors or medical providers</li>
+              <li>Our independent authorised Turkish medical tourism partner, with your permission</li>
               <li>Email and communications service providers</li>
               <li>Website, hosting, and technical service providers</li>
               <li>Professional advisers where necessary</li>
@@ -140,7 +139,7 @@ export default function PrivacyPolicyPage() {
               We only share information that is reasonably necessary for the relevant
               purpose. Where an introduction is appropriate, this can include sharing
               enquiry contact details and treatment interest with an independent
-              healthcare provider or coordination partner in Turkey, as explained at
+              authorised medical tourism partner in Turkey, as explained at
               the point of collection. Medical assessment, diagnosis, treatment planning,
               suitability decisions, and treatment outcomes remain the responsibility
               of the relevant provider, not CareBridge Health.
@@ -150,8 +149,7 @@ export default function PrivacyPolicyPage() {
           <div>
             <h2 className="font-medium text-slate-900">6. International transfers</h2>
             <p className="mt-2">
-              Because CareBridge Health helps coordinate treatment pathways involving
-              providers in Turkey, your personal data may be transferred to or accessed
+              Because CareBridge Health introduces patients to an independent medical tourism partner in Turkey, your personal data may be transferred to or accessed
               by organisations located outside the United Kingdom.
             </p>
             <p className="mt-2">

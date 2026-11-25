@@ -118,7 +118,7 @@ export default function AboutPage() {
             </p>
             <p>
               I created CareBridge Health to bridge that gap between patients and
-              independent healthcare professionals in Turkey. Through a family connection with a specialist doctor who runs a medical tourism company in Istanbul, we arrange introductions within an established healthcare network. Patients are encouraged to check the treating provider’s credentials and make their own informed decisions.
+              independent healthcare professionals in Turkey. Through a family connection with a specialist doctor who runs a medical tourism company in Istanbul, we introduce patients to that independent authorised Turkish medical tourism company, which coordinates appointments within its own network. Patients are encouraged to check the treating provider’s credentials and make their own informed decisions.
             </p>
             <p>
               I also bring my software development experience to this work. I continue
@@ -130,8 +130,7 @@ export default function AboutPage() {
               I am not a doctor, and CareBridge is not a clinic. We coordinate
               enquiries and introductions, while independent healthcare professionals
               are responsible for clinical assessments, treatment decisions and aftercare.
-              We do not independently verify clinics outside our network or guarantee treatment safety or outcomes. CareBridge may receive a referral commission if a patient proceeds
-              with treatment through a provider we introduce.
+              We do not independently verify clinics outside our network or guarantee treatment safety or outcomes. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments.
             </p>
           </div>
 
@@ -164,7 +163,7 @@ export default function AboutPage() {
             </p>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-              We coordinate the pathway. Providers deliver the treatment.
+              We make the introduction. Our Turkish partner coordinates the next steps.
             </h2>
 
             <p className="mt-5 text-base leading-8 text-slate-600">
@@ -234,8 +233,7 @@ export default function AboutPage() {
           </h2>
 
           <p className="mt-5 text-sm leading-7 text-white/65">
-            CareBridge Health helps with coordination, communication, and
-            structured next steps. Any diagnosis, medical suitability, treatment
+            CareBridge Health handles initial enquiries and introductions to its authorised Turkish medical tourism partner. Any diagnosis, medical suitability, treatment
             recommendation, consent, procedure, or outcome remains the
             responsibility of the relevant independent healthcare provider.
           </p>

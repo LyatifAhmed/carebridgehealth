@@ -6,12 +6,12 @@ export default function MedicalPartnerSection() {
     <section id="medical-partner" className="border-y border-slate-200 bg-white py-20 md:py-24" aria-labelledby="medical-partner-title">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-9 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">Our local medical network</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">Our independent Turkish partner</p>
           <h2 id="medical-partner-title" className="mt-3 text-3xl font-semibold tracking-[-0.03em] text-slate-950 md:text-4xl">
-            Personal connections to healthcare professionals in Istanbul
+            An authorised medical tourism partner in Istanbul
           </h2>
           <p className="mt-4 text-base leading-7 text-slate-600">
-            Our local medical tourism partner is led by a specialist doctor and works with an established network of healthcare professionals. We arrange introductions within that network rather than searching for unfamiliar clinics on your behalf. Medical decisions remain with the treating clinician.
+            Our independent Turkish medical tourism partner is authorised in Turkey, led by a specialist doctor and works with an established network of healthcare professionals. CareBridge introduces patients to that company; the company coordinates doctor appointments. Medical decisions remain with the treating clinician.
           </p>
         </div>
         <div className="grid overflow-hidden rounded-[30px] border border-slate-200 bg-[#fbfaf7] shadow-sm md:grid-cols-[0.85fr_1.5fr]">
@@ -26,10 +26,10 @@ export default function MedicalPartnerSection() {
             <h3 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">A doctor-led local network</h3>
             <p className="mt-2 text-base font-medium text-slate-700">Obstetrics &amp; Gynaecology Specialist</p>
             <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600">
-              Our local partner is a specialist in obstetrics and gynaecology and coordinates introductions across its medical network, subject to the treatment requested and provider availability. CareBridge helps coordinate initial enquiries and introductions. We share the treating professional's identity, relevant credentials and provider details before any clinical consultation or treatment decision. Clinical assessment, suitability, procedures and aftercare are the responsibility of the healthcare provider.
+              Our partner company is led by a specialist in obstetrics and gynaecology, who provides care in that specialty independently of CareBridge. The company coordinates other specialties through its own network. Patients should request the treating clinician's identity, credentials and provider details from the partner before proceeding. Clinical assessment, suitability, procedures and aftercare are the responsibility of the healthcare provider.
             </p>
             <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600">
-              CareBridge is a referral and coordination business, not a clinic or an independent credential verification service. Patients should check the treating provider’s credentials and authorisations before committing. We may receive a commission from the provider when an introduced patient proceeds with treatment.
+              CareBridge is a referral and coordination business, not a clinic or an independent credential verification service. Patients should check the treating provider’s credentials and authorisations before committing. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments.
             </p>
             <div className="mt-7 flex flex-wrap items-center gap-3">
               <Link href="/#form" className="inline-flex items-center rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">

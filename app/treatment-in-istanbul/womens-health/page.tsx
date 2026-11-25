@@ -143,8 +143,7 @@ export default function WomensHealthIstanbulPage() {
               </h1>
               <p className="mt-6 max-w-xl text-base leading-8 text-slate-700 md:text-lg">
                 Considering treatment in Turkey? Tell us what you’re looking for.
-                We’ll help you take the next step and, where appropriate, arrange
-                an introduction to an independent specialist. You decide whether to proceed.
+                We’ll introduce you to our authorised Turkish medical tourism partner, which coordinates consultations with independent specialists. You decide whether to proceed.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="/#form" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#075f63] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-950/10 transition hover:bg-[#064c50]">Start a free enquiry</a>
@@ -411,7 +410,7 @@ export default function WomensHealthIstanbulPage() {
                   href="/#form"
                   className="inline-flex rounded-full bg-slate-950 px-7 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
                 >
-                  Request private consultation
+                  Request a free introduction
                 </a>
 
                 <Link

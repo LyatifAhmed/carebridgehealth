@@ -25,7 +25,7 @@ export const internationalGuides = {
     intro: "CareBridge Health is based in the UK, but our enquiries are open to patients from the United States, United Kingdom, Canada, Europe and beyond. Start by exploring independent treatment providers in Istanbul, then decide whether travelling for care is right for you.",
     currency: "Your preferred currency",
     sections: [
-      { title: "Connect with a medical professional", text: "Through our local medical tourism partner in Istanbul, we help coordinate introductions within its established healthcare network. Ask who will assess you, who will provide your treatment and what the proposed appointment schedule includes." },
+      { title: "Connect with a medical professional", text: "We introduce patients to our authorised Turkish medical tourism partner in Istanbul, which coordinates appointments within its own healthcare network. Ask who will assess you, who will provide your treatment and what the proposed appointment schedule includes." },
       { title: "Compare the whole journey", text: "Request an itemised quote with its currency, validity period, inclusions and exclusions. Consider transport, accommodation, time away from home, and what additional costs could arise. Do not book non-refundable travel before the provider confirms the plan." },
       { title: "Prepare for travel and follow-up", text: "Review your home country's travel advice and entry requirements for your passport. Ask your own healthcare professional and the treating provider about suitability, travel timing, risks, records and arrangements for follow-up and complications after you return." },
     ],
@@ -41,7 +41,7 @@ export const internationalGuides = {
     title: "Medical Tourism in Turkey from the USA | Patient Guide",
     heading: "Medical tourism in Turkey from the USA",
     description: "A guide for US patients considering treatment in Turkey: long-haul travel, USD cost comparisons, independent clinics, insurance and follow-up planning.",
-    intro: "Live in the United States and considering dental treatment, hair restoration, cosmetic surgery or another treatment in Turkey? You do not need a UK address or UK residency to contact CareBridge Health. Our UK-based team can help coordinate an introduction to an independent provider in Istanbul.",
+    intro: "Live in the United States and considering dental treatment, hair restoration, cosmetic surgery or another treatment in Turkey? You do not need a UK address or UK residency to contact CareBridge Health. Our UK-based team can introduce you to our authorised Turkish medical tourism partner in Istanbul.",
     currency: "US dollars (USD)",
     sections: [
       { title: "Plan your transatlantic journey", text: "Compare flights from your nearest US airport, connection times and arrival city. Ask the provider to confirm consultation dates, expected length of stay and when it is medically appropriate to take a long-haul flight home. Allow for a flexible return booking rather than assuming a fixed recovery period." },
@@ -108,7 +108,7 @@ export const internationalGuides = {
     title: "Medical Tourism in Turkey from Europe | Patient Guide",
     heading: "Medical tourism in Turkey from Europe",
     description: "International patient coordination for people in Europe exploring treatment in Turkey, with travel logistics, currency, language and follow-up planning.",
-    intro: "Patients based in European countries can enquire about treatment in Turkey through CareBridge Health. Our UK-based coordination is independent of your country of residence; we help arrange communication with independent providers in Istanbul where appropriate.",
+    intro: "Patients based in European countries can enquire about treatment in Turkey through CareBridge Health. Our UK-based coordination is independent of your country of residence; we introduce you to our authorised Turkish medical tourism partner in Istanbul where appropriate.",
     currency: "Euros (EUR) or local currency",
     sections: [
       { title: "Plan from your country of residence", text: "European countries have different travel requirements, insurance arrangements and possible flight routes. Check the official advice of your national authorities and the entry rules applicable to your passport. Ask the provider about arrival and appointment schedules." },

@@ -140,7 +140,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 rounded-[24px] border border-slate-200 bg-white/80 p-5 text-sm leading-6 text-slate-600">
-          CareBridge Health is an independent coordination service. We are not a
+          CareBridge Health is an independent introduction service. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments. We are not a
           clinic or medical provider, and we do not provide medical advice,
           diagnosis, or treatment. Any clinical assessment, treatment planning,
           and medical services are provided by independent third-party medical
@@ -151,7 +151,7 @@ export default function Footer() {
           <div className="space-y-1">
             <p>© {new Date().getFullYear()} CareBridge Health</p>
             <p className="text-xs text-slate-400">
-              Independent coordination service. Not a medical provider.
+              Independent introduction service. Not a medical provider.
             </p>
           </div>
 

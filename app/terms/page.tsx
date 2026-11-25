@@ -27,7 +27,7 @@ export default function TermsPage() {
         </h1>
 
         <p className="mt-6 text-sm text-slate-500">
-          Last updated: 21 April 2026
+          Last updated: 25 November 2026
         </p>
 
         <div className="mt-10 space-y-8 text-sm leading-7 text-slate-600">
@@ -61,9 +61,7 @@ export default function TermsPage() {
             </p>
 
             <p className="mt-2">
-              We provide an independent coordination and information service.
-              We help connect patients with third-party clinics and medical
-              providers, primarily in Turkey.
+              We provide a free independent introduction service, referring patients to our authorised Turkish medical tourism partner. That independent company coordinates medical appointments and optional travel services. CareBridge does not employ treating doctors, book medical appointments, sell treatment or travel packages, or enter into treatment or travel contracts on behalf of patients.
             </p>
 
             <p className="mt-2">
@@ -171,12 +169,11 @@ export default function TermsPage() {
             <h2 className="font-medium text-slate-900">8. Payments</h2>
 
             <p className="mt-2">
-              CareBridge Health does not process payments for medical treatment
-              unless explicitly stated.
+              CareBridge Health does not collect patient payments for medical treatment or travel. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments.
             </p>
 
             <p className="mt-2">
-              Payments for treatment are made directly to the provider.
+              Patients contract with and pay the relevant independent Turkish partner or healthcare provider directly, as specified in their agreements. Nothing in these Terms excludes liability or consumer rights that cannot lawfully be excluded.
             </p>
           </div>
 

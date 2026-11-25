@@ -107,7 +107,7 @@ function buildCustomerHtml(data: ConsultationPayload, leadId: string) {
         </p>
 
         <h1 style="margin:0 0 18px 0;font-size:28px;line-height:1.2;">
-          We’ve received your treatment review request
+          We’ve received your introduction request
         </h1>
 
         <p style="margin:0 0 16px 0;color:#475569;">
@@ -123,11 +123,11 @@ function buildCustomerHtml(data: ConsultationPayload, leadId: string) {
         </p>
 
         <p style="margin:0 0 16px 0;color:#475569;">
-          We’ve received your enquiry and will review it carefully before getting back to you with the most suitable next step.
+          We’ve received your enquiry and will get back to you about the introduction process.
         </p>
 
         <p style="margin:0 0 16px 0;color:#475569;">
-          Where appropriate, this may include helping you think more clearly about destination fit, treatment pathway, and whether your case should move into direct review through a relevant partner clinic.
+          With your permission, we can introduce you to our independent authorised Turkish medical tourism partner, which coordinates medical appointments and optional travel services.
         </p>
 
         <div style="margin:24px 0;padding:16px 18px;border-radius:16px;background:#f8fafc;border:1px solid #e2e8f0;">
@@ -143,7 +143,7 @@ function buildCustomerHtml(data: ConsultationPayload, leadId: string) {
         </div>
 
         <p style="margin:0 0 16px 0;color:#475569;">
-          CareBridge Health is an independent coordination service and not a clinic or medical provider. Any treatment, clinical review, suitability assessment, and medical decisions remain the responsibility of the relevant provider.
+          CareBridge Health is an independent introduction service and not a clinic or medical provider. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments. Any treatment, clinical review, suitability assessment, and medical decisions remain the responsibility of the relevant provider.
         </p>
 
         <p style="margin:0;color:#475569;">
@@ -236,7 +236,7 @@ export async function POST(req: NextRequest) {
       const customerResult = await resend.emails.send({
         from: fromEmail,
         to: data.email,
-        subject: `We’ve received your treatment review request (${leadId})`,
+        subject: `We’ve received your introduction request (${leadId})`,
         html: buildCustomerHtml(data, leadId),
       });
 

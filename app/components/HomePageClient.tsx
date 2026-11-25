@@ -261,7 +261,7 @@ export default function HomePageClient() {
                 Your connection to medical professionals in Turkey
               </h1>
               <p className="mt-7 max-w-xl text-base leading-8 text-slate-700 md:text-lg">
-                Finding a clinic online is easy. Knowing who to contact can be harder. Through our established, doctor-led medical tourism network in Istanbul, we help international patients connect with qualified healthcare professionals and, if needed, arrange travel support through our local partner. It’s free to enquire, with no obligation.
+                Finding a clinic online is easy. Knowing who to contact can be harder. We introduce international patients to our independent, authorised medical tourism partner in Istanbul. Our partner coordinates doctor consultations and, if requested, optional travel services. Our introduction is free, with no obligation.
               </p>
 
               <div className="mt-7 rounded-r-2xl border-l-[3px] border-teal-600 bg-[#f1faf7] px-5 py-4 dark:bg-[#173c3b]">
@@ -278,14 +278,14 @@ export default function HomePageClient() {
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a href="#form" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#075f63] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-950/10 transition hover:bg-[#064c50]">
-                  Connect with a medical professional
+                  Request a free introduction
                 </a>
                 <a href="#process" className="inline-flex min-h-12 items-center justify-center rounded-full border border-slate-300 bg-white/80 px-7 py-3.5 text-sm font-semibold text-slate-900 transition hover:border-teal-500 hover:bg-white">
                   How it works
                 </a>
               </div>
               <p className="mt-5 max-w-lg text-xs leading-5 text-slate-500">
-                CareBridge is an independent referral and coordination service, not a clinic or medical provider. Medical advice and treatment are provided by independent healthcare professionals.
+                CareBridge is an independent introduction service, not a clinic. Our Turkish partner coordinates appointments. Independent clinicians provide medical advice and treatment.
               </p>
             </div>
 
@@ -312,7 +312,7 @@ export default function HomePageClient() {
           <div className="mt-12 grid gap-4 sm:grid-cols-3 lg:mt-16">
             {[
               { title: "Start for free", desc: "Tell us what treatment you’re interested in. There’s no charge to send an enquiry or receive an introduction." },
-              { title: "We arrange the next step", desc: "We aim to reply within 24 hours and help arrange a conversation with an independent healthcare professional." },
+              { title: "We introduce you", desc: "We aim to reply within 24 hours and, with your permission, introduce you to our authorised Turkish partner." },
               { title: "You decide", desc: "Ask questions, consider the options and only go ahead if you feel ready." },
             ].map((item) => (
               <ScrollReveal key={item.title} className="h-full">
@@ -596,7 +596,7 @@ export default function HomePageClient() {
                 A personal connection, not an anonymous clinic search.
               </h2>
               <p className="mt-5 max-w-xl text-base leading-8 text-white/85">
-                Rather than leaving you to search through advertisements and social media, we arrange introductions through our local partner’s existing healthcare network. You can ask about the clinician’s credentials, who will perform your procedure, costs and aftercare before deciding.
+                Rather than leaving you to search through advertisements and social media, we introduce you to our authorised Turkish medical tourism partner, who coordinates access to its healthcare network. You can ask about the clinician’s credentials, who will perform your procedure, costs and aftercare before deciding.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <a href="#form" className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-teal-50">
@@ -703,8 +703,7 @@ export default function HomePageClient() {
 
             <p className="mt-6 text-base leading-8 text-slate-600">
               For patients seeking a more private, carefully handled experience,
-              we can help coordinate selected women’s health procedures through
-              relevant provider routes in Turkey.
+              we can introduce you to our authorised Turkish partner for selected women’s health enquiries.
             </p>
 
             <div className="mt-8 grid gap-3 text-sm text-slate-700 sm:grid-cols-2">
@@ -951,8 +950,8 @@ export default function HomePageClient() {
                     I explicitly consent to CareBridge Health using my enquiry
                     details (which may reveal my treatment interest) to respond
                     and, where appropriate, sharing necessary details with an
-                    independent healthcare provider or coordination partner in
-                    Turkey to arrange an introduction. I understand I should
+                    authorised independent medical tourism partner in
+                    Turkey for an introduction. I understand I should
                     share detailed medical information directly with my doctor.
                   </span>
                 </label>
@@ -969,7 +968,7 @@ export default function HomePageClient() {
                   />
                   <span>
                     I understand that CareBridge Health is an independent
-                    coordination service and not a clinic or medical provider,
+                    introduction service and not a clinic or medical provider,
                     and does not provide medical advice, diagnosis, or treatment.
                   </span>
                 </label>
@@ -1015,10 +1014,7 @@ export default function HomePageClient() {
 
       <section className="mx-auto max-w-5xl px-6 py-14 text-sm leading-7 text-slate-500">
         CareBridge Health is not a clinic or medical provider. We act as an
-        independent coordination service connecting patients with third-party
-        clinics and Turkey-licensed medical providers. All treatments, clinical
-        decisions, suitability assessments, and medical outcomes remain the
-        responsibility of the relevant provider.
+        independent introduction service referring patients to our authorised Turkish medical tourism partner. The partner coordinates appointments and optional travel; independent clinicians are responsible for clinical decisions, treatment and aftercare. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments.
       </section>
     </main>
   );

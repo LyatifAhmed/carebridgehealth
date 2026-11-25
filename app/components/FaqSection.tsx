@@ -9,8 +9,8 @@ const faqs = [
     answer: "You can always contact a clinic directly. Our value is a personal introduction through our doctor-led local medical tourism partner’s established network in Istanbul, with a UK-based point of contact and optional travel coordination. We do not independently verify unrelated clinics or guarantee outcomes.",
   },
   {
-    question: "Can you arrange flights, accommodation and airport transfers?",
-    answer: "Yes, our local medical tourism partner can arrange these optional services on request, subject to availability and a separate quote. Travel is not included in the free enquiry, and you can book independently.",
+    question: "Who arranges flights, accommodation and airport transfers?",
+    answer: "Our authorised Turkish medical tourism partner, not CareBridge, can arrange these optional services on request, subject to availability and a separate quote. Travel is not included in the free enquiry, and you can book independently.",
   },
   {
     question: "Is treatment in Turkey safe?",
@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "Are you a clinic?",
     answer:
-      "No. CareBridge Health is not a hospital, clinic, or medical provider. We help patients navigate treatment options and coordinate communication with providers within our local partner’s existing network.",
+      "No. CareBridge Health is not a hospital, clinic, or medical provider. We help patients navigate treatment options and introduce patients to our authorised Turkish partner, which coordinates access to its own network.",
   },
   {
     question: "Can I speak to a doctor before travelling?",
@@ -135,7 +135,7 @@ export default function FaqSection() {
             href="#form"
             className="mt-6 inline-flex rounded-full bg-slate-950 px-6 py-4 text-sm font-medium text-white transition hover:bg-slate-800"
           >
-            Request consultation
+            Request a free introduction
           </a>
         </div>
       </div>

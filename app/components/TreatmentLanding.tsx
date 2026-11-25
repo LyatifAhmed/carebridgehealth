@@ -46,10 +46,10 @@ export default function TreatmentLanding({
   whyTurkey,
   processSteps,
   faq,
-  ctaTitle = "Start with a private consultation",
-  ctaText = "Tell us what you are considering and we will help you understand the next steps, likely treatment pathway, and arrange an introduction within our Istanbul network where appropriate.",
+  ctaTitle = "Start with a free introduction",
+  ctaText = "Tell us what you are considering. With your permission, we introduce you to our authorised Turkish medical tourism partner, who coordinates consultations with independent clinicians.",
   primaryCtaHref = "/#form",
-  primaryCtaLabel = "Request private consultation",
+  primaryCtaLabel = "Request a free introduction",
   secondaryCtaHref,
   secondaryCtaLabel = "Ask a few questions first",
   tertiaryCtaHref = "/blog",
@@ -109,7 +109,7 @@ export default function TreatmentLanding({
           </p>
 
           <div className="mt-7 max-w-3xl rounded-2xl border border-emerald-100 bg-emerald-50/70 px-5 py-4 text-sm leading-6 text-emerald-950">
-            <strong>Considering treatment in Turkey?</strong> Share a free initial enquiry. We arrange introductions through our doctor-led local medical tourism partner in Istanbul. Optional flights, accommodation and airport transfers can be separately arranged by the partner. Clinical suitability and treatment decisions remain with qualified healthcare professionals.
+            <strong>Considering treatment in Turkey?</strong> Share a free initial enquiry. We introduce you to our independent, authorised medical tourism partner in Istanbul, which coordinates medical appointments. Optional flights, accommodation and airport transfers can be separately arranged by the partner. Clinical suitability and treatment decisions remain with qualified healthcare professionals. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments.
           </div>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -284,7 +284,7 @@ export default function TreatmentLanding({
 
       <section className="mx-auto max-w-6xl px-6 pb-12 md:px-10">
         <div className="rounded-[28px] border border-neutral-200 bg-white p-7 md:p-9">
-          <h2 className="text-2xl font-semibold tracking-[-0.02em]">Connect with our Istanbul medical network</h2>
+          <h2 className="text-2xl font-semibold tracking-[-0.02em]">Connect with our authorised Istanbul partner</h2>
           <p className="mt-3 max-w-3xl text-base leading-7 text-neutral-700">Before choosing a provider, review credentials, treatment risks, follow-up care and what is included in a written quote.</p>
           <div className="mt-5 flex flex-wrap gap-5 text-sm">
             <Link href="/blog/how-to-choose-a-clinic-in-turkey" className="font-medium underline underline-offset-4">How to choose a clinic</Link>

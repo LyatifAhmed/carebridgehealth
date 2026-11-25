@@ -102,7 +102,7 @@ export default function TreatmentInIstanbulPage() {
               </h1>
 
               <p className="mt-7 max-w-2xl text-base leading-8 text-white/82 md:text-lg">
-                Through our doctor-led local medical tourism partner, we connect international patients with qualified healthcare professionals in Istanbul. Optional flight, hotel and airport transfer arrangements are available through the partner on request, subject to a separate quote.
+                We introduce international patients to our independent authorised Turkish medical tourism partner in Istanbul, which coordinates appointments with qualified healthcare professionals. Optional flight, hotel and airport transfer arrangements are available through the partner on request, subject to a separate quote.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3 text-sm text-white/80">
@@ -122,7 +122,7 @@ export default function TreatmentInIstanbulPage() {
                   href="/#form"
                   className="inline-flex items-center rounded-full bg-white px-7 py-4 text-sm font-medium text-slate-950 transition hover:-translate-y-0.5 hover:opacity-95"
                 >
-                  Request private consultation
+                  Request a free introduction
                 </a>
               </div>
             </div>
@@ -351,7 +351,7 @@ export default function TreatmentInIstanbulPage() {
                 href="/#form"
                 className="inline-flex rounded-full bg-slate-950 px-7 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-95"
               >
-                Go to consultation form
+                Send a free enquiry
               </Link>
             </div>
           </div>

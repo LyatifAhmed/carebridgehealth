@@ -14,7 +14,7 @@ const MAX_USER_MESSAGES = 5;
 
 const faqReplies: Record<string, string> = {
   travel: "Our local medical tourism partner in Istanbul can arrange optional flight tickets, accommodation and airport transfers on request, subject to availability and a separate quote. You can also book independently.",
-  network: "We connect patients with healthcare professionals through our specialist doctor-led local medical tourism partner’s established network in Istanbul. We do not independently verify unrelated clinics, provide medical advice or guarantee outcomes. You can contact a clinic directly if you prefer.",
+  network: "We introduce patients to our independent authorised Turkish medical tourism company in Istanbul. That company coordinates consultations with healthcare professionals in its network. We do not independently verify unrelated clinics, provide medical advice or guarantee outcomes. You can contact a clinic directly if you prefer.",
   process:
     "The process is straightforward. You share a few details, we review the enquiry carefully, and then we reply with clearer next steps, likely destination fit, and whether there appears to be a suitable pathway worth exploring further.",
   "womens-health":
@@ -34,7 +34,7 @@ const faqReplies: Record<string, string> = {
   safety:
     "Safety depends far more on clinic quality, case assessment, communication, and aftercare planning than on destination alone. A more careful selection process usually matters more than headline pricing.",
   consultation:
-    "A private consultation request is the best next step when you want clearer direction. It gives enough context to think more carefully about treatment fit, destination, and what pathway may make the most sense.",
+    "Send a free enquiry if you would like an introduction to our authorised Turkish medical tourism partner. The partner coordinates appointments and clinicians assess suitability.",
 };
 
 function normalizeFaqKey(value: string) {
@@ -117,10 +117,11 @@ What the business does:
 - helps international patients think more clearly about treatment in Turkey
 - currently coordinates treatment enquiries in Istanbul only; Antalya is temporarily unavailable
 - helps patients understand likely next steps before submitting an enquiry
-- arranges introductions within the existing healthcare network of a local medical tourism partner led by a specialist doctor in Istanbul
+- introduces patients only to its independent authorised Turkish medical tourism company in Istanbul, led by a specialist doctor; that company coordinates medical appointments and access to its own clinician network
 - the local partner can arrange optional flight tickets, accommodation and airport transfers, subject to availability and separate quotes; patients may book independently
 - does NOT independently verify unrelated doctors or clinics, guarantee credentials, or promise treatment safety
-- may receive referral commission; disclose this when relevant
+- receives a referral commission from the Turkish medical tourism company based on referred patients' purchased services; never charges patients or collects their payments; disclose this when relevant
+- does not book medical appointments, sell treatments or travel packages, or employ treating doctors
 - does NOT provide medical advice
 - does NOT diagnose
 - does NOT promise outcomes

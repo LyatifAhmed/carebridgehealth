@@ -12,13 +12,13 @@ const steps = [
   {
     number: "02",
     title: "We get back to you",
-    description: "We aim to reply within 24 hours, answer your first questions and help arrange an introduction through our local medical tourism partner.",
+    description: "We aim to reply within 24 hours and, with your permission, introduce you to our authorised Turkish medical tourism partner.",
     Icon: MessagesSquare,
   },
   {
     number: "03",
-    title: "Talk to a healthcare professional",
-    description: "Where appropriate, we help arrange a conversation with a qualified healthcare professional in our partner’s Istanbul network. You’ll know who they are before you meet. They answer medical questions and assess suitability.",
+    title: "Connect with our Turkish partner",
+    description: "Our independent, authorised partner coordinates consultations with healthcare professionals. Clinicians answer medical questions and assess suitability.",
     Icon: Stethoscope,
   },
   {
@@ -70,7 +70,7 @@ export default function PatientJourneySection() {
           <div className="max-w-2xl">
             <p className="font-semibold text-slate-950">Free to start. Always your choice.</p>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              CareBridge is not a clinic and does not provide medical advice or treatment. We may receive a referral commission from a provider if you proceed with treatment. You can ask who the provider is and verify their credentials before deciding.
+              CareBridge is not a clinic and does not provide medical advice or treatment. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments. You can ask who the provider is and verify their credentials before deciding.
             </p>
           </div>
           <Link href="/#form" className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-slate-800">
