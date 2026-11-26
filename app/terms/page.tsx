@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms & Conditions | CareBridge Health",
   description:
-    "Read the CareBridge Health terms and conditions, including the nature of our coordination service, liability limitations, and your responsibilities.",
+    "Read the CareBridge Health terms and conditions, including the nature of our referral service, liability limitations, and your responsibilities.",
   alternates: {
     canonical: "/terms",
   },
@@ -61,7 +61,7 @@ export default function TermsPage() {
             </p>
 
             <p className="mt-2">
-              We provide a free independent introduction service, referring patients to our authorised Turkish medical tourism partner. That independent company coordinates medical appointments and optional travel services. CareBridge does not employ treating doctors, book medical appointments, sell treatment or travel packages, or enter into treatment or travel contracts on behalf of patients.
+              Our activities are limited to marketing, introductions and referrals. We provide free introductions to our independent authorised Turkish medical tourism partner. Only that partner arranges doctor appointments, treatment and optional travel services; clinical assessment, treatment and aftercare are delivered by independent licensed clinicians. CareBridge does not employ treating doctors, book appointments, organise treatment or travel, sell packages, or enter into treatment or travel contracts on behalf of patients.
             </p>
 
             <p className="mt-2">

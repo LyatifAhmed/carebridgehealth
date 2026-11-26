@@ -90,10 +90,10 @@ export const costOfTreatmentInTurkeyForUkPatients: BlogPost = {
     ],
     ctaTitle: "Want a clearer idea of your treatment cost?",
     ctaText:
-      "Every case is different. The most accurate way to understand cost, suitability, and next steps is to request a private consultation.",
+      "Every case is different. The most accurate way to understand cost, suitability, and next steps is to request a free introduction.",
     ctaLinks: [
       {
-        label: "Request consultation",
+        label: "Request a free introduction",
         href: "/#form",
         variant: "primary",
       },

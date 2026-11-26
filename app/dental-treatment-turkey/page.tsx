@@ -27,7 +27,7 @@ export default function DentalTreatmentTurkeyPage() {
       processSteps={[
         "You tell us what treatment you are exploring and what concerns or priorities you have.",
         "We help clarify the planning stage, what questions matter, and what to consider before proceeding.",
-        "If suitable, we help coordinate the next stage with the appropriate provider route.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

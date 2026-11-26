@@ -76,7 +76,7 @@ export const hollywoodSmileTurkeyGuide: BlogPost = {
       "CareBridge Health can help you think through treatment options and next steps before committing to a cosmetic dental pathway.",
     ctaLinks: [
       {
-        label: "Request consultation",
+        label: "Request a free introduction",
         href: "/#form",
         variant: "primary",
       },

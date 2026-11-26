@@ -20,13 +20,13 @@ export default function InternationalPatientGuide({ region }: { region: Internat
             <Link href="/" className="underline underline-offset-4">Home</Link><span aria-hidden="true">/</span>
             {region === "global" ? <span>International patient guide</span> : <><Link href="/medical-tourism-turkey" className="underline underline-offset-4">International patients</Link><span aria-hidden="true">/</span><span>{guide.label}</span></>}
           </nav>
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-800 dark:text-teal-200">UK-based coordination · International patients</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-800 dark:text-teal-200">UK-based referral · International patients</p>
           <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight tracking-[-0.045em] md:text-6xl">{guide.heading}</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 dark:text-slate-200">{guide.intro}</p>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 dark:text-slate-200">Our doctor-led medical tourism partner in Istanbul connects patients with its established healthcare network. Optional flight tickets, accommodation and airport transfers can be arranged separately by the partner on request; you can also book independently.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/#form" className="rounded-full bg-[#075f63] px-7 py-3.5 text-sm font-semibold text-white hover:bg-[#064c50]">Send a free enquiry</Link>
-            <Link href="/how-treatment-in-turkey-works" className="rounded-full border border-teal-200 bg-white px-7 py-3.5 text-sm font-semibold text-teal-950 hover:border-teal-500">How coordination works</Link>
+            <Link href="/how-treatment-in-turkey-works" className="rounded-full border border-teal-200 bg-white px-7 py-3.5 text-sm font-semibold text-teal-950 hover:border-teal-500">How referrals work</Link>
           </div>
           <p className="mt-5 max-w-3xl text-sm leading-6 text-slate-600 dark:text-slate-300">Independent coordination and referral service, not a clinic. Medical assessment and treatment are provided by independent healthcare professionals. No clinical outcomes or prices are guaranteed.</p>
         </div>

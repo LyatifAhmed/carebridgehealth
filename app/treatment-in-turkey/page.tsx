@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import TreatmentLanding from "../components/TreatmentLanding";
 
 export const metadata: Metadata = {
-  title: "Treatment in Turkey for International Patients | UK-Based Coordination",
+  title: "Treatment in Turkey for International Patients | UK-Based Referral",
   description:
-    "Explore medical treatment in Turkey from the USA, UK, Canada, Europe and beyond. Explore Istanbul with independent UK-based patient coordination.",
+    "Explore medical treatment in Turkey from the USA, UK, Canada, Europe and beyond. Explore Istanbul with independent UK-based patient referrals.",
   alternates: {
     canonical: "/treatment-in-turkey",
   },
@@ -15,7 +15,7 @@ export default function TreatmentInTurkeyPage() {
     <TreatmentLanding
       eyebrow="Treatment in Turkey"
       title="Treatment in Turkey with clearer guidance before you commit"
-      intro="For international patients exploring private medical treatment in Turkey, CareBridge Health provides independent coordination from the UK. Whether you are based in the USA, UK, Canada, Europe or elsewhere, we connect you with healthcare professionals through our doctor-led medical tourism partner’s existing network in Istanbul."
+      intro="For international patients exploring private medical treatment in Turkey, CareBridge Health provides independent referral services from the UK. Whether you are based in the USA, UK, Canada, Europe or elsewhere, we introduce you to our independent medical tourism partner in Istanbul."
       heroNote="Our role is not to replace a clinic or a doctor. We arrange introductions and help you understand the next steps. Our local partner can also arrange flights, accommodation and airport transfers on request, subject to a separate quote."
       extraLinks={[
         {
@@ -43,7 +43,7 @@ export default function TreatmentInTurkeyPage() {
       ]}
       processSteps={[
         "You tell us what treatment you are considering, your priorities, and your approximate timeframe.",
-        "We review your situation and help you think more clearly about destination fit, likely next steps, and what type of pathway may suit you best.",
+        "We respond to your enquiry and offer an introduction to our independent Turkish partner in Istanbul.",
         "If appropriate, we guide you towards the consultation stage and help you prepare for treatment and travel planning.",
       ]}
       faq={[
@@ -55,18 +55,18 @@ export default function TreatmentInTurkeyPage() {
         {
           question: "Can you recommend one city over another?",
           answer:
-            "Our coordination currently focuses on Istanbul. We can help you understand available options based on your treatment type, recovery preferences and budget.",
+            "Our referrals currently focus on Istanbul. We can help you understand available options based on your treatment type, recovery preferences and budget.",
         },
         {
           question: "Do you provide treatment directly?",
           answer:
-            "No. We provide coordination and guidance around the treatment journey. Medical decisions and treatment delivery remain with the licensed clinic and doctors.",
+            "No. We provide marketing, introductions and referrals only. Medical decisions and treatment delivery remain with the licensed clinic and doctors.",
         },
       ]}
       ctaTitle="Ready to discuss your treatment plans?"
       ctaText="If you already have a treatment in mind, the best next step is to send an enquiry. We can review your situation, understand what you are looking for, and help you decide whether an Istanbul treatment pathway may be appropriate."
       primaryCtaHref="/#form"
-      primaryCtaLabel="Request private consultation"
+      primaryCtaLabel="Request a free introduction"
       secondaryCtaLabel="Ask a few questions first"
       tertiaryCtaHref="/blog"
       tertiaryCtaLabel="Read patient insights"

@@ -4,7 +4,7 @@ import PartnerApplicationClient from "./PartnerApplicationClient";
 export const metadata: Metadata = {
   title: "Partner Application",
   description:
-    "Apply to work with CareBridge Health as a clinic or specialist partner. We review selected providers focused on trust, communication, and patient experience.",
+    "Medical tourism companies can submit referral partnership enquiries. Clinics, hospitals and doctors may submit credentials for independent Turkish partner evaluation.",
   alternates: {
     canonical: "/partner-application",
   },

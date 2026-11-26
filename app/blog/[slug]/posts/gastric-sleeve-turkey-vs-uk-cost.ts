@@ -77,7 +77,7 @@ export const gastricSleeveTurkeyVsUkCost: BlogPost = {
       "We can help you understand the process and questions to ask before you move forward with a provider route.",
     ctaLinks: [
       {
-        label: "Request consultation",
+        label: "Request a free introduction",
         href: "/#form",
         variant: "primary",
       },

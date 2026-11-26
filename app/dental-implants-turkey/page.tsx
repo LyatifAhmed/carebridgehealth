@@ -27,7 +27,7 @@ export default function DentalImplantsTurkeyPage() {
       processSteps={[
         "You share your dental concerns, photos, X-rays if available, and what outcome you are hoping for.",
         "We help clarify what questions to ask, what scans may be needed, and whether the case may require staged treatment.",
-        "If suitable, we help coordinate the next step with the relevant dental provider route in Turkey.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

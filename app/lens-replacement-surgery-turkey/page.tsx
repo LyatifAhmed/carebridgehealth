@@ -14,7 +14,7 @@ export default function LensReplacementSurgeryTurkeyPage() {
     <TreatmentLanding
       eyebrow="Lens Replacement Surgery Turkey"
       title="Lens replacement surgery in Turkey with clearer planning before you travel"
-      intro="Lens replacement surgery is increasingly considered by patients seeking greater visual independence or exploring alternatives to glasses and contact lenses. CareBridge Health helps patients explore treatment pathways in Turkey with structured coordination and clearer communication."
+      intro="Lens replacement surgery is increasingly considered by patients seeking greater visual independence or exploring alternatives to glasses and contact lenses. CareBridge Health helps patients explore treatment pathways in Turkey with general information and referral and clearer communication."
       heroNote="Lens replacement surgery requires careful assessment of eye health, age, prescription, lifestyle, expectations, and suitability by qualified ophthalmology professionals."
       suitableFor={[
         "Patients researching lens replacement surgery abroad.",
@@ -29,7 +29,7 @@ export default function LensReplacementSurgeryTurkeyPage() {
       processSteps={[
         "You share your vision concerns, treatment goals, and any relevant eye health information.",
         "We help clarify what information providers may need for an initial review.",
-        "If suitable, we support the next stage of provider communication and treatment planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

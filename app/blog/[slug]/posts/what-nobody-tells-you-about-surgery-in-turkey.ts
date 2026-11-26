@@ -109,10 +109,10 @@ export const whatNobodyTellsYouAboutSurgeryInTurkey: BlogPost = {
     ],
     ctaTitle: "Still exploring your options?",
     ctaText:
-      "If you want a clearer understanding of your situation and possible next steps, you can request a private consultation with UK-based coordination.",
+      "If you want a clearer understanding of your situation and possible next steps, you can request a free introduction with UK-based referral.",
     ctaLinks: [
       {
-        label: "Request consultation",
+        label: "Request a free introduction",
         href: "/#form",
         variant: "primary",
       },

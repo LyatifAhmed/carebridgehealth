@@ -289,7 +289,7 @@ export default function TreatmentLanding({
           <div className="mt-5 flex flex-wrap gap-5 text-sm">
             <Link href="/blog/how-to-choose-a-clinic-in-turkey" className="font-medium underline underline-offset-4">How to choose a clinic</Link>
             <Link href="/medical-tourism-turkey" className="font-medium underline underline-offset-4">International patient planning guide</Link>
-            <Link href="/how-treatment-in-turkey-works" className="font-medium underline underline-offset-4">How coordination works</Link>
+            <Link href="/how-treatment-in-turkey-works" className="font-medium underline underline-offset-4">How referrals work</Link>
           </div>
         </div>
       </section>
@@ -321,7 +321,7 @@ export default function TreatmentLanding({
         >
           {primaryCtaLabel}
         </Link>
-        <p className="mt-1 text-center text-[11px] leading-4 text-neutral-600">No obligation · Independent coordination, not medical advice</p>
+        <p className="mt-1 text-center text-[11px] leading-4 text-neutral-600">No obligation · Independent referral service, not medical advice</p>
       </div>
       <div aria-hidden="true" className="h-24 md:hidden" />
     </main>

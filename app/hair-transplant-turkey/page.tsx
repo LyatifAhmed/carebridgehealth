@@ -34,7 +34,7 @@ export default function HairTransplantTurkeyPage() {
       processSteps={[
         "You share your current concerns, goals, and any available photos or background information.",
         "We help you understand the kind of assessment that matters before moving forward.",
-        "If suitable, we support the next stage of clinic coordination and treatment planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

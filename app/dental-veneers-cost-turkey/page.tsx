@@ -27,7 +27,7 @@ export default function DentalVeneersCostTurkeyPage() {
       processSteps={[
         "You explain your goals and what you would like to improve.",
         "We help clarify treatment options, planning considerations, and common questions.",
-        "If suitable, we help coordinate the next stage with the relevant provider route.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       ctaTitle="Request a personalised dental veneer estimate"
       ctaText="Tell us what you are considering. CareBridge can help pass your enquiry to a relevant provider for assessment and an initial estimate. A dentist must determine suitability and the final treatment plan."

@@ -111,14 +111,14 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Your consent</li>
-              <li>Our legitimate interests in operating and improving our enquiry and coordination service</li>
+              <li>Our legitimate interests in operating and improving our enquiry and referral service</li>
               <li>Taking steps at your request before entering into a service relationship, where relevant</li>
             </ul>
             <p className="mt-2">
               Where you provide health-related or other sensitive information, we
               process that information on the basis of your explicit consent for the
-              purposes of reviewing your enquiry and, where appropriate, coordinating
-              an introduction to a suitable clinic or medical provider.
+              purposes of responding to your enquiry and, with your permission,
+              introducing you only to our independent Turkish medical tourism partner.
             </p>
           </div>
 
@@ -143,6 +143,13 @@ export default function PrivacyPolicyPage() {
               the point of collection. Medical assessment, diagnosis, treatment planning,
               suitability decisions, and treatment outcomes remain the responsibility
               of the relevant provider, not CareBridge Health.
+            </p>
+            <p className="mt-2">
+              For partner applications, we collect professional contact details, organisation
+              type, authorisation status and licence references. With the applicant’s
+              permission, we may share these with our independent Turkish medical tourism
+              partner for evaluation. Clinical applicants should not submit patient data.
+              The partner is responsible for its own assessment and data handling.
             </p>
           </div>
 

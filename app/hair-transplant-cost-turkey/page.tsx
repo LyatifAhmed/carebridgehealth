@@ -27,7 +27,7 @@ export default function HairTransplantCostTurkeyPage() {
       processSteps={[
         "You tell us about your hair loss concerns and goals.",
         "We help explain common treatment approaches, planning considerations, and what factors influence pricing.",
-        "If suitable, we help coordinate the next stage with the relevant provider route.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

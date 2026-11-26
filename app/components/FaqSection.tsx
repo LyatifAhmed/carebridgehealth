@@ -5,8 +5,12 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
+    question: "Does CareBridge arrange doctor appointments or treatment?",
+    answer: "No. CareBridge provides marketing, introductions and referrals only. Our independent Turkish medical tourism partner alone arranges appointments, treatment and optional travel. Licensed clinicians provide clinical care and aftercare.",
+  },
+  {
     question: "Why use CareBridge instead of contacting a clinic directly?",
-    answer: "You can always contact a clinic directly. Our value is a personal introduction through our doctor-led local medical tourism partner’s established network in Istanbul, with a UK-based point of contact and optional travel coordination. We do not independently verify unrelated clinics or guarantee outcomes.",
+    answer: "You can always contact a clinic directly. Our value is a personal introduction through our doctor-led local medical tourism partner’s established network in Istanbul, with a UK-based point of contact and optional travel arranged by the independent Turkish partner. We do not independently verify unrelated clinics or guarantee outcomes.",
   },
   {
     question: "Who arranges flights, accommodation and airport transfers?",
@@ -15,12 +19,12 @@ const faqs = [
   {
     question: "Is treatment in Turkey safe?",
     answer:
-      "Safety depends on the clinic, medical team, treatment type, and your individual circumstances. CareBridge Health helps patients approach treatment more carefully by providing structured coordination and helping them understand important considerations before travelling.",
+      "Safety depends on the clinic, medical team, treatment type, and your individual circumstances. CareBridge Health helps patients approach treatment more carefully by providing general information and referral and helping them understand important considerations before travelling.",
   },
   {
     question: "Do I pay CareBridge Health or the clinic?",
     answer:
-      "Medical treatment is provided by independent clinics. Any treatment agreements and medical decisions are made directly with the relevant provider. CareBridge Health acts as a coordination and communication service.",
+      "Our introduction is free. We receive a referral commission from our independent Turkish partner based on purchased services. Patients pay and contract directly with the relevant independent provider, never CareBridge.",
   },
   {
     question: "Are you a clinic?",

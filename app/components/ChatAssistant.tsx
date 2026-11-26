@@ -14,7 +14,7 @@ const starterMessages: ChatMessage[] = [
   {
     role: "assistant",
     content:
-      "Hello — I’m the CareBridge Health assistant. I can help with treatment fit, process, destinations, and the best next step before you submit a private consultation request.",
+      "Hello — I’m the CareBridge Health assistant. I can help with referral process, treatment categories, destinations, and the best next step before you submit an introduction request.",
   },
 ];
 
@@ -107,7 +107,7 @@ export default function ChatAssistant() {
           role: "assistant",
           content:
             data.reply ||
-            "You can submit a private consultation request below and we’ll review it more carefully by email.",
+            "You can submit an introduction request below and we’ll review it more carefully by email.",
         },
       ]);
     } catch (error) {
@@ -117,7 +117,7 @@ export default function ChatAssistant() {
         {
           role: "assistant",
           content:
-            "The assistant is temporarily unavailable. You can still request a private consultation using the form on the page.",
+            "The assistant is temporarily unavailable. You can still request a free introduction using the form on the page.",
         },
       ]);
     } finally {
@@ -175,7 +175,7 @@ export default function ChatAssistant() {
 
                 <p className="mt-3 max-w-[320px] text-sm leading-6 text-slate-600">
                   Ask about destination fit, treatment routes, timing, or the
-                  best next step before submitting your private consultation
+                  best next step before submitting your introduction
                   request.
                 </p>
               </div>

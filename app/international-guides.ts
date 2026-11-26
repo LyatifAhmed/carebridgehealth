@@ -21,7 +21,7 @@ export const internationalGuides = {
     label: "International patients",
     title: "Medical Tourism in Turkey | International Patient Guide",
     heading: "Medical tourism in Turkey for international patients",
-    description: "Planning treatment in Turkey from abroad? Explore travel, treatment quotes, independent clinics and follow-up with UK-based CareBridge Health coordination.",
+    description: "Planning treatment in Turkey from abroad? Explore travel, treatment quotes, independent clinics and follow-up with UK-based CareBridge Health referrals.",
     intro: "CareBridge Health is based in the UK, but our enquiries are open to patients from the United States, United Kingdom, Canada, Europe and beyond. Start by exploring independent treatment providers in Istanbul, then decide whether travelling for care is right for you.",
     currency: "Your preferred currency",
     sections: [
@@ -30,8 +30,8 @@ export const internationalGuides = {
       { title: "Prepare for travel and follow-up", text: "Review your home country's travel advice and entry requirements for your passport. Ask your own healthcare professional and the treating provider about suitability, travel timing, risks, records and arrangements for follow-up and complications after you return." },
     ],
     questions: [
-      { question: "Do I need to live in the UK to contact CareBridge Health?", answer: "No. Our coordination is UK-based, but patients can enquire from the USA, UK, Canada, Europe and other countries. An independent healthcare provider determines clinical suitability." },
-      { question: "Can CareBridge Health provide medical treatment?", answer: "No. CareBridge is an independent coordination and referral service, not a clinic. We do not provide diagnosis, medical advice, treatment or outcome guarantees." },
+      { question: "Do I need to live in the UK to contact CareBridge Health?", answer: "No. Our referral service is UK-based, but patients can enquire from the USA, UK, Canada, Europe and other countries. An independent healthcare provider determines clinical suitability." },
+      { question: "Can CareBridge Health provide medical treatment?", answer: "No. CareBridge is an independent referral service, not a clinic. We do not provide diagnosis, medical advice, treatment or outcome guarantees." },
     ],
     resources: [],
   },
@@ -72,7 +72,7 @@ export const internationalGuides = {
       { title: "Discuss care after your return", text: "Speak to your local healthcare professional about the proposed treatment and follow-up arrangements. Ask the provider for written records and a clear plan for concerns after you return to the UK. Establish what your travel or medical insurance covers before departure." },
     ],
     questions: [
-      { question: "Is CareBridge Health a UK clinic?", answer: "No. CareBridge is a UK-based independent coordination service. Treatment is provided directly by independent healthcare professionals and clinics in Turkey." },
+      { question: "Is CareBridge Health a UK clinic?", answer: "No. CareBridge is a UK-based independent referral service. Treatment is provided directly by independent healthcare professionals and clinics in Turkey." },
       { question: "Can I get a quote before travelling?", answer: "You can ask the provider for an itemised estimate, subject to their assessment and any required examination. Final pricing and suitability are determined by the treating provider." },
     ],
     resources: [
@@ -86,7 +86,7 @@ export const internationalGuides = {
     title: "Medical Tourism in Turkey from Canada | Patient Guide",
     heading: "Medical tourism in Turkey from Canada",
     description: "Explore treatment in Turkey from Canada with guidance on Canadian dollar quotes, long-haul travel, insurance, independent providers and follow-up.",
-    intro: "Canadian residents can contact CareBridge Health directly about independent treatment providers in Turkey. Our coordination is based in the UK, with introductions to providers in Istanbul where appropriate; you do not need to travel through or live in the UK.",
+    intro: "Canadian residents can contact CareBridge Health directly about independent treatment providers in Turkey. Our referral service is based in the UK, with introductions to our independent Turkish medical tourism partner in Istanbul where appropriate; you do not need to travel through or live in the UK.",
     currency: "Canadian dollars (CAD)",
     sections: [
       { title: "Budget in Canadian dollars", text: "Check the currency of the provider's invoice, conversion costs and which services are included. Consider flights from Canada, travel time, accommodation, companion costs if relevant, and expenses if a longer stay is required. Ask your provincial or territorial plan and private insurer what is covered outside Canada; do not assume reimbursement." },
@@ -107,8 +107,8 @@ export const internationalGuides = {
     label: "Europe",
     title: "Medical Tourism in Turkey from Europe | Patient Guide",
     heading: "Medical tourism in Turkey from Europe",
-    description: "International patient coordination for people in Europe exploring treatment in Turkey, with travel logistics, currency, language and follow-up planning.",
-    intro: "Patients based in European countries can enquire about treatment in Turkey through CareBridge Health. Our UK-based coordination is independent of your country of residence; we introduce you to our authorised Turkish medical tourism partner in Istanbul where appropriate.",
+    description: "International patient referrals for people in Europe exploring treatment in Turkey, with travel logistics, currency, language and follow-up planning.",
+    intro: "Patients based in European countries can enquire about treatment in Turkey through CareBridge Health. Our UK-based referral is independent of your country of residence; we introduce you to our authorised Turkish medical tourism partner in Istanbul where appropriate.",
     currency: "Euros (EUR) or local currency",
     sections: [
       { title: "Plan from your country of residence", text: "European countries have different travel requirements, insurance arrangements and possible flight routes. Check the official advice of your national authorities and the entry rules applicable to your passport. Ask the provider about arrival and appointment schedules." },

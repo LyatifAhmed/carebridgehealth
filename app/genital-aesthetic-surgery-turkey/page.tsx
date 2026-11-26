@@ -14,7 +14,7 @@ export default function GenitalAestheticSurgeryTurkeyPage() {
     <TreatmentLanding
       eyebrow="Genital Aesthetic Surgery Turkey"
       title="Genital aesthetic surgery in Turkey with privacy and clearer guidance"
-      intro="Genital aesthetic procedures are highly personal decisions. CareBridge Health helps patients explore treatment pathways in Turkey through structured coordination, discreet communication, and a more informed approach before travelling."
+      intro="Genital aesthetic procedures are highly personal decisions. CareBridge Health helps patients explore treatment pathways in Turkey through general information and referral, discreet communication, and a more informed approach before travelling."
       heroNote="Every procedure should begin with realistic expectations, appropriate medical assessment, and careful discussion of risks, recovery, and suitability."
       suitableFor={[
         "Patients researching genital aesthetic procedures abroad.",
@@ -29,7 +29,7 @@ export default function GenitalAestheticSurgeryTurkeyPage() {
       processSteps={[
         "You share your concerns and treatment goals privately.",
         "We help clarify what information providers may need for an initial review.",
-        "If suitable, we support the next stage of provider communication and treatment planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       extraLinks={[
         { linkText: "Read about labiaplasty treatment options", href: "/labiaplasty-turkey" },

@@ -94,9 +94,9 @@ export const istanbulOrAntalyaForTreatmentInTurkey: BlogPost = {
           ". You can also compare destination-specific pages for a more detailed view.",
       },
     ],
-    ctaTitle: "Still deciding between Istanbul and Antalya?",
+    ctaTitle: "Request an introduction in Istanbul",
     ctaText:
-      "The right destination depends on your treatment type, the complexity of your case, and the kind of experience you want before and after travel.",
+      "CareBridge introductions are currently available only through our independent Turkish medical tourism partner in Istanbul. Antalya referrals are paused.",
     ctaLinks: [
       {
         label: "Explore Istanbul",
@@ -104,11 +104,7 @@ export const istanbulOrAntalyaForTreatmentInTurkey: BlogPost = {
         variant: "primary",
       },
       {
-        label: "Explore Antalya",
-        href: "/treatment-in-antalya",
-      },
-      {
-        label: "Request consultation",
+        label: "Request a free introduction",
         href: "/#form",
       },
     ],

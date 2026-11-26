@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "CareBridge Health provides UK-based coordination for international patients exploring dental treatment, hair transplants, cosmetic surgery and other independent treatment providers in Turkey.",
+    "CareBridge Health provides UK-based marketing, introductions and referrals to an independent Turkish medical tourism partner in Istanbul, which arranges appointments, treatment and optional travel.",
 
   keywords: [
     "medical treatment in Turkey from the UK",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CareBridge Health | Medical Tourism in Turkey for International Patients",
     description:
-      "International patient coordination from the UK for independent treatment providers in Istanbul, Turkey.",
+      "International patient referrals from the UK for independent treatment providers in Istanbul, Turkey.",
     url: "https://www.carebridgehealth.co",
     siteName: "CareBridge Health",
     images: [
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
         url: "https://www.carebridgehealth.co/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "CareBridge Health international patient coordination for treatment in Turkey",
+        alt: "CareBridge Health international patient referrals for treatment in Turkey",
       },
     ],
     locale: "en_GB",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CareBridge Health | Medical Tourism in Turkey for International Patients",
     description:
-      "International patient coordination from the UK for independent treatment providers in Istanbul, Turkey.",
+      "International patient referrals from the UK for independent treatment providers in Istanbul, Turkey.",
     images: ["https://www.carebridgehealth.co/og-image.jpg"],
   },
 

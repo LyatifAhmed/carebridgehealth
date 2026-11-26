@@ -9,6 +9,10 @@ type FormState = {
   website: string;
   specialty: string;
   message: string;
+  organisationType: string;
+  authorisation: string;
+  documentReference: string;
+  sharingConsent: string;
 };
 
 const initialState: FormState = {
@@ -18,10 +22,14 @@ const initialState: FormState = {
   website: "",
   specialty: "",
   message: "",
+  organisationType: "",
+  authorisation: "",
+  documentReference: "",
+  sharingConsent: "",
 };
 
 const partnershipPoints = [
-  "Limited network of carefully reviewed clinics",
+  "Authorised medical tourism companies",
   "Focus on patient experience, clarity, and trust",
   "Selected specialties only",
   "Long-term quality over volume",
@@ -79,16 +87,16 @@ export default function PartnerApplicationClient() {
             </h1>
 
             <p className="mt-6 text-base leading-8 text-slate-600 md:text-lg">
-              We collaborate with a limited number of carefully selected clinics
-              and specialists in Turkey. Our focus is not volume. We look for
-              providers who deliver strong clinical standards, clear
-              communication, and a high-quality experience for international
-              patients.
+              CareBridge Health provides marketing, introductions and referrals only.
+              We welcome applications from independently authorised Turkish medical
+              tourism companies. Clinics, hospitals and doctors may submit their
+              details for consideration by our existing Turkish medical tourism partner.
             </p>
 
             <p className="mt-5 text-base leading-8 text-slate-600">
-              If your clinic shares that approach, you can apply to be
-              considered for our network.
+              Clinical applicants are not appointed directly by CareBridge. Our
+              independent partner determines whether to work with them and handles
+              all appointments, treatment arrangements and optional travel.
             </p>
           </div>
 
@@ -124,8 +132,8 @@ export default function PartnerApplicationClient() {
               </p>
 
               <p>
-                Applications are reviewed individually. Submission does not
-                guarantee acceptance into our network.
+                Submission does not guarantee acceptance, referral volume or any
+                partnership. Required authorisations must be verified before collaboration.
               </p>
             </div>
 
@@ -146,9 +154,10 @@ export default function PartnerApplicationClient() {
                   Review criteria
                 </h3>
                 <p className="mt-2 text-sm leading-7 text-slate-600">
-                  We typically review specialty fit, patient communication,
-                  international readiness, clarity of process, and overall brand
-                  alignment.
+                  Medical tourism companies must hold relevant international health
+                  tourism intermediary authorisation. Clinics, hospitals and doctors
+                  should identify their applicable facility and professional licences
+                  and health tourism authorisation where required.
                 </p>
               </div>
             </div>
@@ -171,6 +180,26 @@ export default function PartnerApplicationClient() {
             </div>
 
             <form onSubmit={handleSubmit} className="mt-8 space-y-4">
+              <label className="block text-sm font-medium">Organisation type
+                <select required value={form.organisationType} onChange={(e) => update("organisationType", e.target.value)} className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-4">
+                  <option value="">Select organisation type</option>
+                  <option value="medical-tourism-company">Medical tourism intermediary company</option>
+                  <option value="clinic-hospital">Clinic / hospital</option>
+                  <option value="doctor">Individual doctor / specialist</option>
+                  <option value="other">Other organisation</option>
+                </select>
+              </label>
+              <label className="block text-sm font-medium">Applicable authorisation status
+                <select required value={form.authorisation} onChange={(e) => update("authorisation", e.target.value)} className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-4">
+                  <option value="">Select status</option>
+                  <option value="held">Valid applicable authorisation / licence held</option>
+                  <option value="pending">Application pending</option>
+                  <option value="not-held">Not held / unsure of requirements</option>
+                </select>
+              </label>
+              <label className="block text-sm font-medium">Licence / authorisation reference
+                <input required={form.authorisation === "held"} value={form.documentReference} onChange={(e) => update("documentReference", e.target.value)} placeholder={form.organisationType === "medical-tourism-company" ? "Intermediary authorisation number / issuing authority" : "Facility or professional licence / applicable health tourism authorisation"} className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-4" />
+              </label>
               <div className="grid gap-4 md:grid-cols-2">
                 <input
                   placeholder="Full name"
@@ -223,6 +252,10 @@ export default function PartnerApplicationClient() {
                 className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-4 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-slate-900/5"
               />
 
+              <label className="flex gap-3 text-sm leading-6 text-slate-600">
+                <input type="checkbox" required checked={form.sharingConsent === "yes"} onChange={(e) => update("sharingConsent", e.target.checked ? "yes" : "")} />
+                I agree that CareBridge may share my application and professional contact details with its independent Turkish medical tourism partner for evaluation. I will not include patient data or sensitive records.
+              </label>
               <p className="text-xs leading-6 text-slate-500">
                 By submitting this form, you confirm that the information
                 provided is accurate and that CareBridge Health may contact you
@@ -240,8 +273,7 @@ export default function PartnerApplicationClient() {
 
             {submitted ? (
               <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-700">
-                Application received. We’ll review it carefully and get back to
-                you if there may be a fit.
+                Application received. Clinical applications may be passed to our independent Turkish partner for review. Submission is not approval.
               </div>
             ) : null}
           </div>
@@ -249,7 +281,7 @@ export default function PartnerApplicationClient() {
       </section>
 
       <section className="mx-auto max-w-5xl px-6 pb-16 text-sm leading-7 text-slate-500 md:pb-20">
-        CareBridge Health is an independent coordination brand and not a clinic.
+        CareBridge Health is a marketing, introduction and referral service only, not a clinic.
         Any future collaboration is subject to review, alignment, and separate
         approval.
       </section>

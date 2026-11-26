@@ -29,7 +29,7 @@ export default function CosmeticSurgeryTurkeyPage() {
       processSteps={[
         "You tell us what procedure you are considering and any concerns around timing, recovery, and expectations.",
         "We help you think through key decision points before moving ahead.",
-        "If appropriate, we support the next stage of treatment coordination and destination planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

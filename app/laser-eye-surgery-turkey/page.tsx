@@ -14,7 +14,7 @@ export default function LaserEyeSurgeryTurkeyPage() {
     <TreatmentLanding
       eyebrow="Laser Eye Surgery Turkey"
       title="Laser eye surgery in Turkey with clearer planning before you travel"
-      intro="Laser eye surgery is one of the most researched vision correction procedures in Turkey. CareBridge Health helps patients explore treatment pathways with clearer communication, structured coordination, and realistic expectations before travelling."
+      intro="Laser eye surgery is one of the most researched vision correction procedures in Turkey. CareBridge Health helps patients explore treatment pathways with clearer communication, general information and referral, and realistic expectations before travelling."
       heroNote="Vision correction procedures require careful assessment of eye health, prescription stability, corneal suitability, expectations, and long-term outcomes."
       suitableFor={[
         "Patients researching laser eye surgery abroad.",
@@ -29,7 +29,7 @@ export default function LaserEyeSurgeryTurkeyPage() {
       processSteps={[
         "You share your vision concerns and treatment goals.",
         "We help clarify the information providers may require for an initial review.",
-        "If suitable, we support the next stage of provider communication and treatment planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

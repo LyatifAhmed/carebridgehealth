@@ -29,7 +29,7 @@ export default function EyeTreatmentTurkeyPage() {
       processSteps={[
         "You tell us what type of eye treatment you are considering and any relevant context.",
         "We help clarify what questions and planning points matter before you move ahead.",
-        "If suitable, we support the next coordination stage for treatment planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

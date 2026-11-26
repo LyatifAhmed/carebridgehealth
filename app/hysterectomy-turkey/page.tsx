@@ -14,7 +14,7 @@ export default function HysterectomyTurkeyPage() {
     <TreatmentLanding
       eyebrow="Hysterectomy Turkey"
       title="Hysterectomy treatment in Turkey with clearer guidance from the start"
-      intro="Some women considering hysterectomy treatment abroad want greater clarity before speaking directly with providers. CareBridge Health helps patients explore treatment pathways more carefully through structured coordination and communication."
+      intro="Some women considering hysterectomy treatment abroad want greater clarity before speaking directly with providers. CareBridge Health helps patients explore treatment pathways more carefully through general information and referral and communication."
       heroNote="Hysterectomy is a significant procedure. Treatment suitability, surgical approach, risks, and recovery must always be assessed by qualified medical professionals."
       suitableFor={[
         "Patients researching hysterectomy treatment options abroad.",
@@ -29,7 +29,7 @@ export default function HysterectomyTurkeyPage() {
       processSteps={[
         "You share your situation, concerns, and treatment goals.",
         "We help clarify the information providers typically require for review.",
-        "If suitable, we support the next stage of communication and treatment planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       extraLinks={[
         { linkText: "Read about myomectomy as a possible alternative in selected cases", href: "/myomectomy-turkey" },

@@ -14,7 +14,7 @@ export default function UrinaryIncontinenceSurgeryTurkeyPage() {
     <TreatmentLanding
       eyebrow="Urinary Incontinence Surgery Turkey"
       title="Urinary incontinence surgery in Turkey with clearer guidance from the start"
-      intro="Urinary incontinence can have a significant impact on daily life and confidence. CareBridge Health helps patients explore specialist-led treatment pathways in Turkey through structured coordination and clearer communication before travelling."
+      intro="Urinary incontinence can have a significant impact on daily life and confidence. CareBridge Health helps patients explore specialist-led treatment pathways in Turkey through general information and referral and clearer communication before travelling."
       heroNote="Treatment options vary depending on symptoms, diagnosis, previous treatments, and individual circumstances. Medical suitability must always be assessed by qualified healthcare professionals."
       suitableFor={[
         "Patients researching urinary incontinence treatment abroad.",
@@ -29,7 +29,7 @@ export default function UrinaryIncontinenceSurgeryTurkeyPage() {
       processSteps={[
         "You share your symptoms, concerns, and relevant medical history.",
         "We help clarify what information providers may need for an initial review.",
-        "If suitable, we support the next stage of communication and treatment planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       extraLinks={[
         { linkText: "Explore related women's health pathways", href: "/treatment-in-istanbul/womens-health" },

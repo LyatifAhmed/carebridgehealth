@@ -19,7 +19,7 @@ export default function TummyTuckTurkeyPage() {
       }}
       eyebrow="Tummy Tuck Turkey"
       title="Tummy tuck in Turkey with clearer planning before you travel"
-      intro="A tummy tuck, also known as abdominoplasty, is a commonly researched cosmetic surgery procedure in Turkey. CareBridge Health helps patients approach the process with clearer communication, realistic expectations, and structured coordination before making decisions."
+      intro="A tummy tuck, also known as abdominoplasty, is a commonly researched cosmetic surgery procedure in Turkey. CareBridge Health helps patients approach the process with clearer communication, realistic expectations, and general information and referral before making decisions."
       heroNote="A tummy tuck is not the same as liposuction. It may involve skin removal, abdominal wall repair, and body contouring depending on individual suitability and medical assessment."
       suitableFor={[
         "Patients researching abdominoplasty or tummy tuck surgery abroad.",
@@ -34,7 +34,7 @@ export default function TummyTuckTurkeyPage() {
       processSteps={[
         "You share your goals, concerns, and relevant background information.",
         "We help clarify what information providers may need for an initial review.",
-        "If suitable, we support the next stage of provider communication and planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

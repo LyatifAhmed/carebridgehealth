@@ -14,7 +14,7 @@ export default function LabiaplastyTurkeyPage() {
     <TreatmentLanding
       eyebrow="Labiaplasty Turkey"
       title="Labiaplasty in Turkey with discreet coordination before you travel"
-      intro="Labiaplasty is a personal and sensitive procedure. CareBridge Health helps patients explore treatment pathways in Turkey with privacy, clearer communication, and structured coordination before making any commitment."
+      intro="Labiaplasty is a personal and sensitive procedure. CareBridge Health helps patients explore treatment pathways in Turkey with privacy, clearer communication, and general information and referral before making any commitment."
       heroNote="Labiaplasty suitability, surgical approach, risks, recovery, and expected outcomes must always be discussed with qualified medical professionals."
       suitableFor={[
         "Patients researching labiaplasty or intimate aesthetic surgery abroad.",
@@ -29,7 +29,7 @@ export default function LabiaplastyTurkeyPage() {
       processSteps={[
         "You share your concerns and treatment goals privately.",
         "We help clarify what information providers may need for an initial review.",
-        "If suitable, we support the next stage of discreet provider communication and planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

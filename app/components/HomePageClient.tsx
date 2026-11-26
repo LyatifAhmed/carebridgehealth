@@ -52,7 +52,7 @@ const trustItems = [
 const heroStats = [
   { label: "Destinations", value: "Istanbul", icon: MapPin },
   { label: "Response target", value: "Within 24 hours", icon: Clock },
-  { label: "Model", value: "Private coordination", icon: ShieldCheck },
+  { label: "Model", value: "Free introduction", icon: ShieldCheck },
 ];
 
 const treatmentCards = [
@@ -254,7 +254,7 @@ export default function HomePageClient() {
           <div className="grid items-center gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch lg:gap-10 xl:gap-12">
             <div className="max-w-2xl">
               <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-teal-800">
-                UK-based · International patient coordination
+                UK-based · International patient referrals
                 <span className="h-px w-9 bg-teal-600/70" />
               </p>
               <h1 className="mt-4 text-4xl font-semibold leading-[1.06] tracking-[-0.045em] text-slate-950 sm:text-5xl lg:text-[clamp(2.6rem,3.45vw,3.5rem)]">
@@ -285,7 +285,7 @@ export default function HomePageClient() {
                 </a>
               </div>
               <p className="mt-3 max-w-lg text-xs leading-5 text-slate-500">
-                CareBridge is an independent introduction service, not a clinic. Our Turkish partner coordinates appointments. Independent clinicians provide medical advice and treatment.
+                CareBridge provides marketing, introductions and referrals only. Our independent Turkish partner alone arranges appointments, treatment and optional travel. Licensed clinicians provide medical advice and treatment.
               </p>
             </div>
 
@@ -401,7 +401,7 @@ export default function HomePageClient() {
             <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600 md:mt-0">
               We do not publish patient before-and-after galleries publicly. Where
               clinically appropriate, partner doctors may discuss relevant examples
-              during a private consultation, helping protect patient privacy and
+              during a consultation with their treating clinician, helping protect patient privacy and
               keeping examples relevant to your own case.
             </p>
           </div>
@@ -628,7 +628,7 @@ export default function HomePageClient() {
               Explore treatment in Istanbul
             </h2>
             <p className="mt-5 text-base leading-8 text-slate-600">
-              Our current patient coordination focuses on Istanbul, with access to independent providers across selected treatment pathways.
+              Our current patient referrals focus on Istanbul, through our independent Turkish partner’s network of providers across selected treatment pathways.
             </p>
           </div>
 
@@ -818,8 +818,8 @@ export default function HomePageClient() {
               {[
                 "Free to enquire — no obligation",
                 "Private and discreet",
-                "UK-based coordination",
-                "Destination guidance included",
+                "UK-based referral",
+                "Introduction to our Istanbul partner",
                 "We aim to reply within 24 hours",
               ].map((item) => (
                 <div
@@ -967,9 +967,7 @@ export default function HomePageClient() {
                     required
                   />
                   <span>
-                    I understand that CareBridge Health is an independent
-                    introduction service and not a clinic or medical provider,
-                    and does not provide medical advice, diagnosis, or treatment.
+                    I understand CareBridge Health provides marketing, introductions and referrals only. It does not arrange appointments, treatment or travel. Its independent Turkish partner handles these arrangements and licensed clinicians provide medical care.
                   </span>
                 </label>
               </div>

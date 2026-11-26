@@ -131,7 +131,7 @@ export const breastAugmentationTurkeyGuide: BlogPost = {
 
   ctaLinks: [
     {
-      label: "Request consultation",
+      label: "Request a free introduction",
       href: "/#form",
       variant: "primary",
     },

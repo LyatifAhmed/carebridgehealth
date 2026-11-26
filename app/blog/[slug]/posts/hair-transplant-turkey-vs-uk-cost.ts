@@ -88,7 +88,7 @@ export const hairTransplantTurkeyVsUkCost: BlogPost = {
       "CareBridge Health can help you understand the process, questions to ask, and whether a Turkey treatment pathway may be suitable before you commit.",
     ctaLinks: [
       {
-        label: "Request consultation",
+        label: "Request a free introduction",
         href: "/#form",
         variant: "primary",
       },

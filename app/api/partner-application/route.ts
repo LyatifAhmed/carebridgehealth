@@ -36,6 +36,10 @@ function buildAdminHtml(data: {
   website: string;
   specialty: string;
   message: string;
+  organisationType: string;
+  authorisation: string;
+  documentReference: string;
+  reviewRoute: string;
 }) {
   return `
     <div style="font-family:Arial,Helvetica,sans-serif;color:#0f172a;line-height:1.6;max-width:760px;margin:0 auto;">
@@ -49,6 +53,11 @@ function buildAdminHtml(data: {
         <tbody>
           ${row("Full name", data.name)}
           ${row("Clinic / organisation", data.clinic)}
+          ${row("Organisation type", data.organisationType)}
+          ${row("Authorisation status", data.authorisation)}
+          ${row("Licence reference", data.documentReference)}
+          ${row("Review route", data.reviewRoute)}
+          ${row("Sharing consent", "Confirmed")}
           ${row("Email", data.email)}
           ${row("Website", data.website)}
           ${row("Specialty", data.specialty)}
@@ -84,7 +93,7 @@ function buildApplicantHtml(data: {
         </p>
 
         <p style="margin:0 0 16px 0;color:#475569;">
-          We’ve received your application and will review it carefully against our current partnership criteria, specialty fit, and overall alignment.
+          We have received your application. Medical tourism companies are considered for referral relationships subject to authorisation checks. Clinic, hospital and doctor applications may be shared with our independent Turkish medical tourism partner for its own evaluation.
         </p>
 
         <div style="margin:24px 0;padding:16px 18px;border-radius:16px;background:#f8fafc;border:1px solid #e2e8f0;">
@@ -97,7 +106,7 @@ function buildApplicantHtml(data: {
         </div>
 
         <p style="margin:0 0 16px 0;color:#475569;">
-          Please note that submission does not guarantee acceptance into our network. We work with a limited number of carefully selected clinics and providers.
+          Submission does not guarantee acceptance. CareBridge is limited to marketing, introductions and referrals and does not appoint clinicians, arrange medical appointments, treatment or travel.
         </p>
 
         <p style="margin:0;color:#475569;">
@@ -122,8 +131,16 @@ export async function POST(req: NextRequest) {
       typeof body.specialty === "string" ? body.specialty.trim() : "";
     const message =
       typeof body.message === "string" ? body.message.trim() : "";
+    const organisationType = typeof body.organisationType === "string" ? body.organisationType : "";
+    const authorisation = typeof body.authorisation === "string" ? body.authorisation : "";
+    const documentReference = typeof body.documentReference === "string" ? body.documentReference.trim() : "";
+    const reviewRoute = organisationType === "medical-tourism-company" ? "Referral partnership review — verify authorisation before approval" : "Independent Turkish partner evaluation only — no direct clinical appointment by CareBridge";
 
-    if (!name || !clinic || !email || !specialty) {
+    if (!name || !clinic || !email || !specialty ||
+      !["medical-tourism-company", "clinic-hospital", "doctor", "other"].includes(organisationType) ||
+      !["held", "pending", "not-held"].includes(authorisation) ||
+      (authorisation === "held" && !documentReference) ||
+      body.sharingConsent !== "yes") {
       return NextResponse.json(
         { error: "Missing required fields." },
         { status: 400 }
@@ -149,7 +166,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    await resend.emails.send({
+    const adminResult = await resend.emails.send({
       from: fromEmail,
       to: toEmail,
       replyTo: email,
@@ -161,8 +178,15 @@ export async function POST(req: NextRequest) {
         website,
         specialty,
         message,
+        organisationType,
+        authorisation,
+        documentReference,
+        reviewRoute,
       }),
     });
+    if (adminResult.error) {
+      return NextResponse.json({ error: "Unable to deliver application." }, { status: 502 });
+    }
 
     await resend.emails.send({
       from: fromEmail,

@@ -3,9 +3,9 @@ import HomePageClient from "./components/HomePageClient";
 
 export const metadata: Metadata = {
   title:
-    "Medical Tourism in Turkey | International Patient Coordination",
+    "Medical Tourism in Turkey | International Patient Referrals",
   description:
-    "Explore medical treatment in Turkey from the USA, UK, Canada, Europe and beyond. Connect with healthcare professionals through our established Istanbul medical network, with UK-based coordination and optional travel support.",
+    "Explore treatment in Turkey from the USA, UK, Canada, Europe and beyond. Free introductions to an independent Istanbul medical tourism partner, which arranges appointments, treatment and optional travel.",
   keywords: [
     "private medical treatment in Turkey",
     "medical treatment Turkey from UK",
@@ -31,16 +31,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Medical Tourism in Turkey | International Patient Coordination",
+      "Medical Tourism in Turkey | International Patient Referrals",
     description:
-      "UK-based patient coordination through an established Istanbul medical network, with optional travel support.",
+      "UK-based marketing, introductions and referrals to an independent Istanbul medical tourism partner, which arranges treatment and optional travel.",
     url: "https://www.carebridgehealth.co/",
     siteName: "CareBridge Health",
     images: [{
       url: "https://www.carebridgehealth.co/og-image.jpg",
       width: 1200,
       height: 630,
-      alt: "CareBridge Health — independent patient coordination for treatment in Turkey",
+      alt: "CareBridge Health — independent patient referrals for treatment in Turkey",
     }],
     locale: "en_GB",
     type: "website",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Medical Tourism in Turkey | International Patient Coordination",
+      "Medical Tourism in Turkey | International Patient Referrals",
     description:
       "Explore treatment in Turkey with more guidance, structure, and confidence before travel.",
     images: ["https://www.carebridgehealth.co/og-image.jpg"],
@@ -63,7 +63,7 @@ export default function HomePage() {
     url: "https://www.carebridgehealth.co/",
     logo: "https://www.carebridgehealth.co/logo.png",
     description:
-      "UK-based referral and coordination service connecting international patients with healthcare professionals through a local medical tourism partner in Istanbul.",
+      "UK-based marketing, introduction and referral service introducing international patients to an independent medical tourism partner in Istanbul.",
     areaServed: ["United States", "United Kingdom", "Canada", "Europe", "Worldwide"],
     sameAs: [],
   };

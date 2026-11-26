@@ -14,7 +14,7 @@ export default function FaceliftTurkeyPage() {
     <TreatmentLanding
       eyebrow="Facelift Turkey"
       title="Facelift surgery in Turkey with clearer planning before you travel"
-      intro="Facelift surgery is a widely researched cosmetic procedure for patients looking to address visible signs of ageing. CareBridge Health helps patients approach treatment with clearer communication, realistic expectations, and structured coordination before making decisions."
+      intro="Facelift surgery is a widely researched cosmetic procedure for patients looking to address visible signs of ageing. CareBridge Health helps patients approach treatment with clearer communication, realistic expectations, and general information and referral before making decisions."
       heroNote="Facial rejuvenation procedures should be approached carefully, taking into account facial anatomy, skin quality, recovery, expectations, and medical suitability."
       suitableFor={[
         "Patients researching facelift surgery abroad.",
@@ -29,7 +29,7 @@ export default function FaceliftTurkeyPage() {
       processSteps={[
         "You share your goals, concerns, and relevant background information.",
         "We help clarify what information providers may need for an initial review.",
-        "If suitable, we support the next stage of provider communication and planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

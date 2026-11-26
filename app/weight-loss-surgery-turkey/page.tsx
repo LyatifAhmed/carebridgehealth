@@ -29,7 +29,7 @@ export default function WeightLossSurgeryTurkeyPage() {
       processSteps={[
         "You share your goals, background, and where you are in the decision-making process.",
         "We help you understand the planning issues that matter before moving forward.",
-        "If suitable, we support the next stage of coordination with the relevant provider route.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

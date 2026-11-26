@@ -75,7 +75,7 @@ export const veneersTurkeyVsUkCost: BlogPost = {
       "We can help you understand the planning questions before you commit to cosmetic dental treatment in Turkey.",
     ctaLinks: [
       {
-        label: "Request consultation",
+        label: "Request a free introduction",
         href: "/#form",
         variant: "primary",
       },

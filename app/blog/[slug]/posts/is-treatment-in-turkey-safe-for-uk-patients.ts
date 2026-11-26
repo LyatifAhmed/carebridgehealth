@@ -60,7 +60,7 @@ export const isTreatmentInTurkeySafeForUkPatients: BlogPost = {
       {
         type: "paragraph",
         content:
-          "For UK-based patients, communication and clarity before travel can significantly affect confidence. This is where a more structured coordination approach can help. Instead of navigating multiple clinics individually, having a clearer process and a more organised starting point can reduce uncertainty.",
+          "For UK-based patients, communication and clarity before travel can significantly affect confidence. This is where a more general information and referral approach can help. Instead of navigating multiple clinics individually, having a clearer process and a more organised starting point can reduce uncertainty.",
       },
       {
         type: "paragraph",
@@ -92,10 +92,10 @@ export const isTreatmentInTurkeySafeForUkPatients: BlogPost = {
     ],
     ctaTitle: "Considering treatment in Turkey?",
     ctaText:
-      "If you are exploring options, you can request a private consultation to better understand your situation, possible next steps, and whether Istanbul or Antalya may be a better fit.",
+      "If you are exploring options, you can request a free introduction to better understand your situation, possible next steps, and how to request an introduction to our independent Istanbul partner (Antalya referrals are paused).",
     ctaLinks: [
       {
-        label: "Request consultation",
+        label: "Request a free introduction",
         href: "/#form",
         variant: "primary",
       },

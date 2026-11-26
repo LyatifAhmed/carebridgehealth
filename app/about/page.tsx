@@ -3,16 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Our UK-Based International Patient Coordination",
+  title: "About Our UK-Based International Patient Referrals",
   description:
-    "Learn about CareBridge Health, a UK-based independent coordination service for international patients from the USA, UK, Canada, Europe and beyond exploring treatment in Turkey.",
+    "Learn about CareBridge Health, a UK-based independent referral service for international patients from the USA, UK, Canada, Europe and beyond exploring treatment in Turkey.",
   alternates: {
     canonical: "/about",
   },
 };
 
 const principles = [
-  "UK-based coordination",
+  "UK-based referral",
   "Established local network",
   "Not a clinic",
   "Patient-first approach",
@@ -21,7 +21,7 @@ const principles = [
 const operatingModel = [
   {
     title: "CareBridge Health",
-    text: "UK-based coordination, enquiry handling, patient guidance, communication support, and structured next steps.",
+    text: "UK-based referral, enquiry handling, patient guidance, communication support, and structured next steps.",
   },
   {
     title: "Our Istanbul medical tourism partner",
@@ -49,7 +49,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="mt-7 max-w-3xl text-base leading-8 text-white/70 md:text-lg">
-            CareBridge Health is a UK-based treatment coordination service
+            CareBridge Health is a UK-based marketing, introduction and referral service
             for international patients, including those in the USA, UK, Canada
             and Europe, who want a clearer starting point before exploring treatment options in Turkey.
           </p>
@@ -127,10 +127,10 @@ export default function AboutPage() {
               question to the conversation with a medical professional.
             </p>
             <p>
-              I am not a doctor, and CareBridge is not a clinic. We coordinate
-              enquiries and introductions, while independent healthcare professionals
-              are responsible for clinical assessments, treatment decisions and aftercare.
-              We do not independently verify clinics outside our network or guarantee treatment safety or outcomes. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments.
+              I am not a doctor, and CareBridge is not a clinic. Our activities are limited
+              to marketing, introductions and referrals. Our independent Turkish partner alone
+              arranges appointments, treatment and travel; licensed clinicians deliver clinical care.
+              We do not independently verify clinics outside our independent Turkish partner’s network or guarantee treatment safety or outcomes. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments.
             </p>
           </div>
 
@@ -219,7 +219,7 @@ export default function AboutPage() {
 
           <div className="mt-7 rounded-2xl bg-slate-50 p-5 text-sm leading-7 text-slate-600">
             CareBridge Health is operated by BetaOffice Ltd as an
-            independent treatment coordination service.
+            independent marketing, introduction and referral service.
           </div>
         </div>
 
@@ -243,7 +243,7 @@ export default function AboutPage() {
       <section className="px-6 pb-24">
         <div className="mx-auto max-w-5xl rounded-[36px] border border-slate-200 bg-[#f3efe8] p-8 shadow-[0_20px_60px_rgba(15,23,42,0.04)] dark:border-[#354d55] dark:bg-[#1b2e35] md:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-            Private consultation
+            Free introduction
           </p>
 
           <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-0.04em]">

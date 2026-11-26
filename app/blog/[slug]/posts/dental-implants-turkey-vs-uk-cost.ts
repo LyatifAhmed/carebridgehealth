@@ -76,7 +76,7 @@ export const dentalImplantsTurkeyVsUkCost: BlogPost = {
       "Share your situation and we can help you understand what questions to ask before moving forward with dental implant treatment abroad.",
     ctaLinks: [
       {
-        label: "Request consultation",
+        label: "Request a free introduction",
         href: "/#form",
         variant: "primary",
       },

@@ -34,7 +34,7 @@ export default function GastricSleeveCostTurkeyPage() {
       processSteps={[
         "You explain your goals and current situation.",
         "We help clarify common planning questions and treatment considerations.",
-        "If suitable, we help coordinate the next stage with the relevant provider route.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

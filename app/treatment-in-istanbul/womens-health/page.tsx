@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title:
     "Women’s Health Treatments in Istanbul for International Patients",
   description:
-    "Explore women’s health and gynaecological procedures in Istanbul through CareBridge Health. Discreet coordination, carefully selected clinics, and UK-based guidance for patients seeking clarity before travelling.",
+    "Explore women’s health and gynaecological procedures in Istanbul through CareBridge Health. Discreet coordination, clinics within the independent Turkish partner’s network, and UK-based guidance for patients seeking clarity before travelling.",
   keywords: [
     "women's health Turkey",
     "women's health treatment Istanbul",
@@ -61,7 +61,7 @@ const faqItems = [
   },
   {
     q: "Can CareBridge Health provide medical advice?",
-    a: "No. CareBridge Health is an independent coordination service. Medical suitability, provider decisions, and treatment outcomes remain the responsibility of the relevant medical provider.",
+    a: "No. CareBridge Health is an independent referral service. Medical suitability, provider decisions, and treatment outcomes remain the responsibility of the relevant medical provider.",
   },
 ];
 
@@ -165,7 +165,7 @@ export default function WomensHealthIstanbulPage() {
           <div className="mx-auto max-w-7xl px-6 py-4">
             <div className="grid gap-3 text-sm text-slate-600 sm:grid-cols-2 xl:grid-cols-4">
               <div className="rounded-full border border-slate-200 bg-slate-50 px-4 py-3 text-center">
-                UK-based coordination
+                UK-based referral
               </div>
               <div className="rounded-full border border-slate-200 bg-slate-50 px-4 py-3 text-center">
                 Private and discreet
@@ -387,7 +387,7 @@ export default function WomensHealthIstanbulPage() {
           <div className="mx-auto max-w-4xl px-6">
             <div className="rounded-[32px] border border-slate-200/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(248,244,239,0.98)_100%)] p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)] md:p-10">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
-                Private consultation
+                Free introduction
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
@@ -395,13 +395,13 @@ export default function WomensHealthIstanbulPage() {
               </h2>
 
               <p className="mt-5 text-base leading-8 text-slate-600">
-                We help patients think more clearly about destination fit,
+                We share general information about treatment categories,
                 treatment pathway, and whether Istanbul is the right route for
                 their priorities before moving into direct provider review.
               </p>
 
               <p className="mt-4 text-sm leading-7 text-slate-500">
-                CareBridge Health is an independent coordination service and not
+                CareBridge Health is an independent referral service and not
                 a clinic or medical provider.
               </p>
 
@@ -426,7 +426,7 @@ export default function WomensHealthIstanbulPage() {
 
         <section className="mx-auto max-w-5xl px-6 py-14 text-sm leading-7 text-slate-500">
           CareBridge Health is not a clinic or medical provider. We act as an
-          independent coordination service connecting patients with third-party
+          independent referral service connecting patients with third-party
           clinics and Turkey-licensed medical providers. All treatments,
           clinical decisions, suitability assessments, and medical outcomes
           remain the responsibility of the relevant provider.

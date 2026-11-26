@@ -27,7 +27,7 @@ export default function FueHairTransplantTurkeyPage() {
       processSteps={[
         "You tell us about your hair loss concerns and goals.",
         "We help explain key planning considerations and treatment questions.",
-        "If suitable, we help coordinate the next stage with the relevant provider route.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       ctaTitle="Request an FUE hair transplant assessment"
       ctaText="Tell us what you are considering. CareBridge can help connect your enquiry with a relevant medical provider for an initial review. Only an appropriately qualified clinician can assess suitability and recommend treatment."

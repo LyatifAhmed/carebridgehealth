@@ -27,7 +27,7 @@ export default function HollywoodSmileTurkeyPage() {
       processSteps={[
         "You explain your goals and share photos if available.",
         "We help you understand treatment possibilities, limitations, and planning considerations.",
-        "If suitable, we help coordinate the next stage with the relevant provider route.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

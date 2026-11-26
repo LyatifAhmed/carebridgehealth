@@ -69,7 +69,7 @@ export const whatUkPatientsShouldKnowBeforeTreatmentInTurkey: BlogPost = {
       "We help UK-based patients understand treatment pathways, destination fit, and next steps before they commit to a clinic.",
     ctaLinks: [
       {
-        label: "Request consultation",
+        label: "Request a free introduction",
         href: "/#form",
         variant: "primary",
       },

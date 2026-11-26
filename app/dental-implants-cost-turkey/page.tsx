@@ -27,7 +27,7 @@ export default function DentalImplantsCostTurkeyPage() {
       processSteps={[
         "You tell us about your treatment goals and concerns.",
         "We explain the main factors that influence pricing and planning.",
-        "If suitable, we help coordinate the next stage with the relevant provider route.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

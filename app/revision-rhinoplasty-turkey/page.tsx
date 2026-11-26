@@ -14,7 +14,7 @@ export default function RevisionRhinoplastyTurkeyPage() {
     <TreatmentLanding
       eyebrow="Revision Rhinoplasty Turkey"
       title="Revision rhinoplasty in Turkey with careful planning from the beginning"
-      intro="Revision rhinoplasty is often more complex than first-time nose surgery. CareBridge Health helps patients approach revision procedures with clearer communication, realistic expectations, and structured coordination before travelling."
+      intro="Revision rhinoplasty is often more complex than first-time nose surgery. CareBridge Health helps patients approach revision procedures with clearer communication, realistic expectations, and general information and referral before travelling."
       heroNote="Patients considering revision rhinoplasty should focus on surgeon experience, planning, breathing function, scar tissue, and realistic outcomes rather than marketing alone."
       suitableFor={[
         "Patients unhappy with the results of previous nose surgery.",
@@ -29,7 +29,7 @@ export default function RevisionRhinoplastyTurkeyPage() {
       processSteps={[
         "You explain your previous surgery history and current concerns.",
         "We help clarify what information providers typically require for an initial review.",
-        "If suitable, we assist with the next stage of communication and provider coordination.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

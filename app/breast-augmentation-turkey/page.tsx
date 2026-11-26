@@ -14,7 +14,7 @@ export default function BreastAugmentationTurkeyPage() {
     <TreatmentLanding
       eyebrow="Breast Augmentation Turkey"
       title="Breast augmentation in Turkey with clearer planning before you travel"
-      intro="Breast augmentation is one of the most researched cosmetic surgery procedures in Turkey. CareBridge Health helps patients approach the process more carefully, with structured coordination and clearer communication before making decisions."
+      intro="Breast augmentation is one of the most researched cosmetic surgery procedures in Turkey. CareBridge Health helps patients approach the process more carefully, with general information and referral and clearer communication before making decisions."
       heroNote="Breast augmentation planning should consider implant type, size, placement, body proportions, medical suitability, recovery, and realistic expectations."
       suitableFor={[
         "Patients researching breast augmentation surgery abroad.",
@@ -29,7 +29,7 @@ export default function BreastAugmentationTurkeyPage() {
       processSteps={[
         "You share your goals, concerns, and relevant background information.",
         "We help clarify what information providers may need for an initial review.",
-        "If suitable, we support the next stage of provider communication and planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

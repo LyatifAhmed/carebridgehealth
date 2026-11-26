@@ -14,7 +14,7 @@ export default function LasikEyeSurgeryTurkeyPage() {
     <TreatmentLanding
       eyebrow="LASIK Eye Surgery Turkey"
       title="LASIK eye surgery in Turkey with clearer planning before you travel"
-      intro="LASIK is one of the most recognised vision correction procedures. CareBridge Health helps patients explore LASIK treatment pathways in Turkey with clearer communication, structured coordination, and realistic expectations before making decisions."
+      intro="LASIK is one of the most recognised vision correction procedures. CareBridge Health helps patients explore LASIK treatment pathways in Turkey with clearer communication, general information and referral, and realistic expectations before making decisions."
       heroNote="LASIK suitability depends on prescription stability, corneal thickness, eye health, age, lifestyle, and specialist ophthalmology assessment."
       suitableFor={[
         "Patients researching LASIK or vision correction abroad.",
@@ -29,7 +29,7 @@ export default function LasikEyeSurgeryTurkeyPage() {
       processSteps={[
         "You share your vision concerns, prescription background, and treatment goals.",
         "We help clarify what information providers may need for an initial review.",
-        "If suitable, we support the next stage of provider communication and treatment planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

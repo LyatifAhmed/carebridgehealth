@@ -27,7 +27,7 @@ export default function VeneersTurkeyPage() {
       processSteps={[
         "You tell us about your goals, concerns, and what you would like to improve about your smile.",
         "We help explain important considerations, treatment alternatives, and planning questions before travelling.",
-        "If suitable, we help coordinate the next stage with the appropriate dental provider route.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

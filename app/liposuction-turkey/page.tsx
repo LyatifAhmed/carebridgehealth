@@ -29,7 +29,7 @@ export default function LiposuctionTurkeyPage() {
       processSteps={[
         "You share your goals, concerns, and relevant background information.",
         "We help explain the information providers typically need for assessment.",
-        "If suitable, we support the next stage of provider communication and planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

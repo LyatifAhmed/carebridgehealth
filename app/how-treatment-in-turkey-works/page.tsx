@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/how-treatment-in-turkey-works" },
   title: "How Treatment in Turkey Works | CareBridge Health",
   description:
-    "Learn how CareBridge Health supports international patients exploring treatment in Turkey through independent clinics and local healthcare partners, with UK-based coordination.",
+    "Learn how CareBridge Health supports international patients exploring treatment in Turkey through independent clinics and local healthcare partners, with UK-based referral.",
 };
 
 export default function HealthTourismAuthorisationPage() {
@@ -22,7 +22,7 @@ export default function HealthTourismAuthorisationPage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-slate-700">
-            CareBridge Health is a UK-based coordination and information
+            CareBridge Health is a UK-based referral and information
             service for international patients, including those based in the USA, UK, Canada and Europe. We do not operate clinics, provide medical treatment, or
             present ourselves as a healthcare provider.
           </p>
@@ -134,7 +134,7 @@ export default function HealthTourismAuthorisationPage() {
           </h2>
 
           <p className="mt-4 max-w-4xl text-sm leading-7 text-slate-600">
-            CareBridge Health is a coordination and information service only. We
+            CareBridge Health is a referral and information service only. We
             are not a hospital, clinic, medical practice, or emergency medical
             provider. Any treatment is provided by independent healthcare
             providers in Turkey. Clinical licences, health tourism

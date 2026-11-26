@@ -127,7 +127,7 @@ function buildCustomerHtml(data: ConsultationPayload, leadId: string) {
         </p>
 
         <p style="margin:0 0 16px 0;color:#475569;">
-          With your permission, we can introduce you to our independent authorised Turkish medical tourism partner, which coordinates medical appointments and optional travel services.
+          CareBridge provides marketing, introductions and referrals only. With your permission, we can introduce you to our independent authorised Turkish medical tourism partner. Only that partner arranges medical appointments, treatment and optional travel services.
         </p>
 
         <div style="margin:24px 0;padding:16px 18px;border-radius:16px;background:#f8fafc;border:1px solid #e2e8f0;">
@@ -171,7 +171,7 @@ export async function POST(req: NextRequest) {
     }
 
     if (String(data.treatmentCity ?? "").trim().toLowerCase() === "antalya") {
-      return NextResponse.json({ error: "Antalya coordination is temporarily unavailable. Please select Istanbul or request guidance." }, { status: 400 });
+      return NextResponse.json({ error: "Antalya referrals are temporarily unavailable. Please select Istanbul or request guidance." }, { status: 400 });
     }
 
     if (!data.consentDataProcessing || !data.consentDisclaimer) {

@@ -14,7 +14,7 @@ export default function RhinoplastyTurkeyPage() {
     <TreatmentLanding
       eyebrow="Rhinoplasty Turkey"
       title="Rhinoplasty in Turkey with clearer planning before you travel"
-      intro="Rhinoplasty is one of the most researched cosmetic surgery procedures in Turkey. CareBridge Health helps patients approach the process more carefully, with clearer communication, realistic expectations, and structured coordination before making any commitment."
+      intro="Rhinoplasty is one of the most researched cosmetic surgery procedures in Turkey. CareBridge Health helps patients approach the process more carefully, with clearer communication, realistic expectations, and general information and referral before making any commitment."
       heroNote="Nose surgery is highly individual. A good plan should consider breathing, facial balance, previous surgery, skin thickness, expectations, and recovery — not just before-and-after photos."
       suitableFor={[
         "Patients researching nose surgery in Turkey.",
@@ -29,7 +29,7 @@ export default function RhinoplastyTurkeyPage() {
       processSteps={[
         "You share what you are considering, your main concerns, and whether this is a first rhinoplasty or revision case.",
         "We help clarify what information and questions matter before moving forward.",
-        "If suitable, we support the next stage of communication with an appropriate provider route.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

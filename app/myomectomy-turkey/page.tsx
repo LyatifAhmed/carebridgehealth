@@ -14,7 +14,7 @@ export default function MyomectomyTurkeyPage() {
     <TreatmentLanding
       eyebrow="Myomectomy Turkey"
       title="Myomectomy in Turkey with clearer planning before you travel"
-      intro="Myomectomy is a procedure used to remove fibroids while preserving the uterus where clinically appropriate. CareBridge Health helps patients explore specialist-led pathways in Turkey with clearer communication and structured coordination."
+      intro="Myomectomy is a procedure used to remove fibroids while preserving the uterus where clinically appropriate. CareBridge Health helps patients explore specialist-led pathways in Turkey with clearer communication and general information and referral."
       heroNote="Fibroid treatment should be reviewed carefully. Suitability, surgical approach, fertility considerations, risks, and recovery must always be assessed by qualified medical professionals."
       suitableFor={[
         "Patients researching fibroid surgery or myomectomy abroad.",
@@ -29,7 +29,7 @@ export default function MyomectomyTurkeyPage() {
       processSteps={[
         "You share your situation, diagnosis if known, symptoms, and treatment goals.",
         "We help clarify what information providers may need for an initial review.",
-        "If suitable, we support the next stage of communication and provider coordination.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

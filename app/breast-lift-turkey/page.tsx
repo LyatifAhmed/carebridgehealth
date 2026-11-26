@@ -19,7 +19,7 @@ export default function BreastLiftTurkeyPage() {
       }}
       eyebrow="Breast Lift Turkey"
       title="Breast lift in Turkey with clearer planning before you travel"
-      intro="A breast lift, also known as mastopexy, is a commonly researched cosmetic surgery procedure in Turkey. CareBridge Health helps patients approach the process with clearer communication, realistic expectations, and structured coordination before making decisions."
+      intro="A breast lift, also known as mastopexy, is a commonly researched cosmetic surgery procedure in Turkey. CareBridge Health helps patients approach the process with clearer communication, realistic expectations, and general information and referral before making decisions."
       heroNote="Breast lift planning should consider skin laxity, breast shape, nipple position, implant preference, scarring, recovery, and individual medical suitability."
       suitableFor={[
         "Patients researching breast lift or mastopexy surgery abroad.",
@@ -34,7 +34,7 @@ export default function BreastLiftTurkeyPage() {
       processSteps={[
         "You share your goals, concerns, and relevant background information.",
         "We help clarify what information providers may need for an initial review.",
-        "If suitable, we support the next stage of provider communication and planning.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

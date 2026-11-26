@@ -27,7 +27,7 @@ export default function HollywoodSmileCostTurkeyPage() {
       processSteps={[
         "You tell us what you would like to improve about your smile.",
         "We help explain common treatment approaches and planning considerations.",
-        "If suitable, we help coordinate the next stage with the relevant provider route.",
+        "With your permission, we introduce you to our independent Turkish medical tourism partner, which handles appointments and treatment coordination.",
       ]}
       faq={[
         {

@@ -11,13 +11,12 @@ export default function Footer() {
             </h3>
 
             <p className="mt-4 text-sm leading-6 text-slate-600">
-              UK-based medical treatment coordination for international
-              patients. Focused on trusted clinics, clear communication, and
-              carefully structured planning.
+              UK-based marketing, introduction and referral service for international
+              patients exploring treatment in Turkey.
             </p>
 
             <p className="mt-4 text-sm text-slate-500">
-              UK-based • Istanbul coordination
+              UK-based • Istanbul referrals
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -71,7 +70,7 @@ export default function Footer() {
               <li><Link href="/medical-tourism-turkey-from-europe" className="transition hover:text-slate-900">Patients from Europe</Link></li>
               <li>
                 <a href="/#form" className="transition hover:text-slate-900">
-                  Consultation
+                  Free introduction
                 </a>
               </li>
             </ul>
@@ -118,14 +117,12 @@ export default function Footer() {
             <h4 className="text-sm font-medium text-slate-900">Work with us</h4>
 
             <p className="mt-5 text-sm leading-6 text-slate-600">
-              We collaborate with a limited number of carefully selected
-              clinics and specialists in Turkey.
+              We welcome enquiries from authorised medical tourism companies.
             </p>
 
             <p className="mt-3 text-sm text-slate-500">
-              If you are a licensed clinic or medical provider interested in
-              working with international patients, you can apply to join our
-              network.
+              Clinics and doctors may submit their credentials for consideration by
+              our independent Turkish medical tourism partner.
             </p>
 
             <div className="mt-6">
@@ -133,14 +130,14 @@ export default function Footer() {
                 href="/partner-application"
                 className="inline-flex rounded-full border border-slate-300 bg-white px-5 py-2 text-sm font-medium text-slate-700 transition hover:-translate-y-0.5 hover:border-slate-400 hover:shadow-sm"
               >
-                Apply as a clinic
+                Submit a partner enquiry
               </Link>
             </div>
           </div>
         </div>
 
         <div className="mt-16 rounded-[24px] border border-slate-200 bg-white/80 p-5 text-sm leading-6 text-slate-600">
-          CareBridge Health is an independent introduction service. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments. We are not a
+          CareBridge Health is limited to marketing, introductions and referrals. We do not arrange doctor appointments, treatment or travel. These arrangements are made solely by our independent Turkish medical tourism partner; licensed clinicians provide treatment and aftercare. Our introduction service is free to patients. We receive a referral commission from our authorised Turkish medical tourism partner based on the value of services purchased by referred patients. We do not collect patient payments. We are not a
           clinic or medical provider, and we do not provide medical advice,
           diagnosis, or treatment. Any clinical assessment, treatment planning,
           and medical services are provided by independent third-party medical

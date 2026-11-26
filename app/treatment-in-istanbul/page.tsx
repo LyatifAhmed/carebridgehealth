@@ -6,7 +6,7 @@ import HeroCursor from "../components/HeroCursor";
 export const metadata: Metadata = {
   title: "Medical Treatment in Istanbul for International Patients",
   description:
-    "Explore private medical treatment in Istanbul through CareBridge Health. Carefully selected clinics, structured guidance, and UK-based coordination for patients seeking clarity and discretion.",
+    "Explore private medical treatment in Istanbul through CareBridge Health. Carefully selected clinics, structured guidance, and UK-based referral for patients seeking clarity and discretion.",
   alternates: {
     canonical: "/treatment-in-istanbul",
   },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const treatmentAreas = [
   {
     title: "Dental treatments",
-    desc: "Implants, veneers, full-mouth restoration, and smile design through carefully selected clinics.",
+    desc: "Implants, veneers, full-mouth restoration, and smile design through clinics within the independent Turkish partner’s network.",
     href: "/dental-treatment-turkey",
   },
   {
@@ -59,8 +59,8 @@ const processSteps = [
     desc: "Share your treatment interest, timing, and any priorities through our enquiry form.",
   },
   {
-    title: "We review your case",
-    desc: "We help assess whether Istanbul may be the right destination based on treatment type and preferences.",
+    title: "We receive your enquiry",
+    desc: "We respond to your enquiry and offer an introduction to our independent Turkish partner in Istanbul.",
   },
   {
     title: "Receive clear next steps",
@@ -97,7 +97,7 @@ export default function TreatmentInIstanbulPage() {
               <h1 className="mt-6 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-white md:text-7xl">
                 Medical treatment in Istanbul,
                 <span className="block text-white/88">
-                  carefully coordinated from the UK
+                  with introductions from the UK
                 </span>
               </h1>
 
@@ -113,7 +113,7 @@ export default function TreatmentInIstanbulPage() {
                   Major medical city
                 </span>
                 <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
-                  UK-based coordination
+                  UK-based referral
                 </span>
               </div>
 
@@ -193,7 +193,7 @@ export default function TreatmentInIstanbulPage() {
             </p>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
-              Treatment categories we can help coordinate in Istanbul
+              Treatment categories for which you can request an introduction
             </h2>
 
             <p className="mt-4 text-base leading-8 text-slate-600">
@@ -324,7 +324,7 @@ export default function TreatmentInIstanbulPage() {
           <div className="rounded-[32px] border border-slate-200/80 bg-[#fcfaf7] p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)] md:p-10">
             <div className="max-w-2xl">
               <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500">
-                Private consultation
+                Free introduction
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
@@ -359,10 +359,9 @@ export default function TreatmentInIstanbulPage() {
       </section>
 
       <section className="mx-auto max-w-5xl px-6 py-14 text-sm leading-7 text-slate-500">
-        CareBridge Health is not a medical provider. We act as an independent
-        coordination service connecting patients with third-party clinics. All
-        treatments, provider selection, suitability decisions, and medical
-        outcomes remain the responsibility of the relevant medical provider.
+        CareBridge Health provides marketing, introductions and referrals only.
+        Our independent Turkish medical tourism partner alone arranges appointments,
+        treatment and optional travel. Licensed clinicians deliver medical care.
       </section>
 
       

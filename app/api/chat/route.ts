@@ -16,19 +16,19 @@ const faqReplies: Record<string, string> = {
   travel: "Our local medical tourism partner in Istanbul can arrange optional flight tickets, accommodation and airport transfers on request, subject to availability and a separate quote. You can also book independently.",
   network: "We introduce patients to our independent authorised Turkish medical tourism company in Istanbul. That company coordinates consultations with healthcare professionals in its network. We do not independently verify unrelated clinics, provide medical advice or guarantee outcomes. You can contact a clinic directly if you prefer.",
   process:
-    "The process is straightforward. You share a few details, we review the enquiry carefully, and then we reply with clearer next steps, likely destination fit, and whether there appears to be a suitable pathway worth exploring further.",
+    "CareBridge handles marketing, introductions and referrals only. With your permission we introduce you to our independent Turkish medical tourism partner in Istanbul. Only that partner arranges appointments, treatment and optional travel; licensed clinicians assess suitability and deliver care.",
   "womens-health":
-    "Yes — we can help with selected women’s health and specialist gynaecological enquiries, particularly through Istanbul. These cases are approached with more privacy, more care, and a more structured coordination process before travel.",
+    "Yes — we can help with selected women’s health and specialist gynaecological enquiries, particularly through Istanbul. These cases are approached with more privacy, more care, and a more general information and referral process before travel.",
   hair:
-    "Yes — we can help with selected hair transplant enquiries. The main aim is to understand what kind of result, planning, and clinic pathway may suit you best before you commit to anything.",
+    "You can request an introduction to our independent Turkish medical tourism partner for hair transplant enquiries. It arranges consultations; only clinicians can assess suitability.",
   dental:
-    "Yes — we can help with selected dental enquiries such as implants, veneers, smile design, and broader restorative treatment planning. The best route depends on your goals, timing, and what level of structure you want around the process.",
+    "You can request an introduction to our independent Turkish medical tourism partner for dental enquiries. It arranges consultations; clinicians determine treatment options.",
   eye:
-    "Yes — we can help with selected eye treatment enquiries through trusted partner clinics. A more careful review is usually the best next step so the destination and pathway can be thought through properly.",
+    "You can request an introduction to our independent Turkish medical tourism partner for eye treatment enquiries. It arranges consultations; clinicians determine treatment options.",
   istanbul:
-    "Istanbul is often the stronger fit for patients who prioritise specialist access, advanced hospitals, and more complex treatment pathways. It usually suits people who want a broader medical ecosystem around their decision.",
+    "Our introductions are currently limited to our independent Turkish medical tourism partner in Istanbul. It handles all appointment and treatment arrangements. Antalya is paused.",
   antalya:
-    "Antalya coordination is temporarily unavailable. CareBridge Health currently coordinates treatment enquiries in Istanbul.",
+    "Antalya referrals are temporarily unavailable. CareBridge Health only offers introductions to its independent partner in Istanbul.",
   cost:
     "Cost can vary a lot depending on the treatment, clinic level, destination, and how much support is included around the journey. In most cases, the more useful starting point is understanding fit first, then narrowing down realistic options.",
   safety:
@@ -47,6 +47,7 @@ function trySmartFaqMatch(value: string) {
   if (faqReplies[text]) return faqReplies[text];
 
   if (text.includes("antalya")) return faqReplies.antalya;
+  if (/appoint|book|schedule|arrange|organis|organiz|partner application|licen[cs]e/.test(text)) return faqReplies.process;
   if (/flight|hotel|accommodation|transfer|airport|travel package/.test(text)) return faqReplies.travel;
   if (/verify|verification|network|directly|credentials|why carebridge/.test(text)) return faqReplies.network;
   if (text.includes("how") && text.includes("work")) return faqReplies.process;
@@ -74,7 +75,7 @@ export async function POST(req: NextRequest) {
     if (!Array.isArray(messages) || messages.length === 0) {
       return NextResponse.json({
         reply:
-          "Hello — I can help with treatment fit, destinations, process, and the best next step before you submit a private consultation request.",
+          "Hello — I can help with referral process, treatment categories, destinations, and the best next step before you submit an introduction request.",
       });
     }
 
@@ -101,7 +102,7 @@ export async function POST(req: NextRequest) {
     const recentMessages = messages.slice(-8);
 
     const systemPrompt = `
-You are the CareBridge Health website assistant for a UK-based independent medical treatment coordination service focused on Turkey and international patients, including the USA, UK, Canada and Europe. Do not assume visitors live in the UK.
+You are the CareBridge Health website assistant for a UK-based independent marketing, introduction and referral service focused on Turkey and international patients, including the USA, UK, Canada and Europe. Do not assume visitors live in the UK.
 
 Brand positioning:
 - calm
@@ -114,8 +115,10 @@ Brand positioning:
 - never robotic
 
 What the business does:
+- activity is strictly limited to marketing, introductions and referrals. Never offer to arrange or book appointments, treatment, travel, quotes or clinical assessment on behalf of patients.
+- clinical applicants are referred for evaluation by the independent Turkish medical tourism partner; CareBridge does not appoint doctors or clinics.
 - helps international patients think more clearly about treatment in Turkey
-- currently coordinates treatment enquiries in Istanbul only; Antalya is temporarily unavailable
+- currently offers introductions to the independent partner in Istanbul only; Antalya is temporarily unavailable
 - helps patients understand likely next steps before submitting an enquiry
 - introduces patients only to its independent authorised Turkish medical tourism company in Istanbul, led by a specialist doctor; that company coordinates medical appointments and access to its own clinician network
 - the local partner can arrange optional flight tickets, accommodation and airport transfers, subject to availability and separate quotes; patients may book independently
@@ -156,7 +159,7 @@ Safety rules:
 
 Closing style:
 - where relevant, end with a soft next-step sentence such as:
-  "If you'd like, the next step is to submit the consultation form so your case can be reviewed more carefully."
+  "If you'd like, the next step is to submit the consultation form so we can respond about an introduction."
 - vary wording naturally so it does not feel repetitive
 `;
 
@@ -179,7 +182,7 @@ Write the next assistant reply.`;
 
     const reply =
       response.output_text?.trim() ||
-      "The best next step is to submit a private consultation request so your case can be reviewed more carefully.";
+      "The best next step is to submit an introduction request so we can respond about an introduction.";
 
     return NextResponse.json({ reply });
   } catch (error) {
@@ -187,7 +190,7 @@ Write the next assistant reply.`;
 
     return NextResponse.json({
       reply:
-        "The assistant is temporarily unavailable at the moment, but you can still submit a private consultation request using the form and we’ll review it by email.",
+        "The assistant is temporarily unavailable at the moment, but you can still submit an introduction request using the form and we’ll review it by email.",
     });
   }
 }
